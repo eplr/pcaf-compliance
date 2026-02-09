@@ -1,0 +1,42 @@
+{
+  "title": "PCAF Standard - Methodological Guidance for Emissions Measurement and Disclosure",
+  "parts": [
+    {
+      "id": "A",
+      "name": "Financed Emissions",
+      "definition": "Emissions attributable to loans and investments across 10 asset classes",
+      "examples": [
+        "listed equity and corporate bonds",
+        "business loans and unlisted equity",
+        "project finance",
+        "commercial real estate",
+        "mortgages",
+        "motor vehicle loans",
+        "use of proceeds",
+        "securitized and structured products",
+        "sovereign debt",
+        "sub sovereign debt"
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Facilitated Emissions",
+      "definition": "Emissions attributable to their capital market issuance activities",
+      "examples": [
+        "capital market issuances"
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Insurance-Associated Emissions",
+      "definition": "Emissions attributable to re/insurance and underwriting activities",
+      "examples": [
+        "commercial lines insurance",
+        "project insurance",
+        "personal motor lines",
+        "treaty reinsurance"
+      ]
+    }
+  ],
+  "note": "As the PCAF Standard continues to evolve, additional asset classes and case studies will be added"
+}
