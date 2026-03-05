@@ -1,2 +1,2 @@
-# Exclude files exceeding GitHub's 100MB limit
-resources/reports/origin/ing-esef-extract/ing-2025-12-31-en/reports/ing-2025-12-31-en.xhtml
+# macOS metadata
+.DS_Store
