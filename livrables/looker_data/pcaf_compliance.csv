@@ -1,0 +1,43 @@
+company,assessment_date,pcaf_part,status,completeness_percent,missing_elements,priority
+ASR Nederland,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+ASR Nederland,2026-02-10,Part C - Insurance Emissions,PARTIAL,25,Insurance line breakdown,High
+AXA,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+AXA,2026-02-10,Part C - Insurance Emissions,REPORTED,90,Minor gaps,Low
+Admiral Group,2026-02-10,Part A - Financed Emissions,MISSING,0,All,Critical
+Admiral Group,2026-02-10,Part C - Insurance Emissions,PARTIAL,25,Insurance line breakdown,High
+Ageas,2026-02-10,Part A - Financed Emissions,MISSING,0,All,Critical
+Ageas,2026-02-10,Part C - Insurance Emissions,PARTIAL,25,Insurance line breakdown,High
+Allianz,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+Allianz,2026-02-10,Part C - Insurance Emissions,PARTIAL,25,Insurance line breakdown,High
+Amundi,2026-02-10,Part A - Financed Emissions,MISSING,0,All,Critical
+Aviva,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+Aviva,2026-02-10,Part C - Insurance Emissions,PARTIAL,25,Insurance line breakdown,High
+Commerzbank,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+Commerzbank,2026-02-10,Part B - Facilitated Emissions,MISSING,0,Capital market emissions,High
+Crédit Agricole,2026-02-10,Part A - Financed Emissions,MISSING,0,All,Critical
+Crédit Agricole,2026-02-10,Part B - Facilitated Emissions,MISSING,0,Capital market emissions,High
+Deutsche Börse,2026-02-10,Part A - Financed Emissions,MISSING,0,All,Critical
+Eurazeo,2026-02-10,Part A - Financed Emissions,MISSING,0,All,Critical
+GBL,2026-02-10,Part A - Financed Emissions,MISSING,0,All,Critical
+KBC,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+KBC,2026-02-10,Part B - Facilitated Emissions,PARTIAL,30,Incomplete disclosure,Medium
+KBC,2026-02-10,Part C - Insurance Emissions,PARTIAL,25,Insurance line breakdown,High
+Legal & General,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+Legal & General,2026-02-10,Part C - Insurance Emissions,PARTIAL,25,Insurance line breakdown,High
+NN Group,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+NN Group,2026-02-10,Part C - Insurance Emissions,REPORTED,90,Minor gaps,Low
+Nordea,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+Nordea,2026-02-10,Part B - Facilitated Emissions,PARTIAL,30,Incomplete disclosure,Medium
+Phoenix Group,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+Phoenix Group,2026-02-10,Part C - Insurance Emissions,PARTIAL,25,Insurance line breakdown,High
+Santander,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+Santander,2026-02-10,Part B - Facilitated Emissions,PARTIAL,30,Incomplete disclosure,Medium
+Schroders,2026-02-10,Part A - Financed Emissions,MISSING,0,All,Critical
+Société Générale,2026-02-10,Part A - Financed Emissions,MISSING,0,All,Critical
+Société Générale,2026-02-10,Part B - Facilitated Emissions,MISSING,0,Capital market emissions,High
+Swiss Re,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+Swiss Re,2026-02-10,Part C - Insurance Emissions,PARTIAL,25,Insurance line breakdown,High
+UniCredit,2026-02-10,Part A - Financed Emissions,REPORTED,90,Minor gaps,Low
+UniCredit,2026-02-10,Part B - Facilitated Emissions,MISSING,0,Capital market emissions,High
+Zurich,2026-02-10,Part A - Financed Emissions,PARTIAL,50,Asset class breakdown,High
+Zurich,2026-02-10,Part C - Insurance Emissions,PARTIAL,25,Insurance line breakdown,High

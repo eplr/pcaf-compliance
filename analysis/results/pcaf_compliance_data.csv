@@ -1,0 +1,24 @@
+Institution,Type,PCAF Mentioned,PCAF Signatory,Scope 1 (tCO2e),Scope 2 Market (tCO2e),Financed Emissions,Financed Unit,Part A Status,Part B Status,Part C Status,DQS,Listed Equity/Bonds,Business Loans,Mortgages,Sovereign Debt,Critical Gaps,Primary Recommendation
+ADMIRAL,insurer,True,True,542,,,unknown,partial,N/A,partial,,partial,missing,missing,missing,,Priority 2: Implement PCAF Part A methodology with quantified financed emissions
+AGEAS,insurer,True,True,,,,unknown,partial,N/A,partial,,partial,missing,missing,missing,,Priority 2: Report total financed emissions with PCAF breakdown
+ALLIANZ,insurer,True,True,,,87-161,MtCO2e,reported,N/A,partial,2,reported,partial,partial,partial,,Priority 3: Reduce uncertainty range in Scope 3 financed emissions
+AMUNDI,asset_manager,False,False,,,,unknown,missing,N/A,N/A,,missing,missing,missing,partial,CRITICAL: No PCAF methodology or financed emissions reported,Priority 1: Adopt PCAF methodology and calculate financed emissions
+ASRNEDERLAND,insurer,True,False,,,,unknown,reported,N/A,partial,5,partial,partial,reported,partial,,Priority 3: Continue improving data quality across asset classes
+AVIVA,insurer,True,True,,,7.4,MtCO2e,reported,N/A,partial,1,reported,partial,partial,reported,,Priority 3: Extend coverage to all insurance lines
+AXA,insurer,True,False,,,21.7,MtCO2e,reported,N/A,partial,2,reported,partial,partial,reported,,Priority 3: Improve Part C insurance-associated emissions coverage
+COMMERZBANK,bank,True,True,,,,unknown,partial,partial,N/A,1,partial,partial,reported,partial,,Priority 2: Report aggregate financed emissions total
+CREDITAGRICOLE,bank,True,True,,,,unknown,partial,partial,N/A,,missing,partial,partial,partial,,Priority 2: Consolidate financed emissions across all portfolios
+DEUTSCHEBOERSE,exchange,False,False,,,1227,tCO2e,partial,N/A,N/A,,partial,missing,missing,missing,Non-PCAF signatory with limited financed emissions disclosure,Priority 1: Join PCAF and implement full methodology
+EURAZEO,asset_manager,True,False,45,80,3674661,tCO2e,reported,N/A,N/A,,N/A,N/A,missing,missing,,Priority 3: Add explicit Data Quality Scores per PCAF guidance
+GBL,investment_holding,True,False,,,,unknown,partial,N/A,N/A,,partial,missing,missing,missing,,Priority 2: Report total portfolio financed emissions
+KBC,bancassurance,True,True,,,1.4,MtCO2e,reported,partial,partial,,partial,partial,reported,reported,,Priority 3: Add explicit DQS per asset class
+LEGALGENERAL,insurer,True,True,,,,unknown,partial,N/A,partial,2,reported,partial,reported,partial,,Priority 2: Report absolute financed emissions alongside intensity
+NNGROUP,insurer,True,True,,,,unknown,partial,N/A,partial,1,reported,partial,reported,reported,,Priority 2: Report total absolute financed emissions
+NORDEA,bank,True,True,,,,unknown,reported,partial,N/A,4,partial,reported,partial,partial,,Priority 3: Improve DQS from 4 to target 2-3
+PHOENIXGROUP,insurer,True,True,,,12.4,MtCO2e,reported,N/A,partial,,reported,missing,reported,partial,,Priority 3: Add explicit Data Quality Scores
+SANTANDER,bank,True,True,35503,,9.83,MtCO2e,reported,partial,N/A,1,partial,reported,reported,reported,,Priority 3: Continue sector-by-sector PCAF implementation
+SCHRODERS,asset_manager,True,False,,,18.5,MtCO2e,reported,N/A,N/A,,reported,missing,partial,partial,,Priority 3: Extend coverage to private assets
+SOCGEN,bank,True,False,,,,unknown,partial,partial,N/A,,missing,partial,partial,partial,,"Priority 2: Report total financed emissions, not just sector targets"
+SWISSRE,reinsurer,True,True,,,10.1,MtCO2e,reported,N/A,partial,3,reported,missing,partial,reported,,Priority 3: Extend Part C insurance-associated emissions
+UNICREDIT,bank,True,False,,,10.2,MtCO2e,reported,partial,N/A,5,reported,reported,reported,reported,,Priority 3: Improve DQS from 5 to target 3
+ZURICH,insurer,True,True,1034,,,unknown,partial,N/A,partial,1-5,partial,missing,partial,reported,,Priority 2: Report total financed emissions in 2025

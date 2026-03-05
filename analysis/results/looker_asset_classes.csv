@@ -1,0 +1,93 @@
+Institution,Asset Class,Coverage Status,Coverage Score
+ADMIRAL,Listed Equity & Corporate Bonds,partial,1
+ADMIRAL,Business Loans,missing,0
+ADMIRAL,Mortgages,missing,0
+ADMIRAL,Sovereign Debt,missing,0
+AGEAS,Listed Equity & Corporate Bonds,partial,1
+AGEAS,Business Loans,missing,0
+AGEAS,Mortgages,missing,0
+AGEAS,Sovereign Debt,missing,0
+ALLIANZ,Listed Equity & Corporate Bonds,reported,2
+ALLIANZ,Business Loans,partial,1
+ALLIANZ,Mortgages,partial,1
+ALLIANZ,Sovereign Debt,partial,1
+AMUNDI,Listed Equity & Corporate Bonds,missing,0
+AMUNDI,Business Loans,missing,0
+AMUNDI,Mortgages,missing,0
+AMUNDI,Sovereign Debt,partial,1
+ASRNEDERLAND,Listed Equity & Corporate Bonds,partial,1
+ASRNEDERLAND,Business Loans,partial,1
+ASRNEDERLAND,Mortgages,reported,2
+ASRNEDERLAND,Sovereign Debt,partial,1
+AVIVA,Listed Equity & Corporate Bonds,reported,2
+AVIVA,Business Loans,partial,1
+AVIVA,Mortgages,partial,1
+AVIVA,Sovereign Debt,reported,2
+AXA,Listed Equity & Corporate Bonds,reported,2
+AXA,Business Loans,partial,1
+AXA,Mortgages,partial,1
+AXA,Sovereign Debt,reported,2
+COMMERZBANK,Listed Equity & Corporate Bonds,partial,1
+COMMERZBANK,Business Loans,partial,1
+COMMERZBANK,Mortgages,reported,2
+COMMERZBANK,Sovereign Debt,partial,1
+CREDITAGRICOLE,Listed Equity & Corporate Bonds,missing,0
+CREDITAGRICOLE,Business Loans,partial,1
+CREDITAGRICOLE,Mortgages,partial,1
+CREDITAGRICOLE,Sovereign Debt,partial,1
+DEUTSCHEBOERSE,Listed Equity & Corporate Bonds,partial,1
+DEUTSCHEBOERSE,Business Loans,missing,0
+DEUTSCHEBOERSE,Mortgages,missing,0
+DEUTSCHEBOERSE,Sovereign Debt,missing,0
+EURAZEO,Listed Equity & Corporate Bonds,N/A,0
+EURAZEO,Business Loans,N/A,0
+EURAZEO,Mortgages,missing,0
+EURAZEO,Sovereign Debt,missing,0
+GBL,Listed Equity & Corporate Bonds,partial,1
+GBL,Business Loans,missing,0
+GBL,Mortgages,missing,0
+GBL,Sovereign Debt,missing,0
+KBC,Listed Equity & Corporate Bonds,partial,1
+KBC,Business Loans,partial,1
+KBC,Mortgages,reported,2
+KBC,Sovereign Debt,reported,2
+LEGALGENERAL,Listed Equity & Corporate Bonds,reported,2
+LEGALGENERAL,Business Loans,partial,1
+LEGALGENERAL,Mortgages,reported,2
+LEGALGENERAL,Sovereign Debt,partial,1
+NNGROUP,Listed Equity & Corporate Bonds,reported,2
+NNGROUP,Business Loans,partial,1
+NNGROUP,Mortgages,reported,2
+NNGROUP,Sovereign Debt,reported,2
+NORDEA,Listed Equity & Corporate Bonds,partial,1
+NORDEA,Business Loans,reported,2
+NORDEA,Mortgages,partial,1
+NORDEA,Sovereign Debt,partial,1
+PHOENIXGROUP,Listed Equity & Corporate Bonds,reported,2
+PHOENIXGROUP,Business Loans,missing,0
+PHOENIXGROUP,Mortgages,reported,2
+PHOENIXGROUP,Sovereign Debt,partial,1
+SANTANDER,Listed Equity & Corporate Bonds,partial,1
+SANTANDER,Business Loans,reported,2
+SANTANDER,Mortgages,reported,2
+SANTANDER,Sovereign Debt,reported,2
+SCHRODERS,Listed Equity & Corporate Bonds,reported,2
+SCHRODERS,Business Loans,missing,0
+SCHRODERS,Mortgages,partial,1
+SCHRODERS,Sovereign Debt,partial,1
+SOCGEN,Listed Equity & Corporate Bonds,missing,0
+SOCGEN,Business Loans,partial,1
+SOCGEN,Mortgages,partial,1
+SOCGEN,Sovereign Debt,partial,1
+SWISSRE,Listed Equity & Corporate Bonds,reported,2
+SWISSRE,Business Loans,missing,0
+SWISSRE,Mortgages,partial,1
+SWISSRE,Sovereign Debt,reported,2
+UNICREDIT,Listed Equity & Corporate Bonds,reported,2
+UNICREDIT,Business Loans,reported,2
+UNICREDIT,Mortgages,reported,2
+UNICREDIT,Sovereign Debt,reported,2
+ZURICH,Listed Equity & Corporate Bonds,partial,1
+ZURICH,Business Loans,missing,0
+ZURICH,Mortgages,partial,1
+ZURICH,Sovereign Debt,reported,2

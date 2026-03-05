@@ -1,0 +1,2232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord de conformité PCAF® – fidestra pour Axylia</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-tertiary: #1e1e1e;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #ff6b35;
+            --accent-secondary: #ffd700;
+            --success: #4ade80;
+            --warning: #fbbf24;
+            --danger: #ef4444;
+            --border: #2a2a2a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            padding: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent); }
+        .client-info { text-align: right; color: var(--text-secondary); }
+        .client-info strong { color: var(--accent-secondary); }
+        .title { font-size: 2rem; margin-top: 1rem; }
+        .tabs {
+            display: flex;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            overflow-x: auto;
+        }
+        .tab {
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            color: var(--text-secondary);
+            transition: all 0.3s;
+            white-space: nowrap;
+            font-size: 0.9rem;
+        }
+        .tab:hover { color: var(--text-primary); }
+        .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+        .content { max-width: 1400px; margin: 2rem auto; padding: 0 1rem; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .stat-value { font-size: 2.5rem; font-weight: bold; color: var(--accent); }
+        .stat-label { color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.85rem; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+            font-size: 0.85rem;
+        }
+        th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { background: var(--bg-tertiary); color: var(--accent); font-weight: 600; }
+        tr:hover { background: var(--bg-tertiary); }
+        .status-reported { color: var(--success); }
+        .status-partial { color: var(--warning); }
+        .status-missing { color: var(--danger); }
+        .section-title { font-size: 1.4rem; margin: 2rem 0 1rem; color: var(--accent); }
+        .chart-container {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .methodology-box {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--accent);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 0.85rem;
+        }
+        .glossary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0.5rem;
+            font-size: 0.85rem;
+        }
+        .glossary-item { padding: 0.5rem; background: var(--bg-tertiary); border-radius: 4px; }
+        .glossary-item strong { color: var(--accent); }
+        .bar-chart { display: flex; flex-direction: column; gap: 0.4rem; }
+        .bar-row { display: flex; align-items: center; gap: 0.75rem; }
+        .bar-label { width: 130px; text-align: right; font-size: 0.75rem; }
+        .bar-container { flex: 1; height: 20px; background: var(--bg-tertiary); border-radius: 4px; overflow: hidden; }
+        .bar {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 0.5rem;
+            font-size: 0.65rem;
+            font-weight: bold;
+            color: var(--bg-primary);
+        }
+        .heatmap-cell {
+            padding: 0.4rem;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.75rem;
+        }
+        .heat-5 { background: rgba(74, 222, 128, 0.9); color: #000; }
+        .heat-4 { background: rgba(74, 222, 128, 0.6); color: #000; }
+        .heat-3 { background: rgba(251, 191, 36, 0.7); color: #000; }
+        .heat-2 { background: rgba(251, 191, 36, 0.4); color: #fff; }
+        .heat-1 { background: rgba(239, 68, 68, 0.5); color: #fff; }
+        .heat-0 { background: rgba(239, 68, 68, 0.3); color: #fff; }
+        .heat-na { background: var(--bg-tertiary); color: var(--text-secondary); }
+        .critical-gap { color: var(--danger); font-weight: bold; }
+        .gap-column { min-width: 280px; }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .header-content { flex-direction: column; text-align: center; }
+            .client-info { text-align: center; margin-top: 1rem; }
+            .tabs { flex-wrap: wrap; }
+            .tab { flex: 1; text-align: center; padding: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div>
+                <div class="logo">fidestra</div>
+                <h1 class="title">Analyse de conformité PCAF®</h1>
+            </div>
+            <div class="client-info">
+                <div>Réalisée pour <strong>Axylia</strong></div>
+                <div style="margin-top: 0.5rem;">
+                    <strong>Vincent Auriac</strong>, CEO<br>
+                    <strong>Ferdinand Raffy</strong>, Chief Impact & Carbon Officer<br>
+                    <strong>Lucie Berthomier</strong>, Sustainability Analyst
+                </div>
+                <div style="margin-top: 0.5rem;">Février 2026</div>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="tabs">
+        <div class="tab active" data-tab="summary">Synthèse</div>
+        <div class="tab" data-tab="comparative">Analyse comparative</div>
+        <div class="tab" data-tab="maturity">Matrice de maturité</div>
+        <div class="tab" data-tab="semantic">Analyse sémantique</div>
+        <div class="tab" data-tab="gaps">Analyse d'écarts</div>
+        <div class="tab" data-tab="recommendations">Recommandations</div>
+    </nav>
+    
+    <main class="content">
+
+        <!-- Executive Summary -->
+        <div class="tab-content active" id="summary">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">23</div>
+                    <div class="stat-label">Institutions financières analysées</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">14</div>
+                    <div class="stat-label">Signataires PCAF</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">reporting selon Partie A</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">10</div>
+                    <div class="stat-label">reporting partiel selon Partie A</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">56 %</div>
+                    <div class="stat-label">Conformité moyenne</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Écarts majeurs</div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Résultats clés</h2>
+            <div class="chart-container">
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">• <strong>14/23</strong> (61 %) sont des signataires officiels de PCAF®</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">• <strong>21/23</strong> (91 %) mentionne ou utilise la méthodologie PCAF®</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">• <strong>12/23</strong> (52 %) déclarent les émissions financées (Partie A) via des données quantifiées</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">• <strong>10/23</strong> (43 %) réalisent une publication partielle selon Partie A</li>
+<li style="padding: 0.5rem 0;">• Seulement <strong>2</strong> institutions financières affichent des écarts de conformité majeurs</li>
+                </ul>
+            </div>
+            
+            <h2 class="section-title">Glossaire</h2>
+            <div class="chart-container">
+                <div class="glossary">
+                    <div class="glossary-item"><strong>PCAF</strong> — Partnership for Carbon Accounting Financials</div>
+                    <div class="glossary-item"><strong>DQS</strong> — Data Quality Score (score de qualité des données – 1=excellent, 5=faible)</div>
+                    <div class="glossary-item"><strong>Partie A</strong> — émissions financées (scope 3, cat. 15)</div>
+                    <div class="glossary-item"><strong>Partie B</strong> — émissions facilitées (banques)</div>
+                    <div class="glossary-item"><strong>Partie C</strong> — émissions liées à l'assurance</div>
+                    <div class="glossary-item"><strong>tCO2e</strong> — tonnes d'équivalent CO2</div>
+                    <div class="glossary-item"><strong>MtCO2e</strong> — million(s) de tonnes d'équivalent CO2</div>
+<div class="glossary-item"><strong>GES</strong> — gaz à effet de serre</div>
+                    <div class="glossary-item"><strong>Scope 1</strong> — émissions directes provenant de sources détenues en propre</div>
+                    <div class="glossary-item"><strong>Scope 2</strong> — émissions indirectes provenant de l'énergie achetée</div>
+                    <div class="glossary-item"><strong>Scope 3</strong> — toute autre émission indirecte dans la chaîne de valeur</div>
+                    <div class="glossary-item"><strong>SBTi</strong> — Science Based Targets initiative</div>
+                    <div class="glossary-item"><strong>TCFD</strong> — Task Force on Climate-related Financial Disclosures (Groupe de travail sur la publication d'informations financières relatives au climat)</div>
+                    <div class="glossary-item"><strong>ITV</strong> — méthode « Insurance Transaction Value » (ITV, valeur d'exposition d'assurance)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparative Analysis -->
+        <div class="tab-content" id="comparative">
+<h2 class="section-title">Classement complet des institutions financières</h2>
+            
+            <div class="methodology-box">
+                <strong>* Méthodologie de scoring :</strong> Score = statut PCAF® (20 % si signataire, 10 % si mention) + Partie A (40 % si reporting, 20 % si reporting partiel) + Parties B/C (15 % si reporting, 7,5 % si reporting partiel) + classes d'actifs (2,5 % par classe figurant dans le reporting, 1,25 % si reporting partiel). Exemple : KBC = 20 % (signataire) + 40 % (Partie A) + 7,5 % (reporting partiel Partie B) + 7,5 % (reporting partiel Partie C) + 7,5 % (3 classes d'actifs) = <strong>82 %</strong>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+<th>Institution financière</th>
+                        <th>Type</th>
+                        <th>PCAF</th>
+                        <th>Partie A</th>
+                        <th>Partie B</th>
+                        <th>Partie C</th>
+                        <th>DQS</th>
+                        <th>Score*</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td><strong>KBC</strong></td>
+                        <td>bancassurance</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-partial">partiel</td>
+                        <td>N/A</td>
+                        <td><strong>82 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><strong>SANTANDER</strong></td>
+                        <td>banque</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td>1</td>
+                        <td><strong>76 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><strong>AVIVA</strong></td>
+                        <td>assurance</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>1</td>
+                        <td><strong>75 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td><strong>ALLIANZ</strong></td>
+                        <td>assurance</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>2</td>
+                        <td><strong>74 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td><strong>NORDEA</strong></td>
+                        <td>banque</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td>4</td>
+                        <td><strong>74 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td><strong>PHOENIXGROUP</strong></td>
+                        <td>assurance</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>N/A</td>
+                        <td><strong>74 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td><strong>SWISSRE</strong></td>
+                        <td>réassurance</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>3</td>
+                        <td><strong>74 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td><strong>UNICREDIT</strong></td>
+                        <td>banque</td>
+                        <td class="status-missing">✗</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td>5</td>
+                        <td><strong>68 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td><strong>AXA</strong></td>
+                        <td>assurance</td>
+                        <td class="status-missing">✗</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>2</td>
+                        <td><strong>65 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td><strong>ASRNEDERLAND</strong></td>
+                        <td>assurance</td>
+                        <td class="status-missing">✗</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>5</td>
+                        <td><strong>64 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td><strong>NNGROUP</strong></td>
+                        <td>assurance</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>1</td>
+                        <td><strong>56 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td><strong>LEGALGENERAL</strong></td>
+                        <td>assurance</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>2</td>
+                        <td><strong>55 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>13</td>
+                        <td><strong>SCHRODERS</strong></td>
+                        <td>gestionnaire d'actifs</td>
+                        <td class="status-missing">✗</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td><strong>55 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td><strong>COMMERZBANK</strong></td>
+                        <td>banque</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td>1</td>
+                        <td><strong>54 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td><strong>ZURICH</strong></td>
+                        <td>assurance</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>1-5</td>
+                        <td><strong>52 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>16</td>
+                        <td><strong>CREDITAGRICOLE</strong></td>
+                        <td>banque</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td><strong>51 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>17</td>
+                        <td><strong>EURAZEO</strong></td>
+                        <td>gestionnaire d'actifs</td>
+                        <td class="status-missing">✗</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td><strong>50 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>18</td>
+                        <td><strong>ADMIRAL</strong></td>
+                        <td>assurance</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>N/A</td>
+                        <td><strong>49 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>19</td>
+                        <td><strong>AGEAS</strong></td>
+                        <td>assurance</td>
+                        <td class="status-reported">✓</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>N/A</td>
+                        <td><strong>49 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>20</td>
+                        <td><strong>SOCGEN</strong></td>
+                        <td>banque</td>
+                        <td class="status-missing">✗</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td><strong>41 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>21</td>
+                        <td><strong>GBL</strong></td>
+                        <td>holding d'investissements</td>
+                        <td class="status-missing">✗</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td><strong>31 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>22</td>
+                        <td><strong>DEUTSCHEBOERSE</strong></td>
+                        <td>opérateur de bourse</td>
+                        <td class="status-missing">✗</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td><strong>21 %</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>23</td>
+                        <td><strong>AMUNDI</strong></td>
+                        <td>gestionnaire d'actifs</td>
+                        <td class="status-missing">✗</td>
+                        <td class="status-missing">manquant</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td><strong>1 %</strong></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            
+            <h2 class="section-title">Répartition du score</h2>
+            <div class="chart-container">
+                <div class="bar-chart">
+
+                    <div class="bar-row">
+                        <div class="bar-label">KBC</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 82%; background: var(--success);">82 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">SANTANDER</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 76%; background: var(--success);">76 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">AVIVA</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 75%; background: var(--success);">75 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">ALLIANZ</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 74%; background: var(--success);">74 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">NORDEA</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 74%; background: var(--success);">74 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">PHOENIXGROUP</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 74%; background: var(--success);">74 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">SWISSRE</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 74%; background: var(--success);">74 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">UNICREDIT</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 68%; background: var(--warning);">68 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">AXA</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 65%; background: var(--warning);">65 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">ASRNEDERLAND</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 64%; background: var(--warning);">64 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">NNGROUP</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 56%; background: var(--warning);">56 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">LEGALGENERAL</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 55%; background: var(--warning);">55 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">SCHRODERS</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 55%; background: var(--warning);">55 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">COMMERZBANK</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 54%; background: var(--warning);">54 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">ZURICH</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 52%; background: var(--warning);">52 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">CREDITAGRICOLE</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 51%; background: var(--warning);">51 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">EURAZEO</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 50%; background: var(--warning);">50 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">ADMIRAL</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 49%; background: var(--danger);">49 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">AGEAS</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 49%; background: var(--danger);">49 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">SOCGEN</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 41%; background: var(--danger);">41 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">GBL</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 31%; background: var(--danger);">31 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">DEUTSCHEBOERSE</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 21%; background: var(--danger);">21 %</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-row">
+                        <div class="bar-label">AMUNDI</div>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 1%; background: var(--danger);">1 %</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Maturity Matrix -->
+        <div class="tab-content" id="maturity">
+            <h2 class="section-title">Carte de densité de la maturité PCAF®</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">
+                Légende : <span class="heatmap-cell heat-5" style="padding: 0.2rem 0.5rem;">5 Mature</span>
+                <span class="heatmap-cell heat-4" style="padding: 0.2rem 0.5rem;">4 Maturité avancée</span>
+                <span class="heatmap-cell heat-3" style="padding: 0.2rem 0.5rem;">3 Maturité en développement</span>
+                <span class="heatmap-cell heat-2" style="padding: 0.2rem 0.5rem;">2 En lancement</span>
+                <span class="heatmap-cell heat-1" style="padding: 0.2rem 0.5rem;">1 Sensibilisé</span>
+                <span class="heatmap-cell heat-0" style="padding: 0.2rem 0.5rem;">0 Non mature</span>
+            </p>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.85rem;">
+                Format de la couverture d'actifs : « X+Yp » = X classes avec reporting complet + Y classes avec reporting partiel
+            </p>
+            
+            <table>
+                <thead>
+                    <tr>
+<th>Institution financière</th>
+                        <th>Statut PCAF®</th>
+                        <th>Partie A</th>
+                        <th>Parties B/C</th>
+                        <th>DQS</th>
+                        <th>Couverture d'actifs</th>
+                        <th>Maturité</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>KBC</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-0">N/A</td>
+                        <td class="heatmap-cell heat-3">2+2p</td>
+                        <td class="heatmap-cell heat-3"><strong>3/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SANTANDER</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-5">1</td>
+                        <td class="heatmap-cell heat-3">3+1p</td>
+                        <td class="heatmap-cell heat-4"><strong>4/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AVIVA</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-5">1</td>
+                        <td class="heatmap-cell heat-3">2+2p</td>
+                        <td class="heatmap-cell heat-4"><strong>4/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ALLIANZ</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-5">2</td>
+                        <td class="heatmap-cell heat-2">1+3p</td>
+                        <td class="heatmap-cell heat-4"><strong>4/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>NORDEA</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-1">4</td>
+                        <td class="heatmap-cell heat-2">1+3p</td>
+                        <td class="heatmap-cell heat-3"><strong>3/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>PHOENIXGROUP</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-0">N/A</td>
+                        <td class="heatmap-cell heat-2">2+1p</td>
+                        <td class="heatmap-cell heat-3"><strong>3/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SWISSRE</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-2">2+1p</td>
+                        <td class="heatmap-cell heat-4"><strong>4/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>UNICREDIT</strong></td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-1">5</td>
+                        <td class="heatmap-cell heat-4">4+0p</td>
+                        <td class="heatmap-cell heat-3"><strong>3/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AXA</strong></td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-5">2</td>
+                        <td class="heatmap-cell heat-3">2+2p</td>
+                        <td class="heatmap-cell heat-4"><strong>4/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ASRNEDERLAND</strong></td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-1">5</td>
+                        <td class="heatmap-cell heat-2">1+3p</td>
+                        <td class="heatmap-cell heat-3"><strong>3/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>NNGROUP</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-5">1</td>
+                        <td class="heatmap-cell heat-3">3+1p</td>
+                        <td class="heatmap-cell heat-4"><strong>4/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>LEGALGENERAL</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-5">2</td>
+                        <td class="heatmap-cell heat-3">2+2p</td>
+                        <td class="heatmap-cell heat-4"><strong>4/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SCHRODERS</strong></td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-0">0</td>
+                        <td class="heatmap-cell heat-0">N/A</td>
+                        <td class="heatmap-cell heat-2">1+2p</td>
+                        <td class="heatmap-cell heat-2"><strong>2/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>COMMERZBANK</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-5">1</td>
+                        <td class="heatmap-cell heat-2">1+3p</td>
+                        <td class="heatmap-cell heat-4"><strong>4/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ZURICH</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-0">1-5</td>
+                        <td class="heatmap-cell heat-2">1+2p</td>
+                        <td class="heatmap-cell heat-3"><strong>3/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>CREDITAGRICOLE</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-0">N/A</td>
+                        <td class="heatmap-cell heat-1">0+3p</td>
+                        <td class="heatmap-cell heat-2"><strong>2/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>EURAZEO</strong></td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-0">0</td>
+                        <td class="heatmap-cell heat-0">N/A</td>
+                        <td class="heatmap-cell heat-0">0+0p</td>
+                        <td class="heatmap-cell heat-2"><strong>2/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ADMIRAL</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-0">N/A</td>
+                        <td class="heatmap-cell heat-0">0+1p</td>
+                        <td class="heatmap-cell heat-2"><strong>2/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AGEAS</strong></td>
+                        <td class="heatmap-cell heat-5">5</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-0">N/A</td>
+                        <td class="heatmap-cell heat-0">0+1p</td>
+                        <td class="heatmap-cell heat-2"><strong>2/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SOCGEN</strong></td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-0">N/A</td>
+                        <td class="heatmap-cell heat-1">0+3p</td>
+                        <td class="heatmap-cell heat-2"><strong>2/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>GBL</strong></td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-0">0</td>
+                        <td class="heatmap-cell heat-0">N/A</td>
+                        <td class="heatmap-cell heat-0">0+1p</td>
+                        <td class="heatmap-cell heat-1"><strong>1/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>DEUTSCHEBOERSE</strong></td>
+                        <td class="heatmap-cell heat-0">0</td>
+                        <td class="heatmap-cell heat-3">3</td>
+                        <td class="heatmap-cell heat-0">0</td>
+                        <td class="heatmap-cell heat-0">N/A</td>
+                        <td class="heatmap-cell heat-0">0+1p</td>
+                        <td class="heatmap-cell heat-1"><strong>1/5</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AMUNDI</strong></td>
+                        <td class="heatmap-cell heat-0">0</td>
+                        <td class="heatmap-cell heat-0">0</td>
+                        <td class="heatmap-cell heat-0">0</td>
+                        <td class="heatmap-cell heat-0">N/A</td>
+                        <td class="heatmap-cell heat-0">0+1p</td>
+                        <td class="heatmap-cell heat-0"><strong>0/5</strong></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            
+            <div class="methodology-box" style="margin-top: 1rem;">
+                <strong>Échelle DQS (PCAF®) :</strong><br>
+                <strong>1</strong> = Données vérifiées provenant de l'entité | 
+                <strong>2</strong> = Données non vérifiées provenant de l'entité | 
+                <strong>3</strong> = Estimations des activités physiques | 
+                <strong>4</strong> = Estimations des activités économiques | 
+                <strong>5</strong> = Moyennes sectorielles<br>
+                <em>PCAF® recommande de viser un DQS du portefeuille ≤ 2,5</em>
+            </div>
+        </div>
+
+        <!-- Semantic Analysis -->
+        <div class="tab-content" id="semantic">
+            <h2 class="section-title">Analyse d'écarts terminologiques</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+Comparaison de la terminologie propre à l'institution financière vs les définitions de la norme PCAF®
+            </p>
+            
+            <table>
+                <thead>
+                    <tr>
+<th>Institution financière</th>
+                        <th>PCAF</th>
+                        <th>Partie A</th>
+                        <th>Partie B</th>
+                        <th>Partie C</th>
+                        <th>Émissions financées</th>
+                        <th>Écart terminologique vs PCAF®</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>KBC</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-partial">partiel</td>
+                        <td>1,40 Mt</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Fort degré d'alignement, faibles écarts dans la terminologie belge vs celle PCAF® pour les portefeuilles d'hypothèques</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SANTANDER</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td>9,83 Mt</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Le terme espagnol « huella de carbono financiada » est bien aligné ; adoption complète de PCAF®</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AVIVA</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>7,40 Mt</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Fort alignement PCAF®, écart mineur dans la distinction « carbone pour l'exploitation » et « carbone financé »</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ALLIANZ</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>87-161 Mt</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Utilise « empreinte carbone du portefeuille » de manière interchangeable avec « émissions financées » ; indicateurs d'intensité propriétaires</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>NORDEA</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Termes de durabilité propres aux pays nordiques ; « impact climatique » utilisé en plus du terme « émissions financées » de PCAF®</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>PHOENIXGROUP</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>12,40 Mt</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Focus sur les fonds de pension britanniques ; terme « émissions des investissements » sans attribution PCAF® totale</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SWISSRE</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>10,10 Mt</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Terminologie spécifique à la réassurance ; « empreinte carbone de la souscription » va au-delà du périmètre standard de PCAF®</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>UNICREDIT</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td>10,20 Mt</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Le terme italien « emissioni finanziate » est aligné ; écarts dans la méthode concernant la dette souveraine</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AXA</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>21,70 Mt</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Utilise des indicateurs liés à un alignement sur les températures en plus de PCAF® ; quelques occurrences de terminologie française dans les rapports globaux</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ASRNEDERLAND</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>N/A</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">La terminologique néerlandaise « gefinancierde emissies » est alignée avec PCAF® : le DQS est indiqué par le vocable « datakwaliteitsscore », également aligné</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>NNGROUP</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>N/A</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Pionnier néerlandais de PCAF® ; fort alignement, mais utilisation du terme « beleggingsportefeuille » (portefeuille d'investissement) localement</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>LEGALGENERAL</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>N/A</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Indicateurs « alignés TCFD » spécifiques au R.-U. ; quelques divergences dans la méthodologie immobilière</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SCHRODERS</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-missing">N/A</td>
+                        <td>18,50 Mt</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Terminologie de gestionnaire d'actifs ; « empreinte carbone du portefeuille » vs « émissions financées » dans la norme PCAF®</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>COMMERZBANK</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Le terme allemand « finanzierte Emissionen » est bien conforme ; écarts dans la méthode d'attribution des prêts aux PME</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ZURICH</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>N/A</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Indicateurs spécifiques à l'assurance ; « empreinte carbone des investissements » en plus de la terminologie PCAF®</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>CREDITAGRICOLE</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Le terme français « empreinte carbone du portefeuille » diffère du terme PCAF® « émissions financées »</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>EURAZEO</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-reported">reporting réalisé</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-missing">N/A</td>
+                        <td>3,67 Mt</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Focus sur le private equity ; utilise le terme « émissions des sociétés du portefeuille », sans facteurs d'attribution PCAF</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ADMIRAL</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>N/A</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Utilise le terme « empreinte carbone » au lieu du terme « émissions financées » ; pas de répartition claire des classes d'actifs selon PCAF®</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AGEAS</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-partial">partiel</td>
+                        <td>N/A</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Indique des « émissions du portefeuille d'investissement » sans informations issues de la méthode d'attribution PCAF®</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SOCGEN</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Terminologie bancaire française ; la méthodologie « encours financés » diffère de la norme PCAF®</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>GBL</strong></td>
+                        <td class="status-reported">Oui</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Indicateurs de détention d'entreprises ; la terminologie « émissions transparentes » diffère de l'approche PCAF®</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>DEUTSCHEBOERSE</strong></td>
+                        <td class="status-missing">Non</td>
+                        <td class="status-partial">partiel</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-missing">N/A</td>
+                        <td>0,00 Mt</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Utilisation limitée de la terminologie PCAF® ; utilisation de la catégorie « Scope 3, catégorie 15 » sans l'intégralité du cadre PCAF®</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AMUNDI</strong></td>
+                        <td class="status-missing">Non</td>
+                        <td class="status-missing">manquant</td>
+                        <td class="status-missing">N/A</td>
+                        <td class="status-missing">N/A</td>
+                        <td>N/A</td>
+                        <td style="font-size: 0.75rem; color: var(--text-secondary);">Se concentre sur « l'intensité carbone » (tCO2e/M€) plutôt que les émissions financées absolues</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Gap Analysis -->
+        <div class="tab-content" id="gaps">
+            <h2 class="section-title">Écarts de conformité par institution financière</h2>
+            
+            <div class="methodology-box">
+                <strong>Évaluation des écarts :</strong> chaque institution financière est évaluée au regard des exigences PCAF® Les écarts majeurs indiquent l'absence de publications obligatoires : les recommandations hiérarchisent les améliorations à fort impact
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Institution financière</th>
+                        <th>Score</th>
+                        <th class="gap-column">Écart majeur</th>
+                        <th>Recommandation principale</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>KBC</strong></td>
+                        <td>82 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 3 : ajouter des DQS explicites par classe d'actifs</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SANTANDER</strong></td>
+                        <td>76 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 3 : poursuivre la mise en œuvre PCAF® secteur par secteur</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AVIVA</strong></td>
+                        <td>75 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 3 : étendre la couverture à toutes les lignes d'assurance</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ALLIANZ</strong></td>
+                        <td>74 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 3 : réduire la plage d'incertitude dans les émissions financées du scope 3</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>NORDEA</strong></td>
+                        <td>74 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 3 : améliorer le DQS pour passer de 4 à 3 ou 2</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>PHOENIXGROUP</strong></td>
+                        <td>74 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 3 : ajouter des scores de qualité des données explicites</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SWISSRE</strong></td>
+                        <td>74 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 3 : développer les émissions de la Partie C</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>UNICREDIT</strong></td>
+                        <td>68 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 3 : améliorer le DQS pour passer de 5 à 3</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AXA</strong></td>
+                        <td>65 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 3 : améliorer la couverture de la Partie C</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ASRNEDERLAND</strong></td>
+                        <td>64 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 3 : continuer à améliorer la qualité des données dans toutes les classes d'actifs</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>NNGROUP</strong></td>
+                        <td>56 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 2 : publier les émissions totales financées en valeur absolue</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>LEGALGENERAL</strong></td>
+                        <td>55 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 2 : publier les émissions financées absolues en parallèle de l'intensité</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SCHRODERS</strong></td>
+                        <td>55 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 3 : étendre la couverture aux actifs privés</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>COMMERZBANK</strong></td>
+                        <td>54 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 2 : publier le total consolidé des émissions financées</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ZURICH</strong></td>
+                        <td>52 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 2 : publier les émissions totales financées en 2025</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>CREDITAGRICOLE</strong></td>
+                        <td>51 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 2 : consolider les émissions financées dans l'ensemble des portefeuilles</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>EURAZEO</strong></td>
+                        <td>50 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 3 : ajouter des scores de qualité des données explicites selon les directives PCAF®</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ADMIRAL</strong></td>
+                        <td>49 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 2 : mettre en œuvre la méthodologie PCAF Partie A avec des émissions financées quantifiées</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AGEAS</strong></td>
+                        <td>49 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 2 : publier les émissions totales financées avec la ventilation PCAF</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SOCGEN</strong></td>
+                        <td>41 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 2 : publier les émissions totales financées, pas seulement les objectifs sectoriels</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>GBL</strong></td>
+                        <td>31 %</td>
+                        <td class="status-reported">Aucun</td>
+<td style="font-size: 0.8rem;">Priorité 2 : publier les émissions totales financées du portefeuille</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>DEUTSCHEBOERSE</strong></td>
+                        <td>21 %</td>
+                        <td><span class="critical-gap">Non-signataire PCAF® et publication limitée des émissions financées</span></td>
+<td style="font-size: 0.8rem;">Priorité 1 : adhérer à PCAF® et mettre en œuvre une méthodologie complète</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AMUNDI</strong></td>
+                        <td>1 %</td>
+                        <td><span class="critical-gap">MAJEUR : absence d'utilisation de la méthodologie PCAF® ni de publication des émissions financées</span></td>
+<td style="font-size: 0.8rem;">Priorité 1 : adopter la méthodologie PCAF® et calculer les émissions financées</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            
+            <h2 class="section-title">Matrice de couverture des classes d'actifs</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.85rem;">
+                Couverture complète des classes d'actifs selon PCAF® : Partie A (7 classes), Partie B (2 classes pour les banques), Partie C (assurance)
+            </p>
+            
+            <h3 style="color: var(--accent); margin: 1.5rem 0 0.75rem; font-size: 1.1rem;">Partie A – émissions financées (7 classes d'actifs)</h3>
+            <table>
+                <thead>
+                    <tr>
+<th>Institution financière</th>
+                        <th>Actions et obligations cotées</th>
+                        <th>Prêts aux entreprises</th>
+                        <th>Financement de projets</th>
+                        <th>Immobilier commercial</th>
+                        <th>Hypothèques</th>
+                        <th>Véhicules à moteur</th>
+                        <th>Dette souveraine</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>KBC</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SANTANDER</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AVIVA</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ALLIANZ</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>NORDEA</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>PHOENIXGROUP</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SWISSRE</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>UNICREDIT</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AXA</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ASRNEDERLAND</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>NNGROUP</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>LEGALGENERAL</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SCHRODERS</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>COMMERZBANK</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ZURICH</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>CREDITAGRICOLE</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>EURAZEO</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ADMIRAL</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AGEAS</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SOCGEN</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>GBL</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>DEUTSCHEBOERSE</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AMUNDI</strong></td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            
+            <h3 style="color: var(--accent); margin: 1.5rem 0 0.75rem; font-size: 1.1rem;">Partie B – émissions facilitées (banques uniquement)</h3>
+            <table>
+                <thead>
+                    <tr>
+<th>Institution financière</th>
+                        <th>Type</th>
+                        <th>Marchés des capitaux</th>
+                        <th>Services de conseil</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>KBC</strong></td>
+                        <td>bancassurance</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SANTANDER</strong></td>
+                        <td>banque</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>NORDEA</strong></td>
+                        <td>banque</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>UNICREDIT</strong></td>
+                        <td>banque</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>COMMERZBANK</strong></td>
+                        <td>banque</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>CREDITAGRICOLE</strong></td>
+                        <td>banque</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SOCGEN</strong></td>
+                        <td>banque</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            
+            <h3 style="color: var(--accent); margin: 1.5rem 0 0.75rem; font-size: 1.1rem;">Partie C – émissions liées à l'assurance</h3>
+            <table>
+                <thead>
+                    <tr>
+<th>Institution financière</th>
+                        <th>Type</th>
+                        <th>Souscription d'assurance</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>KBC</strong></td>
+                        <td>bancassurance</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AVIVA</strong></td>
+                        <td>assurance</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ALLIANZ</strong></td>
+                        <td>assurance</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>PHOENIXGROUP</strong></td>
+                        <td>assurance</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SWISSRE</strong></td>
+                        <td>réassurance</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AXA</strong></td>
+                        <td>assurance</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ASRNEDERLAND</strong></td>
+                        <td>assurance</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>NNGROUP</strong></td>
+                        <td>assurance</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>LEGALGENERAL</strong></td>
+                        <td>assurance</td>
+                        <td class="heatmap-cell heat-0">✗</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ZURICH</strong></td>
+                        <td>assurance</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>ADMIRAL</strong></td>
+                        <td>assurance</td>
+                        <td class="heatmap-cell heat-3">~</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>AGEAS</strong></td>
+                        <td>assurance</td>
+                        <td class="heatmap-cell heat-5">✓</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Recommendations Adherence -->
+        <div class="tab-content" id="recommendations">
+            <h2 class="section-title">Suivi des recommandations PCAF®</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                Analyse d'adhésion aux recommandations de pratiques d'excellence PCAF® (au-delà de la conformité minimale)
+            </p>
+            
+            <div class="chart-container" style="margin-bottom: 1.5rem;">
+                <h3 style="color: var(--accent); margin-bottom: 1rem;">6 catégories évaluées</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0.75rem; font-size: 0.85rem;">
+                    <div style="padding: 0.5rem; border-left: 3px solid var(--accent);">
+                        <strong>1. Qualité des données</strong> (max 6) — suivi du DQS, données primaires, documentation
+                    </div>
+                    <div style="padding: 0.5rem; border-left: 3px solid var(--accent);">
+                        <strong>2. Couverture</strong> (max 6) — objectifs, actifs difficiles à évaluer, transparence
+                    </div>
+                    <div style="padding: 0.5rem; border-left: 3px solid var(--accent);">
+                        <strong>3. Scope 3</strong> (max 4) — inclusion des entités investies, estimations sectorielles
+                    </div>
+                    <div style="padding: 0.5rem; border-left: 3px solid var(--accent);">
+                        <strong>4. Transparence</strong> (max 5) — méthodologie, engagement, comparabilité
+                    </div>
+                    <div style="padding: 0.5rem; border-left: 3px solid var(--accent);">
+                        <strong>5. Climat</strong> (max 5) — SBTi, émissions évitées, intensité
+                    </div>
+                    <div style="padding: 0.5rem; border-left: 3px solid var(--accent);">
+                        <strong>6. Assurance</strong> (max 6) — Principales branches, ITV, souscription
+                    </div>
+                </div>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+<th>#</th>
+                        <th>Institution financière</th>
+                        <th>Score</th>
+                        <th>%</th>
+                        <th>Qualité des données</th>
+                        <th>Couverture</th>
+                        <th>Scope 3</th>
+                        <th>Transparence</th>
+                        <th>Climat</th>
+                        <th>Assurance</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td><strong>NORDEA</strong></td>
+                        <td style="text-align: center;">24/26</td>
+                        <td class="heatmap-cell heat-5"><strong>92 %</strong></td>
+                        <td class="heatmap-cell heat-5">6/6</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-5">4/4</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-na">N/A</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><strong>ASRNEDERLAND</strong></td>
+                        <td style="text-align: center;">28/32</td>
+                        <td class="heatmap-cell heat-5"><strong>88 %</strong></td>
+                        <td class="heatmap-cell heat-5">6/6</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-5">4/4</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><strong>SANTANDER</strong></td>
+                        <td style="text-align: center;">22/26</td>
+                        <td class="heatmap-cell heat-5"><strong>85 %</strong></td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-5">4/4</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-na">N/A</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td><strong>AXA</strong></td>
+                        <td style="text-align: center;">27/32</td>
+                        <td class="heatmap-cell heat-5"><strong>84 %</strong></td>
+                        <td class="heatmap-cell heat-5">5/6</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-5">4/4</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td><strong>NNGROUP</strong></td>
+                        <td style="text-align: center;">27/32</td>
+                        <td class="heatmap-cell heat-5"><strong>84 %</strong></td>
+                        <td class="heatmap-cell heat-5">5/6</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-5">4/4</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td><strong>ALLIANZ</strong></td>
+                        <td style="text-align: center;">26/32</td>
+                        <td class="heatmap-cell heat-5"><strong>81 %</strong></td>
+                        <td class="heatmap-cell heat-5">6/6</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-5">4/4</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-3">3/5</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td><strong>SWISSRE</strong></td>
+                        <td style="text-align: center;">25/32</td>
+                        <td class="heatmap-cell heat-4"><strong>78 %</strong></td>
+                        <td class="heatmap-cell heat-5">5/6</td>
+                        <td class="heatmap-cell heat-2">2/6</td>
+                        <td class="heatmap-cell heat-5">4/4</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td><strong>ZURICH</strong></td>
+                        <td style="text-align: center;">25/32</td>
+                        <td class="heatmap-cell heat-4"><strong>78 %</strong></td>
+                        <td class="heatmap-cell heat-5">6/6</td>
+                        <td class="heatmap-cell heat-2">2/6</td>
+                        <td class="heatmap-cell heat-4">3/4</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td><strong>COMMERZBANK</strong></td>
+                        <td style="text-align: center;">20/26</td>
+                        <td class="heatmap-cell heat-4"><strong>77 %</strong></td>
+                        <td class="heatmap-cell heat-5">5/6</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-4">3/4</td>
+                        <td class="heatmap-cell heat-3">3/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-na">N/A</td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td><strong>UNICREDIT</strong></td>
+                        <td style="text-align: center;">20/26</td>
+                        <td class="heatmap-cell heat-4"><strong>77 %</strong></td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-5">4/4</td>
+                        <td class="heatmap-cell heat-3">3/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-na">N/A</td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td><strong>AVIVA</strong></td>
+                        <td style="text-align: center;">23/32</td>
+                        <td class="heatmap-cell heat-4"><strong>72 %</strong></td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-4">3/4</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-2">2/6</td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td><strong>LEGALGENERAL</strong></td>
+                        <td style="text-align: center;">21/32</td>
+                        <td class="heatmap-cell heat-4"><strong>66 %</strong></td>
+                        <td class="heatmap-cell heat-5">5/6</td>
+                        <td class="heatmap-cell heat-2">2/6</td>
+                        <td class="heatmap-cell heat-5">4/4</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                    </tr>
+
+                    <tr>
+                        <td>13</td>
+                        <td><strong>SCHRODERS</strong></td>
+                        <td style="text-align: center;">17/26</td>
+                        <td class="heatmap-cell heat-4"><strong>65 %</strong></td>
+                        <td class="heatmap-cell heat-3">3/6</td>
+                        <td class="heatmap-cell heat-2">2/6</td>
+                        <td class="heatmap-cell heat-4">3/4</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-5">4/5</td>
+                        <td class="heatmap-cell heat-na">N/A</td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td><strong>PHOENIXGROUP</strong></td>
+                        <td style="text-align: center;">20/32</td>
+                        <td class="heatmap-cell heat-3"><strong>62 %</strong></td>
+                        <td class="heatmap-cell heat-5">5/6</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-5">4/4</td>
+                        <td class="heatmap-cell heat-3">3/5</td>
+                        <td class="heatmap-cell heat-5">4/5</td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td><strong>KBC</strong></td>
+                        <td style="text-align: center;">19/32</td>
+                        <td class="heatmap-cell heat-3"><strong>59 %</strong></td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                        <td class="heatmap-cell heat-2">2/6</td>
+                        <td class="heatmap-cell heat-4">3/4</td>
+                        <td class="heatmap-cell heat-3">3/5</td>
+                        <td class="heatmap-cell heat-3">3/5</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                    </tr>
+
+                    <tr>
+                        <td>16</td>
+                        <td><strong>ADMIRAL</strong></td>
+                        <td style="text-align: center;">16/32</td>
+                        <td class="heatmap-cell heat-3"><strong>50 %</strong></td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                        <td class="heatmap-cell heat-3">2/4</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-4">4/6</td>
+                    </tr>
+
+                    <tr>
+                        <td>17</td>
+                        <td><strong>DEUTSCHEBOERSE</strong></td>
+                        <td style="text-align: center;">11/26</td>
+                        <td class="heatmap-cell heat-2"><strong>42 %</strong></td>
+                        <td class="heatmap-cell heat-3">3/6</td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                        <td class="heatmap-cell heat-1">1/4</td>
+                        <td class="heatmap-cell heat-3">3/5</td>
+                        <td class="heatmap-cell heat-5">4/5</td>
+                        <td class="heatmap-cell heat-na">N/A</td>
+                    </tr>
+
+                    <tr>
+                        <td>18</td>
+                        <td><strong>SOCGEN</strong></td>
+                        <td style="text-align: center;">8/26</td>
+                        <td class="heatmap-cell heat-2"><strong>31 %</strong></td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                        <td class="heatmap-cell heat-2">2/6</td>
+                        <td class="heatmap-cell heat-0">0/4</td>
+                        <td class="heatmap-cell heat-1">1/5</td>
+                        <td class="heatmap-cell heat-5">5/5</td>
+                        <td class="heatmap-cell heat-na">N/A</td>
+                    </tr>
+
+                    <tr>
+                        <td>19</td>
+                        <td><strong>GBL</strong></td>
+                        <td style="text-align: center;">6/26</td>
+                        <td class="heatmap-cell heat-1"><strong>23 %</strong></td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                        <td class="heatmap-cell heat-2">2/6</td>
+                        <td class="heatmap-cell heat-0">0/4</td>
+                        <td class="heatmap-cell heat-1">1/5</td>
+                        <td class="heatmap-cell heat-3">3/5</td>
+                        <td class="heatmap-cell heat-na">N/A</td>
+                    </tr>
+
+                    <tr>
+                        <td>20</td>
+                        <td><strong>AMUNDI</strong></td>
+                        <td style="text-align: center;">5/26</td>
+                        <td class="heatmap-cell heat-1"><strong>19 %</strong></td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                        <td class="heatmap-cell heat-2">2/6</td>
+                        <td class="heatmap-cell heat-0">0/4</td>
+                        <td class="heatmap-cell heat-0">0/5</td>
+                        <td class="heatmap-cell heat-3">3/5</td>
+                        <td class="heatmap-cell heat-na">N/A</td>
+                    </tr>
+
+                    <tr>
+                        <td>21</td>
+                        <td><strong>AGEAS</strong></td>
+                        <td style="text-align: center;">6/32</td>
+                        <td class="heatmap-cell heat-1"><strong>19 %</strong></td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                        <td class="heatmap-cell heat-2">2/6</td>
+                        <td class="heatmap-cell heat-0">0/4</td>
+                        <td class="heatmap-cell heat-0">0/5</td>
+                        <td class="heatmap-cell heat-5">4/5</td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                    </tr>
+
+                    <tr>
+                        <td>22</td>
+                        <td><strong>CREDITAGRICOLE</strong></td>
+                        <td style="text-align: center;">4/26</td>
+                        <td class="heatmap-cell heat-1"><strong>15 %</strong></td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                        <td class="heatmap-cell heat-0">0/4</td>
+                        <td class="heatmap-cell heat-1">1/5</td>
+                        <td class="heatmap-cell heat-3">3/5</td>
+                        <td class="heatmap-cell heat-na">N/A</td>
+                    </tr>
+
+                    <tr>
+                        <td>23</td>
+                        <td><strong>EURAZEO</strong></td>
+                        <td style="text-align: center;">2/26</td>
+                        <td class="heatmap-cell heat-1"><strong>8 %</strong></td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                        <td class="heatmap-cell heat-0">0/6</td>
+                        <td class="heatmap-cell heat-0">0/4</td>
+                        <td class="heatmap-cell heat-0">0/5</td>
+                        <td class="heatmap-cell heat-2">2/5</td>
+                        <td class="heatmap-cell heat-na">N/A</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    
+    <footer class="footer">
+        <p>Analyse de conformité PCAF® • Réalisée par <strong style="color: var(--accent);">fidestra</strong> pour <strong style="color: var(--accent-secondary);">Axylia</strong></p>
+        <p style="margin-top: 0.5rem;">Données reposant sur des rapports annuels et de durabilité publics • Février 2026</p>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

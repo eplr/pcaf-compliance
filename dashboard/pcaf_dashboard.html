@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCAF Compliance Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a365d 0%, #2d5a87 100%);
+            color: white;
+            padding: 24px 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            margin-top: 4px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        
+        /* KPI Cards */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+        
+        .kpi-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        
+        .kpi-card .value {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a365d;
+        }
+        
+        .kpi-card .label {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+        }
+        
+        .kpi-card.critical .value { color: #dc2626; }
+        .kpi-card.warning .value { color: #f59e0b; }
+        .kpi-card.success .value { color: #10b981; }
+        
+        /* Charts Grid */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+        
+        @media (max-width: 900px) {
+            .charts-grid { grid-template-columns: 1fr; }
+        }
+        
+        .chart-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .chart-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1a365d;
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
+        }
+        
+        /* Compliance Matrix */
+        .matrix-section {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 24px;
+            overflow-x: auto;
+        }
+        
+        .matrix-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1a365d;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        th {
+            background: #f8fafc;
+            font-weight: 600;
+            color: #475569;
+            position: sticky;
+            top: 0;
+        }
+        
+        tr:hover {
+            background: #f8fafc;
+        }
+        
+        /* Status Badges */
+        .status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .status.reported { background: #d1fae5; color: #065f46; }
+        .status.partial { background: #fef3c7; color: #92400e; }
+        .status.missing { background: #fee2e2; color: #991b1b; }
+        .status.na { background: #e5e7eb; color: #6b7280; }
+        
+        /* Priority Badges */
+        .priority {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .priority.critical { background: #dc2626; color: white; }
+        .priority.high { background: #f59e0b; color: white; }
+        .priority.medium { background: #3b82f6; color: white; }
+        .priority.low { background: #6b7280; color: white; }
+        
+        /* Filter Controls */
+        .filters {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .filter-group label {
+            font-size: 14px;
+            font-weight: 500;
+            color: #475569;
+        }
+        
+        select {
+            padding: 8px 16px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 14px;
+            background: white;
+            cursor: pointer;
+        }
+        
+        select:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        
+        /* Heatmap */
+        .heatmap {
+            display: grid;
+            grid-template-columns: 180px repeat(3, 1fr);
+            gap: 2px;
+            font-size: 13px;
+        }
+        
+        .heatmap-header {
+            background: #1a365d;
+            color: white;
+            padding: 12px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .heatmap-row-header {
+            background: #f1f5f9;
+            padding: 10px 12px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+        
+        .heatmap-cell {
+            padding: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .heatmap-cell.green { background: #d1fae5; color: #065f46; }
+        .heatmap-cell.yellow { background: #fef3c7; color: #92400e; }
+        .heatmap-cell.red { background: #fee2e2; color: #991b1b; }
+        .heatmap-cell.gray { background: #f3f4f6; color: #9ca3af; }
+        
+        /* Gap Analysis */
+        .gap-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background: #f8fafc;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            border-left: 4px solid;
+        }
+        
+        .gap-card.critical { border-left-color: #dc2626; }
+        .gap-card.high { border-left-color: #f59e0b; }
+        .gap-card.medium { border-left-color: #3b82f6; }
+        
+        .gap-info h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        .gap-info p {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 4px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a365d;
+            margin: 32px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 24px;
+            background: white;
+            padding: 4px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .tab {
+            padding: 12px 24px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: #64748b;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+        
+        .tab:hover {
+            background: #f1f5f9;
+        }
+        
+        .tab.active {
+            background: #1a365d;
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 24px;
+            color: #64748b;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 PCAF Compliance Dashboard</h1>
+        <p>Assessment of 23 Financial Institutions • Generated: 10 February 2026</p>
+    </div>
+    
+    <div class="container">
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('overview')">Executive Overview</button>
+            <button class="tab" onclick="showTab('compliance')">Compliance Matrix</button>
+            <button class="tab" onclick="showTab('gaps')">Gap Analysis</button>
+            <button class="tab" onclick="showTab('details')">Institution Details</button>
+        </div>
+        
+        <!-- Tab 1: Executive Overview -->
+        <div id="overview" class="tab-content active">
+            <!-- KPI Cards -->
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="value">23</div>
+                    <div class="label">Institutions Analyzed</div>
+                </div>
+                <div class="kpi-card warning">
+                    <div class="value">78%</div>
+                    <div class="label">Part A Compliance Rate</div>
+                </div>
+                <div class="kpi-card critical">
+                    <div class="value">9</div>
+                    <div class="label">Critical Gaps</div>
+                </div>
+                <div class="kpi-card success">
+                    <div class="value">91%</div>
+                    <div class="label">PCAF Members</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="value">1</div>
+                    <div class="label">Full Part A Compliance</div>
+                </div>
+                <div class="kpi-card warning">
+                    <div class="value">0</div>
+                    <div class="label">Full Part C Compliance</div>
+                </div>
+            </div>
+            
+            <!-- Charts -->
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>Compliance Status by PCAF Part</h3>
+                    <div class="chart-container">
+                        <canvas id="complianceChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>Institutions by Type</h3>
+                    <div class="chart-container">
+                        <canvas id="typeChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>Gap Severity Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="gapChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>Asset Class Coverage</h3>
+                    <div class="chart-container">
+                        <canvas id="assetChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tab 2: Compliance Matrix -->
+        <div id="compliance" class="tab-content">
+            <h2 class="section-title">PCAF Compliance Heatmap</h2>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Institution Type:</label>
+                    <select id="typeFilter" onchange="filterTable()">
+                        <option value="all">All Types</option>
+                        <option value="insurer">Insurers</option>
+                        <option value="bank">Banks</option>
+                        <option value="asset_manager">Asset Managers</option>
+                        <option value="reinsurer">Reinsurers</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Status:</label>
+                    <select id="statusFilter" onchange="filterTable()">
+                        <option value="all">All Statuses</option>
+                        <option value="missing">Missing Only</option>
+                        <option value="partial">Partial Only</option>
+                        <option value="reported">Reported Only</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="matrix-section">
+                <table id="complianceTable">
+                    <thead>
+                        <tr>
+                            <th>Institution</th>
+                            <th>Type</th>
+                            <th>Part A (Financed)</th>
+                            <th>Part B (Facilitated)</th>
+                            <th>Part C (Insurance)</th>
+                            <th>Priority Gap</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-type="insurer" data-status="missing">
+                            <td><strong>Admiral Group</strong></td>
+                            <td>Insurer</td>
+                            <td><span class="status missing">Missing</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="priority critical">Critical</span></td>
+                        </tr>
+                        <tr data-type="insurer" data-status="missing">
+                            <td><strong>Ageas</strong></td>
+                            <td>Insurer</td>
+                            <td><span class="status missing">Missing</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="priority critical">Critical</span></td>
+                        </tr>
+                        <tr data-type="insurer" data-status="partial">
+                            <td><strong>Allianz</strong></td>
+                            <td>Insurer</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+                        <tr data-type="asset_manager" data-status="missing">
+                            <td><strong>Amundi</strong></td>
+                            <td>Asset Manager</td>
+                            <td><span class="status missing">Missing</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="priority critical">Critical</span></td>
+                        </tr>
+                        <tr data-type="insurer" data-status="partial">
+                            <td><strong>ASR Nederland</strong></td>
+                            <td>Insurer</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+                        <tr data-type="insurer" data-status="partial">
+                            <td><strong>Aviva</strong></td>
+                            <td>Insurer</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                        </tr>
+                        <tr data-type="insurer" data-status="partial">
+                            <td><strong>AXA</strong></td>
+                            <td>Insurer</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+                        <tr data-type="bank" data-status="partial">
+                            <td><strong>Commerzbank</strong></td>
+                            <td>Bank</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status missing">Missing</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+                        <tr data-type="bank" data-status="partial">
+                            <td><strong>Crédit Agricole</strong></td>
+                            <td>Bank</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status missing">Missing</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+                        <tr data-type="exchange" data-status="partial">
+                            <td><strong>Deutsche Börse</strong></td>
+                            <td>Exchange</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+                        <tr data-type="asset_manager" data-status="missing">
+                            <td><strong>Eurazeo</strong></td>
+                            <td>Asset Manager</td>
+                            <td><span class="status missing">Missing</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="priority critical">Critical</span></td>
+                        </tr>
+                        <tr data-type="investment_holding" data-status="missing">
+                            <td><strong>GBL</strong></td>
+                            <td>Inv. Holding</td>
+                            <td><span class="status missing">Missing</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="priority critical">Critical</span></td>
+                        </tr>
+                        <tr data-type="bancassurance" data-status="partial">
+                            <td><strong>KBC</strong></td>
+                            <td>Bancassurance</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                        </tr>
+                        <tr data-type="insurer" data-status="partial">
+                            <td><strong>Legal & General</strong></td>
+                            <td>Insurer</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                        </tr>
+                        <tr data-type="insurer" data-status="partial">
+                            <td><strong>NN Group</strong></td>
+                            <td>Insurer</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                        </tr>
+                        <tr data-type="bank" data-status="partial">
+                            <td><strong>Nordea</strong></td>
+                            <td>Bank</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                        </tr>
+                        <tr data-type="insurer" data-status="partial">
+                            <td><strong>Phoenix Group</strong></td>
+                            <td>Insurer</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+                        <tr data-type="bank" data-status="partial">
+                            <td><strong>Santander</strong></td>
+                            <td>Bank</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                        </tr>
+                        <tr data-type="asset_manager" data-status="partial">
+                            <td><strong>Schroders</strong></td>
+                            <td>Asset Manager</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+                        <tr data-type="bank" data-status="partial">
+                            <td><strong>Société Générale</strong></td>
+                            <td>Bank</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status missing">Missing</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+                        <tr data-type="reinsurer" data-status="partial">
+                            <td><strong>Swiss Re</strong></td>
+                            <td>Reinsurer</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+                        <tr data-type="bank" data-status="reported">
+                            <td><strong>UniCredit</strong></td>
+                            <td>Bank</td>
+                            <td><span class="status reported">Reported</span></td>
+                            <td><span class="status missing">Missing</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+                        <tr data-type="insurer" data-status="partial">
+                            <td><strong>Zurich</strong></td>
+                            <td>Insurer</td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="status na">N/A</span></td>
+                            <td><span class="status partial">Partial</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Tab 3: Gap Analysis -->
+        <div id="gaps" class="tab-content">
+            <h2 class="section-title">Critical Gaps (Priority 1)</h2>
+            
+            <div class="gap-card critical">
+                <div class="gap-info">
+                    <h4>Admiral Group - Missing Part A (Financed Emissions)</h4>
+                    <p>No financed emissions reported. As an insurer, must implement PCAF Part A methodology.</p>
+                </div>
+                <span class="priority critical">Critical</span>
+            </div>
+            
+            <div class="gap-card critical">
+                <div class="gap-info">
+                    <h4>Ageas - Missing Part A (Financed Emissions)</h4>
+                    <p>No financed emissions reported. As an insurer, must implement PCAF Part A methodology.</p>
+                </div>
+                <span class="priority critical">Critical</span>
+            </div>
+            
+            <div class="gap-card critical">
+                <div class="gap-info">
+                    <h4>Amundi - Missing Part A (Financed Emissions)</h4>
+                    <p>No financed emissions reported. As an asset manager, Part A is the core requirement.</p>
+                </div>
+                <span class="priority critical">Critical</span>
+            </div>
+            
+            <div class="gap-card critical">
+                <div class="gap-info">
+                    <h4>Eurazeo - Missing Part A (Financed Emissions)</h4>
+                    <p>No financed emissions reported. As an asset manager, Part A is the core requirement.</p>
+                </div>
+                <span class="priority critical">Critical</span>
+            </div>
+            
+            <div class="gap-card critical">
+                <div class="gap-info">
+                    <h4>GBL - Missing Part A (Financed Emissions)</h4>
+                    <p>No financed emissions reported. Investment holding must disclose portfolio emissions.</p>
+                </div>
+                <span class="priority critical">Critical</span>
+            </div>
+            
+            <h2 class="section-title">High Priority Gaps</h2>
+            
+            <div class="gap-card high">
+                <div class="gap-info">
+                    <h4>All Insurers - Missing Part C (Insurance-Associated Emissions)</h4>
+                    <p>12 insurers have only partial Part C compliance. No institution reports full insurance line breakdown.</p>
+                </div>
+                <span class="priority high">High</span>
+            </div>
+            
+            <div class="gap-card high">
+                <div class="gap-info">
+                    <h4>Banks - Missing Part B (Facilitated Emissions)</h4>
+                    <p>4 of 6 banks missing facilitated emissions: Commerzbank, Crédit Agricole, Société Générale, UniCredit.</p>
+                </div>
+                <span class="priority high">High</span>
+            </div>
+            
+            <div class="gap-card high">
+                <div class="gap-info">
+                    <h4>Asset Class Breakdown - Business Loans</h4>
+                    <p>13 of 23 institutions missing business loans emissions breakdown.</p>
+                </div>
+                <span class="priority high">High</span>
+            </div>
+            
+            <div class="gap-card high">
+                <div class="gap-info">
+                    <h4>Asset Class Breakdown - Project Finance</h4>
+                    <p>15 of 23 institutions missing project finance emissions.</p>
+                </div>
+                <span class="priority high">High</span>
+            </div>
+            
+            <h2 class="section-title">Recommendations Summary</h2>
+            
+            <div class="matrix-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Priority</th>
+                            <th>Action</th>
+                            <th>Institutions Affected</th>
+                            <th>Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="priority critical">P1</span></td>
+                            <td>Implement PCAF Part A methodology</td>
+                            <td>Admiral, Ageas, Amundi, Eurazeo, GBL</td>
+                            <td>Resolve critical compliance gap</td>
+                        </tr>
+                        <tr>
+                            <td><span class="priority high">P2</span></td>
+                            <td>Implement Part C insurance line breakdown</td>
+                            <td>All 12 insurers/reinsurers</td>
+                            <td>Complete insurance emissions reporting</td>
+                        </tr>
+                        <tr>
+                            <td><span class="priority high">P2</span></td>
+                            <td>Report facilitated emissions (Part B)</td>
+                            <td>Commerzbank, Crédit Agricole, SocGen, UniCredit</td>
+                            <td>Complete bank PCAF requirements</td>
+                        </tr>
+                        <tr>
+                            <td><span class="priority medium">P3</span></td>
+                            <td>Break down by 10 PCAF asset classes</td>
+                            <td>17 institutions with partial Part A</td>
+                            <td>Improve granularity and comparability</td>
+                        </tr>
+                        <tr>
+                            <td><span class="priority low">P4</span></td>
+                            <td>Include sovereign debt emissions</td>
+                            <td>4 institutions excluding sovereign</td>
+                            <td>Complete portfolio coverage</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Tab 4: Institution Details -->
+        <div id="details" class="tab-content">
+            <h2 class="section-title">Asset Class Coverage by Institution</h2>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Select Institution:</label>
+                    <select id="institutionSelect" onchange="showInstitutionDetail()">
+                        <option value="all">All Institutions</option>
+                        <option value="unicredit">UniCredit (Best Practice)</option>
+                        <option value="aviva">Aviva</option>
+                        <option value="allianz">Allianz</option>
+                        <option value="santander">Santander</option>
+                        <option value="kbc">KBC</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="matrix-section">
+                <h3>Part A: Asset Class Breakdown Coverage</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Asset Class</th>
+                            <th>Reported</th>
+                            <th>Partial</th>
+                            <th>Missing</th>
+                            <th>Coverage Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Listed Equity & Corporate Bonds</td>
+                            <td>5</td>
+                            <td>13</td>
+                            <td>5</td>
+                            <td><div style="background:#d1fae5;width:78%;padding:4px;border-radius:4px;text-align:center;font-weight:600;">78%</div></td>
+                        </tr>
+                        <tr>
+                            <td>Business Loans & Unlisted Equity</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>13</td>
+                            <td><div style="background:#fee2e2;width:43%;padding:4px;border-radius:4px;text-align:center;font-weight:600;">43%</div></td>
+                        </tr>
+                        <tr>
+                            <td>Project Finance</td>
+                            <td>0</td>
+                            <td>8</td>
+                            <td>15</td>
+                            <td><div style="background:#fee2e2;width:35%;padding:4px;border-radius:4px;text-align:center;font-weight:600;">35%</div></td>
+                        </tr>
+                        <tr>
+                            <td>Commercial Real Estate</td>
+                            <td>1</td>
+                            <td>11</td>
+                            <td>11</td>
+                            <td><div style="background:#fef3c7;width:52%;padding:4px;border-radius:4px;text-align:center;font-weight:600;">52%</div></td>
+                        </tr>
+                        <tr>
+                            <td>Mortgages</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>4</td>
+                            <td><div style="background:#d1fae5;width:83%;padding:4px;border-radius:4px;text-align:center;font-weight:600;">83%</div></td>
+                        </tr>
+                        <tr>
+                            <td>Motor Vehicle Loans</td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>18</td>
+                            <td><div style="background:#fee2e2;width:22%;padding:4px;border-radius:4px;text-align:center;font-weight:600;">22%</div></td>
+                        </tr>
+                        <tr>
+                            <td>Sovereign Debt</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>4</td>
+                            <td><div style="background:#d1fae5;width:83%;padding:4px;border-radius:4px;text-align:center;font-weight:600;">83%</div></td>
+                        </tr>
+                        <tr>
+                            <td>Sub-sovereign Debt</td>
+                            <td>0</td>
+                            <td>8</td>
+                            <td>15</td>
+                            <td><div style="background:#fee2e2;width:35%;padding:4px;border-radius:4px;text-align:center;font-weight:600;">35%</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="chart-card" style="margin-top:24px;">
+                <h3>Asset Class Coverage Comparison</h3>
+                <div class="chart-container" style="height:400px;">
+                    <canvas id="assetDetailChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>PCAF Compliance Analysis • Axylia • Generated 10 February 2026</p>
+    </div>
+    
+    <script>
+        // Tab switching
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+        
+        // Table filtering
+        function filterTable() {
+            const typeFilter = document.getElementById('typeFilter').value;
+            const statusFilter = document.getElementById('statusFilter').value;
+            const rows = document.querySelectorAll('#complianceTable tbody tr');
+            
+            rows.forEach(row => {
+                const type = row.getAttribute('data-type');
+                const status = row.getAttribute('data-status');
+                
+                const typeMatch = typeFilter === 'all' || type === typeFilter;
+                const statusMatch = statusFilter === 'all' || status === statusFilter;
+                
+                row.style.display = (typeMatch && statusMatch) ? '' : 'none';
+            });
+        }
+        
+        // Charts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Compliance Status Chart
+            new Chart(document.getElementById('complianceChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Part A (Financed)', 'Part B (Facilitated)', 'Part C (Insurance)'],
+                    datasets: [
+                        {
+                            label: 'Reported',
+                            data: [1, 0, 2],
+                            backgroundColor: '#10b981'
+                        },
+                        {
+                            label: 'Partial',
+                            data: [13, 4, 10],
+                            backgroundColor: '#f59e0b'
+                        },
+                        {
+                            label: 'Missing',
+                            data: [9, 3, 0],
+                            backgroundColor: '#ef4444'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    },
+                    scales: {
+                        x: { stacked: true },
+                        y: { stacked: true, beginAtZero: true }
+                    }
+                }
+            });
+            
+            // Institution Type Chart
+            new Chart(document.getElementById('typeChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Insurers', 'Banks', 'Asset Managers', 'Reinsurer', 'Bancassurance', 'Other'],
+                    datasets: [{
+                        data: [10, 6, 3, 1, 1, 2],
+                        backgroundColor: ['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#6b7280']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'right' }
+                    }
+                }
+            });
+            
+            // Gap Severity Chart
+            new Chart(document.getElementById('gapChart'), {
+                type: 'pie',
+                data: {
+                    labels: ['Critical', 'High', 'Medium', 'Low'],
+                    datasets: [{
+                        data: [9, 13, 6, 1],
+                        backgroundColor: ['#dc2626', '#f59e0b', '#3b82f6', '#6b7280']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'right' }
+                    }
+                }
+            });
+            
+            // Asset Class Chart
+            new Chart(document.getElementById('assetChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Equity/Bonds', 'Business Loans', 'Project Fin.', 'CRE', 'Mortgages', 'Motor', 'Sovereign', 'Sub-sov.'],
+                    datasets: [{
+                        label: 'Coverage %',
+                        data: [78, 43, 35, 52, 83, 22, 83, 35],
+                        backgroundColor: function(context) {
+                            const value = context.raw;
+                            if (value >= 70) return '#10b981';
+                            if (value >= 50) return '#f59e0b';
+                            return '#ef4444';
+                        }
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: { 
+                            beginAtZero: true, 
+                            max: 100,
+                            ticks: { callback: v => v + '%' }
+                        }
+                    }
+                }
+            });
+            
+            // Asset Detail Chart
+            new Chart(document.getElementById('assetDetailChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Listed Equity/Bonds', 'Business Loans', 'Project Finance', 'CRE', 'Mortgages', 'Motor Loans', 'Sovereign Debt', 'Sub-sovereign'],
+                    datasets: [
+                        {
+                            label: 'Reported',
+                            data: [5, 1, 0, 1, 10, 0, 9, 0],
+                            backgroundColor: '#10b981'
+                        },
+                        {
+                            label: 'Partial',
+                            data: [13, 9, 8, 11, 9, 5, 10, 8],
+                            backgroundColor: '#f59e0b'
+                        },
+                        {
+                            label: 'Missing',
+                            data: [5, 13, 15, 11, 4, 18, 4, 15],
+                            backgroundColor: '#ef4444'
+                        }
+                    ]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    },
+                    scales: {
+                        x: { stacked: true },
+                        y: { stacked: true }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
