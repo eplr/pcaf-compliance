@@ -14,9 +14,9 @@ AXA,2024-12-31,Part A - Financed Emissions,PARTIAL,74,Minor gaps,High
 AXA,2024-12-31,Part C - Insurance-Associated Emissions,PARTIAL,62,Minor gaps,High
 Commerzbank,2024-12-31,Part A - Financed Emissions,PARTIAL,65,Temporal Coverage,High
 Commerzbank,2024-12-31,Part B - Facilitated Emissions,MISSING,0,"Asset Class Coverage, Attribution Methodology, Temporal Coverage",Critical
-Crédit Agricole,2024-12-31,Part A - Financed Emissions,MISSING,30,"Data Quality Score, Portfolio Coverage, Temporal Coverage",Critical
-Crédit Agricole,2024-12-31,Part B - Facilitated Emissions,MISSING,23,"Asset Class Coverage, Attribution Methodology, Temporal Coverage",Critical
-Deutsche Börse,2024-12-31,Part A - Financed Emissions,MISSING,39,"Data Quality Score, Attribution Methodology",Critical
+Crédit Agricole,2024-12-31,Part A - Financed Emissions,MISSING,0,Minor gaps,Critical
+Crédit Agricole,2024-12-31,Part B - Facilitated Emissions,MISSING,0,Minor gaps,Critical
+Deutsche Börse,2024-12-31,Part A - Financed Emissions,MISSING,0,Minor gaps,Critical
 Eurazeo,2024-12-31,Part A - Financed Emissions,MISSING,39,"Asset Class Coverage, Data Quality Score",Critical
 GBL,2024-12-31,Part A - Financed Emissions,MISSING,35,"Data Quality Score, Portfolio Coverage, Temporal Coverage",Critical
 KBC,2024-12-31,Part A - Financed Emissions,PARTIAL,65,Data Quality Score,High
@@ -33,8 +33,8 @@ Phoenix Group,2024-12-31,Part C - Insurance-Associated Emissions,MISSING,15,"Ass
 Santander,2024-12-31,Part A - Financed Emissions,REPORTED,87,Minor gaps,Low
 Santander,2024-12-31,Part B - Facilitated Emissions,PARTIAL,31,"Asset Class Coverage, Temporal Coverage",High
 Schroders,2024-12-31,Part A - Financed Emissions,PARTIAL,52,Data Quality Score,High
-Société Générale,2024-12-31,Part A - Financed Emissions,MISSING,30,"Data Quality Score, Portfolio Coverage, Temporal Coverage",Critical
-Société Générale,2024-12-31,Part B - Facilitated Emissions,PARTIAL,31,"Asset Class Coverage, Temporal Coverage",High
+Société Générale,2024-12-31,Part A - Financed Emissions,MISSING,0,Minor gaps,Critical
+Société Générale,2024-12-31,Part B - Facilitated Emissions,MISSING,0,Minor gaps,Critical
 Swiss Re,2024-12-31,Part A - Financed Emissions,PARTIAL,70,Minor gaps,High
 Swiss Re,2024-12-31,Part C - Insurance-Associated Emissions,PARTIAL,69,Minor gaps,High
 UniCredit,2024-12-31,Part A - Financed Emissions,PARTIAL,65,Data Quality Score,High

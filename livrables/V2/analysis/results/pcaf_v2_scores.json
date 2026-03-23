@@ -1,0 +1,86 @@
+{
+  "_meta": {
+    "version": "2.0",
+    "date": "2026-03-23",
+    "source": "Client-verified scores – Nouvelle_Methodologie_PCAF_V2.docx + Comparaison_methodologique_-_Score_compliance_PCAF.xlsx",
+    "note": "Scores manually verified by client (Lucie). Used as authoritative override in generate_pcaf_assessment.py."
+  },
+  "Nordea": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Bank",
+    "Part A": {
+      "Asset Class Coverage":   {"score": 5, "max": 5, "coverage_ratio": 0.9444, "evidence": "17/18 coefficient coverage (94.4%) – all 7 asset classes covered for S1&S2+S3 except sovereign debt S3"},
+      "Data Quality Score":     {"score": 3, "max": 5, "evidence": "Average DQS between 3 and 4"},
+      "Attribution Methodology":{"score": 4, "max": 5, "evidence": "Full PCAF methodology per asset class (PCAF signatory)"},
+      "Portfolio Coverage":     {"score": 3, "max": 5, "evidence": "~75% portfolio coverage"},
+      "Temporal Coverage":      {"score": 3, "max": 3, "evidence": "3 years of history + trends + projections/targets"}
+    },
+    "Part B": {
+      "Asset Class Coverage":   {"score": 0, "max": 5, "coverage_ratio": 0.0, "evidence": "No facilitated emissions reported (Part B not yet implemented)"},
+      "Attribution Methodology":{"score": 0, "max": 5, "evidence": "No facilitated emissions attribution disclosed"},
+      "Temporal Coverage":      {"score": 0, "max": 3, "evidence": "No historical facilitated emissions data"}
+    },
+    "Part C": {
+      "Asset Class Coverage":   {"score": null, "max": null, "evidence": "N/A – Nordea has no P&C insurance activity; life insurance emissions included in financed emissions"},
+      "Attribution Methodology":{"score": null, "max": null, "evidence": "N/A"},
+      "Temporal Coverage":      {"score": null, "max": null, "evidence": "N/A"}
+    },
+    "_compliance": {
+      "Part A": 0.7826086956521739,
+      "Part B": 0.0,
+      "Part C": null
+    }
+  },
+  "Commerzbank": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Bank",
+    "Part A": {
+      "Asset Class Coverage":   {"score": 5, "max": 5, "coverage_ratio": 1.0, "evidence": "18/18 coefficient coverage (100%) – full coverage of all asset classes including sovereign debt S3 (consumption-based)"},
+      "Data Quality Score":     {"score": 3, "max": 5, "evidence": "Average DQS ~4.05 across asset classes"},
+      "Attribution Methodology":{"score": 4, "max": 5, "evidence": "Full PCAF methods per asset class (PCAF signatory)"},
+      "Portfolio Coverage":     {"score": 2, "max": 5, "evidence": "~54% portfolio coverage"},
+      "Temporal Coverage":      {"score": 1, "max": 3, "evidence": "Current year + 1 prior year (2 years)"}
+    },
+    "Part B": {
+      "Asset Class Coverage":   {"score": 0, "max": 5, "coverage_ratio": 0.0, "evidence": "No facilitated emissions data published"},
+      "Attribution Methodology":{"score": 0, "max": 5, "evidence": "No facilitated emissions attribution disclosed"},
+      "Temporal Coverage":      {"score": 0, "max": 3, "evidence": "No historical facilitated emissions data"}
+    },
+    "Part C": {
+      "Asset Class Coverage":   {"score": 3, "max": 5, "coverage_ratio": 0.5, "evidence": "Insurance-related emissions published within financed emissions (Scopes 1, 2 and 3) but no breakdown by insurance branch – 50% coverage estimated (4/8 coefficient)"},
+      "Attribution Methodology":{"score": 0, "max": 5, "evidence": "No insurance-specific attribution methodology disclosed"},
+      "Temporal Coverage":      {"score": 0, "max": 3, "evidence": "No dedicated historical series for insurance-associated emissions"}
+    },
+    "_compliance": {
+      "Part A": 0.6521739130434783,
+      "Part B": 0.0,
+      "Part C": 0.23076923076923078
+    }
+  },
+  "Ageas": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Insurance",
+    "Part A": {
+      "Asset Class Coverage":   {"score": 1, "max": 5, "coverage_ratio": 0.3611, "evidence": "6.5/18 coefficient coverage (36.1%) – listed equity (6/6) + partial sovereign debt (0.5/2); other asset classes excluded (insurer profile, justification provided)"},
+      "Data Quality Score":     {"score": 3, "max": 5, "evidence": "Average DQS ~2.12 for listed equities, ~2 for sovereign debt"},
+      "Attribution Methodology":{"score": 3, "max": 5, "evidence": "PCAF methodology applied for covered asset classes"},
+      "Portfolio Coverage":     {"score": 3, "max": 5, "evidence": "~71% portfolio coverage"},
+      "Temporal Coverage":      {"score": 1, "max": 3, "evidence": "Current year only"}
+    },
+    "Part B": {
+      "Asset Class Coverage":   {"score": 0, "max": 5, "coverage_ratio": 0.0, "evidence": "No facilitated emissions (capital markets activity) reported"},
+      "Attribution Methodology":{"score": 0, "max": 5, "evidence": "No facilitated emissions attribution"},
+      "Temporal Coverage":      {"score": 0, "max": 3, "evidence": "No facilitated emissions data"}
+    },
+    "Part C": {
+      "Asset Class Coverage":   {"score": 4, "max": 5, "coverage_ratio": 0.75, "evidence": "6/8 coefficient coverage (75%) – Commercial Lines (3/3) + Personal Motor (3/3); reinsurance branches not covered"},
+      "Attribution Methodology":{"score": 3, "max": 5, "evidence": "PCAF methodology used for commercial lines and personal motor"},
+      "Temporal Coverage":      {"score": 0, "max": 3, "evidence": "No historical time series for insurance-associated emissions"}
+    },
+    "_compliance": {
+      "Part A": 0.4782608695652174,
+      "Part B": 0.0,
+      "Part C": 0.5384615384615384
+    }
+  }
+}

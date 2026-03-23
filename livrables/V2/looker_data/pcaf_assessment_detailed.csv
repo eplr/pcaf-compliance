@@ -1,0 +1,17 @@
+company,assessment_date,institution_type,pcaf_part,criterion,score,max_score,percentage,evidence,priority
+Aviva PLC,2024-12-31,Insurance,Part A,Asset Class Coverage,3,5,60.0,5 of 10 PCAF asset classes reported (50%),High
+Aviva PLC,2024-12-31,Insurance,Part A,Data Quality Score,3,5,60.0,Weighted average 2.5/5 (audited/primary data),Medium
+Aviva PLC,2024-12-31,Insurance,Part A,Attribution Methodology,4,5,80.0,PCAF-aligned attribution using share of investment,Low
+Aviva PLC,2024-12-31,Insurance,Part A,Scope Coverage,3,5,60.0,Scope 1 + 2 only,Medium
+Aviva PLC,2024-12-31,Insurance,Part A,Portfolio Coverage,3,5,60.0,~85% coverage implied,Medium
+Aviva PLC,2024-12-31,Insurance,Part A,Sovereign Debt Inclusion,3,5,60.0,"Tracked separately, excluded from total",High
+Aviva PLC,2024-12-31,Insurance,Part A,Temporal Coverage,3,5,60.0,3 years of data (2022-2024),Low
+Aviva PLC,2024-12-31,Insurance,Part A,Intensity Metrics,4,5,80.0,ECI and asset-specific intensities,Low
+Aviva PLC,2024-12-31,Insurance,Part C,Insurance Lines Coverage,0,5,0.0,No insurance emissions reported,Critical
+Aviva PLC,2024-12-31,Insurance,Part C,Commercial Lines,0,5,0.0,Not tracked,Critical
+Aviva PLC,2024-12-31,Insurance,Part C,Motor Insurance,0,5,0.0,Not tracked,Critical
+Aviva PLC,2024-12-31,Insurance,Part C,Project Insurance,0,5,0.0,Not tracked,High
+Aviva PLC,2024-12-31,Insurance,Part C,Treaty Reinsurance,0,5,0.0,Not tracked,High
+Aviva PLC,2024-12-31,Insurance,Part C,Attribution Methodology,0,5,0.0,No methodology disclosed,Critical
+Aviva PLC,2024-12-31,Insurance,Part C,Underwriting Integration,0,5,0.0,Not disclosed,High
+Aviva PLC,2024-12-31,Insurance,Part C,Data Quality,0,5,0.0,No data,Critical
