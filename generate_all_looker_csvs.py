@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
 """
-Regenerate all 6 Looker Studio CSV files for 23 financial institutions.
-Sources: pcaf_assessment_detailed.csv, corrected_compliance_data.json,
-         pcaf_composite_scores.csv, deep_analysis_results.json
+Regenerate all 6 Looker Studio CSV files for 25 financial institutions.
+PCAF Methodology V3 – April 2026.
+
+Sources: pcaf_assessment_detailed.csv (from generate_pcaf_assessment.py),
+         corrected_compliance_data.json, pcaf_composite_scores.csv,
+         deep_analysis_results.json.
+
+After running, sync outputs to livrables/V3:
+    cp looker_data/*.csv livrables/V3/looker_data/
+    cp looker_data/*.csv livrables/V3/data/
 """
 
 import csv
@@ -11,7 +18,7 @@ import os
 import math
 
 BASE = "/Users/fidestra/Library/CloudStorage/OneDrive-fidestra/03_ACCOUNTS/Axylia/pcaf-compliance"
-OUT = os.path.join(BASE, "looker_data")
+OUT = os.path.join(BASE, "output")
 
 # ── Load sources ────────────────────────────────────────────────────
 
@@ -21,12 +28,12 @@ with open(os.path.join(OUT, "pcaf_assessment_detailed.csv"), "r", encoding="utf-
     assessment = list(csv.DictReader(f))
 
 # 2. Compliance data
-with open(os.path.join(BASE, "analysis/results/corrected_compliance_data.json"), "r") as f:
+with open(os.path.join(BASE, "data/corrected_compliance_data.json"), "r") as f:
     compliance = json.load(f)
 
 # 3. Composite scores
 composite = {}
-with open(os.path.join(BASE, "analysis/results/pcaf_composite_scores.csv"), "r") as f:
+with open(os.path.join(BASE, "data/pcaf_composite_scores.csv"), "r") as f:
     for row in csv.DictReader(f):
         inst = row["institution"]
         composite.setdefault(inst, {}).setdefault(row["part"], {})[row["category"]] = {
@@ -38,7 +45,7 @@ with open(os.path.join(BASE, "analysis/results/pcaf_composite_scores.csv"), "r")
         }
 
 # 4. Deep analysis
-with open(os.path.join(BASE, "analysis/results/deep_analysis_results.json"), "r") as f:
+with open(os.path.join(BASE, "data/deep_analysis_results.json"), "r") as f:
     deep_raw = json.load(f)
 deep = {d["institution"]: d for d in deep_raw}
 

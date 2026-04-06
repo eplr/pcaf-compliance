@@ -1,0 +1,346 @@
+institution,institution_type,country,part,category,mention,quantitative,coverage,data_quality,composite
+Admiral Group,insurer,UK,Part A,Listed equity and corporate bonds,2,0,0,0,2
+Admiral Group,insurer,UK,Part A,Business loans and unlisted equity,0,0,0,0,0
+Admiral Group,insurer,UK,Part A,Project finance,0,0,0,0,0
+Admiral Group,insurer,UK,Part A,Commercial real estate,0,0,0,0,0
+Admiral Group,insurer,UK,Part A,Mortgages,0,0,0,0,0
+Admiral Group,insurer,UK,Part A,Motor vehicle loans,2,0,0,0,2
+Admiral Group,insurer,UK,Part A,Use of proceeds,2,0,0,0,2
+Admiral Group,insurer,UK,Part A,Securitized and structured products,1,0,0,0,1
+Admiral Group,insurer,UK,Part A,Sovereign debt,0,0,0,0,0
+Admiral Group,insurer,UK,Part A,Sub-sovereign debt,0,0,0,0,0
+Admiral Group,insurer,UK,Part B,Facilitated emissions,0,0,0,0,0
+Admiral Group,insurer,UK,Part C,Commercial lines,2,0,0,0,2
+Admiral Group,insurer,UK,Part C,Personal motor,2,1,0,0,3
+Admiral Group,insurer,UK,Part C,Project insurance,0,0,0,0,0
+Admiral Group,insurer,UK,Part C,Treaty reinsurance,1,0,0,0,1
+Ageas,insurer,Belgium,Part A,Listed equity and corporate bonds,0,0,0,0,0
+Ageas,insurer,Belgium,Part A,Business loans and unlisted equity,0,0,0,0,0
+Ageas,insurer,Belgium,Part A,Project finance,0,0,0,0,0
+Ageas,insurer,Belgium,Part A,Commercial real estate,0,0,0,0,0
+Ageas,insurer,Belgium,Part A,Mortgages,0,0,0,0,0
+Ageas,insurer,Belgium,Part A,Motor vehicle loans,0,0,0,0,0
+Ageas,insurer,Belgium,Part A,Use of proceeds,0,0,0,0,0
+Ageas,insurer,Belgium,Part A,Securitized and structured products,1,1,1,0,3
+Ageas,insurer,Belgium,Part A,Sovereign debt,0,0,0,0,0
+Ageas,insurer,Belgium,Part A,Sub-sovereign debt,1,0,0,0,1
+Ageas,insurer,Belgium,Part B,Facilitated emissions,0,0,0,0,0
+Ageas,insurer,Belgium,Part C,Commercial lines,3,1,0,0,4
+Ageas,insurer,Belgium,Part C,Personal motor,0,0,0,0,0
+Ageas,insurer,Belgium,Part C,Project insurance,0,0,0,0,0
+Ageas,insurer,Belgium,Part C,Treaty reinsurance,1,0,0,0,1
+Allianz,insurer,Germany,Part A,Listed equity and corporate bonds,3,0,0,0,3
+Allianz,insurer,Germany,Part A,Business loans and unlisted equity,3,0,0,0,3
+Allianz,insurer,Germany,Part A,Project finance,3,0,0,0,3
+Allianz,insurer,Germany,Part A,Commercial real estate,3,0,0,0,3
+Allianz,insurer,Germany,Part A,Mortgages,2,0,0,0,2
+Allianz,insurer,Germany,Part A,Motor vehicle loans,1,0,0,0,1
+Allianz,insurer,Germany,Part A,Use of proceeds,3,0,0,0,3
+Allianz,insurer,Germany,Part A,Securitized and structured products,3,0,0,0,3
+Allianz,insurer,Germany,Part A,Sovereign debt,3,0,0,0,3
+Allianz,insurer,Germany,Part A,Sub-sovereign debt,3,0,0,0,3
+Allianz,insurer,Germany,Part B,Facilitated emissions,1,0,0,0,1
+Allianz,insurer,Germany,Part C,Commercial lines,1,0,0,0,1
+Allianz,insurer,Germany,Part C,Personal motor,3,0,0,1,4
+Allianz,insurer,Germany,Part C,Project insurance,0,0,0,0,0
+Allianz,insurer,Germany,Part C,Treaty reinsurance,1,0,1,0,2
+Amundi,asset_manager,France,Part A,Listed equity and corporate bonds,0,0,0,0,0
+Amundi,asset_manager,France,Part A,Business loans and unlisted equity,0,0,0,0,0
+Amundi,asset_manager,France,Part A,Project finance,0,0,0,0,0
+Amundi,asset_manager,France,Part A,Commercial real estate,0,0,0,0,0
+Amundi,asset_manager,France,Part A,Mortgages,1,0,0,0,1
+Amundi,asset_manager,France,Part A,Motor vehicle loans,0,0,0,0,0
+Amundi,asset_manager,France,Part A,Use of proceeds,1,0,0,0,1
+Amundi,asset_manager,France,Part A,Securitized and structured products,1,0,0,0,1
+Amundi,asset_manager,France,Part A,Sovereign debt,0,0,0,0,0
+Amundi,asset_manager,France,Part A,Sub-sovereign debt,0,0,0,0,0
+Amundi,asset_manager,France,Part B,Facilitated emissions,1,0,0,0,1
+Amundi,asset_manager,France,Part C,Commercial lines,0,0,0,0,0
+Amundi,asset_manager,France,Part C,Personal motor,0,0,0,0,0
+Amundi,asset_manager,France,Part C,Project insurance,0,0,0,0,0
+Amundi,asset_manager,France,Part C,Treaty reinsurance,0,0,0,0,0
+ASR Nederland,insurer,Netherlands,Part A,Listed equity and corporate bonds,2,0,0,0,2
+ASR Nederland,insurer,Netherlands,Part A,Business loans and unlisted equity,3,0,0,1,4
+ASR Nederland,insurer,Netherlands,Part A,Project finance,0,0,0,0,0
+ASR Nederland,insurer,Netherlands,Part A,Commercial real estate,2,0,0,0,2
+ASR Nederland,insurer,Netherlands,Part A,Mortgages,1,0,0,0,1
+ASR Nederland,insurer,Netherlands,Part A,Motor vehicle loans,1,0,1,0,2
+ASR Nederland,insurer,Netherlands,Part A,Use of proceeds,2,0,0,0,2
+ASR Nederland,insurer,Netherlands,Part A,Securitized and structured products,1,1,0,0,2
+ASR Nederland,insurer,Netherlands,Part A,Sovereign debt,1,0,0,0,1
+ASR Nederland,insurer,Netherlands,Part A,Sub-sovereign debt,2,0,0,0,2
+ASR Nederland,insurer,Netherlands,Part B,Facilitated emissions,1,0,0,0,1
+ASR Nederland,insurer,Netherlands,Part C,Commercial lines,2,0,0,0,2
+ASR Nederland,insurer,Netherlands,Part C,Personal motor,2,3,0,0,5
+ASR Nederland,insurer,Netherlands,Part C,Project insurance,0,0,0,0,0
+ASR Nederland,insurer,Netherlands,Part C,Treaty reinsurance,1,0,0,0,1
+Aviva,insurer,UK,Part A,Listed equity and corporate bonds,2,0,0,0,2
+Aviva,insurer,UK,Part A,Business loans and unlisted equity,0,0,0,0,0
+Aviva,insurer,UK,Part A,Project finance,3,0,0,0,3
+Aviva,insurer,UK,Part A,Commercial real estate,2,0,0,1,3
+Aviva,insurer,UK,Part A,Mortgages,2,0,0,0,2
+Aviva,insurer,UK,Part A,Motor vehicle loans,0,0,0,0,0
+Aviva,insurer,UK,Part A,Use of proceeds,2,0,0,0,2
+Aviva,insurer,UK,Part A,Securitized and structured products,2,0,0,0,2
+Aviva,insurer,UK,Part A,Sovereign debt,3,0,3,1,7
+Aviva,insurer,UK,Part A,Sub-sovereign debt,3,0,3,1,7
+Aviva,insurer,UK,Part B,Facilitated emissions,1,0,0,1,2
+Aviva,insurer,UK,Part C,Commercial lines,0,0,0,0,0
+Aviva,insurer,UK,Part C,Personal motor,0,0,0,0,0
+Aviva,insurer,UK,Part C,Project insurance,0,0,0,0,0
+Aviva,insurer,UK,Part C,Treaty reinsurance,1,0,0,0,1
+AXA,insurer,France,Part A,Listed equity and corporate bonds,2,3,0,0,5
+AXA,insurer,France,Part A,Business loans and unlisted equity,1,0,0,0,1
+AXA,insurer,France,Part A,Project finance,0,0,0,0,0
+AXA,insurer,France,Part A,Commercial real estate,2,0,0,0,2
+AXA,insurer,France,Part A,Mortgages,3,0,0,0,3
+AXA,insurer,France,Part A,Motor vehicle loans,2,0,0,0,2
+AXA,insurer,France,Part A,Use of proceeds,1,0,0,0,1
+AXA,insurer,France,Part A,Securitized and structured products,1,0,0,0,1
+AXA,insurer,France,Part A,Sovereign debt,3,0,0,0,3
+AXA,insurer,France,Part A,Sub-sovereign debt,3,0,0,0,3
+AXA,insurer,France,Part B,Facilitated emissions,1,0,0,0,1
+AXA,insurer,France,Part C,Commercial lines,3,0,1,0,4
+AXA,insurer,France,Part C,Personal motor,2,0,1,0,3
+AXA,insurer,France,Part C,Project insurance,0,0,0,0,0
+AXA,insurer,France,Part C,Treaty reinsurance,1,0,0,0,1
+Commerzbank,bank,Germany,Part A,Listed equity and corporate bonds,3,0,0,0,3
+Commerzbank,bank,Germany,Part A,Business loans and unlisted equity,3,0,0,0,3
+Commerzbank,bank,Germany,Part A,Project finance,3,0,0,0,3
+Commerzbank,bank,Germany,Part A,Commercial real estate,1,0,0,0,1
+Commerzbank,bank,Germany,Part A,Mortgages,1,0,0,0,1
+Commerzbank,bank,Germany,Part A,Motor vehicle loans,3,0,0,0,3
+Commerzbank,bank,Germany,Part A,Use of proceeds,1,0,0,0,1
+Commerzbank,bank,Germany,Part A,Securitized and structured products,1,0,0,0,1
+Commerzbank,bank,Germany,Part A,Sovereign debt,3,0,0,0,3
+Commerzbank,bank,Germany,Part A,Sub-sovereign debt,1,0,0,0,1
+Commerzbank,bank,Germany,Part B,Facilitated emissions,1,0,0,0,1
+Commerzbank,bank,Germany,Part C,Commercial lines,1,0,0,0,1
+Commerzbank,bank,Germany,Part C,Personal motor,0,0,0,0,0
+Commerzbank,bank,Germany,Part C,Project insurance,0,0,0,0,0
+Commerzbank,bank,Germany,Part C,Treaty reinsurance,1,0,0,0,1
+Crédit Agricole,bank,France,Part A,Listed equity and corporate bonds,0,0,0,0,0
+Crédit Agricole,bank,France,Part A,Business loans and unlisted equity,1,0,0,0,1
+Crédit Agricole,bank,France,Part A,Project finance,0,0,0,0,0
+Crédit Agricole,bank,France,Part A,Commercial real estate,0,0,0,0,0
+Crédit Agricole,bank,France,Part A,Mortgages,1,0,0,0,1
+Crédit Agricole,bank,France,Part A,Motor vehicle loans,0,0,0,0,0
+Crédit Agricole,bank,France,Part A,Use of proceeds,2,0,1,0,3
+Crédit Agricole,bank,France,Part A,Securitized and structured products,1,0,0,0,1
+Crédit Agricole,bank,France,Part A,Sovereign debt,0,0,0,0,0
+Crédit Agricole,bank,France,Part A,Sub-sovereign debt,1,0,0,0,1
+Crédit Agricole,bank,France,Part B,Facilitated emissions,1,0,0,0,1
+Crédit Agricole,bank,France,Part C,Commercial lines,0,0,0,0,0
+Crédit Agricole,bank,France,Part C,Personal motor,0,0,0,0,0
+Crédit Agricole,bank,France,Part C,Project insurance,0,0,0,0,0
+Crédit Agricole,bank,France,Part C,Treaty reinsurance,0,0,0,0,0
+Deutsche Börse,other,Germany,Part A,Listed equity and corporate bonds,1,0,0,0,1
+Deutsche Börse,other,Germany,Part A,Business loans and unlisted equity,0,0,0,0,0
+Deutsche Börse,other,Germany,Part A,Project finance,0,0,0,0,0
+Deutsche Börse,other,Germany,Part A,Commercial real estate,1,0,0,0,1
+Deutsche Börse,other,Germany,Part A,Mortgages,0,0,0,0,0
+Deutsche Börse,other,Germany,Part A,Motor vehicle loans,0,0,0,0,0
+Deutsche Börse,other,Germany,Part A,Use of proceeds,0,0,0,0,0
+Deutsche Börse,other,Germany,Part A,Securitized and structured products,1,0,0,0,1
+Deutsche Börse,other,Germany,Part A,Sovereign debt,1,0,0,0,1
+Deutsche Börse,other,Germany,Part A,Sub-sovereign debt,2,0,0,0,2
+Deutsche Börse,other,Germany,Part B,Facilitated emissions,1,0,0,0,1
+Deutsche Börse,other,Germany,Part C,Commercial lines,0,0,0,0,0
+Deutsche Börse,other,Germany,Part C,Personal motor,0,0,0,0,0
+Deutsche Börse,other,Germany,Part C,Project insurance,0,0,0,0,0
+Deutsche Börse,other,Germany,Part C,Treaty reinsurance,0,0,0,0,0
+Eurazeo,asset_manager,France,Part A,Listed equity and corporate bonds,0,0,0,0,0
+Eurazeo,asset_manager,France,Part A,Business loans and unlisted equity,0,0,0,0,0
+Eurazeo,asset_manager,France,Part A,Project finance,0,0,0,0,0
+Eurazeo,asset_manager,France,Part A,Commercial real estate,0,0,0,0,0
+Eurazeo,asset_manager,France,Part A,Mortgages,0,0,0,0,0
+Eurazeo,asset_manager,France,Part A,Motor vehicle loans,0,0,0,0,0
+Eurazeo,asset_manager,France,Part A,Use of proceeds,0,0,0,0,0
+Eurazeo,asset_manager,France,Part A,Securitized and structured products,1,0,0,0,1
+Eurazeo,asset_manager,France,Part A,Sovereign debt,0,0,0,0,0
+Eurazeo,asset_manager,France,Part A,Sub-sovereign debt,0,0,0,0,0
+Eurazeo,asset_manager,France,Part B,Facilitated emissions,1,0,0,0,1
+Eurazeo,asset_manager,France,Part C,Commercial lines,0,0,0,0,0
+Eurazeo,asset_manager,France,Part C,Personal motor,0,0,0,0,0
+Eurazeo,asset_manager,France,Part C,Project insurance,0,0,0,0,0
+Eurazeo,asset_manager,France,Part C,Treaty reinsurance,0,0,0,0,0
+GBL,other,Belgium,Part A,Listed equity and corporate bonds,0,0,0,0,0
+GBL,other,Belgium,Part A,Business loans and unlisted equity,0,0,0,0,0
+GBL,other,Belgium,Part A,Project finance,0,0,0,0,0
+GBL,other,Belgium,Part A,Commercial real estate,0,0,0,0,0
+GBL,other,Belgium,Part A,Mortgages,0,0,0,0,0
+GBL,other,Belgium,Part A,Motor vehicle loans,0,0,0,0,0
+GBL,other,Belgium,Part A,Use of proceeds,0,0,0,0,0
+GBL,other,Belgium,Part A,Securitized and structured products,1,0,0,0,1
+GBL,other,Belgium,Part A,Sovereign debt,0,0,0,0,0
+GBL,other,Belgium,Part A,Sub-sovereign debt,1,0,0,0,1
+GBL,other,Belgium,Part B,Facilitated emissions,0,0,0,0,0
+GBL,other,Belgium,Part C,Commercial lines,0,0,0,0,0
+GBL,other,Belgium,Part C,Personal motor,0,0,0,0,0
+GBL,other,Belgium,Part C,Project insurance,0,0,0,0,0
+GBL,other,Belgium,Part C,Treaty reinsurance,0,0,0,0,0
+KBC,bancassurance,Belgium,Part A,Listed equity and corporate bonds,2,0,0,0,2
+KBC,bancassurance,Belgium,Part A,Business loans and unlisted equity,1,0,0,0,1
+KBC,bancassurance,Belgium,Part A,Project finance,1,0,0,0,1
+KBC,bancassurance,Belgium,Part A,Commercial real estate,2,0,0,0,2
+KBC,bancassurance,Belgium,Part A,Mortgages,1,0,0,0,1
+KBC,bancassurance,Belgium,Part A,Motor vehicle loans,2,0,0,0,2
+KBC,bancassurance,Belgium,Part A,Use of proceeds,2,0,0,0,2
+KBC,bancassurance,Belgium,Part A,Securitized and structured products,1,1,0,0,2
+KBC,bancassurance,Belgium,Part A,Sovereign debt,2,0,0,0,2
+KBC,bancassurance,Belgium,Part A,Sub-sovereign debt,1,0,0,0,1
+KBC,bancassurance,Belgium,Part B,Facilitated emissions,3,1,0,0,4
+KBC,bancassurance,Belgium,Part C,Commercial lines,3,0,0,0,3
+KBC,bancassurance,Belgium,Part C,Personal motor,3,0,0,0,3
+KBC,bancassurance,Belgium,Part C,Project insurance,0,0,0,0,0
+KBC,bancassurance,Belgium,Part C,Treaty reinsurance,1,0,0,0,1
+Legal & General,insurer,UK,Part A,Listed equity and corporate bonds,2,3,0,0,5
+Legal & General,insurer,UK,Part A,Business loans and unlisted equity,1,0,0,0,1
+Legal & General,insurer,UK,Part A,Project finance,2,0,0,0,2
+Legal & General,insurer,UK,Part A,Commercial real estate,3,0,0,1,4
+Legal & General,insurer,UK,Part A,Mortgages,2,0,0,0,2
+Legal & General,insurer,UK,Part A,Motor vehicle loans,0,0,0,0,0
+Legal & General,insurer,UK,Part A,Use of proceeds,2,3,0,0,5
+Legal & General,insurer,UK,Part A,Securitized and structured products,1,0,0,0,1
+Legal & General,insurer,UK,Part A,Sovereign debt,2,0,3,0,5
+Legal & General,insurer,UK,Part A,Sub-sovereign debt,0,0,0,0,0
+Legal & General,insurer,UK,Part B,Facilitated emissions,0,0,0,0,0
+Legal & General,insurer,UK,Part C,Commercial lines,2,0,0,0,2
+Legal & General,insurer,UK,Part C,Personal motor,0,0,0,0,0
+Legal & General,insurer,UK,Part C,Project insurance,0,0,0,0,0
+Legal & General,insurer,UK,Part C,Treaty reinsurance,1,0,0,0,1
+NN Group,insurer,Netherlands,Part A,Listed equity and corporate bonds,2,0,0,3,5
+NN Group,insurer,Netherlands,Part A,Business loans and unlisted equity,1,0,0,0,1
+NN Group,insurer,Netherlands,Part A,Project finance,0,0,0,0,0
+NN Group,insurer,Netherlands,Part A,Commercial real estate,2,0,0,0,2
+NN Group,insurer,Netherlands,Part A,Mortgages,3,1,0,0,4
+NN Group,insurer,Netherlands,Part A,Motor vehicle loans,2,0,0,0,2
+NN Group,insurer,Netherlands,Part A,Use of proceeds,2,0,0,0,2
+NN Group,insurer,Netherlands,Part A,Securitized and structured products,1,1,0,0,2
+NN Group,insurer,Netherlands,Part A,Sovereign debt,2,0,0,0,2
+NN Group,insurer,Netherlands,Part A,Sub-sovereign debt,1,0,1,0,2
+NN Group,insurer,Netherlands,Part B,Facilitated emissions,1,0,0,0,1
+NN Group,insurer,Netherlands,Part C,Commercial lines,2,0,0,0,2
+NN Group,insurer,Netherlands,Part C,Personal motor,0,0,0,0,0
+NN Group,insurer,Netherlands,Part C,Project insurance,0,0,0,0,0
+NN Group,insurer,Netherlands,Part C,Treaty reinsurance,1,0,0,0,1
+Nordea,bank,Finland,Part A,Listed equity and corporate bonds,2,0,0,0,2
+Nordea,bank,Finland,Part A,Business loans and unlisted equity,1,0,0,0,1
+Nordea,bank,Finland,Part A,Project finance,3,0,0,1,4
+Nordea,bank,Finland,Part A,Commercial real estate,1,0,0,0,1
+Nordea,bank,Finland,Part A,Mortgages,1,0,0,0,1
+Nordea,bank,Finland,Part A,Motor vehicle loans,1,0,0,0,1
+Nordea,bank,Finland,Part A,Use of proceeds,1,0,0,0,1
+Nordea,bank,Finland,Part A,Securitized and structured products,1,0,0,0,1
+Nordea,bank,Finland,Part A,Sovereign debt,3,0,0,1,4
+Nordea,bank,Finland,Part A,Sub-sovereign debt,3,0,1,1,5
+Nordea,bank,Finland,Part B,Facilitated emissions,3,0,1,0,4
+Nordea,bank,Finland,Part C,Commercial lines,0,0,0,0,0
+Nordea,bank,Finland,Part C,Personal motor,0,0,0,0,0
+Nordea,bank,Finland,Part C,Project insurance,0,0,0,0,0
+Nordea,bank,Finland,Part C,Treaty reinsurance,1,0,0,0,1
+Phoenix Group,insurer,UK,Part A,Listed equity and corporate bonds,2,0,0,0,2
+Phoenix Group,insurer,UK,Part A,Business loans and unlisted equity,0,0,0,0,0
+Phoenix Group,insurer,UK,Part A,Project finance,1,0,0,0,1
+Phoenix Group,insurer,UK,Part A,Commercial real estate,1,0,0,0,1
+Phoenix Group,insurer,UK,Part A,Mortgages,1,0,0,0,1
+Phoenix Group,insurer,UK,Part A,Motor vehicle loans,0,0,0,0,0
+Phoenix Group,insurer,UK,Part A,Use of proceeds,1,0,0,0,1
+Phoenix Group,insurer,UK,Part A,Securitized and structured products,1,0,0,0,1
+Phoenix Group,insurer,UK,Part A,Sovereign debt,2,1,0,0,3
+Phoenix Group,insurer,UK,Part A,Sub-sovereign debt,1,0,0,0,1
+Phoenix Group,insurer,UK,Part B,Facilitated emissions,1,0,0,0,1
+Phoenix Group,insurer,UK,Part C,Commercial lines,1,0,0,0,1
+Phoenix Group,insurer,UK,Part C,Personal motor,0,0,0,0,0
+Phoenix Group,insurer,UK,Part C,Project insurance,0,0,0,0,0
+Phoenix Group,insurer,UK,Part C,Treaty reinsurance,1,0,0,0,1
+Santander,bank,Spain,Part A,Listed equity and corporate bonds,2,0,0,0,2
+Santander,bank,Spain,Part A,Business loans and unlisted equity,2,1,1,0,4
+Santander,bank,Spain,Part A,Project finance,1,0,0,0,1
+Santander,bank,Spain,Part A,Commercial real estate,2,0,0,0,2
+Santander,bank,Spain,Part A,Mortgages,2,3,0,0,5
+Santander,bank,Spain,Part A,Motor vehicle loans,1,1,0,0,2
+Santander,bank,Spain,Part A,Use of proceeds,3,1,0,0,4
+Santander,bank,Spain,Part A,Securitized and structured products,1,0,0,0,1
+Santander,bank,Spain,Part A,Sovereign debt,3,1,0,0,4
+Santander,bank,Spain,Part A,Sub-sovereign debt,1,0,0,0,1
+Santander,bank,Spain,Part B,Facilitated emissions,2,0,0,0,2
+Santander,bank,Spain,Part C,Commercial lines,0,0,0,0,0
+Santander,bank,Spain,Part C,Personal motor,1,0,0,0,1
+Santander,bank,Spain,Part C,Project insurance,0,0,0,0,0
+Santander,bank,Spain,Part C,Treaty reinsurance,1,0,0,0,1
+Schroders,asset_manager,UK,Part A,Listed equity and corporate bonds,2,2,0,0,4
+Schroders,asset_manager,UK,Part A,Business loans and unlisted equity,0,0,0,0,0
+Schroders,asset_manager,UK,Part A,Project finance,0,0,0,0,0
+Schroders,asset_manager,UK,Part A,Commercial real estate,1,0,0,0,1
+Schroders,asset_manager,UK,Part A,Mortgages,1,0,0,0,1
+Schroders,asset_manager,UK,Part A,Motor vehicle loans,0,0,0,0,0
+Schroders,asset_manager,UK,Part A,Use of proceeds,1,0,0,0,1
+Schroders,asset_manager,UK,Part A,Securitized and structured products,1,0,0,0,1
+Schroders,asset_manager,UK,Part A,Sovereign debt,1,1,0,0,2
+Schroders,asset_manager,UK,Part A,Sub-sovereign debt,1,0,0,0,1
+Schroders,asset_manager,UK,Part B,Facilitated emissions,1,1,0,0,2
+Schroders,asset_manager,UK,Part C,Commercial lines,0,0,0,0,0
+Schroders,asset_manager,UK,Part C,Personal motor,0,0,0,0,0
+Schroders,asset_manager,UK,Part C,Project insurance,0,0,0,0,0
+Schroders,asset_manager,UK,Part C,Treaty reinsurance,1,0,0,0,1
+Société Générale,bank,France,Part A,Listed equity and corporate bonds,0,0,0,0,0
+Société Générale,bank,France,Part A,Business loans and unlisted equity,0,0,0,0,0
+Société Générale,bank,France,Part A,Project finance,1,0,0,0,1
+Société Générale,bank,France,Part A,Commercial real estate,0,0,0,0,0
+Société Générale,bank,France,Part A,Mortgages,1,0,1,0,2
+Société Générale,bank,France,Part A,Motor vehicle loans,1,0,0,0,1
+Société Générale,bank,France,Part A,Use of proceeds,1,0,0,0,1
+Société Générale,bank,France,Part A,Securitized and structured products,1,0,0,0,1
+Société Générale,bank,France,Part A,Sovereign debt,0,0,0,0,0
+Société Générale,bank,France,Part A,Sub-sovereign debt,1,0,0,0,1
+Société Générale,bank,France,Part B,Facilitated emissions,1,1,0,0,2
+Société Générale,bank,France,Part C,Commercial lines,0,0,0,0,0
+Société Générale,bank,France,Part C,Personal motor,0,0,0,0,0
+Société Générale,bank,France,Part C,Project insurance,0,0,0,0,0
+Société Générale,bank,France,Part C,Treaty reinsurance,0,0,0,0,0
+Swiss Re,reinsurer,Switzerland,Part A,Listed equity and corporate bonds,3,0,0,0,3
+Swiss Re,reinsurer,Switzerland,Part A,Business loans and unlisted equity,0,0,0,0,0
+Swiss Re,reinsurer,Switzerland,Part A,Project finance,0,0,0,0,0
+Swiss Re,reinsurer,Switzerland,Part A,Commercial real estate,0,0,0,0,0
+Swiss Re,reinsurer,Switzerland,Part A,Mortgages,1,0,0,0,1
+Swiss Re,reinsurer,Switzerland,Part A,Motor vehicle loans,0,0,0,0,0
+Swiss Re,reinsurer,Switzerland,Part A,Use of proceeds,2,0,0,0,2
+Swiss Re,reinsurer,Switzerland,Part A,Securitized and structured products,1,0,0,0,1
+Swiss Re,reinsurer,Switzerland,Part A,Sovereign debt,2,0,0,0,2
+Swiss Re,reinsurer,Switzerland,Part A,Sub-sovereign debt,2,0,0,0,2
+Swiss Re,reinsurer,Switzerland,Part B,Facilitated emissions,1,0,0,0,1
+Swiss Re,reinsurer,Switzerland,Part C,Commercial lines,3,0,0,0,3
+Swiss Re,reinsurer,Switzerland,Part C,Personal motor,3,1,0,0,4
+Swiss Re,reinsurer,Switzerland,Part C,Project insurance,0,0,0,0,0
+Swiss Re,reinsurer,Switzerland,Part C,Treaty reinsurance,1,1,0,0,2
+UniCredit,bank,Italy,Part A,Listed equity and corporate bonds,1,0,0,0,1
+UniCredit,bank,Italy,Part A,Business loans and unlisted equity,1,0,0,0,1
+UniCredit,bank,Italy,Part A,Project finance,1,0,0,0,1
+UniCredit,bank,Italy,Part A,Commercial real estate,1,0,0,0,1
+UniCredit,bank,Italy,Part A,Mortgages,3,0,0,0,3
+UniCredit,bank,Italy,Part A,Motor vehicle loans,1,0,0,0,1
+UniCredit,bank,Italy,Part A,Use of proceeds,2,0,0,0,2
+UniCredit,bank,Italy,Part A,Securitized and structured products,1,1,0,0,2
+UniCredit,bank,Italy,Part A,Sovereign debt,1,1,0,0,2
+UniCredit,bank,Italy,Part A,Sub-sovereign debt,1,0,0,0,1
+UniCredit,bank,Italy,Part B,Facilitated emissions,1,1,0,0,2
+UniCredit,bank,Italy,Part C,Commercial lines,1,1,0,0,2
+UniCredit,bank,Italy,Part C,Personal motor,0,0,0,0,0
+UniCredit,bank,Italy,Part C,Project insurance,0,0,0,0,0
+UniCredit,bank,Italy,Part C,Treaty reinsurance,1,0,0,0,1
+Zurich,insurer,Switzerland,Part A,Listed equity and corporate bonds,2,0,0,0,2
+Zurich,insurer,Switzerland,Part A,Business loans and unlisted equity,0,0,0,0,0
+Zurich,insurer,Switzerland,Part A,Project finance,0,0,0,0,0
+Zurich,insurer,Switzerland,Part A,Commercial real estate,2,0,0,0,2
+Zurich,insurer,Switzerland,Part A,Mortgages,1,0,0,0,1
+Zurich,insurer,Switzerland,Part A,Motor vehicle loans,0,0,0,0,0
+Zurich,insurer,Switzerland,Part A,Use of proceeds,2,1,0,0,3
+Zurich,insurer,Switzerland,Part A,Securitized and structured products,1,0,0,0,1
+Zurich,insurer,Switzerland,Part A,Sovereign debt,2,0,1,0,3
+Zurich,insurer,Switzerland,Part A,Sub-sovereign debt,1,0,0,0,1
+Zurich,insurer,Switzerland,Part B,Facilitated emissions,1,0,0,0,1
+Zurich,insurer,Switzerland,Part C,Commercial lines,3,0,0,0,3
+Zurich,insurer,Switzerland,Part C,Personal motor,1,0,1,0,2
+Zurich,insurer,Switzerland,Part C,Project insurance,0,0,0,0,0
+Zurich,insurer,Switzerland,Part C,Treaty reinsurance,1,0,0,0,1
