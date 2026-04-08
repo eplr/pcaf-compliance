@@ -140,44 +140,57 @@ Utilisée pour convertir un taux de couverture brut en niveau 0–5 pour le crit
 
 ## Chaîne d'outils
 
+### Approche de lecture des rapports (V3.1 – 08/04/2026)
+
+L'approche privilégiée pour l'évaluation de conformité est la **lecture complète du rapport source**, pas l'extraction par regex.
+
+**Pour les rapports ESEF XHTML** (format européen structuré) :
+1. Convertir le XHTML en texte propre en supprimant les images base64, CSS, et balises HTML
+2. Résultat : réduction de ~99 % (ex. ING : 121 Mo → 1,86 Mo, 89 783 lignes)
+3. Lire les sections pertinentes en entier (sustainability statement, technical notes)
+4. Pour chaque critère : identifier le verbatim exact + référence de ligne
+
+**Pour les rapports PDF** :
+1. Texte extrait disponible dans `resources/reports/extracted_text/*.json`
+2. Structure : `{"text": "...", "metadata": [{"page_number": N, "text_length": M}, ...]}`
+3. Même approche : lecture complète, pas de recherche par regex isolée
+
+> **Leçon V3** : une lecture partielle (0,1 % du document) a produit 2 erreurs de scoring pour ING. La lecture complète les a corrigées. Chaque score doit être justifié par un verbatim exact avec référence de ligne ou de page.
+
+### Format du rapport d'évaluation
+
+Chaque institution évaluée produit un rapport au format `output/{INSTITUTION}_PCAF_Compliance_Assessment.md` contenant :
+- Métadonnées : rapport source, type d'institution, date, méthode de lecture
+- Pour chaque critère des 3 parties : score, verbatim avec référence de ligne, raisonnement
+- Tableau récapitulatif Part A / Part B / Part C (scores bruts uniquement, pas de pondération)
+
 ### Prérequis
 - Python ≥ 3.10
-- `openpyxl`, `python-docx` (facultatif, pour la lecture des fichiers de retour client)
 
-```bash
-pip install openpyxl python-docx
-```
-
-### Fichiers de données principaux
+### Fichiers de données
 
 | Fichier | Rôle |
 |---|---|
-| `analysis/results/corrected_compliance_data.json` | Statut de conformité par institution (statut Parties A/B/C, DQS, etc.) |
-| `analysis/results/pcaf_composite_scores.csv` | Scores composites par classe d'actifs (0–5) |
-| `analysis/results/extended_asset_class_coverage.json` | Statut de couverture par classe d'actifs et par institution (`reported` / `partial` / `missing`). **Source pour la dette souveraine et toutes les classes d'actifs (V3).** |
-| `analysis/results/pcaf_v2_scores.json` | **Scores V2 vérifiés par le client** pour Nordea, Commerzbank, Ageas (référence prioritaire) |
-| `resources/reports/extracted_text/*.json` | Texte extrait des rapports de durabilité source – utilisé pour l'audit V3 des extractions |
+| `data/corrected_compliance_data.json` | Statut de conformité par institution (statut Parties A/B/C, DQS, etc.) |
+| `data/pcaf_composite_scores.csv` | Scores composites par classe d'actifs (0–5) |
+| `data/extended_asset_class_coverage.json` | Statut de couverture par classe d'actifs (`reported` / `partial` / `missing`) |
+| `data/pcaf_v2_scores.json` | Scores client-vérifiés pour Nordea, Commerzbank, Ageas |
+| `data/verification_checklist.json` | Trace d'audit des vérifications manuelles |
+| `resources/reports/extracted_text/*.json` | Texte extrait des rapports PDF |
+| `resources/reports/extracted_text/*_full_clean.txt` | Texte propre des rapports XHTML |
+| `resources/reports/origin/` | Rapports source (PDF, XHTML) |
 
-### Scripts – à exécuter dans l'ordre
+### Scripts
 
 ```bash
-# 1. Générer les scores par critère pour les 25 institutions
+# Générer les scores par critère (25 institutions)
 python3 generate_pcaf_assessment.py
-# → looker_data/pcaf_assessment_detailed.csv
+# → output/pcaf_assessment_detailed.csv
 
-# 2. Régénérer les 6 fichiers CSV Looker Studio
+# Générer les CSV Looker Studio
 python3 generate_all_looker_csvs.py
-# → looker_data/{asset_class_emissions, financed_emissions,
-#              operational_emissions, pcaf_assessment_parts,
-#              pcaf_assessment_overall, pcaf_compliance}.csv
-
-# 3. Synchroniser vers livrables/V3
-cp looker_data/*.csv livrables/V3/looker_data/
-cp looker_data/*.csv livrables/V3/data/
+# → output/*.csv
 ```
-
-### Ajout ou mise à jour de scores vérifiés
-Pour ajouter une nouvelle institution avec des scores vérifiés par le client, ajouter une entrée dans `analysis/results/pcaf_v2_scores.json` en suivant la structure existante pour Nordea / Commerzbank / Ageas. Le script utilisera automatiquement ces scores à la place du calcul automatique.
 
 ---
 
@@ -249,39 +262,10 @@ Chaque score du fichier `pcaf_assessment_detailed.csv` est accompagné d'un cham
 
 ---
 
-## Résultats finaux V3 – 25 institutions (06/04/2026)
+## Évaluations complètes (lecture complète du rapport)
 
-| Institution | Type | Part A | Part B | Part C | Pondéré |
-|---|---|---|---|---|---|
-| Swiss Re | Réassurance | 73,9 % | — | 69,2 % | **71,6 %** |
-| AXA | Assurance | 78,3 % | — | 61,5 % | **69,9 %** |
-| Allianz | Assurance | 78,3 % | — | 53,8 % | **66,0 %** |
-| ASR Nederland | Assurance | 60,9 % | — | 61,5 % | **61,2 %** |
-| Santander | Banque | 69,6 % | 30,8 % | — | **58,0 %** |
-| ING | Banque | 69,6 % | 23,1 % | — | **55,6 %** |
-| Nordea | Banque | 78,3 % | 0 % | — | **54,8 %** |
-| KBC | Bancassurance | 47,8 % | 69,2 % | 53,8 % | **54,5 %** |
-| Ageas | Assurance | 47,8 % | — | 53,8 % | **50,8 %** |
-| Aviva | Assurance | 82,6 % | — | 15,4 % | **49,0 %** |
-| UniCredit | Banque | 52,2 % | 30,8 % | — | **45,8 %** |
-| Commerzbank | Banque | 65,2 % | 0 % | — | **45,6 %** |
-| NN Group | Assurance | 65,2 % | — | 23,1 % | **44,2 %** |
-| Schroders | Gest. d'actifs | 43,5 % | — | — | **43,5 %** |
-| Zurich | Assurance | 30,4 % | — | 53,8 % | **42,1 %** |
-| Legal & General | Assurance | 56,5 % | — | 23,1 % | **39,8 %** |
-| Julius Baer | Banque | 52,2 % | 0 % | — | **36,5 %** |
-| Admiral Group | Assurance | 17,4 % | — | 53,8 % | **35,6 %** |
-| Phoenix Group | Assurance | 52,2 % | — | 15,4 % | **33,8 %** |
-| Eurazeo | Gest. d'actifs | 30,4 % | — | — | **30,4 %** |
-| Société Générale | Banque | 26,1 % | 30,8 % | — | **27,5 %** |
-| Deutsche Börse | Bourse | 26,1 % | — | — | **26,1 %** |
-| GBL | Holding | 26,1 % | — | — | **26,1 %** |
-| Crédit Agricole | Banque | 17,4 % | 23,1 % | — | **19,1 %** |
-| Amundi | Gest. d'actifs | 8,7 % | — | — | **8,7 %** |
+| Institution | Source | Méthode | Part A | Part B | Part C | Rapport |
+|---|---|---|---|---|---|---|
+| ING | Annual Report 2025 (ESEF XHTML) | Lecture complète (89 783 lignes) | **16**/23 | **5**/13 | N/A | `output/ING_PCAF_Compliance_Assessment.md` |
 
-### Vérification de cohérence
-
-- **275 lignes** générées pour 25 institutions (5 critères Part A + 3 Part B + 3 Part C)
-- **Scores pondérés** : 25/25 vérifiés (detailed → parts → overall)
-- **Evidence** : 25/25 Portfolio Coverage avec référence `[Source]`, 22/22 critères auto avec justification du score
-- **Compliance** : 1 REPORTED, 30 PARTIAL, 15 MISSING (46 entrées)
+*Les autres institutions seront évaluées selon la même méthode (lecture complète du rapport source).*
