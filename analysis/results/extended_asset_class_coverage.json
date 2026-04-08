@@ -1,4 +1,19 @@
 {
+  "AAREAL": {
+    "listed_equity_corporate_bonds": "partial",
+    "business_loans_unlisted_equity": "missing",
+    "project_finance": "N/A",
+    "commercial_real_estate": "reported",
+    "residential_mortgages": "missing",
+    "motor_vehicle_loans": "N/A",
+    "use_of_proceeds": "missing",
+    "securitized_structured": "missing",
+    "sovereign_debt": "partial",
+    "sub_sovereign_debt": "partial",
+    "capital_markets": "N/A",
+    "advisory_services": "N/A",
+    "insurance_underwriting": "N/A"
+  },
   "ADMIRAL": {
     "listed_equity_corporate_bonds": "partial",
     "business_loans_unlisted_equity": "missing",
