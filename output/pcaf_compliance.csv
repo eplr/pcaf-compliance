@@ -41,7 +41,7 @@ UniCredit,2024-12-31,Part A - Financed Emissions,PARTIAL,52,"Data Quality Score,
 UniCredit,2024-12-31,Part B - Facilitated Emissions,PARTIAL,31,"Asset Class Coverage, Temporal Coverage",High
 Zurich,2024-12-31,Part A - Financed Emissions,MISSING,30,"Data Quality Score, Portfolio Coverage, Temporal Coverage",Critical
 Zurich,2024-12-31,Part C - Insurance-Associated Emissions,PARTIAL,54,Minor gaps,High
-ING,2024-12-31,Part A - Financed Emissions,PARTIAL,70,Portfolio Coverage,High
-ING,2024-12-31,Part B - Facilitated Emissions,MISSING,23,"Asset Class Coverage, Attribution Methodology",Critical
+ING,2024-12-31,Part A - Financed Emissions,PARTIAL,70,Minor gaps,High
+ING,2024-12-31,Part B - Facilitated Emissions,PARTIAL,38,"Asset Class Coverage, Temporal Coverage",High
 Julius Baer,2024-12-31,Part A - Financed Emissions,PARTIAL,52,Portfolio Coverage,High
 Julius Baer,2024-12-31,Part B - Facilitated Emissions,MISSING,0,"Asset Class Coverage, Attribution Methodology, Temporal Coverage",Critical

@@ -9,24 +9,70 @@
     "assessment_date": "2024-12-31",
     "institution_type": "Bank",
     "Part A": {
-      "Asset Class Coverage":   {"score": 5, "max": 5, "coverage_ratio": 0.9444, "evidence": "17/18 coefficient coverage (94.4%) – all 7 asset classes covered for S1&S2+S3 except sovereign debt S3"},
-      "Data Quality Score":     {"score": 3, "max": 5, "evidence": "Average DQS between 3 and 4"},
-      "Attribution Methodology":{"score": 4, "max": 5, "evidence": "Full PCAF methodology per asset class (PCAF signatory)"},
-      "Portfolio Coverage":     {"score": 3, "max": 5, "evidence": "~75% portfolio coverage"},
-      "Temporal Coverage":      {"score": 3, "max": 3, "evidence": "3 years of history + trends + projections/targets"}
+      "Asset Class Coverage": {
+        "score": 5,
+        "max": 5,
+        "coverage_ratio": 0.9444,
+        "evidence": "17/18 coefficient coverage (94.4%) – all 7 asset classes covered for S1&S2+S3 except sovereign debt S3"
+      },
+      "Data Quality Score": {
+        "score": 3,
+        "max": 5,
+        "evidence": "Average DQS between 3 and 4"
+      },
+      "Attribution Methodology": {
+        "score": 4,
+        "max": 5,
+        "evidence": "Full PCAF methodology per asset class (PCAF signatory)"
+      },
+      "Portfolio Coverage": {
+        "score": 3,
+        "max": 5,
+        "evidence": "~75% portfolio coverage"
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "3 years of history + trends + projections/targets"
+      }
     },
     "Part B": {
-      "Asset Class Coverage":   {"score": 0, "max": 5, "coverage_ratio": 0.0, "evidence": "No facilitated emissions reported (Part B not yet implemented)"},
-      "Attribution Methodology":{"score": 0, "max": 5, "evidence": "No facilitated emissions attribution disclosed"},
-      "Temporal Coverage":      {"score": 0, "max": 3, "evidence": "No historical facilitated emissions data"}
+      "Asset Class Coverage": {
+        "score": 0,
+        "max": 5,
+        "coverage_ratio": 0.0,
+        "evidence": "No facilitated emissions reported (Part B not yet implemented)"
+      },
+      "Attribution Methodology": {
+        "score": 0,
+        "max": 5,
+        "evidence": "No facilitated emissions attribution disclosed"
+      },
+      "Temporal Coverage": {
+        "score": 0,
+        "max": 3,
+        "evidence": "No historical facilitated emissions data"
+      }
     },
     "Part C": {
-      "Asset Class Coverage":   {"score": null, "max": null, "evidence": "N/A – Nordea has no P&C insurance activity; life insurance emissions included in financed emissions"},
-      "Attribution Methodology":{"score": null, "max": null, "evidence": "N/A"},
-      "Temporal Coverage":      {"score": null, "max": null, "evidence": "N/A"}
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A – Nordea has no P&C insurance activity; life insurance emissions included in financed emissions"
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
     },
     "_compliance": {
-      "Part A": 0.7826086956521739,
+      "Part A": 0.782608695652174,
       "Part B": 0.0,
       "Part C": null
     }
@@ -35,21 +81,68 @@
     "assessment_date": "2024-12-31",
     "institution_type": "Bank",
     "Part A": {
-      "Asset Class Coverage":   {"score": 5, "max": 5, "coverage_ratio": 1.0, "evidence": "18/18 coefficient coverage (100%) – full coverage of all asset classes including sovereign debt S3 (consumption-based)"},
-      "Data Quality Score":     {"score": 3, "max": 5, "evidence": "Average DQS ~4.05 across asset classes"},
-      "Attribution Methodology":{"score": 4, "max": 5, "evidence": "Full PCAF methods per asset class (PCAF signatory)"},
-      "Portfolio Coverage":     {"score": 2, "max": 5, "evidence": "~54% portfolio coverage"},
-      "Temporal Coverage":      {"score": 1, "max": 3, "evidence": "Current year + 1 prior year (2 years)"}
+      "Asset Class Coverage": {
+        "score": 5,
+        "max": 5,
+        "coverage_ratio": 1.0,
+        "evidence": "18/18 coefficient coverage (100%) – full coverage of all asset classes including sovereign debt S3 (consumption-based)"
+      },
+      "Data Quality Score": {
+        "score": 3,
+        "max": 5,
+        "evidence": "Average DQS ~4.05 across asset classes"
+      },
+      "Attribution Methodology": {
+        "score": 4,
+        "max": 5,
+        "evidence": "Full PCAF methods per asset class (PCAF signatory)"
+      },
+      "Portfolio Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "~54% portfolio coverage"
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "Current year + 1 prior year (2 years)"
+      }
     },
     "Part B": {
-      "Asset Class Coverage":   {"score": 0, "max": 5, "coverage_ratio": 0.0, "evidence": "No facilitated emissions data published"},
-      "Attribution Methodology":{"score": 0, "max": 5, "evidence": "No facilitated emissions attribution disclosed"},
-      "Temporal Coverage":      {"score": 0, "max": 3, "evidence": "No historical facilitated emissions data"}
+      "Asset Class Coverage": {
+        "score": 0,
+        "max": 5,
+        "coverage_ratio": 0.0,
+        "evidence": "No facilitated emissions data published"
+      },
+      "Attribution Methodology": {
+        "score": 0,
+        "max": 5,
+        "evidence": "No facilitated emissions attribution disclosed"
+      },
+      "Temporal Coverage": {
+        "score": 0,
+        "max": 3,
+        "evidence": "No historical facilitated emissions data"
+      }
     },
     "Part C": {
-      "Asset Class Coverage":   {"score": 3, "max": 5, "coverage_ratio": 0.5, "evidence": "Insurance-related emissions published within financed emissions (Scopes 1, 2 and 3) but no breakdown by insurance branch – 50% coverage estimated (4/8 coefficient)"},
-      "Attribution Methodology":{"score": 0, "max": 5, "evidence": "No insurance-specific attribution methodology disclosed"},
-      "Temporal Coverage":      {"score": 0, "max": 3, "evidence": "No dedicated historical series for insurance-associated emissions"}
+      "Asset Class Coverage": {
+        "score": 3,
+        "max": 5,
+        "coverage_ratio": 0.5,
+        "evidence": "Insurance-related emissions published within financed emissions (Scopes 1, 2 and 3) but no breakdown by insurance branch – 50% coverage estimated (4/8 coefficient)"
+      },
+      "Attribution Methodology": {
+        "score": 0,
+        "max": 5,
+        "evidence": "No insurance-specific attribution methodology disclosed"
+      },
+      "Temporal Coverage": {
+        "score": 0,
+        "max": 3,
+        "evidence": "No dedicated historical series for insurance-associated emissions"
+      }
     },
     "_compliance": {
       "Part A": 0.6521739130434783,
@@ -61,21 +154,67 @@
     "assessment_date": "2025-12-31",
     "institution_type": "Bank",
     "Part A": {
-      "Asset Class Coverage":   {"score": 1, "max": 5, "coverage_ratio": 0.3333, "evidence": "6/18 coefficient coverage (33.3%) – commercial real estate (1/1, S1&S2+S3 in 2025) + listed equity/corporate bonds (3/6, S1&S2 only, PCAF database DQS 4) + sovereign debt (0.5/2, basic S1&S2 via PPP-GDP, no LULUCF/S3) + project finance (1/2, N/A CRE specialist) + mortgages (0.25/0.5, runoff portfolio excluded) + motor vehicle (0.25/0.5, N/A); corporate loans to financial institutions (~€5.8 bn) not covered in PCAF reporting"},
-      "Data Quality Score":     {"score": 3, "max": 5, "evidence": "Average PCAF DQS 3.3 as at 31 Dec 2025, weighted by financed emissions for the first time (previously unweighted); CREF portfolio DQS ranges from 2.0–4.0 by country, Treasury portfolio DQS 4 (database factors)"},
-      "Attribution Methodology":{"score": 3, "max": 5, "evidence": "PCAF-aligned methodology per covered asset class: CREF uses loan/property value attribution factor (closely based on PCAF but explicitly noted as not fully compliant); Treasury uses EVIC for corporate bonds and PPP-adjusted GDP for sovereign. Active PCAF member (D/A/CH/LI network, CRE subgroup) and published dedicated PCAF Financed Emissions Report for FY2024. Does not cover all asset classes."},
-      "Portfolio Coverage":     {"score": 4, "max": 5, "evidence": "CREF portfolio €34.0 bn + Treasury (sovereign + corporate bonds ~€8-10 bn) = ~€42-44 bn covered out of ~€47.8 bn total assets (~€44 bn investable); loans to financial institutions (~€5.8 bn) excluded; estimated coverage ~85-90%"},
-      "Temporal Coverage":      {"score": 3, "max": 3, "evidence": "3 years of CREF financed emissions (2023: 639,681 t CO2; 2024: 607,197 t CO2; 2025: 632,812 t CO2) with carbon intensity trends + 2030 target (33 kg CO2/m²) and 2050 corridor (1–6 kg CO2/m²) from formal transition plan"}
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "coverage_ratio": 0.3333,
+        "evidence": "6/18 coefficient coverage (33.3%) – commercial real estate (1/1, S1&S2+S3 in 2025) + listed equity/corporate bonds (3/6, S1&S2 only, PCAF database DQS 4) + sovereign debt (0.5/2, basic S1&S2 via PPP-GDP, no LULUCF/S3) + project finance (1/2, N/A CRE specialist) + mortgages (0.25/0.5, runoff portfolio excluded) + motor vehicle (0.25/0.5, N/A); corporate loans to financial institutions (~€5.8 bn) not covered in PCAF reporting"
+      },
+      "Data Quality Score": {
+        "score": 3,
+        "max": 5,
+        "evidence": "Average PCAF DQS 3.3 as at 31 Dec 2025, weighted by financed emissions for the first time (previously unweighted); CREF portfolio DQS ranges from 2.0–4.0 by country, Treasury portfolio DQS 4 (database factors)"
+      },
+      "Attribution Methodology": {
+        "score": 3,
+        "max": 5,
+        "evidence": "PCAF-aligned methodology per covered asset class: CREF uses loan/property value attribution factor (closely based on PCAF but explicitly noted as not fully compliant); Treasury uses EVIC for corporate bonds and PPP-adjusted GDP for sovereign. Active PCAF member (D/A/CH/LI network, CRE subgroup) and published dedicated PCAF Financed Emissions Report for FY2024. Does not cover all asset classes."
+      },
+      "Portfolio Coverage": {
+        "score": 4,
+        "max": 5,
+        "evidence": "CREF portfolio €34.0 bn + Treasury (sovereign + corporate bonds ~€8-10 bn) = ~€42-44 bn covered out of ~€47.8 bn total assets (~€44 bn investable); loans to financial institutions (~€5.8 bn) excluded; estimated coverage ~85-90%"
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "3 years of CREF financed emissions (2023: 639,681 t CO2; 2024: 607,197 t CO2; 2025: 632,812 t CO2) with carbon intensity trends + 2030 target (33 kg CO2/m²) and 2050 corridor (1–6 kg CO2/m²) from formal transition plan"
+      }
     },
     "Part B": {
-      "Asset Class Coverage":   {"score": 0, "max": 5, "coverage_ratio": 0.0, "evidence": "No facilitated emissions reported. Aareal is a specialized CRE lender with no primary-market underwriting or capital markets facilitation activities."},
-      "Attribution Methodology":{"score": 0, "max": 5, "evidence": "No facilitated emissions attribution disclosed"},
-      "Temporal Coverage":      {"score": 0, "max": 3, "evidence": "No facilitated emissions data"}
+      "Asset Class Coverage": {
+        "score": 0,
+        "max": 5,
+        "coverage_ratio": 0.0,
+        "evidence": "No facilitated emissions reported. Aareal is a specialized CRE lender with no primary-market underwriting or capital markets facilitation activities."
+      },
+      "Attribution Methodology": {
+        "score": 0,
+        "max": 5,
+        "evidence": "No facilitated emissions attribution disclosed"
+      },
+      "Temporal Coverage": {
+        "score": 0,
+        "max": 3,
+        "evidence": "No facilitated emissions data"
+      }
     },
     "Part C": {
-      "Asset Class Coverage":   {"score": null, "max": null, "evidence": "N/A – Aareal is a pure CRE bank with no insurance underwriting activities"},
-      "Attribution Methodology":{"score": null, "max": null, "evidence": "N/A"},
-      "Temporal Coverage":      {"score": null, "max": null, "evidence": "N/A"}
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A – Aareal is a pure CRE bank with no insurance underwriting activities"
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
     },
     "_compliance": {
       "Part A": 0.6086956521739131,
@@ -87,26 +226,145 @@
     "assessment_date": "2024-12-31",
     "institution_type": "Insurance",
     "Part A": {
-      "Asset Class Coverage":   {"score": 1, "max": 5, "coverage_ratio": 0.3611, "evidence": "6.5/18 coefficient coverage (36.1%) – listed equity (6/6) + partial sovereign debt (0.5/2); other asset classes excluded (insurer profile, justification provided)"},
-      "Data Quality Score":     {"score": 3, "max": 5, "evidence": "Average DQS ~2.12 for listed equities, ~2 for sovereign debt"},
-      "Attribution Methodology":{"score": 3, "max": 5, "evidence": "PCAF methodology applied for covered asset classes"},
-      "Portfolio Coverage":     {"score": 3, "max": 5, "evidence": "~71% portfolio coverage"},
-      "Temporal Coverage":      {"score": 1, "max": 3, "evidence": "Current year only"}
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "coverage_ratio": 0.3611,
+        "evidence": "6.5/18 coefficient coverage (36.1%) – listed equity (6/6) + partial sovereign debt (0.5/2); other asset classes excluded (insurer profile, justification provided)"
+      },
+      "Data Quality Score": {
+        "score": 3,
+        "max": 5,
+        "evidence": "Average DQS ~2.12 for listed equities, ~2 for sovereign debt"
+      },
+      "Attribution Methodology": {
+        "score": 3,
+        "max": 5,
+        "evidence": "PCAF methodology applied for covered asset classes"
+      },
+      "Portfolio Coverage": {
+        "score": 3,
+        "max": 5,
+        "evidence": "~71% portfolio coverage"
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "Current year only"
+      }
     },
     "Part B": {
-      "Asset Class Coverage":   {"score": 0, "max": 5, "coverage_ratio": 0.0, "evidence": "No facilitated emissions (capital markets activity) reported"},
-      "Attribution Methodology":{"score": 0, "max": 5, "evidence": "No facilitated emissions attribution"},
-      "Temporal Coverage":      {"score": 0, "max": 3, "evidence": "No facilitated emissions data"}
+      "Asset Class Coverage": {
+        "score": 0,
+        "max": 5,
+        "coverage_ratio": 0.0,
+        "evidence": "No facilitated emissions (capital markets activity) reported"
+      },
+      "Attribution Methodology": {
+        "score": 0,
+        "max": 5,
+        "evidence": "No facilitated emissions attribution"
+      },
+      "Temporal Coverage": {
+        "score": 0,
+        "max": 3,
+        "evidence": "No facilitated emissions data"
+      }
     },
     "Part C": {
-      "Asset Class Coverage":   {"score": 4, "max": 5, "coverage_ratio": 0.75, "evidence": "6/8 coefficient coverage (75%) – Commercial Lines (3/3) + Personal Motor (3/3); reinsurance branches not covered"},
-      "Attribution Methodology":{"score": 3, "max": 5, "evidence": "PCAF methodology used for commercial lines and personal motor"},
-      "Temporal Coverage":      {"score": 0, "max": 3, "evidence": "No historical time series for insurance-associated emissions"}
+      "Asset Class Coverage": {
+        "score": 4,
+        "max": 5,
+        "coverage_ratio": 0.75,
+        "evidence": "6/8 coefficient coverage (75%) – Commercial Lines (3/3) + Personal Motor (3/3); reinsurance branches not covered"
+      },
+      "Attribution Methodology": {
+        "score": 3,
+        "max": 5,
+        "evidence": "PCAF methodology used for commercial lines and personal motor"
+      },
+      "Temporal Coverage": {
+        "score": 0,
+        "max": 3,
+        "evidence": "No historical time series for insurance-associated emissions"
+      }
     },
     "_compliance": {
       "Part A": 0.4782608695652174,
       "Part B": 0.0,
       "Part C": 0.5384615384615384
+    }
+  },
+  "ING": {
+    "assessment_date": "2025-12-31",
+    "institution_type": "Bank",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 4,
+        "max": 5,
+        "coverage_ratio": 0.889,
+        "evidence": "[Verified from XHTML, L22547-23075] 16.0/18 = 88.9%. 6 asset classes reported (listed equity+bonds, business loans, project finance, CRE, mortgages, motor vehicles). Sovereign debt confirmed absent after full report search (89,783 lines). Level 4 (70-90%)."
+      },
+      "Data Quality Score": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[Verified from XHTML, L22989] Overall DQS S1&S2 = 4.0. Per asset class: Mortgages 3.9, CRE WB 3.7, CRE BB 3.3, Corporate BB 5.0, Corporate WB 4.0, Equity 4.9, Bonds 3.6. Range 3.5-4.5 -> Score 2."
+      },
+      "Attribution Methodology": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[Verified from XHTML, L22329] 'calculated in accordance with the Partnership for Carbon Accounting Financials (PCAF) methodology'. SBTi 1.5C validated (L19967). PCAF signatory not explicitly stated in report. Score 4."
+      },
+      "Portfolio Coverage": {
+        "score": 3,
+        "max": 5,
+        "evidence": "[Verified from XHTML, L23076-23092] 79.0% = 704.5 / 892.0 EUR bn. Exclusions: money market (179bn), private individuals (18bn), accrued interest (-9bn). Range 60-80% -> Score 3."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[Verified from XHTML, L19724+L19973+L20068] Terra since 2018, financed emissions ref year 2021, reductions tracked since 2019. 2030 SBTi targets + 2050 net zero. Score 3."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "coverage_ratio": 0.2,
+        "evidence": "[Verified from XHTML, L23138-23154] Syndicated loans only (45.4 EUR bn). DCM/ECM excluded (<2.5% threshold). 1 of 5 Part B classes. Level 1."
+      },
+      "Attribution Methodology": {
+        "score": 3,
+        "max": 5,
+        "evidence": "[Verified from XHTML, L23153] 'PCAF methodology for facilitated emissions, applying the prescribed weighting factor of 33 percent'. Score 3."
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[Verified from XHTML] Facilitated emissions table shows 2025 and 2024 only. 2 years. Score 1."
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A - ING is a bank, not insurer/reinsurer."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "_compliance": {
+      "Part A": 0.6957,
+      "Part B": 0.3846,
+      "Part C": null
     }
   }
 }

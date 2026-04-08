@@ -588,10 +588,12 @@ def generate_assessment():
         def append_rows(part_label, scored_rows):
             for criterion, score, max_s, evidence, priority, gap in scored_rows:
                 pct = "" if score==NA else (round((score/max_s)*100,1) if isinstance(max_s,(int,float)) and max_s>0 else "")
+                # Flag auto-generated scores as unverified
+                flagged_evidence = f"[UNVERIFIED — auto-generated, requires human verification against source report] {evidence}"
                 output_rows.append({
                     "company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
                     "pcaf_part":part_label,"criterion":criterion,"score":score,"max_score":max_s,
-                    "percentage":pct,"evidence":evidence,"priority":priority,"gap_description":gap,
+                    "percentage":pct,"evidence":flagged_evidence,"priority":priority,"gap_description":gap,
                     "assessor_notes":compl_data.get("recommendation",""),
                 })
 
