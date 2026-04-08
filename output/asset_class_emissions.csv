@@ -16,9 +16,9 @@ Ageas,2024,Commercial real estate,,0,FALSE
 Ageas,2024,Mortgages,,0,FALSE
 Ageas,2024,Motor vehicle loans,,0,FALSE
 Ageas,2024,Use of proceeds,,0,FALSE
-Ageas,2024,Securitized and structured products,3.53,40,TRUE
+Ageas,2024,Securitized and structured products,,40,TRUE
 Ageas,2024,Sovereign debt,,0,FALSE
-Ageas,2024,Sub-sovereign debt,1.18,20,TRUE
+Ageas,2024,Sub-sovereign debt,,20,TRUE
 Allianz,2024,Listed equity and corporate bonds,,40,TRUE
 Allianz,2024,Business loans and unlisted equity,,40,TRUE
 Allianz,2024,Project finance,,40,TRUE
@@ -39,16 +39,16 @@ Amundi,2024,Use of proceeds,,20,TRUE
 Amundi,2024,Securitized and structured products,,20,TRUE
 Amundi,2024,Sovereign debt,,0,FALSE
 Amundi,2024,Sub-sovereign debt,,0,FALSE
-ASR Nederland,2024,Listed equity and corporate bonds,0.11,40,TRUE
-ASR Nederland,2024,Business loans and unlisted equity,0.22,70,TRUE
+ASR Nederland,2024,Listed equity and corporate bonds,,40,TRUE
+ASR Nederland,2024,Business loans and unlisted equity,,70,TRUE
 ASR Nederland,2024,Project finance,,0,FALSE
-ASR Nederland,2024,Commercial real estate,0.11,40,TRUE
-ASR Nederland,2024,Mortgages,0.06,20,TRUE
-ASR Nederland,2024,Motor vehicle loans,0.11,40,TRUE
-ASR Nederland,2024,Use of proceeds,0.11,40,TRUE
-ASR Nederland,2024,Securitized and structured products,0.11,40,TRUE
-ASR Nederland,2024,Sovereign debt,0.06,20,TRUE
-ASR Nederland,2024,Sub-sovereign debt,0.11,40,TRUE
+ASR Nederland,2024,Commercial real estate,,40,TRUE
+ASR Nederland,2024,Mortgages,,20,TRUE
+ASR Nederland,2024,Motor vehicle loans,,40,TRUE
+ASR Nederland,2024,Use of proceeds,,40,TRUE
+ASR Nederland,2024,Securitized and structured products,,40,TRUE
+ASR Nederland,2024,Sovereign debt,,20,TRUE
+ASR Nederland,2024,Sub-sovereign debt,,40,TRUE
 Aviva,2024,Listed equity and corporate bonds,0.53,40,TRUE
 Aviva,2024,Business loans and unlisted equity,,0,FALSE
 Aviva,2024,Project finance,0.79,40,TRUE
@@ -69,26 +69,26 @@ AXA,2024,Use of proceeds,1.03,20,TRUE
 AXA,2024,Securitized and structured products,1.03,20,TRUE
 AXA,2024,Sovereign debt,3.1,40,TRUE
 AXA,2024,Sub-sovereign debt,3.1,40,TRUE
-Commerzbank,2024,Listed equity and corporate bonds,3.45,40,TRUE
-Commerzbank,2024,Business loans and unlisted equity,3.45,40,TRUE
-Commerzbank,2024,Project finance,3.45,40,TRUE
-Commerzbank,2024,Commercial real estate,1.15,20,TRUE
-Commerzbank,2024,Mortgages,1.15,20,TRUE
-Commerzbank,2024,Motor vehicle loans,3.45,40,TRUE
-Commerzbank,2024,Use of proceeds,1.15,20,TRUE
-Commerzbank,2024,Securitized and structured products,1.15,20,TRUE
-Commerzbank,2024,Sovereign debt,3.45,40,TRUE
-Commerzbank,2024,Sub-sovereign debt,1.15,20,TRUE
+Commerzbank,2024,Listed equity and corporate bonds,,40,TRUE
+Commerzbank,2024,Business loans and unlisted equity,,40,TRUE
+Commerzbank,2024,Project finance,,40,TRUE
+Commerzbank,2024,Commercial real estate,,20,TRUE
+Commerzbank,2024,Mortgages,,20,TRUE
+Commerzbank,2024,Motor vehicle loans,,40,TRUE
+Commerzbank,2024,Use of proceeds,,20,TRUE
+Commerzbank,2024,Securitized and structured products,,20,TRUE
+Commerzbank,2024,Sovereign debt,,40,TRUE
+Commerzbank,2024,Sub-sovereign debt,,20,TRUE
 Crédit Agricole,2024,Listed equity and corporate bonds,,0,FALSE
-Crédit Agricole,2024,Business loans and unlisted equity,3.84,20,TRUE
+Crédit Agricole,2024,Business loans and unlisted equity,,20,TRUE
 Crédit Agricole,2024,Project finance,,0,FALSE
 Crédit Agricole,2024,Commercial real estate,,0,FALSE
-Crédit Agricole,2024,Mortgages,3.84,20,TRUE
+Crédit Agricole,2024,Mortgages,,20,TRUE
 Crédit Agricole,2024,Motor vehicle loans,,0,FALSE
-Crédit Agricole,2024,Use of proceeds,11.53,40,TRUE
-Crédit Agricole,2024,Securitized and structured products,3.84,20,TRUE
+Crédit Agricole,2024,Use of proceeds,,40,TRUE
+Crédit Agricole,2024,Securitized and structured products,,20,TRUE
 Crédit Agricole,2024,Sovereign debt,,0,FALSE
-Crédit Agricole,2024,Sub-sovereign debt,3.84,20,TRUE
+Crédit Agricole,2024,Sub-sovereign debt,,20,TRUE
 Deutsche Börse,2024,Listed equity and corporate bonds,0.0002,20,TRUE
 Deutsche Börse,2024,Business loans and unlisted equity,,0,FALSE
 Deutsche Börse,2024,Project finance,,0,FALSE
@@ -129,15 +129,15 @@ KBC,2024,Use of proceeds,0.17,40,TRUE
 KBC,2024,Securitized and structured products,0.17,40,TRUE
 KBC,2024,Sovereign debt,0.17,40,TRUE
 KBC,2024,Sub-sovereign debt,0.09,20,TRUE
-Legal & General,2024,Listed equity and corporate bonds,0.98,70,TRUE
-Legal & General,2024,Business loans and unlisted equity,0.2,20,TRUE
-Legal & General,2024,Project finance,0.39,40,TRUE
-Legal & General,2024,Commercial real estate,0.78,70,TRUE
-Legal & General,2024,Mortgages,0.39,40,TRUE
+Legal & General,2024,Listed equity and corporate bonds,,70,TRUE
+Legal & General,2024,Business loans and unlisted equity,,20,TRUE
+Legal & General,2024,Project finance,,40,TRUE
+Legal & General,2024,Commercial real estate,,70,TRUE
+Legal & General,2024,Mortgages,,40,TRUE
 Legal & General,2024,Motor vehicle loans,,0,FALSE
-Legal & General,2024,Use of proceeds,0.98,70,TRUE
-Legal & General,2024,Securitized and structured products,0.2,20,TRUE
-Legal & General,2024,Sovereign debt,0.98,70,TRUE
+Legal & General,2024,Use of proceeds,,70,TRUE
+Legal & General,2024,Securitized and structured products,,20,TRUE
+Legal & General,2024,Sovereign debt,,70,TRUE
 Legal & General,2024,Sub-sovereign debt,,0,FALSE
 NN Group,2024,Listed equity and corporate bonds,,70,TRUE
 NN Group,2024,Business loans and unlisted equity,,20,TRUE
@@ -149,16 +149,16 @@ NN Group,2024,Use of proceeds,,40,TRUE
 NN Group,2024,Securitized and structured products,,40,TRUE
 NN Group,2024,Sovereign debt,,40,TRUE
 NN Group,2024,Sub-sovereign debt,,40,TRUE
-Nordea,2024,Listed equity and corporate bonds,1.41,40,TRUE
-Nordea,2024,Business loans and unlisted equity,0.7,20,TRUE
-Nordea,2024,Project finance,2.82,70,TRUE
-Nordea,2024,Commercial real estate,0.7,20,TRUE
-Nordea,2024,Mortgages,0.7,20,TRUE
-Nordea,2024,Motor vehicle loans,0.7,20,TRUE
-Nordea,2024,Use of proceeds,0.7,20,TRUE
-Nordea,2024,Securitized and structured products,0.7,20,TRUE
-Nordea,2024,Sovereign debt,2.82,70,TRUE
-Nordea,2024,Sub-sovereign debt,3.52,70,TRUE
+Nordea,2024,Listed equity and corporate bonds,,40,TRUE
+Nordea,2024,Business loans and unlisted equity,,20,TRUE
+Nordea,2024,Project finance,,70,TRUE
+Nordea,2024,Commercial real estate,,20,TRUE
+Nordea,2024,Mortgages,,20,TRUE
+Nordea,2024,Motor vehicle loans,,20,TRUE
+Nordea,2024,Use of proceeds,,20,TRUE
+Nordea,2024,Securitized and structured products,,20,TRUE
+Nordea,2024,Sovereign debt,,70,TRUE
+Nordea,2024,Sub-sovereign debt,,70,TRUE
 Phoenix Group,2024,Listed equity and corporate bonds,2.25,40,TRUE
 Phoenix Group,2024,Business loans and unlisted equity,,0,FALSE
 Phoenix Group,2024,Project finance,1.13,20,TRUE
@@ -219,16 +219,16 @@ UniCredit,2024,Use of proceeds,1.36,40,TRUE
 UniCredit,2024,Securitized and structured products,1.36,40,TRUE
 UniCredit,2024,Sovereign debt,1.36,40,TRUE
 UniCredit,2024,Sub-sovereign debt,0.68,20,TRUE
-Zurich,2024,Listed equity and corporate bonds,0.15,40,TRUE
+Zurich,2024,Listed equity and corporate bonds,,40,TRUE
 Zurich,2024,Business loans and unlisted equity,,0,FALSE
 Zurich,2024,Project finance,,0,FALSE
-Zurich,2024,Commercial real estate,0.15,40,TRUE
-Zurich,2024,Mortgages,0.08,20,TRUE
+Zurich,2024,Commercial real estate,,40,TRUE
+Zurich,2024,Mortgages,,20,TRUE
 Zurich,2024,Motor vehicle loans,,0,FALSE
-Zurich,2024,Use of proceeds,0.23,40,TRUE
-Zurich,2024,Securitized and structured products,0.08,20,TRUE
-Zurich,2024,Sovereign debt,0.23,40,TRUE
-Zurich,2024,Sub-sovereign debt,0.08,20,TRUE
+Zurich,2024,Use of proceeds,,40,TRUE
+Zurich,2024,Securitized and structured products,,20,TRUE
+Zurich,2024,Sovereign debt,,40,TRUE
+Zurich,2024,Sub-sovereign debt,,20,TRUE
 ING,2024,Listed equity and corporate bonds,,0,FALSE
 ING,2024,Business loans and unlisted equity,,0,FALSE
 ING,2024,Project finance,,0,FALSE
