@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="pcaf_dashboard.html" source-language="en" target-language="fr" datatype="html">
+    <header>
+      <tool tool-id="fidestra" tool-name="PCAF Dashboard Generator"/>
+    </header>
+    <body>
+      <trans-unit id="1">
+        <source>PCAF Compliance Dashboard - fidestra for Axylia</source>
+        <target></target>
+        <note>Page title</note>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>PCAF Compliance Study</source>
+        <target></target>
+        <note>Main title</note>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Prepared for</source>
+        <target></target>
+        <note>Header</note>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>CEO</source>
+        <target></target>
+        <note>Job title</note>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Chief Impact &amp; Carbon Officer</source>
+        <target></target>
+        <note>Job title</note>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Sustainability Analyst</source>
+        <target></target>
+        <note>Job title</note>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>February 2026</source>
+        <target></target>
+        <note>Date</note>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Executive Summary</source>
+        <target></target>
+        <note>Tab name</note>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Comparative Analysis</source>
+        <target></target>
+        <note>Tab name</note>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Maturity Matrix</source>
+        <target></target>
+        <note>Tab name</note>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Semantic Analysis</source>
+        <target></target>
+        <note>Tab name</note>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Gap Analysis</source>
+        <target></target>
+        <note>Tab name</note>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Recommendations</source>
+        <target></target>
+        <note>Tab name</note>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Institutions Analyzed</source>
+        <target></target>
+        <note>Stat label</note>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>PCAF Signatories</source>
+        <target></target>
+        <note>Stat label</note>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Part A Reported</source>
+        <target></target>
+        <note>Stat label</note>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Part A Partial</source>
+        <target></target>
+        <note>Stat label</note>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Avg Compliance</source>
+        <target></target>
+        <note>Stat label</note>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Critical Gaps</source>
+        <target></target>
+        <note>Stat label</note>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Key Findings</source>
+        <target></target>
+        <note>Section title</note>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>are official PCAF signatories</source>
+        <target></target>
+        <note>Key finding</note>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>mention or use PCAF methodology</source>
+        <target></target>
+        <note>Key finding</note>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>report financed emissions (Part A) with quantified data</source>
+        <target></target>
+        <note>Key finding</note>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>have partial Part A disclosure</source>
+        <target></target>
+        <note>Key finding</note>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>institution(s) have critical compliance gaps</source>
+        <target></target>
+        <note>Key finding</note>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Glossary</source>
+        <target></target>
+        <note>Section title</note>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Partnership for Carbon Accounting Financials</source>
+        <target></target>
+        <note>Glossary - PCAF</note>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Data Quality Score (1=best, 5=lowest)</source>
+        <target></target>
+        <note>Glossary - DQS</note>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Financed emissions (Scope 3 Cat. 15)</source>
+        <target></target>
+        <note>Glossary - Part A</note>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Facilitated emissions (banks)</source>
+        <target></target>
+        <note>Glossary - Part B</note>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Insurance-associated emissions</source>
+        <target></target>
+        <note>Glossary - Part C</note>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>Tonnes of CO2 equivalent</source>
+        <target></target>
+        <note>Glossary - tCO2e</note>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Million tonnes of CO2 equivalent</source>
+        <target></target>
+        <note>Glossary - MtCO2e</note>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Greenhouse Gas</source>
+        <target></target>
+        <note>Glossary - GHG</note>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Direct emissions from owned sources</source>
+        <target></target>
+        <note>Glossary - Scope 1</note>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>Indirect emissions from purchased energy</source>
+        <target></target>
+        <note>Glossary - Scope 2</note>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>All other indirect emissions in value chain</source>
+        <target></target>
+        <note>Glossary - Scope 3</note>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Science Based Targets initiative</source>
+        <target></target>
+        <note>Glossary - SBTi</note>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>Task Force on Climate-related Financial Disclosures</source>
+        <target></target>
+        <note>Glossary - TCFD</note>
+      </trans-unit>
+      <trans-unit id="40">
+        <source>Insurance Transaction Value method</source>
+        <target></target>
+        <note>Glossary - ITV</note>
+      </trans-unit>
+      <trans-unit id="41">
+        <source>Full Institution Ranking</source>
+        <target></target>
+        <note>Section title</note>
+      </trans-unit>
+      <trans-unit id="42">
+        <source>Scoring Methodology:</source>
+        <target></target>
+        <note>Label</note>
+      </trans-unit>
+      <trans-unit id="43">
+        <source>Score = PCAF Status (20% if signatory, 10% if mentioned) + Part A (40% if reported, 20% if partial) + Part B/C (15% if reported, 7.5% if partial) + Asset Classes (2.5% per class reported, 1.25% if partial).</source>
+        <target></target>
+        <note>Methodology explanation</note>
+      </trans-unit>
+      <trans-unit id="44">
+        <source>Example: KBC = 20% (signatory) + 40% (Part A) + 7.5% (Part B partial) + 7.5% (Part C partial) + 7.5% (3 asset classes) =</source>
+        <target></target>
+        <note>Methodology example</note>
+      </trans-unit>
+      <trans-unit id="45">
+        <source>Score Distribution</source>
+        <target></target>
+        <note>Section title</note>
+      </trans-unit>
+      <trans-unit id="46">
+        <source>Institution</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="47">
+        <source>Type</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="48">
+        <source>Score</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="49">
+        <source>Financed Em.</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="50">
+        <source>PCAF Status</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="51">
+        <source>Part B/C</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="52">
+        <source>Asset Coverage</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="53">
+        <source>Maturity</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="54">
+        <source>Critical Gap</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="55">
+        <source>Primary Recommendation</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="56">
+        <source>Terminology Gap vs PCAF Standard</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="57">
+        <source>Data Quality</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="58">
+        <source>Coverage</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="59">
+        <source>Transparency</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="60">
+        <source>Climate</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="61">
+        <source>Insurance</source>
+        <target></target>
+        <note>Table header</note>
+      </trans-unit>
+      <trans-unit id="62">
+        <source>bank</source>
+        <target></target>
+        <note>Institution type</note>
+      </trans-unit>
+      <trans-unit id="63">
+        <source>insurer</source>
+        <target></target>
+        <note>Institution type</note>
+      </trans-unit>
+      <trans-unit id="64">
+        <source>reinsurer</source>
+        <target></target>
+        <note>Institution type</note>
+      </trans-unit>
+      <trans-unit id="65">
+        <source>bancassurance</source>
+        <target></target>
+        <note>Institution type</note>
+      </trans-unit>
+      <trans-unit id="66">
+        <source>asset_manager</source>
+        <target></target>
+        <note>Institution type</note>
+      </trans-unit>
+      <trans-unit id="67">
+        <source>exchange</source>
+        <target></target>
+        <note>Institution type</note>
+      </trans-unit>
+      <trans-unit id="68">
+        <source>investment_holding</source>
+        <target></target>
+        <note>Institution type</note>
+      </trans-unit>
+      <trans-unit id="69">
+        <source>reported</source>
+        <target></target>
+        <note>Status value</note>
+      </trans-unit>
+      <trans-unit id="70">
+        <source>partial</source>
+        <target></target>
+        <note>Status value</note>
+      </trans-unit>
+      <trans-unit id="71">
+        <source>missing</source>
+        <target></target>
+        <note>Status value</note>
+      </trans-unit>
+      <trans-unit id="72">
+        <source>Yes</source>
+        <target></target>
+        <note>Status value</note>
+      </trans-unit>
+      <trans-unit id="73">
+        <source>No</source>
+        <target></target>
+        <note>Status value</note>
+      </trans-unit>
+      <trans-unit id="74">
+        <source>None identified</source>
+        <target></target>
+        <note>Gap status - positive</note>
+      </trans-unit>
+      <trans-unit id="75">
+        <source>PCAF Maturity Heatmap</source>
+        <target></target>
+        <note>Section title</note>
+      </trans-unit>
+      <trans-unit id="76">
+        <source>Color scale:</source>
+        <target></target>
+        <note>Label</note>
+      </trans-unit>
+      <trans-unit id="77">
+        <source>Leading</source>
+        <target></target>
+        <note>Maturity level 5</note>
+      </trans-unit>
+      <trans-unit id="78">
+        <source>Advanced</source>
+        <target></target>
+        <note>Maturity level 4</note>
+      </trans-unit>
+      <trans-unit id="79">
+        <source>Developing</source>
+        <target></target>
+        <note>Maturity level 3</note>
+      </trans-unit>
+      <trans-unit id="80">
+        <source>Initiating</source>
+        <target></target>
+        <note>Maturity level 2</note>
+      </trans-unit>
+      <trans-unit id="81">
+        <source>Aware</source>
+        <target></target>
+        <note>Maturity level 1</note>
+      </trans-unit>
+      <trans-unit id="82">
+        <source>None</source>
+        <target></target>
+        <note>Maturity level 0</note>
+      </trans-unit>
+      <trans-unit id="83">
+        <source>Asset Coverage format: &quot;X+Yp&quot; = X classes with full reporting + Y classes with partial reporting</source>
+        <target></target>
+        <note>Legend explanation</note>
+      </trans-unit>
+      <trans-unit id="84">
+        <source>DQS Scale (PCAF Standard):</source>
+        <target></target>
+        <note>Label</note>
+      </trans-unit>
+      <trans-unit id="85">
+        <source>Verified data from investee</source>
+        <target></target>
+        <note>DQS level 1</note>
+      </trans-unit>
+      <trans-unit id="86">
+        <source>Unverified data from investee</source>
+        <target></target>
+        <note>DQS level 2</note>
+      </trans-unit>
+      <trans-unit id="87">
+        <source>Physical activity estimates</source>
+        <target></target>
+        <note>DQS level 3</note>
+      </trans-unit>
+      <trans-unit id="88">
+        <source>Economic activity estimates</source>
+        <target></target>
+        <note>DQS level 4</note>
+      </trans-unit>
+      <trans-unit id="89">
+        <source>Sector averages</source>
+        <target></target>
+        <note>DQS level 5</note>
+      </trans-unit>
+      <trans-unit id="90">
+        <source>PCAF recommends targeting portfolio DQS ≤ 2.5</source>
+        <target></target>
+        <note>DQS recommendation</note>
+      </trans-unit>
+      <trans-unit id="91">
+        <source>Terminology Gap Analysis</source>
+        <target></target>
+        <note>Section title</note>
+      </trans-unit>
+      <trans-unit id="92">
+        <source>Comparison of institution-specific terminology vs. PCAF standard definitions</source>
+        <target></target>
+        <note>Section description</note>
+      </trans-unit>
+      <trans-unit id="93">
+        <source>Uses &apos;carbon footprint&apos; instead of &apos;financed emissions&apos;; no explicit PCAF asset class breakdown</source>
+        <target></target>
+        <note>Semantic gap - ADMIRAL</note>
+      </trans-unit>
+      <trans-unit id="94">
+        <source>Reports &apos;investment portfolio emissions&apos; without PCAF attribution methodology details</source>
+        <target></target>
+        <note>Semantic gap - AGEAS</note>
+      </trans-unit>
+      <trans-unit id="95">
+        <source>Uses &apos;portfolio carbon footprint&apos; interchangeably with &apos;financed emissions&apos;; proprietary intensity metrics</source>
+        <target></target>
+        <note>Semantic gap - ALLIANZ</note>
+      </trans-unit>
+      <trans-unit id="96">
+        <source>Focuses on &apos;carbon intensity&apos; (tCO2e/€M) rather than absolute financed emissions</source>
+        <target></target>
+        <note>Semantic gap - AMUNDI</note>
+      </trans-unit>
+      <trans-unit id="97">
+        <source>Dutch terminology &apos;gefinancierde emissies&apos; aligned with PCAF; reports DQS as &apos;datakwaliteitsscore&apos;</source>
+        <target></target>
+        <note>Semantic gap - ASRNEDERLAND</note>
+      </trans-unit>
+      <trans-unit id="98">
+        <source>Strong PCAF alignment; minor gap in &apos;operational carbon&apos; vs &apos;financed carbon&apos; distinction</source>
+        <target></target>
+        <note>Semantic gap - AVIVA</note>
+      </trans-unit>
+      <trans-unit id="99">
+        <source>Uses &apos;temperature alignment&apos; metrics alongside PCAF; some French terminology in global reports</source>
+        <target></target>
+        <note>Semantic gap - AXA</note>
+      </trans-unit>
+      <trans-unit id="100">
+        <source>German &apos;finanzierte Emissionen&apos; well-aligned; gaps in SME loan attribution methodology</source>
+        <target></target>
+        <note>Semantic gap - COMMERZBANK</note>
+      </trans-unit>
+      <trans-unit id="101">
+        <source>French &apos;empreinte carbone du portefeuille&apos; differs from PCAF&apos;s &apos;financed emissions&apos; concept</source>
+        <target></target>
+        <note>Semantic gap - CREDITAGRICOLE</note>
+      </trans-unit>
+      <trans-unit id="102">
+        <source>Limited PCAF terminology; uses &apos;Scope 3 Category 15&apos; without full PCAF framework</source>
+        <target></target>
+        <note>Semantic gap - DEUTSCHEBOERSE</note>
+      </trans-unit>
+      <trans-unit id="103">
+        <source>Private equity focus; uses &apos;portfolio company emissions&apos; without PCAF attribution factors</source>
+        <target></target>
+        <note>Semantic gap - EURAZEO</note>
+      </trans-unit>
+      <trans-unit id="104">
+        <source>Holding company metrics; &apos;look-through emissions&apos; terminology differs from PCAF approach</source>
+        <target></target>
+        <note>Semantic gap - GBL</note>
+      </trans-unit>
+      <trans-unit id="105">
+        <source>Strong alignment; minor gaps in Belgian vs PCAF terminology for mortgage portfolios</source>
+        <target></target>
+        <note>Semantic gap - KBC</note>
+      </trans-unit>
+      <trans-unit id="106">
+        <source>UK-specific &apos;TCFD-aligned&apos; metrics; some divergence in real estate methodology</source>
+        <target></target>
+        <note>Semantic gap - LEGALGENERAL</note>
+      </trans-unit>
+      <trans-unit id="107">
+        <source>Dutch PCAF pioneer; strong alignment but uses &apos;beleggingsportefeuille&apos; locally</source>
+        <target></target>
+        <note>Semantic gap - NNGROUP</note>
+      </trans-unit>
+      <trans-unit id="108">
+        <source>Nordic sustainability terms; &apos;climate impact&apos; used alongside PCAF financed emissions</source>
+        <target></target>
+        <note>Semantic gap - NORDEA</note>
+      </trans-unit>
+      <trans-unit id="109">
+        <source>UK pension focus; &apos;investment emissions&apos; terminology without full PCAF attribution</source>
+        <target></target>
+        <note>Semantic gap - PHOENIXGROUP</note>
+      </trans-unit>
+      <trans-unit id="110">
+        <source>Spanish &apos;huella de carbono financiada&apos; well-aligned; comprehensive PCAF adoption</source>
+        <target></target>
+        <note>Semantic gap - SANTANDER</note>
+      </trans-unit>
+      <trans-unit id="111">
+        <source>Asset manager terminology; &apos;portfolio carbon footprint&apos; vs PCAF &apos;financed emissions&apos;</source>
+        <target></target>
+        <note>Semantic gap - SCHRODERS</note>
+      </trans-unit>
+      <trans-unit id="112">
+        <source>French banking terms; &apos;encours financés&apos; methodology differs from PCAF standard</source>
+        <target></target>
+        <note>Semantic gap - SOCGEN</note>
+      </trans-unit>
+      <trans-unit id="113">
+        <source>Reinsurance-specific; &apos;underwriting footprint&apos; extends beyond standard PCAF scope</source>
+        <target></target>
+        <note>Semantic gap - SWISSRE</note>
+      </trans-unit>
+      <trans-unit id="114">
+        <source>Italian &apos;emissioni finanziate&apos; aligned; gaps in sovereign debt methodology</source>
+        <target></target>
+        <note>Semantic gap - UNICREDIT</note>
+      </trans-unit>
+      <trans-unit id="115">
+        <source>Insurance-specific metrics; &apos;investment footprint&apos; terminology alongside PCAF</source>
+        <target></target>
+        <note>Semantic gap - ZURICH</note>
+      </trans-unit>
+      <trans-unit id="116">
+        <source>Compliance Gaps by Institution</source>
+        <target></target>
+        <note>Section title</note>
+      </trans-unit>
+      <trans-unit id="117">
+        <source>Gap Assessment:</source>
+        <target></target>
+        <note>Label</note>
+      </trans-unit>
+      <trans-unit id="118">
+        <source>Each institution is evaluated against PCAF requirements. Critical gaps indicate missing mandatory disclosures; recommendations prioritize high-impact improvements.</source>
+        <target></target>
+        <note>Gap assessment explanation</note>
+      </trans-unit>
+      <trans-unit id="119">
+        <source>Non-PCAF signatory with limited financed emissions disclosure</source>
+        <target></target>
+        <note>Critical gap text</note>
+      </trans-unit>
+      <trans-unit id="120">
+        <source>CRITICAL: No PCAF methodology or financed emissions reported</source>
+        <target></target>
+        <note>Critical gap text</note>
+      </trans-unit>
+      <trans-unit id="121">
+        <source>Asset Class Coverage Matrix</source>
+        <target></target>
+        <note>Section title</note>
+      </trans-unit>
+      <trans-unit id="122">
+        <source>Complete PCAF asset class coverage: Part A (7 classes), Part B (2 classes for banks), Part C (insurance)</source>
+        <target></target>
+        <note>Section description</note>
+      </trans-unit>
+      <trans-unit id="123">
+        <source>Part A — Financed Emissions (7 Asset Classes)</source>
+        <target></target>
+        <note>Subsection title</note>
+      </trans-unit>
+      <trans-unit id="124">
+        <source>Listed Equity &amp; Bonds</source>
+        <target></target>
+        <note>Asset class</note>
+      </trans-unit>
+      <trans-unit id="125">
+        <source>Business Loans</source>
+        <target></target>
+        <note>Asset class</note>
+      </trans-unit>
+      <trans-unit id="126">
+        <source>Project Finance</source>
+        <target></target>
+        <note>Asset class</note>
+      </trans-unit>
+      <trans-unit id="127">
+        <source>Commercial RE</source>
+        <target></target>
+        <note>Asset class</note>
+      </trans-unit>
+      <trans-unit id="128">
+        <source>Mortgages</source>
+        <target></target>
+        <note>Asset class</note>
+      </trans-unit>
+      <trans-unit id="129">
+        <source>Motor Vehicles</source>
+        <target></target>
+        <note>Asset class</note>
+      </trans-unit>
+      <trans-unit id="130">
+        <source>Sovereign</source>
+        <target></target>
+        <note>Asset class</note>
+      </trans-unit>
+      <trans-unit id="131">
+        <source>Part B — Facilitated Emissions (Banks only)</source>
+        <target></target>
+        <note>Subsection title</note>
+      </trans-unit>
+      <trans-unit id="132">
+        <source>Capital Markets</source>
+        <target></target>
+        <note>Asset class</note>
+      </trans-unit>
+      <trans-unit id="133">
+        <source>Advisory Services</source>
+        <target></target>
+        <note>Asset class</note>
+      </trans-unit>
+      <trans-unit id="134">
+        <source>Part C — Insurance-Associated Emissions</source>
+        <target></target>
+        <note>Subsection title</note>
+      </trans-unit>
+      <trans-unit id="135">
+        <source>Insurance Underwriting</source>
+        <target></target>
+        <note>Asset class</note>
+      </trans-unit>
+      <trans-unit id="136">
+        <source>PCAF Recommendations Adherence</source>
+        <target></target>
+        <note>Section title</note>
+      </trans-unit>
+      <trans-unit id="137">
+        <source>Analysis of adherence to PCAF best practice recommendations (beyond minimum compliance)</source>
+        <target></target>
+        <note>Section description</note>
+      </trans-unit>
+      <trans-unit id="138">
+        <source>6 Categories Evaluated</source>
+        <target></target>
+        <note>Subsection title</note>
+      </trans-unit>
+      <trans-unit id="139">
+        <source>DQS tracking, primary data, documentation</source>
+        <target></target>
+        <note>Category 1 description</note>
+      </trans-unit>
+      <trans-unit id="140">
+        <source>Targets, difficult assets, transparency</source>
+        <target></target>
+        <note>Category 2 description</note>
+      </trans-unit>
+      <trans-unit id="141">
+        <source>Investee inclusion, sector estimates</source>
+        <target></target>
+        <note>Category 3 description</note>
+      </trans-unit>
+      <trans-unit id="142">
+        <source>Methodology, engagement, comparability</source>
+        <target></target>
+        <note>Category 4 description</note>
+      </trans-unit>
+      <trans-unit id="143">
+        <source>SBTi, avoided emissions, intensity</source>
+        <target></target>
+        <note>Category 5 description</note>
+      </trans-unit>
+      <trans-unit id="144">
+        <source>Material lines, ITV, underwriting</source>
+        <target></target>
+        <note>Category 6 description</note>
+      </trans-unit>
+      <trans-unit id="145">
+        <source>Maintain current reporting standards</source>
+        <target></target>
+        <note>Recommendation</note>
+      </trans-unit>
+      <trans-unit id="146">
+        <source>Expand financed emissions disclosure with PCAF methodology</source>
+        <target></target>
+        <note>Recommendation</note>
+      </trans-unit>
+      <trans-unit id="147">
+        <source>Formalize PCAF membership and expand asset class coverage</source>
+        <target></target>
+        <note>Recommendation</note>
+      </trans-unit>
+      <trans-unit id="148">
+        <source>Adopt PCAF methodology for financed emissions calculation</source>
+        <target></target>
+        <note>Recommendation</note>
+      </trans-unit>
+      <trans-unit id="149">
+        <source>Improve DQS and expand Scope 3 coverage</source>
+        <target></target>
+        <note>Recommendation</note>
+      </trans-unit>
+      <trans-unit id="150">
+        <source>Expand Part B/C reporting</source>
+        <target></target>
+        <note>Recommendation</note>
+      </trans-unit>
+      <trans-unit id="151">
+        <source>Add quantified financed emissions disclosure</source>
+        <target></target>
+        <note>Recommendation</note>
+      </trans-unit>
+      <trans-unit id="152">
+        <source>Consider PCAF membership to formalize methodology alignment</source>
+        <target></target>
+        <note>Recommendation</note>
+      </trans-unit>
+      <trans-unit id="153">
+        <source>Data based on publicly available annual reports and sustainability disclosures</source>
+        <target></target>
+        <note>Footer</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="87397781-b5d7-4a3f-909d-28aa082ff172" SettingsBundleGuid="16272dab-6b76-40e3-84b1-83c4f6ebddbb" Version="4.0.0.0" Owner="FIDESTRA\fidestra" ProjectTemplateGuid="10004f3b-4acf-4425-a3e3-38d3b3514276" ReferenceProjectGuid="00000000-0000-0000-0000-000000000000">
+  <LanguageDirections>
+    <LanguageDirection Guid="915bdee6-5332-4c09-bc88-c79061c560b4" SettingsBundleGuid="97f0cb6e-62ae-4c72-a935-612043593630" TargetLanguageCode="fr-FR" SourceLanguageCode="en-GB">
+      <AutoSuggestDictionaries />
+      <AnalysisStatistics WordCountStatus="Complete" AnalysisStatus="Complete">
+        <Total Words="1830" Characters="9147" Segments="705" Placeables="157" Tags="0" />
+        <Repetitions Words="256" Characters="1256" Segments="78" Placeables="0" Tags="0" />
+        <Perfect Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+        <InContextExact Words="260" Characters="876" Segments="239" Placeables="5" Tags="0" />
+        <Exact Words="406" Characters="1436" Segments="304" Placeables="151" Tags="0" />
+        <Fuzzy>
+          <CountData Words="60" Characters="377" Segments="7" Placeables="0" Tags="0" />
+          <CountData Words="208" Characters="1300" Segments="16" Placeables="0" Tags="0" />
+          <CountData Words="417" Characters="2587" Segments="29" Placeables="0" Tags="0" />
+          <CountData Words="8" Characters="40" Segments="3" Placeables="0" Tags="0" />
+        </Fuzzy>
+        <New Words="215" Characters="1275" Segments="29" Placeables="1" Tags="0" />
+        <Locked Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+      </AnalysisStatistics>
+      <CascadeItem OverrideParent="false" StopSearchingWhenResultsFound="false" />
+    </LanguageDirection>
+  </LanguageDirections>
+  <TermbaseConfiguration>
+    <RecognitionOptions>
+      <ShowWithNoAvailableTranslation>false</ShowWithNoAvailableTranslation>
+      <MinimumMatchValue>70</MinimumMatchValue>
+      <SearchDepth>200</SearchDepth>
+      <SearchOrder>Parallel</SearchOrder>
+    </RecognitionOptions>
+  </TermbaseConfiguration>
+  <SettingsBundles>
+    <SettingsBundle Guid="16272dab-6b76-40e3-84b1-83c4f6ebddbb">
+      <SettingsBundle>
+        <SettingsGroup Id="TerminologyProviderSettings">
+          <Setting Id="TermbasesOrder">
+            <ArrayOfstring xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            </ArrayOfstring>
+          </Setting>
+          <Setting Id="Termbases">
+            <ArrayOfTermbase xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Sdl.ProjectApi.Implementation.Xml">
+            </ArrayOfTermbase>
+          </Setting>
+        </SettingsGroup>
+        <SettingsGroup Id="QAVerificationSettings">
+          <Setting Id="Enabled">True</Setting>
+        </SettingsGroup>
+        <SettingsGroup Id="SettingsTagVerifier">
+          <Setting Id="Enabled">True</Setting>
+        </SettingsGroup>
+        <SettingsGroup Id="SettingsTermVerifier">
+          <Setting Id="Enabled">False</Setting>
+        </SettingsGroup>
+        <SettingsGroup Id="TranslationMemorySettings">
+          <Setting Id="HardFilter" />
+        </SettingsGroup>
+        <SettingsGroup Id="TranslateTaskSettings">
+          <Setting Id="MinimumMatchScore">70</Setting>
+          <Setting Id="NoTranslationMemoryMatchFoundAction">CopySourceToTarget</Setting>
+        </SettingsGroup>
+        <SettingsGroup Id="FileViewServiceSettings">
+          <Setting Id="SelectedTargetLanguageCode">fr-FR</Setting>
+        </SettingsGroup>
+        <SettingsGroup Id="Plugin.AnyTM.SourceLanguages">
+          <Setting Id="HasMixedSourceLanguages">False</Setting>
+          <Setting Id="AutoDetectSourceLanguage">True</Setting>
+          <Setting Id="SourceLanguages">en-GB</Setting>
+        </SettingsGroup>
+        <SettingsGroup Id="ExportFilesSettings">
+          <Setting Id="ExportLocation">C:\Users\fidestra\OneDrive - fidestra\03_ACCOUNTS\Axylia\pcaf-compliance\translation\Coverage\out</Setting>
+        </SettingsGroup>
+      </SettingsBundle>
+    </SettingsBundle>
+    <SettingsBundle Guid="97f0cb6e-62ae-4c72-a935-612043593630">
+      <SettingsBundle>
+        <SettingsGroup Id="TranslateTaskSettings">
+          <Setting Id="NoTranslationMemoryMatchFoundAction">ApplyAutomatedTranslation</Setting>
+        </SettingsGroup>
+      </SettingsBundle>
+    </SettingsBundle>
+  </SettingsBundles>
+  <InitialTaskTemplate Description="ComplexTask_Prepare_NoProjectTM_Description" Name="ComplexTask_Prepare_NoProjectTM_Name" Id="Sdl.ProjectApi.AutomaticTask.Prepare.NoProjectTM">
+    <SubTaskTemplates>
+      <SubTaskTemplate TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Conversion" />
+      <SubTaskTemplate TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Split" />
+      <SubTaskTemplate TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.PerfectMatch" />
+      <SubTaskTemplate TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Translate" />
+      <SubTaskTemplate TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Analysis" />
+    </SubTaskTemplates>
+  </InitialTaskTemplate>
+  <AnalysisBands>
+    <AnalysisBand MinimumMatchValue="50" />
+    <AnalysisBand MinimumMatchValue="75" />
+    <AnalysisBand MinimumMatchValue="85" />
+    <AnalysisBand MinimumMatchValue="95" />
+  </AnalysisBands>
+  <ManualTaskTemplates />
+  <Users>
+    <User UserId="FIDESTRA\fidestra" FullName="FIDESTRA\fidestra" Description="" Email="it@fidestra.fr" PhoneNumber="" EmailType="Smtp" />
+  </Users>
+  <CascadeItem OverrideParent="true" StopSearchingWhenResultsFound="false">
+    <CascadeEntryItem PerformConcordanceSearch="true" Penalty="0" PerformUpdate="false" PerformNormalSearch="true">
+      <MainTranslationProviderItem Uri="sdltm.file:///C:/Users/fidestra/OneDrive - fidestra/04_PROJETS/_01_Hermès/ESMA/_resources/ESMA_EN-FR.sdltm" Enabled="true" />
+      <ProjectTranslationProviderItem Uri="sdltm.file:///Tm/fr-FR/PCAF Asset Class Coverage_ESMA_EN-FR.sdltm" Enabled="true" />
+    </CascadeEntryItem>
+    <CascadeEntryItem PerformConcordanceSearch="false" Penalty="0" PerformUpdate="false" PerformNormalSearch="true">
+      <MainTranslationProviderItem Uri="modernmt:///?sm=645471&amp;k=IMslHFF8OkfeATY%2blp5ThS%2b%2fnhKvJdBTa1OEhJ8zOWS0mhWnGbp9mJJXu5Rn2ZuGPd0JtDAB7OnBUNBGSN8DxZa9IXwv0cND%2fIG1cDY%2bA764VrKD9QKQLIj5TsZxDZ0SZ1pKEHhrcXVr%2fuhS%2fx4UPwFkfzAqVuBq0HJ9n4wTl98%3d" Enabled="false" />
+    </CascadeEntryItem>
+    <CascadeEntryItem PerformConcordanceSearch="true" Penalty="0" PerformUpdate="true" PerformNormalSearch="true">
+      <MainTranslationProviderItem Uri="sdltm.file:///C:/Users/fidestra/OneDrive - fidestra/03_ACCOUNTS/Axylia/pcaf-compliance/translation/tm/pcaf-compliance.sdltm" Enabled="true" />
+      <ProjectTranslationProviderItem Uri="sdltm.file:///Tm/fr-FR/PCAF Asset Class Coverage_pcaf-compliance.sdltm" Enabled="true" />
+    </CascadeEntryItem>
+  </CascadeItem>
+  <GeneralProjectInfo IsInPlace="false" IsImported="false" Name="PCAF Asset Class Coverage" CreatedAt="2026-02-26T16:01:30.830756Z" StartedAt="2026-02-26T16:02:55.3527656Z" Status="Started" CreatedBy="FIDESTRA\fidestra">
+    <Customer Guid="0748f113-cc30-49af-870c-fb7ecffe4294" Name="" Email="" />
+  </GeneralProjectInfo>
+  <SourceLanguageCode>en-GB</SourceLanguageCode>
+  <ProjectFiles>
+    <ProjectFile Guid="05608de4-f103-423e-b6b0-8337d1a65c73" Path="" Role="Translatable" Name="partial_coverage_analysis_EN.xlsx" ParentProjectFileGuid="00000000-0000-0000-0000-000000000000" FilterDefinitionId="SpreadsheetML v. 1">
+      <SpecificTargetLanguages />
+      <LanguageFiles>
+        <LanguageFile Guid="fca34344-b225-424d-94ae-258f4a2a1e17" SettingsBundleGuid="e1c27a77-aa2a-48ef-9358-9664303af6e2" LanguageCode="en-GB">
+          <FileVersions>
+            <FileVersion Guid="1d48ffce-e760-4d34-8e77-3e0a62506b7e" VersionNumber="1" Size="11186" FileName="partial_coverage_analysis_EN.xlsx" PhysicalPath="en-GB\partial_coverage_analysis_EN.xlsx" CreatedBy="FIDESTRA\fidestra" CreatedAt="2026-02-26T19:15:15.5088906Z" FileTimeStamp="2026-02-26T19:12:27Z" IsAutoUpload="false" />
+            <FileVersion Guid="a5a7464f-87cc-4805-a73e-4c998db37340" VersionNumber="2" Size="350898" FileName="partial_coverage_analysis_EN.xlsx.sdlxliff" PhysicalPath="en-GB\partial_coverage_analysis_EN.xlsx.sdlxliff" Comment="" CreatedBy="FIDESTRA\fidestra" CreatedAt="2026-02-26T19:15:35.7588601Z" FileTimeStamp="2026-02-26T19:15:35.7568523Z" IsAutoUpload="false" />
+          </FileVersions>
+          <AnalysisStatistics WordCountStatus="None" AnalysisStatus="None">
+            <Total Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Repetitions Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Perfect Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <InContextExact Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Exact Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Fuzzy>
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            </Fuzzy>
+            <New Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Locked Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+          </AnalysisStatistics>
+          <ChildFiles />
+        </LanguageFile>
+        <LanguageFile Guid="85c6f310-dfa4-4aaf-afbc-79e1d2a53128" SettingsBundleGuid="2dc3a402-4ad7-4b40-9bb9-0d2e7ab3e4de" LanguageCode="fr-FR">
+          <FileVersions>
+            <FileVersion Guid="a061063a-af24-4bdf-bd39-c7e6139e3aad" VersionNumber="3" Size="350898" FileName="partial_coverage_analysis_EN.xlsx.sdlxliff" PhysicalPath="fr-FR\partial_coverage_analysis_EN.xlsx.sdlxliff" CreatedBy="FIDESTRA\fidestra" CreatedAt="2026-02-26T19:15:35.7608681Z" FileTimeStamp="2026-02-26T19:15:35.7568523Z" IsAutoUpload="false" />
+            <FileVersion Guid="373f56e1-85f1-42a8-9f5e-f33dd83476a0" VersionNumber="4" Size="694356" FileName="partial_coverage_analysis_EN.xlsx.sdlxliff" PhysicalPath="fr-FR\partial_coverage_analysis_EN.xlsx.sdlxliff" Comment="Created by 'Appliquer PerfectMatch+Pré-traduire les fichiers+Analyser les fichiers+Remplir les mémoires de traduction du projet'" CreatedBy="FIDESTRA\fidestra" CreatedAt="2026-02-26T19:15:44.2381934Z" FileTimeStamp="2026-02-26T19:15:44.2361777Z" IsAutoUpload="false" />
+          </FileVersions>
+          <AnalysisStatistics WordCountFileTimeStamp="2026-02-26T19:15:44.2361777Z" WordCountStatus="Complete" AnalysisFileTimeStamp="2026-02-26T19:15:44.2361777Z" AnalysisStatus="Complete">
+            <Total Words="1830" Characters="9147" Segments="705" Placeables="157" Tags="0" />
+            <Repetitions Words="256" Characters="1256" Segments="78" Placeables="0" Tags="0" />
+            <Perfect Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <InContextExact Words="260" Characters="876" Segments="239" Placeables="5" Tags="0" />
+            <Exact Words="406" Characters="1436" Segments="304" Placeables="151" Tags="0" />
+            <Fuzzy>
+              <CountData Words="60" Characters="377" Segments="7" Placeables="0" Tags="0" />
+              <CountData Words="208" Characters="1300" Segments="16" Placeables="0" Tags="0" />
+              <CountData Words="417" Characters="2587" Segments="29" Placeables="0" Tags="0" />
+              <CountData Words="8" Characters="40" Segments="3" Placeables="0" Tags="0" />
+            </Fuzzy>
+            <New Words="215" Characters="1275" Segments="29" Placeables="1" Tags="0" />
+            <Locked Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+          </AnalysisStatistics>
+          <ConfirmationStatistics FileTimeStamp="2026-02-26T19:15:35.7568523Z" Status="Complete">
+            <Unspecified Words="361" Characters="2006" Segments="69" Placeables="1" Tags="0" />
+            <Draft Words="803" Characters="4829" Segments="93" Placeables="0" Tags="0" />
+            <Translated Words="666" Characters="2312" Segments="543" Placeables="156" Tags="0" />
+            <RejectedTranslation Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <ApprovedTranslation Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <RejectedSignOff Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <ApprovedSignOff Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+          </ConfirmationStatistics>
+          <ChildFiles />
+        </LanguageFile>
+      </LanguageFiles>
+      <PreviousBilingualFiles />
+    </ProjectFile>
+  </ProjectFiles>
+  <Tasks>
+    <AutomaticTask Guid="6eb657d0-4aea-48a9-9819-0be48c5c02aa" PercentComplete="100" Status="Completed" CreatedAt="2026-02-26T16:02:06.3854472Z" PredecessorTaskGuid="00000000-0000-0000-0000-000000000000" CreatedBy="FIDESTRA\fidestra" CompletedAt="2026-02-26T16:02:06.6523742Z" StartedAt="2026-02-26T16:02:06.6054391Z">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Scan</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files />
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="e72069cb-1d34-4186-bcf8-d2aba495b1cb" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports />
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="d1377f1e-f193-4467-88a5-d00417d351d7" ComplexTaskTemplateId="Sdl.ProjectApi.AutomaticTask.Prepare.NoProjectTM" PercentComplete="100" Status="Completed" CreatedAt="2026-02-26T16:02:55.4335998Z" PredecessorTaskGuid="00000000-0000-0000-0000-000000000000" CreatedBy="FIDESTRA\fidestra" CompletedAt="2026-02-26T16:02:57.2310987Z" StartedAt="2026-02-26T16:02:55.5408449Z">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Conversion</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files />
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="e72069cb-1d34-4186-bcf8-d2aba495b1cb" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports />
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="d81c9d34-b2c4-4dda-af00-93a8eaaead6b" ComplexTaskTemplateId="Sdl.ProjectApi.AutomaticTask.Prepare.NoProjectTM" PercentComplete="100" Status="Completed" CreatedAt="2026-02-26T16:02:55.4335998Z" PredecessorTaskGuid="d1377f1e-f193-4467-88a5-d00417d351d7" CreatedBy="FIDESTRA\fidestra" CompletedAt="2026-02-26T16:02:57.2558752Z" StartedAt="2026-02-26T16:02:57.2401424Z">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Split</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files />
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="927791f8-e3ed-476d-8ee5-4e9dd4d15c63" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports />
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="53521107-24e4-4ad8-844f-a509a2065fe0" ComplexTaskTemplateId="Sdl.ProjectApi.AutomaticTask.Prepare.NoProjectTM" PercentComplete="100" Status="Completed" CreatedAt="2026-02-26T16:02:55.4335998Z" PredecessorTaskGuid="d81c9d34-b2c4-4dda-af00-93a8eaaead6b" CreatedBy="FIDESTRA\fidestra" CompletedAt="2026-02-26T16:03:04.4213519Z" StartedAt="2026-02-26T16:02:57.2619068Z">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.PerfectMatch</TaskTemplateId>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Translate</TaskTemplateId>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Analysis</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files />
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="927791f8-e3ed-476d-8ee5-4e9dd4d15c63" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports>
+        <Report Guid="abe9dd33-eaa7-43aa-8b9f-3612d568a283" Name="Rapport de pré-traduction des fichiers" Description="Résultats de l'application des mémoires de traduction aux fichiers." TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Translate" LanguageDirectionGuid="915bdee6-5332-4c09-bc88-c79061c560b4" PhysicalPath="Reports\Pré-traduire les fichiers en-GB_fr-FR.xml" />
+        <Report Guid="0da16854-79f8-4417-a017-3053768f0f5c" Name="Rapport d'analyse des fichiers" Description="Statistiques indiquant les niveaux de recyclage attendus après application des mémoires de traduction." TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Analysis" LanguageDirectionGuid="915bdee6-5332-4c09-bc88-c79061c560b4" PhysicalPath="Reports\Analyser les fichiers en-GB_fr-FR.xml" />
+      </Reports>
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="fbf2f305-f0dc-4f52-ad48-9bfff20224e6" PercentComplete="100" Status="Completed" CreatedAt="2026-02-26T16:04:25.7752242Z" PredecessorTaskGuid="00000000-0000-0000-0000-000000000000" CreatedBy="FIDESTRA\fidestra" CompletedAt="2026-02-26T16:04:28.5086793Z" StartedAt="2026-02-26T16:04:25.8197665Z">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Translate</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files />
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="927791f8-e3ed-476d-8ee5-4e9dd4d15c63" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports>
+        <Report Guid="ddba3def-c1ee-4dc2-915e-4abe27f53bc9" Name="Rapport de pré-traduction des fichiers" Description="Résultats de l'application des mémoires de traduction aux fichiers." TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Translate" LanguageDirectionGuid="915bdee6-5332-4c09-bc88-c79061c560b4" PhysicalPath="Reports\Pré-traduire les fichiers en-GB_fr-FR(1).xml" />
+      </Reports>
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="33aabca2-605e-4a40-bec8-18147976f11a" PercentComplete="100" Status="Completed" CreatedAt="2026-02-26T16:07:02.0267859Z" PredecessorTaskGuid="00000000-0000-0000-0000-000000000000" CreatedBy="FIDESTRA\fidestra" CompletedAt="2026-02-26T16:07:06.8111129Z" StartedAt="2026-02-26T16:07:02.0466142Z">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Translate</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files />
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="927791f8-e3ed-476d-8ee5-4e9dd4d15c63" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports>
+        <Report Guid="d2e6d58d-b1a3-402f-9d94-9c1c676c2f0a" Name="Rapport de pré-traduction des fichiers" Description="Résultats de l'application des mémoires de traduction aux fichiers." TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Translate" LanguageDirectionGuid="915bdee6-5332-4c09-bc88-c79061c560b4" PhysicalPath="Reports\Pré-traduire les fichiers en-GB_fr-FR(2).xml" />
+      </Reports>
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="02f0ccec-d3ee-40ca-b8df-8bdd897369b0" PercentComplete="100" Status="Completed" CreatedAt="2026-02-26T16:07:13.9932319Z" PredecessorTaskGuid="00000000-0000-0000-0000-000000000000" CreatedBy="FIDESTRA\fidestra" CompletedAt="2026-02-26T16:07:17.6913244Z" StartedAt="2026-02-26T16:07:14.0147843Z">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Analysis</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files />
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="927791f8-e3ed-476d-8ee5-4e9dd4d15c63" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports>
+        <Report Guid="99296db5-c69e-43fd-b62c-76eb61cf7020" Name="Rapport d'analyse des fichiers" Description="Statistiques indiquant les niveaux de recyclage attendus après application des mémoires de traduction." TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Analysis" LanguageDirectionGuid="915bdee6-5332-4c09-bc88-c79061c560b4" PhysicalPath="Reports\Analyser les fichiers en-GB_fr-FR(1).xml" />
+      </Reports>
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="b80b574d-af8a-4ce4-9c0e-e7e606cc96e3" PercentComplete="100" Status="Completed" CreatedAt="2026-02-26T18:58:39.0973743Z" PredecessorTaskGuid="00000000-0000-0000-0000-000000000000" CreatedBy="FIDESTRA\fidestra" CompletedAt="2026-02-26T18:58:40.561618Z" StartedAt="2026-02-26T18:58:39.2776168Z">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.GenerateTargetTranslation.ExportFiles</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files />
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="927791f8-e3ed-476d-8ee5-4e9dd4d15c63" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports />
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="db1c4985-209c-4244-b9ed-cbb960f09159" PercentComplete="100" Status="Completed" CreatedAt="2026-02-26T19:15:15.511479Z" PredecessorTaskGuid="00000000-0000-0000-0000-000000000000" CreatedBy="FIDESTRA\fidestra" CompletedAt="2026-02-26T19:15:15.582493Z" StartedAt="2026-02-26T19:15:15.5134867Z">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Scan</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files>
+        <TaskFile Guid="e420a4a8-e33f-43f4-9a2e-b2c0ac9c38f7" Completed="true" ParentTaskFileGuid="00000000-0000-0000-0000-000000000000" LanguageFileGuid="fca34344-b225-424d-94ae-258f4a2a1e17" Purpose="WorkFile">
+          <Result Guid="00000000-0000-0000-0000-000000000000" />
+        </TaskFile>
+      </Files>
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="fca34344-b225-424d-94ae-258f4a2a1e17" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports />
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="c454e4d1-2288-4c09-837f-7fc2c656d2a5" ComplexTaskTemplateId="Sdl.ProjectApi.AutomaticTask.Prepare" PercentComplete="100" Status="Completed" CreatedAt="2026-02-26T19:15:35.1180184Z" PredecessorTaskGuid="00000000-0000-0000-0000-000000000000" CreatedBy="FIDESTRA\fidestra" CompletedAt="2026-02-26T19:15:35.7588601Z" StartedAt="2026-02-26T19:15:35.1379594Z">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Conversion</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files>
+        <TaskFile Guid="3b8bab1f-0298-4507-8d1c-641a387fb62f" Completed="true" ParentTaskFileGuid="00000000-0000-0000-0000-000000000000" LanguageFileGuid="fca34344-b225-424d-94ae-258f4a2a1e17" Purpose="WorkFile">
+          <Result Guid="00000000-0000-0000-0000-000000000000" />
+        </TaskFile>
+      </Files>
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="fca34344-b225-424d-94ae-258f4a2a1e17" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports />
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="0644bdf4-5943-45f5-a461-50184ca4130a" ComplexTaskTemplateId="Sdl.ProjectApi.AutomaticTask.Prepare" PercentComplete="100" Status="Completed" CreatedAt="2026-02-26T19:15:35.1180184Z" PredecessorTaskGuid="c454e4d1-2288-4c09-837f-7fc2c656d2a5" CreatedBy="FIDESTRA\fidestra" CompletedAt="2026-02-26T19:15:35.7649052Z" StartedAt="2026-02-26T19:15:35.7588601Z">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Split</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files>
+        <TaskFile Guid="957f2ecd-f68e-4b55-b162-07eb97630b7c" Completed="true" ParentTaskFileGuid="00000000-0000-0000-0000-000000000000" LanguageFileGuid="fca34344-b225-424d-94ae-258f4a2a1e17" Purpose="WorkFile">
+          <Result Guid="00000000-0000-0000-0000-000000000000" />
+        </TaskFile>
+      </Files>
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="85c6f310-dfa4-4aaf-afbc-79e1d2a53128" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports />
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="be59e174-4130-4309-9755-44a2f315aeed" ComplexTaskTemplateId="Sdl.ProjectApi.AutomaticTask.Prepare" PercentComplete="100" Status="Completed" CreatedAt="2026-02-26T19:15:35.1180184Z" PredecessorTaskGuid="0644bdf4-5943-45f5-a461-50184ca4130a" CreatedBy="FIDESTRA\fidestra" CompletedAt="2026-02-26T19:15:44.2639815Z" StartedAt="2026-02-26T19:15:35.7649052Z">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.PerfectMatch</TaskTemplateId>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Translate</TaskTemplateId>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Analysis</TaskTemplateId>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.ProjectTm</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files>
+        <TaskFile Guid="e0848ce8-6ad7-4071-b419-d84c9b4626d4" Completed="true" ParentTaskFileGuid="00000000-0000-0000-0000-000000000000" LanguageFileGuid="85c6f310-dfa4-4aaf-afbc-79e1d2a53128" Purpose="WorkFile">
+          <Result Guid="00000000-0000-0000-0000-000000000000" />
+        </TaskFile>
+      </Files>
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="85c6f310-dfa4-4aaf-afbc-79e1d2a53128" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports>
+        <Report Guid="a3088b8d-511c-461a-ae62-09acf95e95dd" Name="Rapport de pré-traduction des fichiers" Description="Résultats de l'application des mémoires de traduction aux fichiers." TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Translate" LanguageDirectionGuid="915bdee6-5332-4c09-bc88-c79061c560b4" PhysicalPath="Reports\Pré-traduire les fichiers en-GB_fr-FR(3).xml" />
+        <Report Guid="11223ba5-85b4-48b2-876b-a64fd0354540" Name="Rapport d'analyse des fichiers" Description="Statistiques indiquant les niveaux de recyclage attendus après application des mémoires de traduction." TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Analysis" LanguageDirectionGuid="915bdee6-5332-4c09-bc88-c79061c560b4" PhysicalPath="Reports\Analyser les fichiers en-GB_fr-FR(2).xml" />
+      </Reports>
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+  </Tasks>
+  <PackageOperations>
+    <ProjectPackageCreationOperations />
+    <ProjectPackageImportOperations />
+    <ReturnPackageCreationOperations />
+    <ReturnPackageImportOperations />
+  </PackageOperations>
+</Project>

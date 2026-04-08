@@ -1,26 +1,26 @@
 company,year,category,emissions_million_tco2e,asset_class,coverage_percent,data_quality_score
 Admiral Group,2024,Category 15 - Investments,,Mixed (aggregate),,
-Ageas,2024,Category 15 - Investments,,Mixed (aggregate),70,
+Ageas,2024,Category 15 - Investments,4.7,Mixed (aggregate),70,5
 Allianz,2024,Category 15 - Investments,87-161,Range estimate,70,2
 Amundi,2024,Category 15 - Investments,,Mixed (aggregate),,
-ASR Nederland,2024,Category 15 - Investments,,Mixed (aggregate),70,5
-Aviva,2024,Category 15 - Investments,7.4,Mixed (aggregate),87,1
+ASR Nederland,2024,Category 15 - Investments,1.0,Mixed (aggregate),70,1.0
+Aviva,2024,Category 15 - Investments,7.4,Mixed (aggregate),87,2.2
 AXA,2024,Category 15 - Investments,21.7,Mixed (aggregate),87,2
-Commerzbank,2024,Category 15 - Investments,,Mixed (aggregate),50,1
-Crédit Agricole,2024,Category 15 - Investments,,Mixed (aggregate),,
+Commerzbank,2024,Category 15 - Investments,23.0,Mixed (aggregate),50,4.05
+Crédit Agricole,2024,Category 15 - Investments,26.9,Mixed (aggregate),,
 Deutsche Börse,2024,Category 15 - Investments,0.0012,Mixed (aggregate),,
 Eurazeo,2024,Category 15 - Investments,3.6747,Mixed (aggregate),,
 GBL,2024,Category 15 - Investments,,Mixed (aggregate),,
 KBC,2024,Category 15 - Investments,1.4,Mixed (aggregate),,
-Legal & General,2024,Category 15 - Investments,,Mixed (aggregate),50,2
+Legal & General,2024,Category 15 - Investments,4.9,Mixed (aggregate),50,2
 NN Group,2024,Category 15 - Investments,,Mixed (aggregate),70,1
-Nordea,2024,Category 15 - Investments,,Mixed (aggregate),70,4
+Nordea,2024,Category 15 - Investments,14.8,Mixed (aggregate),70,3.8
 Phoenix Group,2024,Category 15 - Investments,12.4,Mixed (aggregate),,
 Santander,2024,Category 15 - Investments,9.83,Mixed (aggregate),,1
 Schroders,2024,Category 15 - Investments,18.5,Mixed (aggregate),,
 Société Générale,2024,Category 15 - Investments,,Mixed (aggregate),,
 Swiss Re,2024,Category 15 - Investments,10.1,Mixed (aggregate),70,3
 UniCredit,2024,Category 15 - Investments,10.2,Mixed (aggregate),,5
-Zurich,2024,Category 15 - Investments,,Mixed (aggregate),,1-5
-ING,2024,Category 15 - Investments,,Mixed (aggregate),,1.5
+Zurich,2024,Category 15 - Investments,1.0,Mixed (aggregate),,1-5
+ING,2024,Category 15 - Investments,86.0,Mixed (aggregate),,1.5
 Julius Baer,2024,Category 15 - Investments,,Mixed (aggregate),,3.5

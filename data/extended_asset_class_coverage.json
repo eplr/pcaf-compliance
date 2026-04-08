@@ -105,9 +105,9 @@
     "insurance_underwriting": "reported"
   },
   "COMMERZBANK": {
-    "listed_equity_corporate_bonds": "partial",
+    "listed_equity_corporate_bonds": "reported",
     "business_loans_unlisted_equity": "reported",
-    "project_finance": "partial",
+    "project_finance": "reported",
     "commercial_real_estate": "reported",
     "residential_mortgages": "reported",
     "motor_vehicle_loans": "reported",

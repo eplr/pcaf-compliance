@@ -1,0 +1,276 @@
+company,assessment_date,institution_type,pcaf_part,criterion,score,max_score,percentage,evidence,priority,gap_description,assessor_notes
+Admiral Group,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,6.5/18 coefficient coverage (36.1%),Critical,Extend coverage to remaining asset classes and S3 scopes,Priority 2: Implement PCAF Part A methodology with quantified financed emissions
+Admiral Group,2024-12-31,Insurance,Part A,Data Quality Score,0,5,0.0,No PCAF data quality score reported,High,Implement and disclose PCAF DQS,Priority 2: Implement PCAF Part A methodology with quantified financed emissions
+Admiral Group,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,PCAF-referenced methodology,High,Incomplete,Priority 2: Implement PCAF Part A methodology with quantified financed emissions
+Admiral Group,2024-12-31,Insurance,Part A,Portfolio Coverage,1,5,20.0,Coverage not disclosed – estimated <40%,Medium,Disclose exact portfolio coverage %,Priority 2: Implement PCAF Part A methodology with quantified financed emissions
+Admiral Group,2024-12-31,Insurance,Part A,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to 3 years + projections for full score,Priority 2: Implement PCAF Part A methodology with quantified financed emissions
+Admiral Group,2024-12-31,Insurance,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 2: Implement PCAF Part A methodology with quantified financed emissions
+Admiral Group,2024-12-31,Insurance,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Implement PCAF Part A methodology with quantified financed emissions
+Admiral Group,2024-12-31,Insurance,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Implement PCAF Part A methodology with quantified financed emissions
+Admiral Group,2024-12-31,Insurance,Part C,Asset Class Coverage,4,5,80.0,"5.75/8 branch coefficient (72%) – Comm.Lines 2/5, Motor 3/5, Re 1/5",Low,Extend to all 4 insurance branches,Priority 2: Implement PCAF Part A methodology with quantified financed emissions
+Admiral Group,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,ITV allocation applied,Medium,Full PCAF Part C alignment,Priority 2: Implement PCAF Part A methodology with quantified financed emissions
+Admiral Group,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 2: Implement PCAF Part A methodology with quantified financed emissions
+Ageas,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,"6.5/18 coefficient coverage (36.1%) – listed equity (6/6) + partial sovereign debt (0.5/2); other asset classes excluded (insurer profile, justification provided)",—,—,V2 client-verified score
+Ageas,2024-12-31,Insurance,Part A,Data Quality Score,3,5,60.0,"Average DQS ~2.12 for listed equities, ~2 for sovereign debt",—,—,V2 client-verified score
+Ageas,2024-12-31,Insurance,Part A,Attribution Methodology,3,5,60.0,PCAF methodology applied for covered asset classes,—,—,V2 client-verified score
+Ageas,2024-12-31,Insurance,Part A,Portfolio Coverage,3,5,60.0,~71% portfolio coverage,—,—,V2 client-verified score
+Ageas,2024-12-31,Insurance,Part A,Temporal Coverage,1,3,33.3,Current year only,—,—,V2 client-verified score
+Ageas,2024-12-31,Insurance,Part B,Asset Class Coverage,0,5,0.0,No facilitated emissions (capital markets activity) reported,—,—,V2 client-verified score
+Ageas,2024-12-31,Insurance,Part B,Attribution Methodology,0,5,0.0,No facilitated emissions attribution,—,—,V2 client-verified score
+Ageas,2024-12-31,Insurance,Part B,Temporal Coverage,0,3,0.0,No facilitated emissions data,—,—,V2 client-verified score
+Ageas,2024-12-31,Insurance,Part C,Asset Class Coverage,4,5,80.0,6/8 coefficient coverage (75%) – Commercial Lines (3/3) + Personal Motor (3/3); reinsurance branches not covered,—,—,V2 client-verified score
+Ageas,2024-12-31,Insurance,Part C,Attribution Methodology,3,5,60.0,PCAF methodology used for commercial lines and personal motor,—,—,V2 client-verified score
+Ageas,2024-12-31,Insurance,Part C,Temporal Coverage,0,3,0.0,No historical time series for insurance-associated emissions,—,—,V2 client-verified score
+Allianz,2024-12-31,Insurance,Part A,Asset Class Coverage,5,5,100.0,17.0/18 coefficient coverage (94.4%),Low,Full coverage,Priority 3: Reduce uncertainty range in Scope 3 financed emissions
+Allianz,2024-12-31,Insurance,Part A,Data Quality Score,4,5,80.0,Average PCAF DQS 2.00/5,Low,Good – target DQS <2 for Level 5,Priority 3: Reduce uncertainty range in Scope 3 financed emissions
+Allianz,2024-12-31,Insurance,Part A,Attribution Methodology,4,5,80.0,"Full PCAF methods (signatory), annual updates",Low,Enhance with sector-specific improvements,Priority 3: Reduce uncertainty range in Scope 3 financed emissions
+Allianz,2024-12-31,Insurance,Part A,Portfolio Coverage,3,5,60.0,Estimated 60-80% portfolio coverage,Low,Disclose exact portfolio coverage %,Priority 3: Reduce uncertainty range in Scope 3 financed emissions
+Allianz,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 3: Reduce uncertainty range in Scope 3 financed emissions
+Allianz,2024-12-31,Insurance,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 3: Reduce uncertainty range in Scope 3 financed emissions
+Allianz,2024-12-31,Insurance,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Reduce uncertainty range in Scope 3 financed emissions
+Allianz,2024-12-31,Insurance,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Reduce uncertainty range in Scope 3 financed emissions
+Allianz,2024-12-31,Insurance,Part C,Asset Class Coverage,4,5,80.0,"6.75/8 branch coefficient (84%) – Comm.Lines 1/5, Motor 4/5, Re 2/5",Low,Extend to all 4 insurance branches,Priority 3: Reduce uncertainty range in Scope 3 financed emissions
+Allianz,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,ITV allocation applied,Medium,Full PCAF Part C alignment,Priority 3: Reduce uncertainty range in Scope 3 financed emissions
+Allianz,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 3: Reduce uncertainty range in Scope 3 financed emissions
+Amundi,2024-12-31,Asset Manager,Part A,Asset Class Coverage,3,5,60.0,10.5/18 coefficient coverage (58.3%),Medium,Extend coverage to remaining asset classes and S3 scopes,Priority 1: Adopt PCAF methodology and calculate financed emissions
+Amundi,2024-12-31,Asset Manager,Part A,Data Quality Score,0,5,0.0,No PCAF data quality score reported,High,Implement and disclose PCAF DQS,Priority 1: Adopt PCAF methodology and calculate financed emissions
+Amundi,2024-12-31,Asset Manager,Part A,Attribution Methodology,0,5,0.0,No attribution methodology disclosed,Critical,No PCAF methodology,Priority 1: Adopt PCAF methodology and calculate financed emissions
+Amundi,2024-12-31,Asset Manager,Part A,Portfolio Coverage,0,5,0.0,No portfolio coverage reporting,Medium,Disclose exact portfolio coverage %,Priority 1: Adopt PCAF methodology and calculate financed emissions
+Amundi,2024-12-31,Asset Manager,Part A,Temporal Coverage,0,3,0.0,No historical financed emissions data,Low,Extend to 3 years + projections for full score,Priority 1: Adopt PCAF methodology and calculate financed emissions
+Amundi,2024-12-31,Asset Manager,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 1: Adopt PCAF methodology and calculate financed emissions
+Amundi,2024-12-31,Asset Manager,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 1: Adopt PCAF methodology and calculate financed emissions
+Amundi,2024-12-31,Asset Manager,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 1: Adopt PCAF methodology and calculate financed emissions
+Amundi,2024-12-31,Asset Manager,Part C,Asset Class Coverage,0,5,0.0,N/A – not an insurer/reinsurer,N/A,Not applicable,Priority 1: Adopt PCAF methodology and calculate financed emissions
+Amundi,2024-12-31,Asset Manager,Part C,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 1: Adopt PCAF methodology and calculate financed emissions
+Amundi,2024-12-31,Asset Manager,Part C,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 1: Adopt PCAF methodology and calculate financed emissions
+ASR Nederland,2024-12-31,Insurance,Part A,Asset Class Coverage,4,5,80.0,15.0/18 coefficient coverage (83.3%),Low,Extend coverage to remaining asset classes and S3 scopes,Priority 3: Continue improving data quality across asset classes
+ASR Nederland,2024-12-31,Insurance,Part A,Data Quality Score,1,5,20.0,Average PCAF DQS 5.00/5,High,Improve DQS toward <2.5,Priority 3: Continue improving data quality across asset classes
+ASR Nederland,2024-12-31,Insurance,Part A,Attribution Methodology,3,5,60.0,PCAF-aligned methods per asset class,Low,Enhance with sector-specific improvements,Priority 3: Continue improving data quality across asset classes
+ASR Nederland,2024-12-31,Insurance,Part A,Portfolio Coverage,3,5,60.0,Estimated 60-80% portfolio coverage,Low,Disclose exact portfolio coverage %,Priority 3: Continue improving data quality across asset classes
+ASR Nederland,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 3: Continue improving data quality across asset classes
+ASR Nederland,2024-12-31,Insurance,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 3: Continue improving data quality across asset classes
+ASR Nederland,2024-12-31,Insurance,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Continue improving data quality across asset classes
+ASR Nederland,2024-12-31,Insurance,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Continue improving data quality across asset classes
+ASR Nederland,2024-12-31,Insurance,Part C,Asset Class Coverage,4,5,80.0,"6.75/8 branch coefficient (84%) – Comm.Lines 2/5, Motor 5/5, Re 1/5",Low,Extend to all 4 insurance branches,Priority 3: Continue improving data quality across asset classes
+ASR Nederland,2024-12-31,Insurance,Part C,Attribution Methodology,3,5,60.0,PCAF insurance attribution applied,Low,Add risk-adjusted refinements,Priority 3: Continue improving data quality across asset classes
+ASR Nederland,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 3: Continue improving data quality across asset classes
+Aviva,2024-12-31,Insurance,Part A,Asset Class Coverage,3,5,60.0,11.5/18 coefficient coverage (63.9%),Medium,Extend coverage to remaining asset classes and S3 scopes,Priority 3: Extend coverage to all insurance lines
+Aviva,2024-12-31,Insurance,Part A,Data Quality Score,5,5,100.0,Average PCAF DQS 1.00/5,Low,Good – target DQS <2 for Level 5,Priority 3: Extend coverage to all insurance lines
+Aviva,2024-12-31,Insurance,Part A,Attribution Methodology,4,5,80.0,"Full PCAF methods (signatory), annual updates",Low,Enhance with sector-specific improvements,Priority 3: Extend coverage to all insurance lines
+Aviva,2024-12-31,Insurance,Part A,Portfolio Coverage,2,5,40.0,Partial portfolio coverage,Medium,Disclose exact portfolio coverage %,Priority 3: Extend coverage to all insurance lines
+Aviva,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 3: Extend coverage to all insurance lines
+Aviva,2024-12-31,Insurance,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 3: Extend coverage to all insurance lines
+Aviva,2024-12-31,Insurance,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Extend coverage to all insurance lines
+Aviva,2024-12-31,Insurance,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Extend coverage to all insurance lines
+Aviva,2024-12-31,Insurance,Part C,Asset Class Coverage,1,5,20.0,"0.75/8 branch coefficient (9%) – Comm.Lines 0/5, Motor 0/5, Re 1/5",High,Extend to all 4 insurance branches,Priority 3: Extend coverage to all insurance lines
+Aviva,2024-12-31,Insurance,Part C,Attribution Methodology,0,5,0.0,No insurance attribution,Critical,Develop ITV methodology,Priority 3: Extend coverage to all insurance lines
+Aviva,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 3: Extend coverage to all insurance lines
+AXA,2024-12-31,Insurance,Part A,Asset Class Coverage,4,5,80.0,16.0/18 coefficient coverage (88.9%),Low,Extend coverage to remaining asset classes and S3 scopes,Priority 3: Improve Part C insurance-associated emissions coverage
+AXA,2024-12-31,Insurance,Part A,Data Quality Score,4,5,80.0,Average PCAF DQS 2.00/5,Low,Good – target DQS <2 for Level 5,Priority 3: Improve Part C insurance-associated emissions coverage
+AXA,2024-12-31,Insurance,Part A,Attribution Methodology,3,5,60.0,PCAF-aligned methods per asset class,Low,Enhance with sector-specific improvements,Priority 3: Improve Part C insurance-associated emissions coverage
+AXA,2024-12-31,Insurance,Part A,Portfolio Coverage,3,5,60.0,Estimated 60-80% portfolio coverage,Low,Disclose exact portfolio coverage %,Priority 3: Improve Part C insurance-associated emissions coverage
+AXA,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 3: Improve Part C insurance-associated emissions coverage
+AXA,2024-12-31,Insurance,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 3: Improve Part C insurance-associated emissions coverage
+AXA,2024-12-31,Insurance,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Improve Part C insurance-associated emissions coverage
+AXA,2024-12-31,Insurance,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Improve Part C insurance-associated emissions coverage
+AXA,2024-12-31,Insurance,Part C,Asset Class Coverage,4,5,80.0,"6.75/8 branch coefficient (84%) – Comm.Lines 4/5, Motor 3/5, Re 1/5",Low,Extend to all 4 insurance branches,Priority 3: Improve Part C insurance-associated emissions coverage
+AXA,2024-12-31,Insurance,Part C,Attribution Methodology,3,5,60.0,PCAF insurance attribution applied,Low,Add risk-adjusted refinements,Priority 3: Improve Part C insurance-associated emissions coverage
+AXA,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 3: Improve Part C insurance-associated emissions coverage
+Commerzbank,2024-12-31,Bank,Part A,Asset Class Coverage,5,5,100.0,18/18 coefficient coverage (100%) – full coverage of all asset classes including sovereign debt S3 (consumption-based),—,—,V2 client-verified score
+Commerzbank,2024-12-31,Bank,Part A,Data Quality Score,3,5,60.0,Average DQS ~4.05 across asset classes,—,—,V2 client-verified score
+Commerzbank,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,Full PCAF methods per asset class (PCAF signatory),—,—,V2 client-verified score
+Commerzbank,2024-12-31,Bank,Part A,Portfolio Coverage,2,5,40.0,~54% portfolio coverage,—,—,V2 client-verified score
+Commerzbank,2024-12-31,Bank,Part A,Temporal Coverage,1,3,33.3,Current year + 1 prior year (2 years),—,—,V2 client-verified score
+Commerzbank,2024-12-31,Bank,Part B,Asset Class Coverage,0,5,0.0,No facilitated emissions data published,—,—,V2 client-verified score
+Commerzbank,2024-12-31,Bank,Part B,Attribution Methodology,0,5,0.0,No facilitated emissions attribution disclosed,—,—,V2 client-verified score
+Commerzbank,2024-12-31,Bank,Part B,Temporal Coverage,0,3,0.0,No historical facilitated emissions data,—,—,V2 client-verified score
+Commerzbank,2024-12-31,Bank,Part C,Asset Class Coverage,3,5,60.0,"Insurance-related emissions published within financed emissions (Scopes 1, 2 and 3) but no breakdown by insurance branch – 50% coverage estimated (4/8 coefficient)",—,—,V2 client-verified score
+Commerzbank,2024-12-31,Bank,Part C,Attribution Methodology,0,5,0.0,No insurance-specific attribution methodology disclosed,—,—,V2 client-verified score
+Commerzbank,2024-12-31,Bank,Part C,Temporal Coverage,0,3,0.0,No dedicated historical series for insurance-associated emissions,—,—,V2 client-verified score
+Crédit Agricole,2024-12-31,Bank,Part A,Asset Class Coverage,3,5,60.0,10.5/18 coefficient coverage (58.3%),Medium,Extend coverage to remaining asset classes and S3 scopes,Priority 2: Consolidate financed emissions across all portfolios
+Crédit Agricole,2024-12-31,Bank,Part A,Data Quality Score,0,5,0.0,No PCAF data quality score reported,High,Implement and disclose PCAF DQS,Priority 2: Consolidate financed emissions across all portfolios
+Crédit Agricole,2024-12-31,Bank,Part A,Attribution Methodology,2,5,40.0,PCAF-referenced methodology,High,Incomplete,Priority 2: Consolidate financed emissions across all portfolios
+Crédit Agricole,2024-12-31,Bank,Part A,Portfolio Coverage,1,5,20.0,Coverage not disclosed – estimated <40%,Medium,Disclose exact portfolio coverage %,Priority 2: Consolidate financed emissions across all portfolios
+Crédit Agricole,2024-12-31,Bank,Part A,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to 3 years + projections for full score,Priority 2: Consolidate financed emissions across all portfolios
+Crédit Agricole,2024-12-31,Bank,Part B,Asset Class Coverage,1,5,20.0,Facilitated emissions composite 1/5 -> ~20% Part B class coverage,High,Extend Part B to all 5 asset class categories,Priority 2: Consolidate financed emissions across all portfolios
+Crédit Agricole,2024-12-31,Bank,Part B,Attribution Methodology,1,5,20.0,Basic allocation,Medium,Adopt time-based PCAF attribution,Priority 2: Consolidate financed emissions across all portfolios
+Crédit Agricole,2024-12-31,Bank,Part B,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 2: Consolidate financed emissions across all portfolios
+Crédit Agricole,2024-12-31,Bank,Part C,Asset Class Coverage,0,5,0.0,N/A – not an insurer/reinsurer,N/A,Not applicable,Priority 2: Consolidate financed emissions across all portfolios
+Crédit Agricole,2024-12-31,Bank,Part C,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Consolidate financed emissions across all portfolios
+Crédit Agricole,2024-12-31,Bank,Part C,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Consolidate financed emissions across all portfolios
+Deutsche Börse,2024-12-31,Exchange,Part A,Asset Class Coverage,4,5,80.0,13.0/18 coefficient coverage (72.2%),Low,Extend coverage to remaining asset classes and S3 scopes,Priority 1: Join PCAF and implement full methodology
+Deutsche Börse,2024-12-31,Exchange,Part A,Data Quality Score,0,5,0.0,No PCAF data quality score reported,High,Implement and disclose PCAF DQS,Priority 1: Join PCAF and implement full methodology
+Deutsche Börse,2024-12-31,Exchange,Part A,Attribution Methodology,1,5,20.0,Basic estimation without documented PCAF method,Critical,Incomplete,Priority 1: Join PCAF and implement full methodology
+Deutsche Börse,2024-12-31,Exchange,Part A,Portfolio Coverage,2,5,40.0,Estimated 40-60% portfolio coverage,Medium,Disclose exact portfolio coverage %,Priority 1: Join PCAF and implement full methodology
+Deutsche Börse,2024-12-31,Exchange,Part A,Temporal Coverage,2,3,66.7,2-3 years + trends,Low,Extend to 3 years + projections for full score,Priority 1: Join PCAF and implement full methodology
+Deutsche Börse,2024-12-31,Exchange,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 1: Join PCAF and implement full methodology
+Deutsche Börse,2024-12-31,Exchange,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 1: Join PCAF and implement full methodology
+Deutsche Börse,2024-12-31,Exchange,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 1: Join PCAF and implement full methodology
+Deutsche Börse,2024-12-31,Exchange,Part C,Asset Class Coverage,0,5,0.0,N/A – not an insurer/reinsurer,N/A,Not applicable,Priority 1: Join PCAF and implement full methodology
+Deutsche Börse,2024-12-31,Exchange,Part C,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 1: Join PCAF and implement full methodology
+Deutsche Börse,2024-12-31,Exchange,Part C,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 1: Join PCAF and implement full methodology
+Eurazeo,2024-12-31,Asset Manager,Part A,Asset Class Coverage,1,5,20.0,6.5/18 coefficient coverage (36.1%),Critical,Extend coverage to remaining asset classes and S3 scopes,Priority 3: Add explicit Data Quality Scores per PCAF guidance
+Eurazeo,2024-12-31,Asset Manager,Part A,Data Quality Score,0,5,0.0,No PCAF data quality score reported,High,Implement and disclose PCAF DQS,Priority 3: Add explicit Data Quality Scores per PCAF guidance
+Eurazeo,2024-12-31,Asset Manager,Part A,Attribution Methodology,3,5,60.0,PCAF-aligned methods per asset class,Low,Enhance with sector-specific improvements,Priority 3: Add explicit Data Quality Scores per PCAF guidance
+Eurazeo,2024-12-31,Asset Manager,Part A,Portfolio Coverage,2,5,40.0,Partial portfolio coverage,Medium,Disclose exact portfolio coverage %,Priority 3: Add explicit Data Quality Scores per PCAF guidance
+Eurazeo,2024-12-31,Asset Manager,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 3: Add explicit Data Quality Scores per PCAF guidance
+Eurazeo,2024-12-31,Asset Manager,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 3: Add explicit Data Quality Scores per PCAF guidance
+Eurazeo,2024-12-31,Asset Manager,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Add explicit Data Quality Scores per PCAF guidance
+Eurazeo,2024-12-31,Asset Manager,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Add explicit Data Quality Scores per PCAF guidance
+Eurazeo,2024-12-31,Asset Manager,Part C,Asset Class Coverage,0,5,0.0,N/A – not an insurer/reinsurer,N/A,Not applicable,Priority 3: Add explicit Data Quality Scores per PCAF guidance
+Eurazeo,2024-12-31,Asset Manager,Part C,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Add explicit Data Quality Scores per PCAF guidance
+Eurazeo,2024-12-31,Asset Manager,Part C,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Add explicit Data Quality Scores per PCAF guidance
+GBL,2024-12-31,Investment Holding,Part A,Asset Class Coverage,4,5,80.0,15.0/18 coefficient coverage (83.3%),Low,Extend coverage to remaining asset classes and S3 scopes,Priority 2: Report total portfolio financed emissions
+GBL,2024-12-31,Investment Holding,Part A,Data Quality Score,0,5,0.0,No PCAF data quality score reported,High,Implement and disclose PCAF DQS,Priority 2: Report total portfolio financed emissions
+GBL,2024-12-31,Investment Holding,Part A,Attribution Methodology,2,5,40.0,"Documented methodology, partial asset class coverage",High,Incomplete,Priority 2: Report total portfolio financed emissions
+GBL,2024-12-31,Investment Holding,Part A,Portfolio Coverage,1,5,20.0,Coverage not disclosed – estimated <40%,Medium,Disclose exact portfolio coverage %,Priority 2: Report total portfolio financed emissions
+GBL,2024-12-31,Investment Holding,Part A,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to 3 years + projections for full score,Priority 2: Report total portfolio financed emissions
+GBL,2024-12-31,Investment Holding,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 2: Report total portfolio financed emissions
+GBL,2024-12-31,Investment Holding,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Report total portfolio financed emissions
+GBL,2024-12-31,Investment Holding,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Report total portfolio financed emissions
+GBL,2024-12-31,Investment Holding,Part C,Asset Class Coverage,0,5,0.0,N/A – not an insurer/reinsurer,N/A,Not applicable,Priority 2: Report total portfolio financed emissions
+GBL,2024-12-31,Investment Holding,Part C,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Report total portfolio financed emissions
+GBL,2024-12-31,Investment Holding,Part C,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Report total portfolio financed emissions
+KBC,2024-12-31,Bancassurance,Part A,Asset Class Coverage,5,5,100.0,18.0/18 coefficient coverage (100.0%),Low,Full coverage,Priority 3: Add explicit DQS per asset class
+KBC,2024-12-31,Bancassurance,Part A,Data Quality Score,0,5,0.0,No PCAF data quality score reported,High,Implement and disclose PCAF DQS,Priority 3: Add explicit DQS per asset class
+KBC,2024-12-31,Bancassurance,Part A,Attribution Methodology,4,5,80.0,"Full PCAF methods (signatory), annual updates",Low,Enhance with sector-specific improvements,Priority 3: Add explicit DQS per asset class
+KBC,2024-12-31,Bancassurance,Part A,Portfolio Coverage,3,5,60.0,Estimated 60-80% portfolio coverage,Low,Disclose exact portfolio coverage %,Priority 3: Add explicit DQS per asset class
+KBC,2024-12-31,Bancassurance,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 3: Add explicit DQS per asset class
+KBC,2024-12-31,Bancassurance,Part B,Asset Class Coverage,4,5,80.0,Facilitated emissions composite 4/5 -> ~80% Part B class coverage,Low,Extend Part B to all 5 asset class categories,Priority 3: Add explicit DQS per asset class
+KBC,2024-12-31,Bancassurance,Part B,Attribution Methodology,4,5,80.0,Comprehensive facilitation attribution,Low,Continue improving,Priority 3: Add explicit DQS per asset class
+KBC,2024-12-31,Bancassurance,Part B,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 3: Add explicit DQS per asset class
+KBC,2024-12-31,Bancassurance,Part C,Asset Class Coverage,4,5,80.0,"6.75/8 branch coefficient (84%) – Comm.Lines 3/5, Motor 3/5, Re 1/5",Low,Extend to all 4 insurance branches,Priority 3: Add explicit DQS per asset class
+KBC,2024-12-31,Bancassurance,Part C,Attribution Methodology,2,5,40.0,ITV allocation applied,Medium,Full PCAF Part C alignment,Priority 3: Add explicit DQS per asset class
+KBC,2024-12-31,Bancassurance,Part C,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 3: Add explicit DQS per asset class
+Legal & General,2024-12-31,Insurance,Part A,Asset Class Coverage,5,5,100.0,16.5/18 coefficient coverage (91.7%),Low,Full coverage,Priority 2: Report absolute financed emissions alongside intensity
+Legal & General,2024-12-31,Insurance,Part A,Data Quality Score,4,5,80.0,Average PCAF DQS 2.00/5,Low,Good – target DQS <2 for Level 5,Priority 2: Report absolute financed emissions alongside intensity
+Legal & General,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,PCAF-referenced methodology,High,Incomplete,Priority 2: Report absolute financed emissions alongside intensity
+Legal & General,2024-12-31,Insurance,Part A,Portfolio Coverage,1,5,20.0,Coverage not disclosed – estimated <40%,Medium,Disclose exact portfolio coverage %,Priority 2: Report absolute financed emissions alongside intensity
+Legal & General,2024-12-31,Insurance,Part A,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to 3 years + projections for full score,Priority 2: Report absolute financed emissions alongside intensity
+Legal & General,2024-12-31,Insurance,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 2: Report absolute financed emissions alongside intensity
+Legal & General,2024-12-31,Insurance,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Report absolute financed emissions alongside intensity
+Legal & General,2024-12-31,Insurance,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Report absolute financed emissions alongside intensity
+Legal & General,2024-12-31,Insurance,Part C,Asset Class Coverage,1,5,20.0,"2.75/8 branch coefficient (34%) – Comm.Lines 2/5, Motor 0/5, Re 1/5",High,Extend to all 4 insurance branches,Priority 2: Report absolute financed emissions alongside intensity
+Legal & General,2024-12-31,Insurance,Part C,Attribution Methodology,1,5,20.0,Basic premium-based allocation,High,Adopt ITV method,Priority 2: Report absolute financed emissions alongside intensity
+Legal & General,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 2: Report absolute financed emissions alongside intensity
+NN Group,2024-12-31,Insurance,Part A,Asset Class Coverage,4,5,80.0,16.0/18 coefficient coverage (88.9%),Low,Extend coverage to remaining asset classes and S3 scopes,Priority 2: Report total absolute financed emissions
+NN Group,2024-12-31,Insurance,Part A,Data Quality Score,5,5,100.0,Average PCAF DQS 1.00/5,Low,Good – target DQS <2 for Level 5,Priority 2: Report total absolute financed emissions
+NN Group,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,PCAF-referenced methodology,High,Incomplete,Priority 2: Report total absolute financed emissions
+NN Group,2024-12-31,Insurance,Part A,Portfolio Coverage,1,5,20.0,Coverage not disclosed – estimated <40%,Medium,Disclose exact portfolio coverage %,Priority 2: Report total absolute financed emissions
+NN Group,2024-12-31,Insurance,Part A,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to 3 years + projections for full score,Priority 2: Report total absolute financed emissions
+NN Group,2024-12-31,Insurance,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 2: Report total absolute financed emissions
+NN Group,2024-12-31,Insurance,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Report total absolute financed emissions
+NN Group,2024-12-31,Insurance,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Report total absolute financed emissions
+NN Group,2024-12-31,Insurance,Part C,Asset Class Coverage,1,5,20.0,"2.75/8 branch coefficient (34%) – Comm.Lines 2/5, Motor 0/5, Re 1/5",High,Extend to all 4 insurance branches,Priority 2: Report total absolute financed emissions
+NN Group,2024-12-31,Insurance,Part C,Attribution Methodology,1,5,20.0,Basic premium-based allocation,High,Adopt ITV method,Priority 2: Report total absolute financed emissions
+NN Group,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 2: Report total absolute financed emissions
+Nordea,2024-12-31,Bank,Part A,Asset Class Coverage,5,5,100.0,17/18 coefficient coverage (94.4%) – all 7 asset classes covered for S1&S2+S3 except sovereign debt S3,—,—,V2 client-verified score
+Nordea,2024-12-31,Bank,Part A,Data Quality Score,3,5,60.0,Average DQS between 3 and 4,—,—,V2 client-verified score
+Nordea,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,Full PCAF methodology per asset class (PCAF signatory),—,—,V2 client-verified score
+Nordea,2024-12-31,Bank,Part A,Portfolio Coverage,3,5,60.0,~75% portfolio coverage,—,—,V2 client-verified score
+Nordea,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,3 years of history + trends + projections/targets,—,—,V2 client-verified score
+Nordea,2024-12-31,Bank,Part B,Asset Class Coverage,0,5,0.0,No facilitated emissions reported (Part B not yet implemented),—,—,V2 client-verified score
+Nordea,2024-12-31,Bank,Part B,Attribution Methodology,0,5,0.0,No facilitated emissions attribution disclosed,—,—,V2 client-verified score
+Nordea,2024-12-31,Bank,Part B,Temporal Coverage,0,3,0.0,No historical facilitated emissions data,—,—,V2 client-verified score
+Nordea,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,0.0,N/A – Nordea has no P&C insurance activity; life insurance emissions included in financed emissions,N/A,N/A,V2 client-verified – N/A
+Nordea,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,0.0,N/A,N/A,N/A,V2 client-verified – N/A
+Nordea,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,0.0,N/A,N/A,N/A,V2 client-verified – N/A
+Phoenix Group,2024-12-31,Insurance,Part A,Asset Class Coverage,5,5,100.0,16.5/18 coefficient coverage (91.7%),Low,Full coverage,Priority 3: Add explicit Data Quality Scores
+Phoenix Group,2024-12-31,Insurance,Part A,Data Quality Score,0,5,0.0,No PCAF data quality score reported,High,Implement and disclose PCAF DQS,Priority 3: Add explicit Data Quality Scores
+Phoenix Group,2024-12-31,Insurance,Part A,Attribution Methodology,4,5,80.0,"Full PCAF methods (signatory), annual updates",Low,Enhance with sector-specific improvements,Priority 3: Add explicit Data Quality Scores
+Phoenix Group,2024-12-31,Insurance,Part A,Portfolio Coverage,3,5,60.0,Estimated 60-80% portfolio coverage,Low,Disclose exact portfolio coverage %,Priority 3: Add explicit Data Quality Scores
+Phoenix Group,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 3: Add explicit Data Quality Scores
+Phoenix Group,2024-12-31,Insurance,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 3: Add explicit Data Quality Scores
+Phoenix Group,2024-12-31,Insurance,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Add explicit Data Quality Scores
+Phoenix Group,2024-12-31,Insurance,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Add explicit Data Quality Scores
+Phoenix Group,2024-12-31,Insurance,Part C,Asset Class Coverage,1,5,20.0,"2.75/8 branch coefficient (34%) – Comm.Lines 1/5, Motor 0/5, Re 1/5",High,Extend to all 4 insurance branches,Priority 3: Add explicit Data Quality Scores
+Phoenix Group,2024-12-31,Insurance,Part C,Attribution Methodology,0,5,0.0,No insurance attribution,Critical,Develop ITV methodology,Priority 3: Add explicit Data Quality Scores
+Phoenix Group,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 3: Add explicit Data Quality Scores
+Santander,2024-12-31,Bank,Part A,Asset Class Coverage,5,5,100.0,18.0/18 coefficient coverage (100.0%),Low,Full coverage,Priority 3: Continue sector-by-sector PCAF implementation
+Santander,2024-12-31,Bank,Part A,Data Quality Score,5,5,100.0,Average PCAF DQS 1.00/5,Low,Good – target DQS <2 for Level 5,Priority 3: Continue sector-by-sector PCAF implementation
+Santander,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,"Full PCAF methods (signatory), annual updates",Low,Enhance with sector-specific improvements,Priority 3: Continue sector-by-sector PCAF implementation
+Santander,2024-12-31,Bank,Part A,Portfolio Coverage,3,5,60.0,Estimated 60-80% portfolio coverage,Low,Disclose exact portfolio coverage %,Priority 3: Continue sector-by-sector PCAF implementation
+Santander,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 3: Continue sector-by-sector PCAF implementation
+Santander,2024-12-31,Bank,Part B,Asset Class Coverage,1,5,20.0,Facilitated emissions composite 2/5 -> ~40% Part B class coverage,High,Extend Part B to all 5 asset class categories,Priority 3: Continue sector-by-sector PCAF implementation
+Santander,2024-12-31,Bank,Part B,Attribution Methodology,2,5,40.0,Time-based allocation documented,Medium,Full PCAF Part B alignment,Priority 3: Continue sector-by-sector PCAF implementation
+Santander,2024-12-31,Bank,Part B,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 3: Continue sector-by-sector PCAF implementation
+Santander,2024-12-31,Bank,Part C,Asset Class Coverage,0,5,0.0,N/A – not an insurer/reinsurer,N/A,Not applicable,Priority 3: Continue sector-by-sector PCAF implementation
+Santander,2024-12-31,Bank,Part C,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Continue sector-by-sector PCAF implementation
+Santander,2024-12-31,Bank,Part C,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Continue sector-by-sector PCAF implementation
+Schroders,2024-12-31,Asset Manager,Part A,Asset Class Coverage,4,5,80.0,13.5/18 coefficient coverage (75.0%),Low,Extend coverage to remaining asset classes and S3 scopes,Priority 3: Extend coverage to private assets
+Schroders,2024-12-31,Asset Manager,Part A,Data Quality Score,0,5,0.0,No PCAF data quality score reported,High,Implement and disclose PCAF DQS,Priority 3: Extend coverage to private assets
+Schroders,2024-12-31,Asset Manager,Part A,Attribution Methodology,3,5,60.0,PCAF-aligned methods per asset class,Low,Enhance with sector-specific improvements,Priority 3: Extend coverage to private assets
+Schroders,2024-12-31,Asset Manager,Part A,Portfolio Coverage,2,5,40.0,Partial portfolio coverage,Medium,Disclose exact portfolio coverage %,Priority 3: Extend coverage to private assets
+Schroders,2024-12-31,Asset Manager,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 3: Extend coverage to private assets
+Schroders,2024-12-31,Asset Manager,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 3: Extend coverage to private assets
+Schroders,2024-12-31,Asset Manager,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Extend coverage to private assets
+Schroders,2024-12-31,Asset Manager,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Extend coverage to private assets
+Schroders,2024-12-31,Asset Manager,Part C,Asset Class Coverage,0,5,0.0,N/A – not an insurer/reinsurer,N/A,Not applicable,Priority 3: Extend coverage to private assets
+Schroders,2024-12-31,Asset Manager,Part C,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Extend coverage to private assets
+Schroders,2024-12-31,Asset Manager,Part C,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Extend coverage to private assets
+Société Générale,2024-12-31,Bank,Part A,Asset Class Coverage,3,5,60.0,11.0/18 coefficient coverage (61.1%),Medium,Extend coverage to remaining asset classes and S3 scopes,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part A,Data Quality Score,0,5,0.0,No PCAF data quality score reported,High,Implement and disclose PCAF DQS,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part A,Attribution Methodology,2,5,40.0,"Documented methodology, partial asset class coverage",High,Incomplete,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part A,Portfolio Coverage,1,5,20.0,Coverage not disclosed – estimated <40%,Medium,Disclose exact portfolio coverage %,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part A,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to 3 years + projections for full score,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part B,Asset Class Coverage,1,5,20.0,Facilitated emissions composite 2/5 -> ~40% Part B class coverage,High,Extend Part B to all 5 asset class categories,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part B,Attribution Methodology,2,5,40.0,Time-based allocation documented,Medium,Full PCAF Part B alignment,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part B,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part C,Asset Class Coverage,0,5,0.0,N/A – not an insurer/reinsurer,N/A,Not applicable,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part C,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part C,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,"Priority 2: Report total financed emissions, not just sector targets"
+Swiss Re,2024-12-31,Reinsurance,Part A,Asset Class Coverage,4,5,80.0,14.5/18 coefficient coverage (80.6%),Low,Extend coverage to remaining asset classes and S3 scopes,Priority 3: Extend Part C insurance-associated emissions
+Swiss Re,2024-12-31,Reinsurance,Part A,Data Quality Score,3,5,60.0,Average PCAF DQS 3.00/5,Medium,Improve DQS toward <2.5,Priority 3: Extend Part C insurance-associated emissions
+Swiss Re,2024-12-31,Reinsurance,Part A,Attribution Methodology,4,5,80.0,"Full PCAF methods (signatory), annual updates",Low,Enhance with sector-specific improvements,Priority 3: Extend Part C insurance-associated emissions
+Swiss Re,2024-12-31,Reinsurance,Part A,Portfolio Coverage,2,5,40.0,Partial portfolio coverage,Medium,Disclose exact portfolio coverage %,Priority 3: Extend Part C insurance-associated emissions
+Swiss Re,2024-12-31,Reinsurance,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 3: Extend Part C insurance-associated emissions
+Swiss Re,2024-12-31,Reinsurance,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 3: Extend Part C insurance-associated emissions
+Swiss Re,2024-12-31,Reinsurance,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Extend Part C insurance-associated emissions
+Swiss Re,2024-12-31,Reinsurance,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Extend Part C insurance-associated emissions
+Swiss Re,2024-12-31,Reinsurance,Part C,Asset Class Coverage,5,5,100.0,"7.75/8 branch coefficient (97%) – Comm.Lines 3/5, Motor 4/5, Re 2/5",Low,Full coverage,Priority 3: Extend Part C insurance-associated emissions
+Swiss Re,2024-12-31,Reinsurance,Part C,Attribution Methodology,3,5,60.0,PCAF insurance attribution applied,Low,Add risk-adjusted refinements,Priority 3: Extend Part C insurance-associated emissions
+Swiss Re,2024-12-31,Reinsurance,Part C,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 3: Extend Part C insurance-associated emissions
+UniCredit,2024-12-31,Bank,Part A,Asset Class Coverage,5,5,100.0,18.0/18 coefficient coverage (100.0%),Low,Full coverage,Priority 3: Improve DQS from 5 to target 3
+UniCredit,2024-12-31,Bank,Part A,Data Quality Score,1,5,20.0,Average PCAF DQS 5.00/5,High,Improve DQS toward <2.5,Priority 3: Improve DQS from 5 to target 3
+UniCredit,2024-12-31,Bank,Part A,Attribution Methodology,3,5,60.0,PCAF-aligned methods per asset class,Low,Enhance with sector-specific improvements,Priority 3: Improve DQS from 5 to target 3
+UniCredit,2024-12-31,Bank,Part A,Portfolio Coverage,3,5,60.0,Estimated 60-80% portfolio coverage,Low,Disclose exact portfolio coverage %,Priority 3: Improve DQS from 5 to target 3
+UniCredit,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 3: Improve DQS from 5 to target 3
+UniCredit,2024-12-31,Bank,Part B,Asset Class Coverage,1,5,20.0,Facilitated emissions composite 2/5 -> ~40% Part B class coverage,High,Extend Part B to all 5 asset class categories,Priority 3: Improve DQS from 5 to target 3
+UniCredit,2024-12-31,Bank,Part B,Attribution Methodology,2,5,40.0,Time-based allocation documented,Medium,Full PCAF Part B alignment,Priority 3: Improve DQS from 5 to target 3
+UniCredit,2024-12-31,Bank,Part B,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 3: Improve DQS from 5 to target 3
+UniCredit,2024-12-31,Bank,Part C,Asset Class Coverage,0,5,0.0,N/A – not an insurer/reinsurer,N/A,Not applicable,Priority 3: Improve DQS from 5 to target 3
+UniCredit,2024-12-31,Bank,Part C,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Improve DQS from 5 to target 3
+UniCredit,2024-12-31,Bank,Part C,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Improve DQS from 5 to target 3
+Zurich,2024-12-31,Insurance,Part A,Asset Class Coverage,4,5,80.0,15.5/18 coefficient coverage (86.1%),Low,Extend coverage to remaining asset classes and S3 scopes,Priority 2: Report total financed emissions in 2025
+Zurich,2024-12-31,Insurance,Part A,Data Quality Score,1,5,20.0,DQS range 1-5 (wide dispersion),Medium,Narrow DQS range,Priority 2: Report total financed emissions in 2025
+Zurich,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,PCAF-referenced methodology,High,Incomplete,Priority 2: Report total financed emissions in 2025
+Zurich,2024-12-31,Insurance,Part A,Portfolio Coverage,1,5,20.0,Coverage not disclosed – estimated <40%,Medium,Disclose exact portfolio coverage %,Priority 2: Report total financed emissions in 2025
+Zurich,2024-12-31,Insurance,Part A,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to 3 years + projections for full score,Priority 2: Report total financed emissions in 2025
+Zurich,2024-12-31,Insurance,Part B,Asset Class Coverage,0,5,0.0,N/A – not a bank/bancassurance,N/A,Not applicable,Priority 2: Report total financed emissions in 2025
+Zurich,2024-12-31,Insurance,Part B,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Report total financed emissions in 2025
+Zurich,2024-12-31,Insurance,Part B,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Report total financed emissions in 2025
+Zurich,2024-12-31,Insurance,Part C,Asset Class Coverage,4,5,80.0,"6.75/8 branch coefficient (84%) – Comm.Lines 3/5, Motor 2/5, Re 1/5",Low,Extend to all 4 insurance branches,Priority 2: Report total financed emissions in 2025
+Zurich,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,ITV allocation applied,Medium,Full PCAF Part C alignment,Priority 2: Report total financed emissions in 2025
+Zurich,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,Current year only,Low,Extend to multi-year trend reporting,Priority 2: Report total financed emissions in 2025
+ING,2024-12-31,Bank,Part A,Asset Class Coverage,5,5,100.0,18.0/18 coefficient coverage (100.0%),Low,Full coverage,Priority 3: Extend facilitated emissions coverage; deepen DQS toward <1
+ING,2024-12-31,Bank,Part A,Data Quality Score,4,5,80.0,Average PCAF DQS 1.50/5,Low,Good – target DQS <2 for Level 5,Priority 3: Extend facilitated emissions coverage; deepen DQS toward <1
+ING,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,"Full PCAF methods (signatory), annual updates",Low,Enhance with sector-specific improvements,Priority 3: Extend facilitated emissions coverage; deepen DQS toward <1
+ING,2024-12-31,Bank,Part A,Portfolio Coverage,3,5,60.0,Estimated 60-80% portfolio coverage,Low,Disclose exact portfolio coverage %,Priority 3: Extend facilitated emissions coverage; deepen DQS toward <1
+ING,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 3: Extend facilitated emissions coverage; deepen DQS toward <1
+ING,2024-12-31,Bank,Part B,Asset Class Coverage,0,5,0.0,Facilitated emissions composite 0/5 -> ~0% Part B class coverage,High,Extend Part B to all 5 asset class categories,Priority 3: Extend facilitated emissions coverage; deepen DQS toward <1
+ING,2024-12-31,Bank,Part B,Attribution Methodology,1,5,20.0,Basic allocation,Medium,Adopt time-based PCAF attribution,Priority 3: Extend facilitated emissions coverage; deepen DQS toward <1
+ING,2024-12-31,Bank,Part B,Temporal Coverage,2,3,66.7,Multi-year data with trend analysis,Low,Add projections for full score,Priority 3: Extend facilitated emissions coverage; deepen DQS toward <1
+ING,2024-12-31,Bank,Part C,Asset Class Coverage,0,5,0.0,N/A – not an insurer/reinsurer,N/A,Not applicable,Priority 3: Extend facilitated emissions coverage; deepen DQS toward <1
+ING,2024-12-31,Bank,Part C,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Extend facilitated emissions coverage; deepen DQS toward <1
+ING,2024-12-31,Bank,Part C,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 3: Extend facilitated emissions coverage; deepen DQS toward <1
+Julius Baer,2024-12-31,Bank,Part A,Asset Class Coverage,4,5,80.0,14.5/18 coefficient coverage (80.6%),Low,Extend coverage to remaining asset classes and S3 scopes,Priority 2: Extend to project finance and motor vehicle loans; improve DQS from ~3.5
+Julius Baer,2024-12-31,Bank,Part A,Data Quality Score,2,5,40.0,Average PCAF DQS 3.50/5,Medium,Improve DQS toward <2.5,Priority 2: Extend to project finance and motor vehicle loans; improve DQS from ~3.5
+Julius Baer,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,"Full PCAF methods (signatory), annual updates",Low,Enhance with sector-specific improvements,Priority 2: Extend to project finance and motor vehicle loans; improve DQS from ~3.5
+Julius Baer,2024-12-31,Bank,Part A,Portfolio Coverage,2,5,40.0,Partial portfolio coverage,Medium,Disclose exact portfolio coverage %,Priority 2: Extend to project finance and motor vehicle loans; improve DQS from ~3.5
+Julius Baer,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,3+ years with trends and projections,Low,Good temporal coverage,Priority 2: Extend to project finance and motor vehicle loans; improve DQS from ~3.5
+Julius Baer,2024-12-31,Bank,Part B,Asset Class Coverage,0,5,0.0,No facilitated emissions reported,High,Implement PCAF Part B,Priority 2: Extend to project finance and motor vehicle loans; improve DQS from ~3.5
+Julius Baer,2024-12-31,Bank,Part B,Attribution Methodology,0,5,0.0,No facilitated emission attribution,High,Develop Part B attribution,Priority 2: Extend to project finance and motor vehicle loans; improve DQS from ~3.5
+Julius Baer,2024-12-31,Bank,Part B,Temporal Coverage,0,3,0.0,No historical facilitated emissions data,High,Build Part B data series,Priority 2: Extend to project finance and motor vehicle loans; improve DQS from ~3.5
+Julius Baer,2024-12-31,Bank,Part C,Asset Class Coverage,0,5,0.0,N/A – not an insurer/reinsurer,N/A,Not applicable,Priority 2: Extend to project finance and motor vehicle loans; improve DQS from ~3.5
+Julius Baer,2024-12-31,Bank,Part C,Attribution Methodology,0,5,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Extend to project finance and motor vehicle loans; improve DQS from ~3.5
+Julius Baer,2024-12-31,Bank,Part C,Temporal Coverage,0,3,0.0,N/A – not applicable,N/A,Not applicable,Priority 2: Extend to project finance and motor vehicle loans; improve DQS from ~3.5

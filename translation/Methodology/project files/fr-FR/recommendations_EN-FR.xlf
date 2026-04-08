@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" target-language="fr" datatype="html" original="pcaf_compliance_dashboard_FR.html">
+    <header>
+      <note>Phrases anglaises à traduire - Section Recommandations du dashboard PCAF</note>
+    </header>
+    <body>
+      <trans-unit id="rec_01">
+        <source>Priority 3: Add explicit DQS per asset class</source>
+        <target state="translated">Priorité 3 : ajouter des DQS explicites par classe d’actifs</target>
+        
+      <note>KBC</note></trans-unit>
+      <trans-unit id="rec_02">
+        <source>Priority 3: Continue sector-by-sector PCAF implementation</source>
+        <target state="translated">Priorité 3 : poursuivre la mise en œuvre PCAF® secteur par secteur</target>
+        
+      <note>SANTANDER</note></trans-unit>
+      <trans-unit id="rec_03">
+        <source>Priority 3: Extend coverage to all insurance lines</source>
+        <target state="translated">Priorité 3 : étendre la couverture à toutes les lignes d’assurance</target>
+        
+      <note>AVIVA</note></trans-unit>
+      <trans-unit id="rec_04">
+        <source>Priority 3: Reduce uncertainty range in Scope 3 financed emissions</source>
+        <target state="translated">Priorité 3 : réduire la plage d’incertitude dans les émissions financées du scope 3</target>
+        
+      <note>ALLIANZ</note></trans-unit>
+      <trans-unit id="rec_05">
+        <source>Priority 3: Improve DQS from 4 to target 2-3</source>
+        <target state="translated">Priorité 3 : améliorer le DQS pour passer de 4 à 3 ou 2</target>
+        
+      <note>NORDEA</note></trans-unit>
+      <trans-unit id="rec_06">
+        <source>Priority 3: Add explicit Data Quality Scores</source>
+        <target state="translated">Priorité 3 : ajouter des scores de qualité des données explicites</target>
+        
+      <note>PHOENIXGROUP</note></trans-unit>
+      <trans-unit id="rec_07">
+        <source>Priority 3: Extend Part C insurance-associated emissions</source>
+        <target state="translated">Priorité 3 : développer les émissions de la Partie C</target>
+        
+      <note>SWISSRE</note></trans-unit>
+      <trans-unit id="rec_08">
+        <source>Priority 3: Improve DQS from 5 to target 3</source>
+        <target state="translated">Priorité 3 : améliorer le DQS pour passer de 5 à 3</target>
+        
+      <note>UNICREDIT</note></trans-unit>
+      <trans-unit id="rec_09">
+        <source>Priority 3: Improve Part C insurance-associated emissions coverage</source>
+        <target state="translated">Priorité 3 : améliorer la couverture de la Partie C</target>
+        
+      <note>AXA</note></trans-unit>
+      <trans-unit id="rec_10">
+        <source>Priority 3: Continue improving data quality across asset classes</source>
+        <target state="translated">Priorité 3 : continuer à améliorer la qualité des données dans toutes les classes d’actifs</target>
+        
+      <note>ASRNEDERLAND</note></trans-unit>
+      <trans-unit id="rec_11">
+        <source>Priority 2: Report total absolute financed emissions</source>
+        <target state="translated">Priorité 2 : publier les émissions totales financées en valeur absolue</target>
+        
+      <note>NNGROUP</note></trans-unit>
+      <trans-unit id="rec_12">
+        <source>Priority 2: Report absolute financed emissions alongside intensity</source>
+        <target state="translated">Priorité 2 : publier les émissions financées absolues en parallèle de l’intensité</target>
+        
+      <note>LEGALGENERAL</note></trans-unit>
+      <trans-unit id="rec_13">
+        <source>Priority 3: Extend coverage to private assets</source>
+        <target state="translated">Priorité 3 : étendre la couverture aux actifs privés</target>
+        
+      <note>SCHRODERS</note></trans-unit>
+      <trans-unit id="rec_14">
+        <source>Priority 2: Report aggregate financed emissions total</source>
+        <target state="translated">Priorité 2 : publier le total consolidé des émissions financées</target>
+        
+      <note>COMMERZBANK</note></trans-unit>
+      <trans-unit id="rec_15">
+        <source>Priority 2: Report total financed emissions in 2025</source>
+        <target state="translated">Priorité 2 : publier les émissions totales financées en 2025</target>
+        
+      <note>ZURICH</note></trans-unit>
+      <trans-unit id="rec_16">
+        <source>Priority 2: Consolidate financed emissions across all portfolios</source>
+        <target state="translated">Priorité 2 : consolider les émissions financées dans l’ensemble des portefeuilles</target>
+        
+      <note>CREDITAGRICOLE</note></trans-unit>
+      <trans-unit id="rec_17">
+        <source>Priority 3: Add explicit Data Quality Scores per PCAF guidance</source>
+        <target state="translated">Priorité 3 : ajouter des scores de qualité des données explicites selon les directives PCAF®</target>
+        
+      <note>EURAZEO</note></trans-unit>
+      <trans-unit id="rec_18">
+        <source>Priority 2: Implement PCAF Part A methodology with quantified financed emissions</source>
+        <target state="translated">Priorité 2 : mettre en œuvre la méthodologie PCAF Partie A avec des émissions financées quantifiées</target>
+        
+      <note>ADMIRAL</note></trans-unit>
+      <trans-unit id="rec_19">
+        <source>Priority 2: Report total financed emissions with PCAF breakdown</source>
+        <target state="translated">Priorité 2 : publier les émissions totales financées avec la ventilation PCAF</target>
+        
+      <note>AGEAS</note></trans-unit>
+      <trans-unit id="rec_20">
+        <source>Priority 2: Report total financed emissions, not just sector targets</source>
+        <target state="translated">Priorité 2 : publier les émissions totales financées, pas seulement les objectifs sectoriels</target>
+        
+      <note>SOCGEN</note></trans-unit>
+      <trans-unit id="rec_21">
+        <source>Priority 2: Report total portfolio financed emissions</source>
+        <target state="translated">Priorité 2 : publier les émissions totales financées du portefeuille</target>
+        
+      <note>GBL</note></trans-unit>
+      <trans-unit id="rec_22">
+        <source>Priority 1: Join PCAF and implement full methodology</source>
+        <target state="translated">Priorité 1 : adhérer à PCAF® et mettre en œuvre une méthodologie complète</target>
+        
+      <note>DEUTSCHEBOERSE</note></trans-unit>
+      <trans-unit id="rec_23">
+        <source>Priority 1: Adopt PCAF methodology and calculate financed emissions</source>
+        <target state="translated">Priorité 1 : adopter la méthodologie PCAF® et calculer les émissions financées</target>
+        
+      <note>AMUNDI</note></trans-unit>
+    </body>
+  </file>
+</xliff>

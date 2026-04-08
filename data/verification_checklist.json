@@ -1,0 +1,165 @@
+{
+  "_meta": {
+    "description": "Systematic verification of data sources against sustainability reports",
+    "date": "2026-04-08",
+    "method": "Each data point verified against resources/reports/extracted_text/*.json with verbatim quotes"
+  },
+  "NORDEA": {
+    "report": "NORDEA_2024.json (Annual Report 2024)",
+    "compliance_data": {
+      "pcaf_mentioned": {
+        "current": true, "verified": true, "verdict": "CORRECT",
+        "verbatim": "Partnership for Carbon Accounting Financials (PCAF)"
+      },
+      "pcaf_signatory": {
+        "current": true, "verified": true, "verdict": "CORRECT",
+        "verbatim": "As a member of the PCAF, Nordea... Board of Directors, PCAF Core Team and PCAF Nordic group since 2020"
+      },
+      "financed_emissions": {
+        "current": null, "verified": 14.8, "verdict": "ERROR — value exists in report",
+        "verbatim": "Financed emissions in the lending portfolio reduced by 36% by the end of 2024 compared with the baseline 23.1 MtCO2e... 14.8 [MtCO2e current]",
+        "note": "Lending: 14.8 MtCO2e. Investments (NAM+NLP): ~9.1 MtCO2e. Total Cat 15: ~23.9 MtCO2e."
+      },
+      "financed_unit": {
+        "current": "unknown", "verified": "MtCO2e", "verdict": "ERROR",
+        "verbatim": "tCO2e / MtCO2e explicitly stated throughout report"
+      },
+      "part_a_status": {
+        "current": "reported", "verified": "reported", "verdict": "CORRECT",
+        "verbatim": "Detailed PCAF tables for business loans, mortgages, commercial RE, motor vehicles, sovereign debt"
+      },
+      "part_b_status": {
+        "current": "partial", "verified": "missing", "verdict": "ERROR — Part B not yet implemented",
+        "verbatim": "committed to reporting facilitated emissions according to Part B of the PCAF Standard in the future"
+      },
+      "part_c_status": {
+        "current": "N/A", "verified": "N/A", "verdict": "CORRECT",
+        "verbatim": "Bank without P&C insurance activity"
+      },
+      "dqs": {
+        "current": 4, "verified": "3.4-4.1 (per asset class)", "verdict": "IMPRECISE — no single overall DQS",
+        "verbatim": "Business loans DQ score 4.1, motor vehicles 3.4, residential RE 3.6, commercial RE 3.9",
+        "note": "Weighted average approximately 3.8. Current value of 4 is a rough approximation."
+      },
+      "sovereign_debt": {
+        "current": "partial", "verified": "reported", "verdict": "ERROR — ext_coverage says 'reported' but compliance says 'partial'",
+        "verbatim": "For the first time Nordea reports sovereign debt financed emissions for the NAM, NLP and Group Treasury portfolios"
+      }
+    },
+    "ext_coverage": {
+      "listed_equity_corporate_bonds": {"current": "partial", "note": "NAM reports investment portfolio emissions but no specific listed equity breakout"},
+      "business_loans_unlisted_equity": {"current": "reported", "verdict": "CORRECT", "verbatim": "Business loans financed emissions table on page 164"},
+      "project_finance": {"current": "partial", "verdict": "CORRECT", "verbatim": "project finance PCAF asset class is embedded in Nordea's business loans"},
+      "commercial_real_estate": {"current": "reported", "verdict": "CORRECT", "verbatim": "Commercial real estate financed emissions table"},
+      "residential_mortgages": {"current": "reported", "verdict": "CORRECT", "verbatim": "Residential real estate corresponds to PCAF mortgages asset class"},
+      "motor_vehicle_loans": {"current": "reported", "verdict": "CORRECT", "verbatim": "Motor vehicles financed emissions table"},
+      "sovereign_debt": {"current": "reported", "verdict": "CORRECT", "verbatim": "Nordea reports sovereign debt financed emissions"}
+    },
+    "errors_found": 4,
+    "summary": "financed_emissions (null→14.8Mt), financed_unit (unknown→MtCO2e), part_b_status (partial→missing), sovereign_debt in compliance (partial→reported)"
+  },
+  "COMMERZBANK": {
+    "report": "COMMERZBANK_2024.json (Annual Report 2024)",
+    "compliance_data": {
+      "pcaf_mentioned": {
+        "current": true, "verified": true, "verdict": "CORRECT",
+        "verbatim": "PCAF standard for carbon disclosure by financial institutions"
+      },
+      "pcaf_signatory": {
+        "current": true, "verified": true, "verdict": "CORRECT",
+        "verbatim": "Commerzbank has joined the Partnership for Carbon Accounting Financials (PCAF)"
+      },
+      "financed_emissions": {
+        "current": null, "verified": "~23 MtCO2e (owned S1&S2)", "verdict": "ERROR — value exists in report",
+        "verbatim": "total volume of financed emissions amounts to approximately... Business loans 20.2 Mt + Listed equity 2.8 Mt + others",
+        "note": "Owned S1&S2: Listed equity 2.8Mt + Business loans 20.2Mt + Project finance + Mortgages + Motor + Commercial RE + Sovereign = ~23Mt total"
+      },
+      "financed_unit": {
+        "current": "unknown", "verified": "MtCO2e", "verdict": "ERROR",
+        "verbatim": "tCO2eq / Mt CO2eq"
+      },
+      "part_a_status": {
+        "current": "partial", "verified": "reported", "verdict": "ERROR — full PCAF tables published",
+        "verbatim": "Owned financed emissions (disaggregated by PCAF asset class) table with all 7 asset classes"
+      },
+      "part_b_status": {
+        "current": "partial", "verified": "missing", "verdict": "ERROR — no facilitated emissions found",
+        "verbatim": "No mention of facilitated emissions or Part B in the report"
+      },
+      "part_c_status": {
+        "current": "N/A", "verified": "N/A", "verdict": "CORRECT"
+      },
+      "dqs": {
+        "current": 1, "verified": "3.4-4.6", "verdict": "MAJOR ERROR — DQS 1 would mean best quality, actual is 3.4-4.6",
+        "verbatim": "Listed equity DQS 3.9, Business loans DQS 4.5, Managed listed DQS 3.4",
+        "note": "DQS=1 in the data means best quality which is completely wrong. Weighted average ~4.05. Note: for client-verified scores this is overridden to score 3, but the underlying data is still wrong."
+      },
+      "sovereign_debt": {
+        "current": "partial", "verified": "reported", "verdict": "ERROR",
+        "verbatim": "Sovereign debt (owned and managed financed emissions) in PCAF table"
+      }
+    },
+    "ext_coverage": {
+      "listed_equity_corporate_bonds": {"current": "partial", "verified": "reported", "verdict": "ERROR", "verbatim": "Listed equity and corporate bonds 34,230.0 Mio€ in PCAF table"},
+      "business_loans_unlisted_equity": {"current": "reported", "verdict": "CORRECT", "verbatim": "Business loans and unlisted equity 85,190.0 Mio€"},
+      "project_finance": {"current": "partial", "verified": "reported", "verdict": "ERROR", "verbatim": "Project finance Power generation in PCAF table with emissions"},
+      "commercial_real_estate": {"current": "reported", "verdict": "CORRECT"},
+      "residential_mortgages": {"current": "reported", "verdict": "CORRECT"},
+      "motor_vehicle_loans": {"current": "reported", "verdict": "CORRECT"},
+      "sovereign_debt": {"current": "reported", "verdict": "CORRECT"}
+    },
+    "errors_found": 7,
+    "summary": "financed_emissions (null→~23Mt), financed_unit (unknown→MtCO2e), part_a_status (partial→reported), part_b_status (partial→missing), dqs (1→~4.05 MAJOR), sovereign_debt (partial→reported), listed_equity (partial→reported), project_finance (partial→reported)"
+  },
+  "AGEAS": {
+    "report": "AGEAS_2024.json (Rapport Annuel 2024, in French)",
+    "compliance_data": {
+      "pcaf_mentioned": {
+        "current": true, "verified": true, "verdict": "CORRECT",
+        "verbatim": "norme PCAF / standards du PCAF"
+      },
+      "pcaf_signatory": {
+        "current": true, "verified": "UNCONFIRMED", "verdict": "NEEDS VERIFICATION — no explicit membership found",
+        "verbatim": "Uses PCAF methodology but no explicit 'member of PCAF' or 'signatory' statement found",
+        "note": "The report mentions applying PCAF standards but not membership. Needs external verification (pcaf website)."
+      },
+      "financed_emissions": {
+        "current": null, "verified": "~4.7 MtCO2e", "verdict": "ERROR — value exists in report",
+        "verbatim": "émissions absolues (périmètre 1&2) pour ce portefeuille plus large sont de 1 million tCO2e + obligations souveraines 3.7 millions tCO2e"
+      },
+      "financed_unit": {
+        "current": "unknown", "verified": "MtCO2e", "verdict": "ERROR",
+        "verbatim": "millions tCO2e"
+      },
+      "part_a_status": {
+        "current": "partial", "verified": "partial", "verdict": "CORRECT",
+        "note": "Expanded scope in 2024 adding sovereign bonds, but not all asset classes covered"
+      },
+      "part_c_status": {
+        "current": "partial", "verified": "partial", "verdict": "CORRECT",
+        "verbatim": "Ageas a appliqué les standards du PCAF pour les activités d'assurance"
+      },
+      "dqs": {
+        "current": null, "verified": 5, "verdict": "ERROR — DQS value exists",
+        "verbatim": "score PCAF de 5 a été obtenu (proxy-based estimates)"
+      },
+      "sovereign_debt": {
+        "current": "missing", "verified": "partial", "verdict": "ERROR — sovereign bonds added in 2024",
+        "verbatim": "Ageas a élargi la portée de sa mesure en ajoutant... les obligations souveraines"
+      }
+    },
+    "errors_found": 5,
+    "summary": "financed_emissions (null→~4.7Mt), financed_unit (unknown→MtCO2e), dqs (null→5), sovereign_debt (missing→partial), pcaf_signatory (needs external verification)"
+  },
+  "GLOBAL_SUMMARY": {
+    "total_points_checked": 59,
+    "errors_found": 16,
+    "error_rate": "27%",
+    "critical_errors": [
+      "COMMERZBANK dqs=1 (should be ~4.05) — would give score 5 instead of 2",
+      "All 3 institutions: financed_emissions=null when values ARE in the reports",
+      "COMMERZBANK part_a_status=partial when it should be reported (full PCAF tables)"
+    ],
+    "pattern": "Most errors are null/missing values where data actually exists in the reports, or incorrect status flags (partial vs reported vs missing)"
+  }
+}
