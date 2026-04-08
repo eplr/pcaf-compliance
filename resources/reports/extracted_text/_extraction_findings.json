@@ -1,0 +1,359 @@
+{
+  "ADMIRAL_2024": {
+    "name": "Admiral Group",
+    "type": "Insurance",
+    "chars": 116842,
+    "hits": {
+      "pcaf_mentioned": 2,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 2,
+      "dqs": 0,
+      "portfolio_coverage": 0,
+      "sovereign_debt": 0,
+      "asset_classes": 0,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 3,
+      "temporal": 3
+    }
+  },
+  "ALLIANZ_2024": {
+    "name": "Allianz",
+    "type": "Insurance",
+    "chars": 1537634,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 3,
+      "dqs": 2,
+      "portfolio_coverage": 2,
+      "sovereign_debt": 0,
+      "asset_classes": 3,
+      "facilitated_emissions": 1,
+      "insurance_emissions": 3,
+      "temporal": 3
+    }
+  },
+  "AMUNDI_2024": {
+    "name": "Amundi",
+    "type": "Asset Manager",
+    "chars": 1819973,
+    "hits": {
+      "pcaf_mentioned": 0,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 0,
+      "dqs": 0,
+      "portfolio_coverage": 0,
+      "sovereign_debt": 0,
+      "asset_classes": 0,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 0,
+      "temporal": 3
+    }
+  },
+  "ASRNEDERLAND_2024": {
+    "name": "ASR Nederland",
+    "type": "Insurance",
+    "chars": 1816679,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 3,
+      "dqs": 3,
+      "portfolio_coverage": 3,
+      "sovereign_debt": 3,
+      "asset_classes": 3,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 3,
+      "temporal": 3
+    }
+  },
+  "AVIVA_2024": {
+    "name": "Aviva",
+    "type": "Insurance",
+    "chars": 369121,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 1,
+      "financed_emissions_total": 3,
+      "dqs": 3,
+      "portfolio_coverage": 3,
+      "sovereign_debt": 0,
+      "asset_classes": 2,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 2,
+      "temporal": 3
+    }
+  },
+  "AXA_2024": {
+    "name": "AXA",
+    "type": "Insurance",
+    "chars": 1903832,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 3,
+      "dqs": 1,
+      "portfolio_coverage": 3,
+      "sovereign_debt": 1,
+      "asset_classes": 1,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 3,
+      "temporal": 3
+    }
+  },
+  "CREDITAGRICOLE_2024": {
+    "name": "Cr\u00e9dit Agricole",
+    "type": "Bank",
+    "chars": 2527005,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 0,
+      "dqs": 0,
+      "portfolio_coverage": 0,
+      "sovereign_debt": 0,
+      "asset_classes": 0,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 2,
+      "temporal": 3
+    }
+  },
+  "DEUTSCHEBOERSE_2024": {
+    "name": "Deutsche B\u00f6rse",
+    "type": "Exchange",
+    "chars": 1160744,
+    "hits": {
+      "pcaf_mentioned": 0,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 1,
+      "dqs": 0,
+      "portfolio_coverage": 0,
+      "sovereign_debt": 0,
+      "asset_classes": 0,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 0,
+      "temporal": 3
+    }
+  },
+  "EURAZEO_2024": {
+    "name": "Eurazeo",
+    "type": "Asset Manager",
+    "chars": 1365490,
+    "hits": {
+      "pcaf_mentioned": 2,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 0,
+      "dqs": 0,
+      "portfolio_coverage": 0,
+      "sovereign_debt": 0,
+      "asset_classes": 0,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 1,
+      "temporal": 0
+    }
+  },
+  "GBL_2024": {
+    "name": "GBL",
+    "type": "Investment Holding",
+    "chars": 2692641,
+    "hits": {
+      "pcaf_mentioned": 1,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 0,
+      "dqs": 0,
+      "portfolio_coverage": 0,
+      "sovereign_debt": 0,
+      "asset_classes": 0,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 0,
+      "temporal": 1
+    }
+  },
+  "JULIUSBAER_2025": {
+    "name": "Julius Baer",
+    "type": "Bank",
+    "chars": 238107,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 3,
+      "dqs": 0,
+      "portfolio_coverage": 1,
+      "sovereign_debt": 0,
+      "asset_classes": 3,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 0,
+      "temporal": 3
+    }
+  },
+  "KBC_2024": {
+    "name": "KBC",
+    "type": "Bancassurance",
+    "chars": 443879,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 0,
+      "dqs": 0,
+      "portfolio_coverage": 0,
+      "sovereign_debt": 0,
+      "asset_classes": 3,
+      "facilitated_emissions": 3,
+      "insurance_emissions": 3,
+      "temporal": 3
+    }
+  },
+  "LEGALGENERAL_2024": {
+    "name": "Legal & General",
+    "type": "Insurance",
+    "chars": 279944,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 2,
+      "dqs": 2,
+      "portfolio_coverage": 3,
+      "sovereign_debt": 0,
+      "asset_classes": 2,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 0,
+      "temporal": 3
+    }
+  },
+  "NNGROUP_2024": {
+    "name": "NN Group",
+    "type": "Insurance",
+    "chars": 1475345,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 1,
+      "financed_emissions_total": 3,
+      "dqs": 3,
+      "portfolio_coverage": 2,
+      "sovereign_debt": 0,
+      "asset_classes": 3,
+      "facilitated_emissions": 2,
+      "insurance_emissions": 3,
+      "temporal": 3
+    }
+  },
+  "PHOENIXGROUP_2024": {
+    "name": "Phoenix Group",
+    "type": "Insurance",
+    "chars": 1370540,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 1,
+      "dqs": 0,
+      "portfolio_coverage": 3,
+      "sovereign_debt": 0,
+      "asset_classes": 1,
+      "facilitated_emissions": 1,
+      "insurance_emissions": 0,
+      "temporal": 3
+    }
+  },
+  "SANTANDER_2024": {
+    "name": "Santander",
+    "type": "Bank",
+    "chars": 3075027,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 2,
+      "financed_emissions_total": 1,
+      "dqs": 3,
+      "portfolio_coverage": 3,
+      "sovereign_debt": 0,
+      "asset_classes": 3,
+      "facilitated_emissions": 3,
+      "insurance_emissions": 0,
+      "temporal": 3
+    }
+  },
+  "SCHRODERS_2024": {
+    "name": "Schroders",
+    "type": "Asset Manager",
+    "chars": 743614,
+    "hits": {
+      "pcaf_mentioned": 2,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 0,
+      "dqs": 0,
+      "portfolio_coverage": 2,
+      "sovereign_debt": 0,
+      "asset_classes": 0,
+      "facilitated_emissions": 2,
+      "insurance_emissions": 0,
+      "temporal": 3
+    }
+  },
+  "SOCGEN_2024": {
+    "name": "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale",
+    "type": "Bank",
+    "chars": 2988754,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 0,
+      "dqs": 0,
+      "portfolio_coverage": 0,
+      "sovereign_debt": 0,
+      "asset_classes": 0,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 0,
+      "temporal": 3
+    }
+  },
+  "SWISSRE_2024": {
+    "name": "Swiss Re",
+    "type": "Reinsurance",
+    "chars": 411588,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 0,
+      "dqs": 0,
+      "portfolio_coverage": 3,
+      "sovereign_debt": 3,
+      "asset_classes": 3,
+      "facilitated_emissions": 0,
+      "insurance_emissions": 3,
+      "temporal": 3
+    }
+  },
+  "UNICREDIT_2024": {
+    "name": "UniCredit",
+    "type": "Bank",
+    "chars": 3360711,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 3,
+      "dqs": 0,
+      "portfolio_coverage": 3,
+      "sovereign_debt": 0,
+      "asset_classes": 3,
+      "facilitated_emissions": 3,
+      "insurance_emissions": 0,
+      "temporal": 3
+    }
+  },
+  "ZURICH_2024": {
+    "name": "Zurich",
+    "type": "Insurance",
+    "chars": 1374024,
+    "hits": {
+      "pcaf_mentioned": 3,
+      "pcaf_signatory": 0,
+      "financed_emissions_total": 0,
+      "dqs": 1,
+      "portfolio_coverage": 1,
+      "sovereign_debt": 0,
+      "asset_classes": 0,
+      "facilitated_emissions": 1,
+      "insurance_emissions": 3,
+      "temporal": 3
+    }
+  }
+}
