@@ -366,5 +366,1305 @@
       "Part B": 0.3846,
       "Part C": null
     }
+  },
+  "Allianz": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Insurance",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 3,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 12.5/18 = 69.4%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'commercial_re', 'mortgages', 'sovereign_debt']."
+      },
+      "Data Quality Score": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 2.2."
+      },
+      "Attribution Methodology": {
+        "score": 3,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L57), methods applied per asset class."
+      },
+      "Portfolio Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L48."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+      }
+    }
+  },
+  "Amundi": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Asset Manager",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 0/18 = 0.0%. Asset classes found: []."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+      },
+      "Attribution Methodology": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] PCAF not mentioned."
+      },
+      "Portfolio Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not an insurer/reinsurer."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    }
+  },
+  "ASR Nederland": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Insurance",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 5.5/18 = 30.6%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'sovereign_debt']."
+      },
+      "Data Quality Score": {
+        "score": 5,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 1.0."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L6872), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+      },
+      "Temporal Coverage": {
+        "score": 2,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: False."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L7474."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+      }
+    }
+  },
+  "Aviva": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Insurance",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'commercial_re', 'mortgages', 'sovereign_debt']."
+      },
+      "Data Quality Score": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 2.3."
+      },
+      "Attribution Methodology": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF signatory confirmed. L818:  for Carbon Accounting Financials (PCAF) We are a PCAF Member and standing member of the Climate Data Working Group. In 2024: we have been a participa"
+      },
+      "Portfolio Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 23.0% found at L2147, verify this is PCAF portfolio coverage not another metric] Coverage: 23.0%."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L1714."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+      }
+    }
+  },
+  "AXA": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Insurance",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.0/18 = 33.3%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'motor_vehicle', 'sovereign_debt']."
+      },
+      "Data Quality Score": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 4.0."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L1806), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 24.0% found at L2026, verify this is PCAF portfolio coverage not another metric] Coverage: 24.0%."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L1796."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+      }
+    }
+  },
+  "Crédit Agricole": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Bank",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 3.5/18 = 19.4%. Asset classes found: ['business_loans', 'mortgages']."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L3696), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 89.2% found at L22013, verify this is PCAF portfolio coverage not another metric] Coverage: 89.2%."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No facilitated emissions identified."
+      },
+      "Attribution Methodology": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+      },
+      "Temporal Coverage": {
+        "score": 0,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not an insurer/reinsurer."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    }
+  },
+  "Deutsche Börse": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Exchange",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 3/18 = 16.7%. Asset classes found: ['listed_equity_bonds']."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+      },
+      "Attribution Methodology": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] PCAF not mentioned."
+      },
+      "Portfolio Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not an insurer/reinsurer."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    }
+  },
+  "Eurazeo": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Asset Manager",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 0.5/18 = 2.8%. Asset classes found: ['mortgages']."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L2646), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 5,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 99.7% found at L2620, verify this is PCAF portfolio coverage not another metric] Coverage: 99.7%."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not an insurer/reinsurer."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    }
+  },
+  "GBL": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Investment Holding",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 0/18 = 0.0%. Asset classes found: []."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L14679), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 46.0% found at L19789, verify this is PCAF portfolio coverage not another metric] Coverage: 46.0%."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not an insurer/reinsurer."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    }
+  },
+  "Julius Baer": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Bank",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'mortgages']."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L148), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 49.0% found at L1847, verify this is PCAF portfolio coverage not another metric] Coverage: 49.0%."
+      },
+      "Temporal Coverage": {
+        "score": 2,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: False."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No facilitated emissions identified."
+      },
+      "Attribution Methodology": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+      },
+      "Temporal Coverage": {
+        "score": 0,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not an insurer/reinsurer."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    }
+  },
+  "KBC": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Bancassurance",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'mortgages']."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L66), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 44.0% found at L4777, verify this is PCAF portfolio coverage not another metric] Coverage: 44.0%."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Facilitated emissions mentioned at L5759."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L3840."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+      }
+    }
+  },
+  "Legal & General": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Insurance",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 7.5/18 = 41.7%. Asset classes found: ['listed_equity_bonds', 'project_finance', 'mortgages', 'sovereign_debt']."
+      },
+      "Data Quality Score": {
+        "score": 3,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 2.8."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L1108), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No IAE data identified."
+      },
+      "Attribution Methodology": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+      },
+      "Temporal Coverage": {
+        "score": 0,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+      }
+    }
+  },
+  "NN Group": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Insurance",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.0/18 = 33.3%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'motor_vehicle', 'sovereign_debt']."
+      },
+      "Data Quality Score": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 1.5."
+      },
+      "Attribution Methodology": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF signatory confirmed. L5464: orresponding emission factor. Together with other members of PCAF, we are exploring ways to obtain the actual consumption data to further enhance repo"
+      },
+      "Portfolio Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 40.0% found at L20000, verify this is PCAF portfolio coverage not another metric] Coverage: 40.0%."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L4583."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+      }
+    }
+  },
+  "Phoenix Group": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Insurance",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'mortgages']."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L2146), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 85.0% found at L5835, verify this is PCAF portfolio coverage not another metric] Coverage: 85.0%."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No IAE data identified."
+      },
+      "Attribution Methodology": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+      },
+      "Temporal Coverage": {
+        "score": 0,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+      }
+    }
+  },
+  "Santander": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Bank",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 3,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 12.0/18 = 66.7%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'project_finance', 'commercial_re', 'mortgages', 'motor_vehicle', 'sovereign_debt']."
+      },
+      "Data Quality Score": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 2.3."
+      },
+      "Attribution Methodology": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF signatory confirmed. L4159: rbon Accounting Financials (PCAF): We have been a member of PCAF since 2021 and thus committed to disclose our financed emissions according to the PCA"
+      },
+      "Portfolio Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 50.0% found at L3836, verify this is PCAF portfolio coverage not another metric] Coverage: 50.0%."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Facilitated emissions mentioned at L2849."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not an insurer/reinsurer."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    }
+  },
+  "Schroders": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Asset Manager",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 3.5/18 = 19.4%. Asset classes found: ['listed_equity_bonds', 'mortgages']."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L10130), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not an insurer/reinsurer."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    }
+  },
+  "Swiss Re": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Reinsurance",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 8.5/18 = 47.2%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'sovereign_debt']."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L284), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 23.0% found at L1993, verify this is PCAF portfolio coverage not another metric] Coverage: 23.0%."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L1484."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+      }
+    }
+  },
+  "UniCredit": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Bank",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 4.5/18 = 25.0%. Asset classes found: ['listed_equity_bonds', 'commercial_re', 'mortgages']."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L2243), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 32.0% found at L4320, verify this is PCAF portfolio coverage not another metric] Coverage: 32.0%."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Facilitated emissions mentioned at L2054."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not an insurer/reinsurer."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    }
+  },
+  "Zurich": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Insurance",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 8.5/18 = 47.2%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'sovereign_debt']."
+      },
+      "Data Quality Score": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 1.8."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L4213), partial coverage."
+      },
+      "Portfolio Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — not a bank/bancassurance."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L4169."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+      }
+    }
+  },
+  "Admiral Group": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Insurance",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 1,
+        "max": 5,
+        "evidence": "[VERIFIED from full reading of Sustainability Report 2024] 3.0/18 = 16.7%. Only corporate bonds (partial S1&S2). L285-302."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[VERIFIED from full reading of Sustainability Report 2024] [NOT FOUND] No PCAF DQS in sustainability report."
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[VERIFIED from full reading of Sustainability Report 2024] PCAF mentioned once (L253, for IAE). WACI + SBTi for investments."
+      },
+      "Portfolio Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "[VERIFIED from full reading of Sustainability Report 2024] [NOT FOUND] No coverage rate disclosed."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "[VERIFIED from full reading of Sustainability Report 2024] 4 years (2021-2024) + 2025/2030/2040 targets. L271+L285."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A — insurer, not bank."
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[VERIFIED from full reading of Sustainability Report 2024] Motor IAE measured (L254). [INCOMPLETE — detailed data in Net Zero Transition Plan, not available.]"
+      },
+      "Attribution Methodology": {
+        "score": 2,
+        "max": 5,
+        "evidence": "[VERIFIED from full reading of Sustainability Report 2024] PCAF standards referenced for IAE (L253). [INCOMPLETE — need NZTP for details.]"
+      },
+      "Temporal Coverage": {
+        "score": 1,
+        "max": 3,
+        "evidence": "[VERIFIED from full reading of Sustainability Report 2024] First IAE measurement in 2024. [INCOMPLETE — need NZTP.]"
+      }
+    }
   }
 }
