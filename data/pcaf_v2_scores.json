@@ -770,34 +770,34 @@
       "Asset Class Coverage": {
         "score": 1,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 3/18 = 16.7%. Asset classes found: ['listed_equity_bonds']."
+        "evidence": "[Verified from full reading of Annual Report 2024, 10420 lines] Deutsche Börse is a stock exchange/market infrastructure provider, not a financial institution with investment portfolios. Scope 3 Category 15 (Investments) = only 1,396 tCO2e (L3440) from treasury/own investments. GHG Protocol used, no PCAF. Asset classes in Category 15 not broken down. Score 1 based on minimal Category 15 reporting."
       },
       "Data Quality Score": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+        "evidence": "[Verified from full reading] No PCAF DQS — PCAF not used. GHG emissions calculated using GHG Protocol with ecoinvent, CDP, CEDA, IEA, DEFRA factors (L3404-3411). No data quality score for financed emissions. Score 0."
       },
       "Attribution Methodology": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] PCAF not mentioned."
+        "evidence": "[Verified from full reading] PCAF is not mentioned anywhere in the report. Confirmed: Non-signatory (no mention). Deutsche Börse uses GHG Protocol for operational emissions, SBTi for targets (L3297). Category 15 calculated using GHG Protocol, not PCAF methodology. Score 0."
       },
       "Portfolio Coverage": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+        "evidence": "[Verified from full reading] No portfolio coverage concept applicable. Deutsche Börse's Category 15 (1,396 tCO2e) is 1.1% of total GHG emissions (L3440). No investment portfolio coverage rate disclosed or relevant. Score 0."
       },
       "Temporal Coverage": {
-        "score": 3,
+        "score": 2,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "[Verified from full reading] GHG emissions reported for 2022 (base year) and 2024 (L3440). SBTi targets: -42% S1&S2 by 2030, net zero by 2045 (L3297-3302). Category 15 data for 2 years only. Score 2: 2 years + targets."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A — Deutsche Börse is a stock exchange, not a bank/bancassurance."
       },
       "Attribution Methodology": {
         "score": null,
@@ -814,7 +814,7 @@
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not an insurer/reinsurer."
+        "evidence": "N/A — Deutsche Börse is a stock exchange, not an insurer/reinsurer."
       },
       "Attribution Methodology": {
         "score": null,
@@ -826,6 +826,11 @@
         "max": null,
         "evidence": "N/A"
       }
+    },
+    "_compliance": {
+      "Part A": 0.1304,
+      "Part B": null,
+      "Part C": null
     }
   },
   "Eurazeo": {
