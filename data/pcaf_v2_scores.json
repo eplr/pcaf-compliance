@@ -1034,64 +1034,71 @@
     "institution_type": "Bancassurance",
     "Part A": {
       "Asset Class Coverage": {
-        "score": 1,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'mortgages']."
+        "coverage_ratio": 0.528,
+        "evidence": "[Verified from full reading of Sustainability Report 2024, 6013 lines] 9.5/18 = 52.8%. Loan portfolio PCAF: agriculture 38% (6.0 Mt), real estate/mortgages 13%, energy 9%, transport 8%, chemicals 2%, metals 3%, building 2%, food 3% (L3908-3910). White Paper sectors = 78% of financed S1&S2, 66% of loans. KBC Insurance: equity+bonds tracked (L5657-5677, Trucost). Sovereign bonds tracked (L5699-5701). Motor vehicle financing covered (L5001). All S1&S2; S3 reported but not in targets (L3987)."
       },
       "Data Quality Score": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+        "evidence": "[Verified from full reading] No overall PCAF DQS published. PCAF quality scoring referenced at sector level (L5112) but no weighted average figure. Score 0."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L66), partial coverage."
+        "evidence": "[Verified from full reading] PCAF signatory. Uses PCAF Global Standard since 2019 for loan portfolio (L3872). Trucost for investment portfolios. PACTA for sector alignment. White Paper sectoral targets with scenario-based benchmarks (L4043-4048). Dedicated Data and Metrics project within Sustainable Finance Programme (L3809). Score 4: comprehensive PCAF methodology, signatory."
       },
       "Portfolio Coverage": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 44.0% found at L4777, verify this is PCAF portfolio coverage not another metric] Coverage: 44.0%."
+        "evidence": "[Verified from full reading] Climate targets cover ~62% of total financed S1&S2 emissions (L3986/L4000). White Paper sectors = 78% of financed S1&S2, 66% of total loan portfolio (L3986). The 44% at L4777 refers to real estate's share of total loan exposure (91bn/207bn), NOT portfolio coverage. PCAF applied to entire loan portfolio since 2021 (L3872). Score 3 (60-80%)."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "[Verified from full reading] PCAF financed emissions since 2019 (L3872), entire portfolio since 2021. 2021 baselines for all White Paper targets. 2030 and 2050 targets across all sectors (L3986-3989). Fourth consecutive progress report (L3877). Score 3."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
-        "score": 1,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Facilitated emissions mentioned at L5759."
+        "evidence": "[Verified from full reading, L5758-5759] Facilitated emissions explicitly immaterial. Verbatim: 'the portion of our portfolio subject to the PCAF Facilitated Emissions Standard relative to the outstanding exposure in our loan portfolio is only 0.46%. We therefore consider this to be immaterial and do not calculate nor publish the facilitated emissions.' Score 0."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+        "evidence": "[Verified] No facilitated emissions methodology — immaterial portfolio."
       },
       "Temporal Coverage": {
-        "score": 1,
+        "score": 0,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+        "evidence": "[Verified] No facilitated emissions data."
       }
     },
     "Part C": {
       "Asset Class Coverage": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L3840."
+        "coverage_ratio": 0.625,
+        "evidence": "[Verified from full reading, L5726-5748] PCAF Part C used. Personal motor: 2,699,160 vehicles, 283,382 tCO2e (L5728). Commercial lines: 173,847 tCO2e with sector breakdown (L5729-5747). Two of four PCAF Part C branches covered (motor S1&S2 + commercial S1&S2). 5.0/8.0 = 62.5%. Described as pilot phase. Score 3."
       },
       "Attribution Methodology": {
         "score": 2,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+        "evidence": "[Verified from full reading, L5726] PCAF Standard Part C applied. Described as pilot phase (L5727). Calculations 'largely based on estimates and proxies' (L5748). Score 2: ITV method applied but still in development."
       },
       "Temporal Coverage": {
         "score": 1,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+        "evidence": "[Verified from full reading] Second year of IAE calculation (first in 2023, L5726). Two years of data. Score 1."
       }
+    },
+    "_compliance": {
+      "Part A": 0.5652,
+      "Part B": 0.0,
+      "Part C": 0.4615
     }
   },
   "Legal & General": {

@@ -19,9 +19,9 @@ Crédit Agricole,2024-12-31,Signatory,Part B - Facilitated Emissions,MISSING,0,"
 Deutsche Börse,2024-12-31,Non-signatory (no mention),Part A - Financed Emissions,MISSING,17,"Asset Class Coverage, Data Quality Score, Attribution Methodology, Portfolio Coverage",Critical
 Eurazeo,2024-12-31,Non-signatory (mentions PCAF),Part A - Financed Emissions,PARTIAL,48,"Asset Class Coverage, Data Quality Score",High
 GBL,2024-12-31,Non-signatory (mentions PCAF),Part A - Financed Emissions,MISSING,30,"Asset Class Coverage, Data Quality Score",Critical
-KBC,2024-12-31,Signatory,Part A - Financed Emissions,MISSING,35,"Asset Class Coverage, Data Quality Score",Critical
-KBC,2024-12-31,Signatory,Part B - Facilitated Emissions,PARTIAL,31,"Asset Class Coverage, Temporal Coverage",High
-KBC,2024-12-31,Signatory,Part C - Insurance-Associated Emissions,PARTIAL,38,Temporal Coverage,High
+KBC,2024-12-31,Signatory,Part A - Financed Emissions,PARTIAL,56,Data Quality Score,High
+KBC,2024-12-31,Signatory,Part B - Facilitated Emissions,MISSING,0,"Asset Class Coverage, Attribution Methodology, Temporal Coverage",Critical
+KBC,2024-12-31,Signatory,Part C - Insurance-Associated Emissions,PARTIAL,46,Temporal Coverage,High
 Legal & General,2024-12-31,Signatory,Part A - Financed Emissions,REPORTED,83,Minor gaps,Low
 Legal & General,2024-12-31,Signatory,Part C - Insurance-Associated Emissions,MISSING,0,"Asset Class Coverage, Attribution Methodology, Temporal Coverage",Critical
 NN Group,2024-12-31,Signatory,Part A - Financed Emissions,PARTIAL,56,"Asset Class Coverage, Portfolio Coverage",High
