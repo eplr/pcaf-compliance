@@ -305,9 +305,9 @@ _LEADING_TAG_RE = re.compile(
     r'^\[(?:VERIFIED|Verified|AUTOMATED|UNVERIFIED)[^\]]*\]\s*',
     re.IGNORECASE,
 )
-# Matches inline status/scan tags: [NOT FOUND], [FOUND — ...], [INCOMPLETE — ...], [No data]
-_INLINE_TAG_RE = re.compile(
-    r'\[(?:NOT FOUND|FOUND[^\]]*|INCOMPLETE[^\]]*|No data)\]\s*'
+# Matches inline extraction tags: [NOT FOUND], [FOUND — ...], [INCOMPLETE — ...], [No data]
+_EXTRACTION_TAG_RE = re.compile(
+    r'\[(?:NOT FOUND|FOUND[^\]]*|INCOMPLETE[^\]]*|No data)\]'
 )
 
 def _detect_verification_status(evidence, score, assessor_notes=""):
@@ -324,10 +324,17 @@ def _detect_verification_status(evidence, score, assessor_notes=""):
         return "[CLIENT-VERIFIED]"
     return "[UNVERIFIED]"
 
-def _strip_verification_tag(evidence):
+def _extract_result_tags(evidence):
+    """Extract [NOT FOUND]/[FOUND ...]/[INCOMPLETE ...]/[No data] tags from evidence."""
+    tags = _EXTRACTION_TAG_RE.findall(evidence)
+    return " ".join(tags) if tags else ""
+
+def _strip_all_tags(evidence):
     """Remove all bracket labels from evidence, keeping only the factual content."""
     cleaned = _LEADING_TAG_RE.sub('', evidence)
-    cleaned = _INLINE_TAG_RE.sub('', cleaned)
+    cleaned = _EXTRACTION_TAG_RE.sub('', cleaned)
+    # Collapse double spaces left by removed tags
+    cleaned = re.sub(r'  +', ' ', cleaned)
     return cleaned.strip()
 
 # ── Part A ──────────────────────────────────────────────────────────
@@ -633,19 +640,22 @@ def generate_assessment():
             score = data.get("score"); max_s = data.get("max"); evid = data.get("evidence", "")
             notes = "V2 client-verified"
             vstatus = _detect_verification_status(evid, score, notes)
-            clean_evid = _strip_verification_tag(evid)
+            ext_result = _extract_result_tags(evid)
+            clean_evid = _strip_all_tags(evid)
             if score is None:
                 return {"company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
                         "pcaf_signatory":signatory,
                         "pcaf_part":part_label,"criterion":criterion,"score":NA,"max_score":NA,
-                        "percentage":"","verification_status":"[N/A]","evidence":clean_evid,
+                        "percentage":"","verification_status":"[N/A]","extraction_result":ext_result,
+                        "evidence":clean_evid,
                         "priority":NA,"gap_description":NA,
                         "assessor_notes":"V2 client-verified – N/A"}
             pct = round((score/max_s)*100,1) if max_s else ""
             return {"company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
                     "pcaf_signatory":signatory,
                     "pcaf_part":part_label,"criterion":criterion,"score":score,"max_score":max_s,
-                    "percentage":pct,"verification_status":vstatus,"evidence":clean_evid,
+                    "percentage":pct,"verification_status":vstatus,"extraction_result":ext_result,
+                    "evidence":clean_evid,
                     "priority":"—","gap_description":"—",
                     "assessor_notes":"V2 client-verified"}
 
@@ -660,12 +670,14 @@ def generate_assessment():
             for criterion, score, max_s, evidence, priority, gap in scored_rows:
                 pct = "" if score==NA else (round((score/max_s)*100,1) if isinstance(max_s,(int,float)) and max_s>0 else "")
                 vstatus = "[N/A]" if score == NA else "[UNVERIFIED]"
-                clean_evid = _strip_verification_tag(evidence)
+                ext_result = _extract_result_tags(evidence)
+                clean_evid = _strip_all_tags(evidence)
                 output_rows.append({
                     "company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
                     "pcaf_signatory":signatory,
                     "pcaf_part":part_label,"criterion":criterion,"score":score,"max_score":max_s,
-                    "percentage":pct,"verification_status":vstatus,"evidence":clean_evid,
+                    "percentage":pct,"verification_status":vstatus,"extraction_result":ext_result,
+                    "evidence":clean_evid,
                     "priority":priority,"gap_description":gap,
                     "assessor_notes":compl_data.get("recommendation",""),
                 })
@@ -681,7 +693,8 @@ def main():
     rows = generate_assessment()
     output_path = os.path.join(BASE, "output", "pcaf_assessment_detailed.csv")
     fieldnames = ["company","assessment_date","institution_type","pcaf_signatory","pcaf_part","criterion",
-                  "score","max_score","percentage","verification_status","evidence","priority","gap_description","assessor_notes"]
+                  "score","max_score","percentage","verification_status","extraction_result","evidence",
+                  "priority","gap_description","assessor_notes"]
     with open(output_path,"w",newline="",encoding="utf-8") as f:
         w = csv.DictWriter(f,fieldnames=fieldnames); w.writeheader(); w.writerows(rows)
 
