@@ -1,71 +1,62 @@
 # Julius Baer — PCAF® Compliance Assessment
 
-> **Report analysed**: JULIUSBAER 2025 (238,107 chars, 4,925 lines)
-> **Institution type**: Bank (Part A + Part B applicable)
-> **Assessment date**: 8 April 2026
-> **Method**: Automated extraction from clean text with targeted section reading. ALL SCORES REQUIRE HUMAN VERIFICATION.
+**Source**: Sustainability Report 2025 (PDF, 4 924 lines extracted text)
+**Institution type**: Bank (private wealth manager)
+**PCAF signatory**: Signatory
+**Assessment date**: 2025-12-31
+**Method**: Full reading of extracted text (`JULIUSBAER_2025_clean.txt`)
 
 ---
 
-## Part A — Financed Emissions: 7/23
+## Part A — Financed Emissions: 13/23 (56,5%)
 
-### 1. Asset Class Coverage — 1/5
+### Asset Class Coverage: 4/5
+14,0/18 = 77,8%
 
-Raw: 6.5/18 = 36.1%
+| Asset class | Status | Points | Evidence |
+|---|---|---|---|
+| Listed equity + corporate bonds | Reported (S1&S2+S3) | 6,0/6,0 | Treasury book: L1867-1874. S1&S2 (54k tCO2e) + S3 (480k tCO2e). 68% coverage. |
+| Business loans / unlisted equity | Reported (S1&S2+S3) | 6,0/6,0 | Lending book: L2607+. Corporate loans with S1&S2 (72k) + S3 (116k). |
+| Project finance | Missing | 0/2,0 | Not covered. |
+| Commercial real estate | Reported | 1,0/1,0 | Mortgage book CRE: L2545-2550. CHF 0,8bn. |
+| Mortgages | Reported | 0,5/0,5 | Residential RE: L2538-2544. CHF 7,5bn. 97% coverage. |
+| Motor vehicle loans | Missing | 0/0,5 | Not covered. |
+| Sovereign debt | Partial (prod. excl. LULUCF) | 0,5/2,0 | L2218-2224. CHF 6,1bn, 100% coverage. DQS 1,2. |
 
-| Asset class | Status | Evidence |
-|---|---|---|
-| Listed equity & corporate bonds | partial | [FOUND — HUMAN VERIFICATION REQUIRED] |
-| Business loans & unlisted equity | partial | [FOUND — HUMAN VERIFICATION REQUIRED] |
-| Project finance | missing | [NOT FOUND] |
-| Commercial real estate | missing | [NOT FOUND] |
-| Mortgages | reported | [FOUND — HUMAN VERIFICATION REQUIRED] |
-| Motor vehicle loans | missing | [NOT FOUND] |
-| Sovereign debt | missing | [NOT FOUND] |
+### Data Quality Score: 0/5
+No single overall PCAF DQS published. Per-sector DQS in detailed tables: Treasury S1&S2 ranges 1,6–5,0, Mortgage 4,2–5,0, Lending 3,8–5,0. Score 0: no weighted average disclosed.
 
-### 2. Data Quality Score — 0/5
+### Attribution Methodology: 4/5
+PCAF signatory. Uses PCAF (2022) Global GHG Accounting Standard Part A (L947). SBTi-validated targets (L887). Third-party platform for calculations (L1950-1952). Includes S3 for equities, bonds, and corporate loans. Score 4.
 
-[NOT FOUND] Score 0 (not disclosed).
+### Portfolio Coverage: 2/5
+Treasury: 68% outstanding coverage (L2232). Mortgage: 97% (L2557). Lending: 100% corporate loans.
 
-### 3. Attribution Methodology — 2/5
+**False positive corrected**: The 49% at L986 is the share of investments in companies with SBTi targets, NOT financed emissions portfolio coverage. No single overall coverage % published. Conservative score 2.
 
-PCAF mentioned (L148), partial coverage.
-
-PCAF signatory: [NOT CONFIRMED in report text. Verify on PCAF website.]
-
-### 4. Portfolio Coverage — 2/5
-
-49.0% found at L1847.
-[FOUND — HUMAN VERIFICATION REQUIRED: 49.0% found at L1847, verify this is PCAF portfolio coverage not another metric]
-
-### 5. Temporal Coverage — 2/3
-
-Years referenced: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets/net zero: No.
+### Temporal Coverage: 3/3
+Financed emissions tracked from 2021 baseline. Data for 2021, 2024, 2025. 52% reduction vs 2021 (L172). SBTi targets through 2040. Net-zero by 2050. Score 3.
 
 ---
 
-## Part B — Facilitated Emissions: 0/13
+## Part B — Facilitated Emissions: 0/13 (0%)
 
-| Criterion | Score | Evidence |
-|---|---|---|
-| Asset Class Coverage | 0/5 | [NOT FOUND] No facilitated emissions data identified. |
-| Attribution Methodology | 0/5 | [NOT FOUND] No facilitated emissions data identified. |
-| Temporal Coverage | 0/3 | [NOT FOUND] No facilitated emissions data identified. |
+Julius Baer is a private wealth manager, not a capital markets underwriter. No facilitated emissions reported.
 
 ---
 
 ## Part C — N/A
-
-N/A — not applicable.
+Not an insurer/reinsurer.
 
 ---
 
-## Summary
+## Score changes vs auto-generated
 
-| Part | Score | Max |
-|---|---|---|
-| **Part A** | **7** | 23 |
-| **Part B** | **0** | 13 |
-| **Part C** | **N/A** | 13 |
+| Criterion | Old | New | Reason |
+|---|---|---|---|
+| Part A Asset Class Coverage | 1 | **4** | S3 included for equities, bonds, loans. Auto-scan missed S3 and several asset classes. |
+| Part A Attribution | 2 | **4** | PCAF signatory, SBTi validated, comprehensive PCAF methodology. |
+| Part A Temporal Coverage | 2 | **3** | 2021 baseline + 2050 net-zero targets confirmed. |
 
-> **ALL SCORES in this assessment are based on automated extraction and REQUIRE HUMAN VERIFICATION against the source report before use.**
+**Part A**: 7 → **13**/23 (30,4% → 56,5%)
+**Part B**: 0 → **0**/13 (unchanged, correct)

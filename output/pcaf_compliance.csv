@@ -43,5 +43,5 @@ Zurich,2024-12-31,Signatory,Part A - Financed Emissions,PARTIAL,48,Portfolio Cov
 Zurich,2024-12-31,Signatory,Part C - Insurance-Associated Emissions,PARTIAL,38,Temporal Coverage,High
 ING,2024-12-31,Signatory,Part A - Financed Emissions,PARTIAL,70,Minor gaps,High
 ING,2024-12-31,Signatory,Part B - Facilitated Emissions,PARTIAL,38,"Asset Class Coverage, Temporal Coverage",High
-Julius Baer,2024-12-31,Signatory,Part A - Financed Emissions,MISSING,30,"Asset Class Coverage, Data Quality Score",Critical
+Julius Baer,2024-12-31,Signatory,Part A - Financed Emissions,PARTIAL,56,Data Quality Score,High
 Julius Baer,2024-12-31,Signatory,Part B - Facilitated Emissions,MISSING,0,"Asset Class Coverage, Attribution Methodology, Temporal Coverage",Critical

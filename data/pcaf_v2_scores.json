@@ -959,57 +959,58 @@
     }
   },
   "Julius Baer": {
-    "assessment_date": "2024-12-31",
+    "assessment_date": "2025-12-31",
     "institution_type": "Bank",
     "Part A": {
       "Asset Class Coverage": {
-        "score": 1,
+        "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'mortgages']."
+        "coverage_ratio": 0.778,
+        "evidence": "[Verified from full reading of Sustainability Report 2025, 4924 lines] 14.0/18 = 77.8%. Treasury book: listed equities + corporate bonds S1&S2+S3 (L1867-1874, CHF 10.4bn measured, 68% coverage). Lending book: corporate loans S1&S2+S3 (L2607+). Mortgage book: residential RE + commercial RE (L2521-2560, CHF 8.3bn, 97% coverage). Sovereign debt: production emissions excl/incl LULUCF (L2218-2224, CHF 6.1bn, 100% coverage). PCAF methodology (L941-948). Not covered: project finance, motor vehicle."
       },
       "Data Quality Score": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+        "evidence": "[Verified from full reading] No single overall PCAF DQS published. Per-sector DQS available in detailed tables: Treasury S1&S2 ranges 1.6-5.0, Mortgage 4.2-5.0, Lending 3.8-5.0 (L1965-1970, L2531, L2616). No weighted average disclosed. Score 0."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L148), partial coverage."
+        "evidence": "[Verified from full reading, L941-948] PCAF signatory. Uses PCAF (2022) Global GHG Accounting and Reporting Standard Part A (L947). SBTi-validated targets (L148, L887). Third-party platform for calculations (L1950-1952). Covers treasury, mortgage, lending books comprehensively. Includes S3 for listed equities, bonds, and corporate loans. Score 4: full PCAF methods, signatory."
       },
       "Portfolio Coverage": {
         "score": 2,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 49.0% found at L1847, verify this is PCAF portfolio coverage not another metric] Coverage: 49.0%."
+        "evidence": "[Verified from full reading] Treasury book: 68% outstanding coverage (L2232). Mortgage book: 97% (L2557). Lending book: 100% corporate loans covered. The 49% at L986 is the SBTi portfolio coverage target (share in companies with SBTi targets), NOT financed emissions coverage. Estimated overall ~70% but not explicitly published as a single figure. Conservative score 2."
       },
       "Temporal Coverage": {
-        "score": 2,
+        "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: False."
+        "evidence": "[Verified from full reading] Financed emissions tracked from 2021 baseline (L895). Data for 2021, 2024, 2025 (restated via new platform, L1953). 52% reduction vs 2021 (L172). SBTi targets: 36%+ by 2025 (achieved 49%), 100% by 2040, net-zero by 2050 (L876-883). Score 3."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No facilitated emissions identified."
+        "evidence": "[Verified from full reading] No facilitated emissions reported. Julius Baer is a private wealth manager, not a capital markets underwriter. No Part B activity identified in the report."
       },
       "Attribution Methodology": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+        "evidence": "[Verified] No facilitated emissions methodology."
       },
       "Temporal Coverage": {
         "score": 0,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+        "evidence": "[Verified] No facilitated emissions data."
       }
     },
     "Part C": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not an insurer/reinsurer."
+        "evidence": "N/A — Julius Baer is a bank, not an insurer/reinsurer."
       },
       "Attribution Methodology": {
         "score": null,
@@ -1021,6 +1022,11 @@
         "max": null,
         "evidence": "N/A"
       }
+    },
+    "_compliance": {
+      "Part A": 0.5652,
+      "Part B": 0.0,
+      "Part C": null
     }
   },
   "KBC": {
