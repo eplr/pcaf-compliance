@@ -35,8 +35,8 @@ Santander,2024-12-31,Signatory,Part B - Facilitated Emissions,PARTIAL,31,"Asset 
 Schroders,2024-12-31,Non-signatory (mentions PCAF),Part A - Financed Emissions,MISSING,26,"Asset Class Coverage, Data Quality Score, Portfolio Coverage",Critical
 Société Générale,2024-12-31,Non-signatory (mentions PCAF),Part A - Financed Emissions,MISSING,26,"Data Quality Score, Portfolio Coverage, Temporal Coverage",Critical
 Société Générale,2024-12-31,Non-signatory (mentions PCAF),Part B - Facilitated Emissions,PARTIAL,31,"Asset Class Coverage, Temporal Coverage",High
-Swiss Re,2024-12-31,Signatory,Part A - Financed Emissions,MISSING,35,"Data Quality Score, Portfolio Coverage",Critical
-Swiss Re,2024-12-31,Signatory,Part C - Insurance-Associated Emissions,PARTIAL,38,Temporal Coverage,High
+Swiss Re,2024-12-31,Signatory,Part A - Financed Emissions,PARTIAL,44,"Asset Class Coverage, Data Quality Score",High
+Swiss Re,2024-12-31,Signatory,Part C - Insurance-Associated Emissions,PARTIAL,46,Asset Class Coverage,High
 UniCredit,2024-12-31,Non-signatory (mentions PCAF),Part A - Financed Emissions,MISSING,30,"Asset Class Coverage, Data Quality Score, Portfolio Coverage",Critical
 UniCredit,2024-12-31,Non-signatory (mentions PCAF),Part B - Facilitated Emissions,PARTIAL,31,"Asset Class Coverage, Temporal Coverage",High
 Zurich,2024-12-31,Signatory,Part A - Financed Emissions,PARTIAL,48,Portfolio Coverage,High
