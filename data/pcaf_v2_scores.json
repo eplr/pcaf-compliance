@@ -1591,36 +1591,37 @@
     "institution_type": "Insurance",
     "Part A": {
       "Asset Class Coverage": {
-        "score": 2,
+        "score": 1,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 8.5/18 = 47.2%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'sovereign_debt']."
+        "coverage_ratio": 0.25,
+        "evidence": "[Verified from full reading of Annual Report 2024, 26238 lines] 4.5/18 = 25.0%. Listed equity + corporate bonds S1&S2 ($46.6bn, -54% intensity vs 2019, L6553-6701). Direct real estate S1&S2 ($10bn, -30% vs 2019, L6782-6845). Sovereign bonds S1 production excl LULUCF (added 2024, $43.9bn, PCAF/NZAOA methodology, L6761-6781). Not covered: business loans, project finance, mortgages, motor vehicle."
       },
       "Data Quality Score": {
-        "score": 4,
-        "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 1.8."
-      },
-      "Attribution Methodology": {
-        "score": 2,
-        "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L4213), partial coverage."
-      },
-      "Portfolio Coverage": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+        "evidence": "[Verified from full reading] No PCAF DQS published for financed emissions (investments). The DQS 2.9 (L6330) relates to IAE (Part C), not financed emissions. The 1.8 found by auto-scan was from a different context. S&P Trucost used as data provider (L6923). Score 0."
+      },
+      "Attribution Methodology": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[Verified from full reading] PCAF signatory. Uses PCAF methodology for sovereign bonds (L6781: 'methodology aligned with PCAF Global GHG Accounting and Reporting Standard') and IAE (L6308, L6315). NZAOA aligned targets. S&P Trucost for corporate emissions (L6923). Enterprise value attribution (L6921-6925). Comprehensive methodology. Score 4."
+      },
+      "Portfolio Coverage": {
+        "score": 3,
+        "max": 5,
+        "evidence": "[Verified from full reading, L6781] ~60% of total portfolio covered. Verbatim: 'covering approximately 60 percent of the total portfolio.' Listed equity+bonds ($46.6bn) + sovereign ($43.9bn) + real estate ($10bn). Total investment portfolio ~$160.6bn (L7062). The 65% at L4165 is engagement target, NOT portfolio coverage. Score 3 (60-80%)."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "[Verified from full reading] 2019 baseline (L6558-6562). Annual data 2019-2024. -54% intensity reduction achieved (L6701). 2025 targets achieved (L4153). 2030 targets: -55% listed (L6281), -45% RE (L6283). Net zero 2050. Score 3."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A — Zurich is an insurer, not a bank/bancassurance."
       },
       "Attribution Methodology": {
         "score": null,
@@ -1635,20 +1636,26 @@
     },
     "Part C": {
       "Asset Class Coverage": {
-        "score": 2,
+        "score": 1,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L4169."
+        "coverage_ratio": 0.25,
+        "evidence": "[Verified from full reading, L6315-6370] PCAF Part C IAE for commercial lines only (large corporate >$1bn revenue). 1.7M tCO2e, $7.4bn GWP = 25% of Commercial Insurance (L6329). Personal motor: not covered. Reinsurance: not covered. 2.0/8.0 = 25%. Score 1."
       },
       "Attribution Methodology": {
         "score": 2,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+        "evidence": "[Verified from full reading, L6315] PCAF IAE methodology for commercial lines. WACI metric from CRO Forum (L6315). S&P Global data. PCAF DQS 2.9 (L6330). Score 2: ITV method applied."
       },
       "Temporal Coverage": {
         "score": 1,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+        "evidence": "[Verified from full reading] IAE baseline 2022 (L6359). -20% target by 2030 (L6285-6286). Only baseline year data shown in detail. Score 1."
       }
+    },
+    "_compliance": {
+      "Part A": 0.4783,
+      "Part B": null,
+      "Part C": 0.3077
     }
   },
   "Admiral Group": {
