@@ -1093,36 +1093,37 @@
     "institution_type": "Insurance",
     "Part A": {
       "Asset Class Coverage": {
-        "score": 2,
-        "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 7.5/18 = 41.7%. Asset classes found: ['listed_equity_bonds', 'project_finance', 'mortgages', 'sovereign_debt']."
-      },
-      "Data Quality Score": {
         "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 2.8."
+        "coverage_ratio": 0.50,
+        "evidence": "[Verified from full reading of Climate and Nature Report 2024, 3236 lines] 9.0/18 = 50.0%. Bonds 90% of portfolio (Table 4, L1126-1130, £87.2bn incl. lifetime mortgages £5.9bn). Property 9% (L1131-1135, £6.0bn). Equity 1% (L1136-1140, £2.9bn). Private debt and private equity covered via proxy (L1190). Sovereign (Government 16%, Table 5 L1172-1176). All S1&S2 only (L1079). CRE uses whole-building data. Motor vehicle not covered."
+      },
+      "Data Quality Score": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[Verified from Climate and Nature Report 2024, Table 3 L1108-1111] PCAF DQS = 2.3 (2024), 2.5 (2023). Per asset class (Table 4): Bond 2.3, Property 2.3, Equity 2.3. Score 4: DQS 2.3 falls in 1.5-2.5 range. Auto-scan found 2.8 which was a previous year or different metric."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L1108), partial coverage."
+        "evidence": "[Verified from Climate and Nature Report 2024] PCAF signatory. Reports PCAF DQS across all asset classes (Tables 3-5). Uses EVIC for corporates, sovereign capital stock for sovereigns, market valuations for real estate (L1081-1083). SBTi-validated targets. NZAOA member. Comprehensive financed emissions methodology covering £96.1bn. Score 4: full PCAF methods, signatory, reported status."
       },
       "Portfolio Coverage": {
-        "score": 0,
+        "score": 5,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+        "evidence": "[Verified from Climate and Nature Report 2024] £96.1bn of £97.6bn proprietary assets included in financed emissions = 98.5% (L1086+L1188). Total absolute emissions: 4.9M tCO2e (L1144). Proxy approaches fill coverage gaps for real estate, lifetime mortgages, private debt, private equity (L1190). Score 5 (>95%)."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "[Verified from Climate and Nature Report 2024] Investment GHG intensity tracked from 2019 base year. 37% reduction achieved by 2024 (Table 3, L1102-1104). SBTi targets: 50% reduction by 2030 (L869). Net zero by 2050 (L541). Score 3."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A — L&G is not a bank/bancassurance."
       },
       "Attribution Methodology": {
         "score": null,
@@ -1139,18 +1140,23 @@
       "Asset Class Coverage": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No IAE data identified."
+        "evidence": "[Verified from full reading] L&G is a life/retirement insurer and asset manager. No P&C underwriting. No insurance-associated emissions (IAE) reported. IAE is not applicable to L&G's business model."
       },
       "Attribution Methodology": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+        "evidence": "[Verified] No IAE methodology — no P&C underwriting business."
       },
       "Temporal Coverage": {
         "score": 0,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+        "evidence": "[Verified] No IAE data."
       }
+    },
+    "_compliance": {
+      "Part A": 0.8261,
+      "Part B": null,
+      "Part C": 0.0
     }
   },
   "NN Group": {

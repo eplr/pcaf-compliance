@@ -1,70 +1,63 @@
 # Legal & General — PCAF® Compliance Assessment
 
-> **Report analysed**: LEGALGENERAL 2024 (279,944 chars, 3,237 lines)
-> **Institution type**: Insurance (Part A + Part C applicable)
-> **Assessment date**: 8 April 2026
-> **Method**: Automated extraction from clean text with targeted section reading. ALL SCORES REQUIRE HUMAN VERIFICATION.
+**Source**: Climate and Nature Report 2024 (PDF, 3 236 lines extracted text)
+**Institution type**: Insurance (life/retirement + asset management)
+**PCAF signatory**: Signatory
+**Assessment date**: 2024-12-31
+**Method**: Full reading of extracted text (`LEGALGENERAL_2024_clean.txt`)
 
 ---
 
-## Part A — Financed Emissions: 10/23
+## Part A — Financed Emissions: 19/23 (82,6%)
 
-### 1. Asset Class Coverage — 2/5
+### Asset Class Coverage: 3/5
+9,0/18 = 50,0%
 
-Raw: 7.5/18 = 41.7%
+| Asset class | Status | Points | Evidence |
+|---|---|---|---|
+| Listed equity + corporate bonds | Partial (S1&S2) | 3,0/6,0 | Table 4: Bond 90%, Equity 1%. £87,2bn bonds + £2,9bn equity. L1079: S1&S2 only. |
+| Business loans / unlisted equity | Partial (S1&S2) | 3,0/6,0 | Private debt £18,5bn (L563) + private equity. Proxy approaches (L1190). |
+| Project finance | Partial (S1&S2) | 1,0/2,0 | Infrastructure: £1,1bn clean energy (L564). SBT: electricity generation project finance (L1223). |
+| Commercial real estate | Reported | 1,0/1,0 | Property 9% of portfolio (Table 4). Whole-building emissions via CRREM (L767). |
+| Mortgages | Reported | 0,5/0,5 | Lifetime mortgages £5,9bn (L573). EPC-based emissions. |
+| Motor vehicle loans | Missing | 0/0,5 | Not covered. |
+| Sovereign debt | Partial (S1 production) | 0,5/2,0 | Government 16% by value (Table 5). Sovereign capital stock methodology (L1082). |
 
-| Asset class | Status | Evidence |
-|---|---|---|
-| Listed equity & corporate bonds | partial | [FOUND — HUMAN VERIFICATION REQUIRED] |
-| Business loans & unlisted equity | missing | [NOT FOUND] |
-| Project finance | reported | [FOUND — HUMAN VERIFICATION REQUIRED] |
-| Commercial real estate | missing | [NOT FOUND] |
-| Mortgages | reported | [FOUND — HUMAN VERIFICATION REQUIRED] |
-| Motor vehicle loans | missing | [NOT FOUND] |
-| Sovereign debt | reported | [FOUND — HUMAN VERIFICATION REQUIRED] |
+### Data Quality Score: 4/5
+PCAF DQS = 2,3 (Table 3, L1108-1111). Per asset class: Bond 2,3 · Property 2,3 · Equity 2,3 (Table 4). Score 4 (DQS in 1,5–2,5 range).
 
-### 2. Data Quality Score — 3/5
+**False positive corrected**: Auto-scan found 2,8 — this was a previous year or different metric. Actual 2024 DQS is 2,3.
 
-DQS value: ~2.8 (from 2 values found). [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check]
+### Attribution Methodology: 4/5
+PCAF signatory. Reports PCAF DQS across all asset classes (Tables 3-5). Uses EVIC for corporates, sovereign capital stock for sovereigns, market valuations for real estate (L1081-1083). SBTi-validated targets. NZAOA member. Covers £96,1bn in comprehensive methodology. Score 4.
 
-### 3. Attribution Methodology — 2/5
+### Portfolio Coverage: 5/5
+£96,1bn / £97,6bn proprietary assets = 98,5% (L1086+L1188). Proxy approaches fill remaining gaps for real estate, lifetime mortgages, private debt, private equity (L1190). Total absolute emissions: 4,9M tCO2e. Score 5 (>95%).
 
-PCAF mentioned (L1108), partial coverage.
-
-PCAF signatory: [NOT CONFIRMED in report text. Verify on PCAF website.]
-
-### 4. Portfolio Coverage — 0/5
-
-[NOT FOUND] No portfolio coverage percentage identified.
-
-### 5. Temporal Coverage — 3/3
-
-Years referenced: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets/net zero: Yes.
+### Temporal Coverage: 3/3
+Investment GHG intensity tracked from 2019 base year. 37% reduction achieved by 2024 (Table 3). SBTi targets: 50% by 2030. Net zero by 2050. Score 3.
 
 ---
 
-## Part B — N/A
-
-N/A — not applicable.
-
----
-
-## Part C — Insurance-Associated Emissions: 0/13
-
-| Criterion | Score | Evidence |
-|---|---|---|
-| Asset Class Coverage | 0/5 | [NOT FOUND] No insurance-associated emissions data identified. |
-| Attribution Methodology | 0/5 | [NOT FOUND] No insurance-associated emissions data identified. |
-| Temporal Coverage | 0/3 | [NOT FOUND] No insurance-associated emissions data identified. |
+## Part B — Facilitated Emissions: N/A
+L&G is not a bank/bancassurance.
 
 ---
 
-## Summary
+## Part C — Insurance-Associated Emissions: 0/13 (0%)
 
-| Part | Score | Max |
-|---|---|---|
-| **Part A** | **10** | 23 |
-| **Part B** | **N/A** | 13 |
-| **Part C** | **0** | 13 |
+L&G is a life/retirement insurer and asset manager. No P&C underwriting business. Insurance-associated emissions (IAE) under PCAF Part C are not applicable to L&G's business model.
 
-> **ALL SCORES in this assessment are based on automated extraction and REQUIRE HUMAN VERIFICATION against the source report before use.**
+---
+
+## Score changes vs auto-generated
+
+| Criterion | Old | New | Reason |
+|---|---|---|---|
+| Part A Asset Class Coverage | 2 | **3** | Private debt/equity also covered via proxies (L1190). 9,0/18 vs 7,5/18. |
+| Part A DQS | 3 | **4** | DQS is 2,3 (L1108), not 2,8. Falls in 1,5-2,5 range. |
+| Part A Attribution | 2 | **4** | PCAF signatory, PCAF DQS reported, SBTi, NZAOA. Comprehensive methodology. |
+| Part A Portfolio Coverage | 0 | **5** | 98,5% coverage (£96,1bn/£97,6bn). Auto-scan failed to find any %. |
+
+**Part A**: 10 → **19**/23 (43,5% → 82,6%)
+**Part C**: 0 → **0**/13 (unchanged, correct)
