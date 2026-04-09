@@ -1,71 +1,68 @@
 # NN Group — PCAF® Compliance Assessment
 
-> **Report analysed**: NNGROUP 2024 (1,475,345 chars, 23,634 lines)
-> **Institution type**: Insurance (Part A + Part C applicable)
-> **Assessment date**: 8 April 2026
-> **Method**: Automated extraction from clean text with targeted section reading. ALL SCORES REQUIRE HUMAN VERIFICATION.
+**Source**: Annual Report 2024 (PDF, 23 633 lines extracted text)
+**Institution type**: Insurance (EUR 156bn proprietary assets)
+**PCAF signatory**: Signatory (PCAF member)
+**Assessment date**: 2024-12-31
+**Method**: Full reading of extracted text (`NNGROUP_2024_clean.txt`)
 
 ---
 
-## Part A — Financed Emissions: 13/23
+## Part A — Financed Emissions: 16/23 (69,6%)
 
-### 1. Asset Class Coverage — 1/5
+### Asset Class Coverage: 1/5
+5,0/18 = 27,8%
 
-Raw: 6.0/18 = 33.3%
+| Asset class | Status | Points | Evidence |
+|---|---|---|---|
+| Listed equity + corporate bonds | Partial (S1&S2) | 3,0/6,0 | L5106-5330: 2,4M tCO2e S1&S2. S3 separately: 21,7M tCO2e. DQS 1,8. |
+| Business loans / unlisted equity | Missing | 0/6,0 | Not covered (insurer, no lending except mortgages). |
+| Project finance | Missing | 0/2,0 | Not covered. |
+| Commercial real estate | Reported (S1&S2&S3) | 1,0/1,0 | L5419-5460: 27,6k + 61,5k tCO2e. GRESB-based. DQS 2,1. |
+| Mortgages | Reported (S1&S2) | 0,5/0,5 | L5462-5478: 434k tCO2e. NN Bank + external. PCAF/CBS methodology. DQS 3,5. |
+| Motor vehicle loans | Missing | 0/0,5 | Not an investment class (motor is insurance, Part C). |
+| Sovereign debt | Partial (S1 production) | 0,5/2,0 | L5362-5380: 5,5M tCO2e excl LULUCF. DQS 1,1. |
 
-| Asset class | Status | Evidence |
-|---|---|---|
-| Listed equity & corporate bonds | partial | [FOUND — HUMAN VERIFICATION REQUIRED] |
-| Business loans & unlisted equity | missing | [NOT FOUND] |
-| Project finance | missing | [NOT FOUND] |
-| Commercial real estate | missing | [NOT FOUND] |
-| Mortgages | reported | [FOUND — HUMAN VERIFICATION REQUIRED] |
-| Motor vehicle loans | reported | [FOUND — HUMAN VERIFICATION REQUIRED] |
-| Sovereign debt | reported | [FOUND — HUMAN VERIFICATION REQUIRED] |
+### Data Quality Score: 4/5
+PCAF DQS per asset class (L5101-5110): Corporate S1&S2 = 1,8 · Sovereign = 1,1 · Real estate = 2,1 · Mortgages = 3,5. Corporate (largest class) at 1,8. Score 4.
 
-### 2. Data Quality Score — 4/5
+### Attribution Methodology: 4/5
+PCAF member. Uses PCAF Global GHG Standard Part A (2022) (L5282). NZIF/PAII aligned. Asset-class-specific strategies with PCAF attribution factors (L5252-5280). ISS + Morningstar Sustainalytics data. Score 4.
 
-DQS value: ~1.5 (from 21 values found). [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check]
+### Portfolio Coverage: 4/5
+EUR 126bn covered = ~80% of proprietary assets (L5293). 13% via extrapolation, 15% not yet covered (mutual funds, ABS, cash, derivatives).
 
-### 3. Attribution Methodology — 4/5
+**False positive corrected**: The 40% at L20000 was not portfolio coverage. Actual is 80%.
 
-PCAF signatory confirmed. L5464: orresponding emission factor. Together with other members of PCAF, we are exploring ways to obtain the actual consumption data to further enhance repo
-
-PCAF signatory: CONFIRMED at L5464.
-
-### 4. Portfolio Coverage — 1/5
-
-40.0% found at L20000.
-[FOUND — HUMAN VERIFICATION REQUIRED: 40.0% found at L20000, verify this is PCAF portfolio coverage not another metric]
-
-### 5. Temporal Coverage — 3/3
-
-Years referenced: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets/net zero: Yes.
+### Temporal Coverage: 3/3
+2019/2021 baselines. Corporate: -31% vs 2021. 2025/2030/2050 targets. Net zero by 2050. Score 3.
 
 ---
 
 ## Part B — N/A
-
-N/A — not applicable.
-
----
-
-## Part C — Insurance-Associated Emissions: 5/13
-
-| Criterion | Score | Evidence |
-|---|---|---|
-| Asset Class Coverage | 2/5 | [FOUND — HUMAN VERIFICATION REQUIRED] IAE mentioned at L4583. |
-| Attribution Methodology | 2/5 | [FOUND — HUMAN VERIFICATION REQUIRED] IAE mentioned at L4583. |
-| Temporal Coverage | 1/3 | [FOUND — HUMAN VERIFICATION REQUIRED] IAE mentioned at L4583. |
+NN Group is an insurer, not a bank/bancassurance.
 
 ---
 
-## Summary
+## Part C — Insurance-Associated Emissions: 6/13 (46,2%)
 
-| Part | Score | Max |
-|---|---|---|
-| **Part A** | **13** | 23 |
-| **Part B** | **N/A** | 13 |
-| **Part C** | **5** | 13 |
+### Asset Class Coverage: 3/5
+5,0/8,0 = 62,5%. PCAF Standard for commercial lines and Private Motor (L4915+L4934-4946). Commercial: -26% IAE by 2030 (L4937). Private Motor: -15% intensity per car by 2030 (L4943). Total IAE: 199 513 tCO2e.
 
-> **ALL SCORES in this assessment are based on automated extraction and REQUIRE HUMAN VERIFICATION against the source report before use.**
+### Attribution Methodology: 2/5
+PCAF Standard for IAE. Sector analyses based on Dutch Klimaatnota. Score 2.
+
+### Temporal Coverage: 1/3
+IAE base year 2022. 2023+2024 data. -26% target by 2030. Net zero 2050. Score 1.
+
+---
+
+## Score changes vs auto-generated
+
+| Criterion | Old | New | Reason |
+|---|---|---|---|
+| Part A Portfolio Coverage | 1 | **4** | 80% confirmed (L5293); 40% was wrong metric |
+| Part C Asset Class Coverage | 2 | **3** | Commercial + Private Motor via PCAF Part C (62,5%) |
+
+**Part A**: 13 → **16**/23 (56,5% → 69,6%)
+**Part C**: 5 → **6**/13 (38,5% → 46,2%)

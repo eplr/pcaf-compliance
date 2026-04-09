@@ -1190,34 +1190,35 @@
       "Asset Class Coverage": {
         "score": 1,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.0/18 = 33.3%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'motor_vehicle', 'sovereign_debt']."
+        "coverage_ratio": 0.278,
+        "evidence": "[Verified from full reading of Annual Report 2024, 23633 lines] 5.0/18 = 27.8%. Corporate bonds + listed equity S1&S2 (L5106-5110, 2.4M tCO2e; S3 separately: 21.7M tCO2e). Real estate S1&S2&S3 (L5419-5460, 27.6k + 61.5k tCO2e). Residential mortgages S1&S2 (PCAF, L5462-5478, 434k tCO2e). Sovereign bonds S1 production (L5362-5380, 5.5M tCO2e). PE and infrastructure strategies started 2024 (L4884-4886). Not covered: business loans, project finance, motor vehicle."
       },
       "Data Quality Score": {
         "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 1.5."
+        "evidence": "[Verified from full reading, L5101-5110] PCAF DQS per asset class: Corporate S1&S2 = 1.8, S3 = 3.3. Sovereign = 1.1. Real estate = 2.1. Mortgages = 3.5. No single total published, but corporate (largest class) at 1.8. Auto-scan found 1.5 which was likely the listed equity sub-score. Score 4."
       },
       "Attribution Methodology": {
         "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF signatory confirmed. L5464: orresponding emission factor. Together with other members of PCAF, we are exploring ways to obtain the actual consumption data to further enhance repo"
+        "evidence": "[Verified from full reading, L5282] PCAF member. Uses PCAF Global GHG Standard Part A (2022). NZIF/PAII aligned. ISS and Morningstar Sustainalytics data (L5262). Asset-class-specific strategies with PCAF attribution factors per class (L5252-5280). Score 4."
       },
       "Portfolio Coverage": {
-        "score": 1,
+        "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 40.0% found at L20000, verify this is PCAF portfolio coverage not another metric] Coverage: 40.0%."
+        "evidence": "[Verified from full reading, L5293] EUR 126bn covered = ~80% of proprietary assets. 13% via extrapolation, 15% not yet covered (mutual funds, ABS, cash, derivatives, L5293). The 40% at L20000 was not portfolio coverage. Score 4 (80-95%)."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "[Verified from full reading] 2019/2021 baselines. Annual data. Corporate: -31% vs 2021 baseline (L5340-5341). 2025/2030/2050 targets. Net zero by 2050. Score 3."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A — NN Group is an insurer, not a bank/bancassurance."
       },
       "Attribution Methodology": {
         "score": null,
@@ -1232,20 +1233,26 @@
     },
     "Part C": {
       "Asset Class Coverage": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L4583."
+        "coverage_ratio": 0.625,
+        "evidence": "[Verified from full reading, L4915+L4934-4946] PCAF Standard for commercial lines and Private Motor. Commercial: -26% IAE by 2030 vs 2022 (L4937-4942). Private Motor: -15% intensity per car by 2030 (L4943-4946). Total IAE: 199,513 tCO2e (L5037-5040). 5.0/8.0 = 62.5%. Score 3."
       },
       "Attribution Methodology": {
         "score": 2,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+        "evidence": "[Verified from full reading, L4934] PCAF Standard for IAE. Sector analyses based on Dutch Klimaatnota. Score 2."
       },
       "Temporal Coverage": {
         "score": 1,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+        "evidence": "[Verified from full reading] IAE base year 2022. 2023+2024 data (L5037-5040). -26% target by 2030. Net zero 2050. Score 1."
       }
+    },
+    "_compliance": {
+      "Part A": 0.6957,
+      "Part B": null,
+      "Part C": 0.4615
     }
   },
   "Phoenix Group": {
