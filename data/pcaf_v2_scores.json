@@ -770,7 +770,7 @@
     "verification_status": "VERIFIED"
   },
   "Deutsche Börse": {
-    "assessment_date": "2024-12-31",
+    "assessment_date": "2026-04-09",
     "institution_type": "Exchange",
     "Part A": {
       "Asset Class Coverage": {
@@ -837,10 +837,11 @@
       "Part A": 0.1304,
       "Part B": null,
       "Part C": null
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "Eurazeo": {
-    "assessment_date": "2024-12-31",
+    "assessment_date": "2026-04-09",
     "institution_type": "Asset Manager",
     "Part A": {
       "Asset Class Coverage": {
@@ -908,7 +909,8 @@
       "Part A": 0.3043,
       "Part B": null,
       "Part C": null
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "GBL": {
     "assessment_date": "2024-12-31",
@@ -1614,7 +1616,7 @@
     "verification_status": "VERIFIED"
   },
   "Zurich": {
-    "assessment_date": "2024-12-31",
+    "assessment_date": "2026-04-09",
     "institution_type": "Insurance",
     "Part A": {
       "Asset Class Coverage": {
@@ -1669,9 +1671,9 @@
         "evidence": "[Verified from full reading, L6315-6370] PCAF Part C IAE for commercial lines only (large corporate >$1bn revenue). 1.7M tCO2e, $7.4bn GWP = 25% of Commercial Insurance (L6329). Personal motor: not covered. Reinsurance: not covered. 2.0/8.0 = 25%. Score 1."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[Verified from full reading, L6315] PCAF IAE methodology for commercial lines. WACI metric from CRO Forum (L6315). S&P Global data. PCAF DQS 2.9 (L6330). Score 2: ITV method applied."
+        "evidence": "[Verified from full reading, L6308, L6315] PCAF Standard Part C explicitly applied. L6308: 'IAE is determined by scope 1 & 2 for our customers\u2019 emissions using the Partnership for Carbon Accounting Financials (PCAF) insurance-associated emissions methodology.' L6315: 'leveraging the accounting method for IAE, published by the Partnership for Carbon Accounting Financials (PCAF) in November 2022.' WACI from CRO Forum is supplementary. PCAF DQS 2.9 disclosed (L6330). Score 3: PCAF insurance standard applied."
       },
       "Temporal Coverage": {
         "score": 1,
@@ -1682,8 +1684,9 @@
     "_compliance": {
       "Part A": 0.4783,
       "Part B": null,
-      "Part C": 0.3077
-    }
+      "Part C": 0.3846
+    },
+    "verification_status": "VERIFIED"
   },
   "Admiral Group": {
     "assessment_date": "2024-12-31",
