@@ -1,276 +1,276 @@
-company,assessment_date,institution_type,pcaf_part,criterion,score,max_score,percentage,evidence,priority,gap_description,assessor_notes
-Admiral Group,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,[VERIFIED from full reading of Sustainability Report 2024] 3.0/18 = 16.7%. Only corporate bonds (partial S1&S2). L285-302.,—,—,V2 client-verified
-Admiral Group,2024-12-31,Insurance,Part A,Data Quality Score,0,5,0.0,[VERIFIED from full reading of Sustainability Report 2024] [NOT FOUND] No PCAF DQS in sustainability report.,—,—,V2 client-verified
-Admiral Group,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,"[VERIFIED from full reading of Sustainability Report 2024] PCAF mentioned once (L253, for IAE). WACI + SBTi for investments.",—,—,V2 client-verified
-Admiral Group,2024-12-31,Insurance,Part A,Portfolio Coverage,0,5,0.0,[VERIFIED from full reading of Sustainability Report 2024] [NOT FOUND] No coverage rate disclosed.,—,—,V2 client-verified
-Admiral Group,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,[VERIFIED from full reading of Sustainability Report 2024] 4 years (2021-2024) + 2025/2030/2040 targets. L271+L285.,—,—,V2 client-verified
-Admiral Group,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,"N/A — insurer, not bank.",N/A,N/A,V2 client-verified – N/A
-Admiral Group,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Admiral Group,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Admiral Group,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,"[VERIFIED from full reading of Sustainability Report 2024] Motor IAE measured (L254). [INCOMPLETE — detailed data in Net Zero Transition Plan, not available.]",—,—,V2 client-verified
-Admiral Group,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[VERIFIED from full reading of Sustainability Report 2024] PCAF standards referenced for IAE (L253). [INCOMPLETE — need NZTP for details.],—,—,V2 client-verified
-Admiral Group,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[VERIFIED from full reading of Sustainability Report 2024] First IAE measurement in 2024. [INCOMPLETE — need NZTP.],—,—,V2 client-verified
-Ageas,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,"6.5/18 coefficient coverage (36.1%) – listed equity (6/6) + partial sovereign debt (0.5/2); other asset classes excluded (insurer profile, justification provided)",—,—,V2 client-verified
-Ageas,2024-12-31,Insurance,Part A,Data Quality Score,3,5,60.0,"Average DQS ~2.12 for listed equities, ~2 for sovereign debt",—,—,V2 client-verified
-Ageas,2024-12-31,Insurance,Part A,Attribution Methodology,3,5,60.0,PCAF methodology applied for covered asset classes,—,—,V2 client-verified
-Ageas,2024-12-31,Insurance,Part A,Portfolio Coverage,3,5,60.0,~71% portfolio coverage,—,—,V2 client-verified
-Ageas,2024-12-31,Insurance,Part A,Temporal Coverage,1,3,33.3,Current year only,—,—,V2 client-verified
-Ageas,2024-12-31,Insurance,Part B,Asset Class Coverage,0,5,0.0,No facilitated emissions (capital markets activity) reported,—,—,V2 client-verified
-Ageas,2024-12-31,Insurance,Part B,Attribution Methodology,0,5,0.0,No facilitated emissions attribution,—,—,V2 client-verified
-Ageas,2024-12-31,Insurance,Part B,Temporal Coverage,0,3,0.0,No facilitated emissions data,—,—,V2 client-verified
-Ageas,2024-12-31,Insurance,Part C,Asset Class Coverage,4,5,80.0,6/8 coefficient coverage (75%) – Commercial Lines (3/3) + Personal Motor (3/3); reinsurance branches not covered,—,—,V2 client-verified
-Ageas,2024-12-31,Insurance,Part C,Attribution Methodology,3,5,60.0,PCAF methodology used for commercial lines and personal motor,—,—,V2 client-verified
-Ageas,2024-12-31,Insurance,Part C,Temporal Coverage,0,3,0.0,No historical time series for insurance-associated emissions,—,—,V2 client-verified
-Allianz,2024-12-31,Insurance,Part A,Asset Class Coverage,3,5,60.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 12.5/18 = 69.4%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'commercial_re', 'mortgages', 'sovereign_debt'].",—,—,V2 client-verified
-Allianz,2024-12-31,Insurance,Part A,Data Quality Score,4,5,80.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 2.2.",—,—,V2 client-verified
-Allianz,2024-12-31,Insurance,Part A,Attribution Methodology,3,5,60.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L57), methods applied per asset class.",—,—,V2 client-verified
-Allianz,2024-12-31,Insurance,Part A,Portfolio Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified.,—,—,V2 client-verified
-Allianz,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-Allianz,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-Allianz,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Allianz,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Allianz,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L48.,—,—,V2 client-verified
-Allianz,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification.,—,—,V2 client-verified
-Allianz,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification.,—,—,V2 client-verified
-Amundi,2024-12-31,Asset Manager,Part A,Asset Class Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] 0/18 = 0.0%. Asset classes found: [].,—,—,V2 client-verified
-Amundi,2024-12-31,Asset Manager,Part A,Data Quality Score,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None.,—,—,V2 client-verified
-Amundi,2024-12-31,Asset Manager,Part A,Attribution Methodology,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] PCAF not mentioned.,—,—,V2 client-verified
-Amundi,2024-12-31,Asset Manager,Part A,Portfolio Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified.,—,—,V2 client-verified
-Amundi,2024-12-31,Asset Manager,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-Amundi,2024-12-31,Asset Manager,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-Amundi,2024-12-31,Asset Manager,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Amundi,2024-12-31,Asset Manager,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Amundi,2024-12-31,Asset Manager,Part C,Asset Class Coverage,N/A,N/A,,N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
-Amundi,2024-12-31,Asset Manager,Part C,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Amundi,2024-12-31,Asset Manager,Part C,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-ASR Nederland,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 5.5/18 = 30.6%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'sovereign_debt'].",—,—,V2 client-verified
-ASR Nederland,2024-12-31,Insurance,Part A,Data Quality Score,5,5,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 1.0.",—,—,V2 client-verified
-ASR Nederland,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L6872), partial coverage.",—,—,V2 client-verified
-ASR Nederland,2024-12-31,Insurance,Part A,Portfolio Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified.,—,—,V2 client-verified
-ASR Nederland,2024-12-31,Insurance,Part A,Temporal Coverage,2,3,66.7,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: False.",—,—,V2 client-verified
-ASR Nederland,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-ASR Nederland,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-ASR Nederland,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-ASR Nederland,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L7474.,—,—,V2 client-verified
-ASR Nederland,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification.,—,—,V2 client-verified
-ASR Nederland,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification.,—,—,V2 client-verified
-Aviva,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'commercial_re', 'mortgages', 'sovereign_debt'].",—,—,V2 client-verified
-Aviva,2024-12-31,Insurance,Part A,Data Quality Score,4,5,80.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 2.3.",—,—,V2 client-verified
-Aviva,2024-12-31,Insurance,Part A,Attribution Methodology,4,5,80.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF signatory confirmed. L818:  for Carbon Accounting Financials (PCAF) We are a PCAF Member and standing member of the Climate Data Working Group. In 2024: we have been a participa,—,—,V2 client-verified
-Aviva,2024-12-31,Insurance,Part A,Portfolio Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 23.0% found at L2147, verify this is PCAF portfolio coverage not another metric] Coverage: 23.0%.",—,—,V2 client-verified
-Aviva,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-Aviva,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-Aviva,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Aviva,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Aviva,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L1714.,—,—,V2 client-verified
-Aviva,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification.,—,—,V2 client-verified
-Aviva,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification.,—,—,V2 client-verified
-AXA,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.0/18 = 33.3%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'motor_vehicle', 'sovereign_debt'].",—,—,V2 client-verified
-AXA,2024-12-31,Insurance,Part A,Data Quality Score,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 4.0.",—,—,V2 client-verified
-AXA,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L1806), partial coverage.",—,—,V2 client-verified
-AXA,2024-12-31,Insurance,Part A,Portfolio Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 24.0% found at L2026, verify this is PCAF portfolio coverage not another metric] Coverage: 24.0%.",—,—,V2 client-verified
-AXA,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-AXA,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-AXA,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-AXA,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-AXA,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L1796.,—,—,V2 client-verified
-AXA,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification.,—,—,V2 client-verified
-AXA,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification.,—,—,V2 client-verified
-Commerzbank,2024-12-31,Bank,Part A,Asset Class Coverage,5,5,100.0,18/18 coefficient coverage (100%) – full coverage of all asset classes including sovereign debt S3 (consumption-based),—,—,V2 client-verified
-Commerzbank,2024-12-31,Bank,Part A,Data Quality Score,3,5,60.0,Average DQS ~4.05 across asset classes,—,—,V2 client-verified
-Commerzbank,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,Full PCAF methods per asset class (PCAF signatory),—,—,V2 client-verified
-Commerzbank,2024-12-31,Bank,Part A,Portfolio Coverage,2,5,40.0,~54% portfolio coverage,—,—,V2 client-verified
-Commerzbank,2024-12-31,Bank,Part A,Temporal Coverage,1,3,33.3,Current year + 1 prior year (2 years),—,—,V2 client-verified
-Commerzbank,2024-12-31,Bank,Part B,Asset Class Coverage,0,5,0.0,No facilitated emissions data published,—,—,V2 client-verified
-Commerzbank,2024-12-31,Bank,Part B,Attribution Methodology,0,5,0.0,No facilitated emissions attribution disclosed,—,—,V2 client-verified
-Commerzbank,2024-12-31,Bank,Part B,Temporal Coverage,0,3,0.0,No historical facilitated emissions data,—,—,V2 client-verified
-Commerzbank,2024-12-31,Bank,Part C,Asset Class Coverage,3,5,60.0,"Insurance-related emissions published within financed emissions (Scopes 1, 2 and 3) but no breakdown by insurance branch – 50% coverage estimated (4/8 coefficient)",—,—,V2 client-verified
-Commerzbank,2024-12-31,Bank,Part C,Attribution Methodology,0,5,0.0,No insurance-specific attribution methodology disclosed,—,—,V2 client-verified
-Commerzbank,2024-12-31,Bank,Part C,Temporal Coverage,0,3,0.0,No dedicated historical series for insurance-associated emissions,—,—,V2 client-verified
-Crédit Agricole,2024-12-31,Bank,Part A,Asset Class Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 3.5/18 = 19.4%. Asset classes found: ['business_loans', 'mortgages'].",—,—,V2 client-verified
-Crédit Agricole,2024-12-31,Bank,Part A,Data Quality Score,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None.,—,—,V2 client-verified
-Crédit Agricole,2024-12-31,Bank,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L3696), partial coverage.",—,—,V2 client-verified
-Crédit Agricole,2024-12-31,Bank,Part A,Portfolio Coverage,4,5,80.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 89.2% found at L22013, verify this is PCAF portfolio coverage not another metric] Coverage: 89.2%.",—,—,V2 client-verified
-Crédit Agricole,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-Crédit Agricole,2024-12-31,Bank,Part B,Asset Class Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No facilitated emissions identified.,—,—,V2 client-verified
-Crédit Agricole,2024-12-31,Bank,Part B,Attribution Methodology,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND],—,—,V2 client-verified
-Crédit Agricole,2024-12-31,Bank,Part B,Temporal Coverage,0,3,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND],—,—,V2 client-verified
-Crédit Agricole,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
-Crédit Agricole,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Crédit Agricole,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Deutsche Börse,2024-12-31,Exchange,Part A,Asset Class Coverage,1,5,20.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] 3/18 = 16.7%. Asset classes found: ['listed_equity_bonds'].,—,—,V2 client-verified
-Deutsche Börse,2024-12-31,Exchange,Part A,Data Quality Score,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None.,—,—,V2 client-verified
-Deutsche Börse,2024-12-31,Exchange,Part A,Attribution Methodology,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] PCAF not mentioned.,—,—,V2 client-verified
-Deutsche Börse,2024-12-31,Exchange,Part A,Portfolio Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified.,—,—,V2 client-verified
-Deutsche Börse,2024-12-31,Exchange,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-Deutsche Börse,2024-12-31,Exchange,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-Deutsche Börse,2024-12-31,Exchange,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Deutsche Börse,2024-12-31,Exchange,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Deutsche Börse,2024-12-31,Exchange,Part C,Asset Class Coverage,N/A,N/A,,N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
-Deutsche Börse,2024-12-31,Exchange,Part C,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Deutsche Börse,2024-12-31,Exchange,Part C,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Eurazeo,2024-12-31,Asset Manager,Part A,Asset Class Coverage,1,5,20.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] 0.5/18 = 2.8%. Asset classes found: ['mortgages'].,—,—,V2 client-verified
-Eurazeo,2024-12-31,Asset Manager,Part A,Data Quality Score,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None.,—,—,V2 client-verified
-Eurazeo,2024-12-31,Asset Manager,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L2646), partial coverage.",—,—,V2 client-verified
-Eurazeo,2024-12-31,Asset Manager,Part A,Portfolio Coverage,5,5,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 99.7% found at L2620, verify this is PCAF portfolio coverage not another metric] Coverage: 99.7%.",—,—,V2 client-verified
-Eurazeo,2024-12-31,Asset Manager,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-Eurazeo,2024-12-31,Asset Manager,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-Eurazeo,2024-12-31,Asset Manager,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Eurazeo,2024-12-31,Asset Manager,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Eurazeo,2024-12-31,Asset Manager,Part C,Asset Class Coverage,N/A,N/A,,N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
-Eurazeo,2024-12-31,Asset Manager,Part C,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Eurazeo,2024-12-31,Asset Manager,Part C,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-GBL,2024-12-31,Investment Holding,Part A,Asset Class Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] 0/18 = 0.0%. Asset classes found: [].,—,—,V2 client-verified
-GBL,2024-12-31,Investment Holding,Part A,Data Quality Score,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None.,—,—,V2 client-verified
-GBL,2024-12-31,Investment Holding,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L14679), partial coverage.",—,—,V2 client-verified
-GBL,2024-12-31,Investment Holding,Part A,Portfolio Coverage,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 46.0% found at L19789, verify this is PCAF portfolio coverage not another metric] Coverage: 46.0%.",—,—,V2 client-verified
-GBL,2024-12-31,Investment Holding,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-GBL,2024-12-31,Investment Holding,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-GBL,2024-12-31,Investment Holding,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-GBL,2024-12-31,Investment Holding,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-GBL,2024-12-31,Investment Holding,Part C,Asset Class Coverage,N/A,N/A,,N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
-GBL,2024-12-31,Investment Holding,Part C,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-GBL,2024-12-31,Investment Holding,Part C,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-KBC,2024-12-31,Bancassurance,Part A,Asset Class Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'mortgages'].",—,—,V2 client-verified
-KBC,2024-12-31,Bancassurance,Part A,Data Quality Score,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None.,—,—,V2 client-verified
-KBC,2024-12-31,Bancassurance,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L66), partial coverage.",—,—,V2 client-verified
-KBC,2024-12-31,Bancassurance,Part A,Portfolio Coverage,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 44.0% found at L4777, verify this is PCAF portfolio coverage not another metric] Coverage: 44.0%.",—,—,V2 client-verified
-KBC,2024-12-31,Bancassurance,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-KBC,2024-12-31,Bancassurance,Part B,Asset Class Coverage,1,5,20.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Facilitated emissions mentioned at L5759.,—,—,V2 client-verified
-KBC,2024-12-31,Bancassurance,Part B,Attribution Methodology,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification.,—,—,V2 client-verified
-KBC,2024-12-31,Bancassurance,Part B,Temporal Coverage,1,3,33.3,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification.,—,—,V2 client-verified
-KBC,2024-12-31,Bancassurance,Part C,Asset Class Coverage,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L3840.,—,—,V2 client-verified
-KBC,2024-12-31,Bancassurance,Part C,Attribution Methodology,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification.,—,—,V2 client-verified
-KBC,2024-12-31,Bancassurance,Part C,Temporal Coverage,1,3,33.3,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification.,—,—,V2 client-verified
-Legal & General,2024-12-31,Insurance,Part A,Asset Class Coverage,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 7.5/18 = 41.7%. Asset classes found: ['listed_equity_bonds', 'project_finance', 'mortgages', 'sovereign_debt'].",—,—,V2 client-verified
-Legal & General,2024-12-31,Insurance,Part A,Data Quality Score,3,5,60.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 2.8.",—,—,V2 client-verified
-Legal & General,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L1108), partial coverage.",—,—,V2 client-verified
-Legal & General,2024-12-31,Insurance,Part A,Portfolio Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified.,—,—,V2 client-verified
-Legal & General,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-Legal & General,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-Legal & General,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Legal & General,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Legal & General,2024-12-31,Insurance,Part C,Asset Class Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No IAE data identified.,—,—,V2 client-verified
-Legal & General,2024-12-31,Insurance,Part C,Attribution Methodology,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND],—,—,V2 client-verified
-Legal & General,2024-12-31,Insurance,Part C,Temporal Coverage,0,3,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND],—,—,V2 client-verified
-NN Group,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.0/18 = 33.3%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'motor_vehicle', 'sovereign_debt'].",—,—,V2 client-verified
-NN Group,2024-12-31,Insurance,Part A,Data Quality Score,4,5,80.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 1.5.",—,—,V2 client-verified
-NN Group,2024-12-31,Insurance,Part A,Attribution Methodology,4,5,80.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF signatory confirmed. L5464: orresponding emission factor. Together with other members of PCAF, we are exploring ways to obtain the actual consumption data to further enhance repo",—,—,V2 client-verified
-NN Group,2024-12-31,Insurance,Part A,Portfolio Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 40.0% found at L20000, verify this is PCAF portfolio coverage not another metric] Coverage: 40.0%.",—,—,V2 client-verified
-NN Group,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-NN Group,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-NN Group,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-NN Group,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-NN Group,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L4583.,—,—,V2 client-verified
-NN Group,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification.,—,—,V2 client-verified
-NN Group,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification.,—,—,V2 client-verified
-Nordea,2024-12-31,Bank,Part A,Asset Class Coverage,5,5,100.0,17/18 coefficient coverage (94.4%) – all 7 asset classes covered for S1&S2+S3 except sovereign debt S3,—,—,V2 client-verified
-Nordea,2024-12-31,Bank,Part A,Data Quality Score,3,5,60.0,Average DQS between 3 and 4,—,—,V2 client-verified
-Nordea,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,Full PCAF methodology per asset class (PCAF signatory),—,—,V2 client-verified
-Nordea,2024-12-31,Bank,Part A,Portfolio Coverage,3,5,60.0,~75% portfolio coverage,—,—,V2 client-verified
-Nordea,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,3 years of history + trends + projections/targets,—,—,V2 client-verified
-Nordea,2024-12-31,Bank,Part B,Asset Class Coverage,0,5,0.0,No facilitated emissions reported (Part B not yet implemented),—,—,V2 client-verified
-Nordea,2024-12-31,Bank,Part B,Attribution Methodology,0,5,0.0,No facilitated emissions attribution disclosed,—,—,V2 client-verified
-Nordea,2024-12-31,Bank,Part B,Temporal Coverage,0,3,0.0,No historical facilitated emissions data,—,—,V2 client-verified
-Nordea,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,N/A – Nordea has no P&C insurance activity; life insurance emissions included in financed emissions,N/A,N/A,V2 client-verified – N/A
-Nordea,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Nordea,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Phoenix Group,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'mortgages'].",—,—,V2 client-verified
-Phoenix Group,2024-12-31,Insurance,Part A,Data Quality Score,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None.,—,—,V2 client-verified
-Phoenix Group,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L2146), partial coverage.",—,—,V2 client-verified
-Phoenix Group,2024-12-31,Insurance,Part A,Portfolio Coverage,4,5,80.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 85.0% found at L5835, verify this is PCAF portfolio coverage not another metric] Coverage: 85.0%.",—,—,V2 client-verified
-Phoenix Group,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-Phoenix Group,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-Phoenix Group,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Phoenix Group,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Phoenix Group,2024-12-31,Insurance,Part C,Asset Class Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No IAE data identified.,—,—,V2 client-verified
-Phoenix Group,2024-12-31,Insurance,Part C,Attribution Methodology,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND],—,—,V2 client-verified
-Phoenix Group,2024-12-31,Insurance,Part C,Temporal Coverage,0,3,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND],—,—,V2 client-verified
-Santander,2024-12-31,Bank,Part A,Asset Class Coverage,3,5,60.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 12.0/18 = 66.7%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'project_finance', 'commercial_re', 'mortgages', 'motor_vehicle', 'sovereign_debt'].",—,—,V2 client-verified
-Santander,2024-12-31,Bank,Part A,Data Quality Score,4,5,80.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 2.3.",—,—,V2 client-verified
-Santander,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF signatory confirmed. L4159: rbon Accounting Financials (PCAF): We have been a member of PCAF since 2021 and thus committed to disclose our financed emissions according to the PCA,—,—,V2 client-verified
-Santander,2024-12-31,Bank,Part A,Portfolio Coverage,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 50.0% found at L3836, verify this is PCAF portfolio coverage not another metric] Coverage: 50.0%.",—,—,V2 client-verified
-Santander,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-Santander,2024-12-31,Bank,Part B,Asset Class Coverage,1,5,20.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Facilitated emissions mentioned at L2849.,—,—,V2 client-verified
-Santander,2024-12-31,Bank,Part B,Attribution Methodology,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification.,—,—,V2 client-verified
-Santander,2024-12-31,Bank,Part B,Temporal Coverage,1,3,33.3,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification.,—,—,V2 client-verified
-Santander,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
-Santander,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Santander,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Schroders,2024-12-31,Asset Manager,Part A,Asset Class Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 3.5/18 = 19.4%. Asset classes found: ['listed_equity_bonds', 'mortgages'].",—,—,V2 client-verified
-Schroders,2024-12-31,Asset Manager,Part A,Data Quality Score,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None.,—,—,V2 client-verified
-Schroders,2024-12-31,Asset Manager,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L10130), partial coverage.",—,—,V2 client-verified
-Schroders,2024-12-31,Asset Manager,Part A,Portfolio Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified.,—,—,V2 client-verified
-Schroders,2024-12-31,Asset Manager,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-Schroders,2024-12-31,Asset Manager,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-Schroders,2024-12-31,Asset Manager,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Schroders,2024-12-31,Asset Manager,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Schroders,2024-12-31,Asset Manager,Part C,Asset Class Coverage,N/A,N/A,,N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
-Schroders,2024-12-31,Asset Manager,Part C,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Schroders,2024-12-31,Asset Manager,Part C,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Société Générale,2024-12-31,Bank,Part A,Asset Class Coverage,3,5,60.0,"[UNVERIFIED — auto-generated, requires human verification against source report] 9.5/18 weighted coverage (53%). Detail: Listed equity and corporate bonds: 0.0/6.0 (not reported); Business loans and unlisted equity: 6.0/6.0 (S1&S2 + S3); Project finance: 1.0/2.0 (S1&S2 only, S3 not covered); Commercial real estate: 1.0/1.0 (S1&S2); Mortgages: 0.5/0.5 (S1&S2 partial coverage); Motor vehicle loans: 0.5/0.5 (S1&S2 partial coverage); Sovereign debt: 0.5/2.0 (S1&S2 production only, LULUCF not included, S3 not covered)",Medium,Extend coverage to missing asset classes and include S3 emissions,"Priority 2: Report total financed emissions, not just sector targets"
-Société Générale,2024-12-31,Bank,Part A,Data Quality Score,0,5,0.0,"[UNVERIFIED — auto-generated, requires human verification against source report] PCAF® data quality score not disclosed in the sustainability report. Score 0: no DQS data available to assess data quality.",High,Implement and disclose PCAF® DQS,"Priority 2: Report total financed emissions, not just sector targets"
-Société Générale,2024-12-31,Bank,Part A,Attribution Methodology,2,5,40.0,"[UNVERIFIED — auto-generated, requires human verification against source report] PCAF® mentioned but not a signatory. Documented methods with partial asset class coverage (Part A status: partial). Score 2.",High,Incomplete methodology,"Priority 2: Report total financed emissions, not just sector targets"
-Société Générale,2024-12-31,Bank,Part A,Portfolio Coverage,0,5,0.0,"[UNVERIFIED — auto-generated, requires human verification against source report] [No data] No PCAF® portfolio coverage rate (Scope 3, Cat. 15) found in Société Générale's 2024 sustainability report.",Medium,Coverage data not disclosed – publish explicit PCAF® portfolio coverage rate,"Priority 2: Report total financed emissions, not just sector targets"
-Société Générale,2024-12-31,Bank,Part A,Temporal Coverage,1,3,33.3,"[UNVERIFIED — auto-generated, requires human verification against source report] Part A status: partial, no quantified financed emissions found. Score 1: current year only (no multi-year trend possible).",Low,Extend to 3 years + projections for maximum score,"Priority 2: Report total financed emissions, not just sector targets"
-Société Générale,2024-12-31,Bank,Part B,Asset Class Coverage,1,5,20.0,"[UNVERIFIED — auto-generated, requires human verification against source report] Facilitated emissions composite 2/5 → ~40% Part B asset class coverage",High,Extend Part B to all 5 asset classes,"Priority 2: Report total financed emissions, not just sector targets"
-Société Générale,2024-12-31,Bank,Part B,Attribution Methodology,2,5,40.0,"[UNVERIFIED — auto-generated, requires human verification against source report] Time-based allocation documented",Medium,Full PCAF® Part B alignment,"Priority 2: Report total financed emissions, not just sector targets"
-Société Générale,2024-12-31,Bank,Part B,Temporal Coverage,1,3,33.3,"[UNVERIFIED — auto-generated, requires human verification against source report] Current year only",Low,Extend to multi-year reporting,"Priority 2: Report total financed emissions, not just sector targets"
-Société Générale,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,"[UNVERIFIED — auto-generated, requires human verification against source report] N/A – not applicable (not an insurer/reinsurer)",N/A,N/A,"Priority 2: Report total financed emissions, not just sector targets"
-Société Générale,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,"[UNVERIFIED — auto-generated, requires human verification against source report] N/A – not applicable",N/A,N/A,"Priority 2: Report total financed emissions, not just sector targets"
-Société Générale,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,"[UNVERIFIED — auto-generated, requires human verification against source report] N/A – not applicable",N/A,N/A,"Priority 2: Report total financed emissions, not just sector targets"
-Swiss Re,2024-12-31,Reinsurance,Part A,Asset Class Coverage,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 8.5/18 = 47.2%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'sovereign_debt'].",—,—,V2 client-verified
-Swiss Re,2024-12-31,Reinsurance,Part A,Data Quality Score,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None.,—,—,V2 client-verified
-Swiss Re,2024-12-31,Reinsurance,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L284), partial coverage.",—,—,V2 client-verified
-Swiss Re,2024-12-31,Reinsurance,Part A,Portfolio Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 23.0% found at L1993, verify this is PCAF portfolio coverage not another metric] Coverage: 23.0%.",—,—,V2 client-verified
-Swiss Re,2024-12-31,Reinsurance,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-Swiss Re,2024-12-31,Reinsurance,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-Swiss Re,2024-12-31,Reinsurance,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Swiss Re,2024-12-31,Reinsurance,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Swiss Re,2024-12-31,Reinsurance,Part C,Asset Class Coverage,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L1484.,—,—,V2 client-verified
-Swiss Re,2024-12-31,Reinsurance,Part C,Attribution Methodology,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification.,—,—,V2 client-verified
-Swiss Re,2024-12-31,Reinsurance,Part C,Temporal Coverage,1,3,33.3,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification.,—,—,V2 client-verified
-UniCredit,2024-12-31,Bank,Part A,Asset Class Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 4.5/18 = 25.0%. Asset classes found: ['listed_equity_bonds', 'commercial_re', 'mortgages'].",—,—,V2 client-verified
-UniCredit,2024-12-31,Bank,Part A,Data Quality Score,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None.,—,—,V2 client-verified
-UniCredit,2024-12-31,Bank,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L2243), partial coverage.",—,—,V2 client-verified
-UniCredit,2024-12-31,Bank,Part A,Portfolio Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 32.0% found at L4320, verify this is PCAF portfolio coverage not another metric] Coverage: 32.0%.",—,—,V2 client-verified
-UniCredit,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-UniCredit,2024-12-31,Bank,Part B,Asset Class Coverage,1,5,20.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Facilitated emissions mentioned at L2054.,—,—,V2 client-verified
-UniCredit,2024-12-31,Bank,Part B,Attribution Methodology,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification.,—,—,V2 client-verified
-UniCredit,2024-12-31,Bank,Part B,Temporal Coverage,1,3,33.3,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification.,—,—,V2 client-verified
-UniCredit,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
-UniCredit,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-UniCredit,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Zurich,2024-12-31,Insurance,Part A,Asset Class Coverage,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 8.5/18 = 47.2%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'sovereign_debt'].",—,—,V2 client-verified
-Zurich,2024-12-31,Insurance,Part A,Data Quality Score,4,5,80.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 1.8.",—,—,V2 client-verified
-Zurich,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L4213), partial coverage.",—,—,V2 client-verified
-Zurich,2024-12-31,Insurance,Part A,Portfolio Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified.,—,—,V2 client-verified
-Zurich,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
-Zurich,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
-Zurich,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Zurich,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Zurich,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L4169.,—,—,V2 client-verified
-Zurich,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification.,—,—,V2 client-verified
-Zurich,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification.,—,—,V2 client-verified
-ING,2024-12-31,Bank,Part A,Asset Class Coverage,4,5,80.0,"[Verified from XHTML, L22547-23075] 16.0/18 = 88.9%. 6 asset classes reported (listed equity+bonds, business loans, project finance, CRE, mortgages, motor vehicles). Sovereign debt confirmed absent after full report search (89,783 lines). Level 4 (70-90%).",—,—,V2 client-verified
-ING,2024-12-31,Bank,Part A,Data Quality Score,2,5,40.0,"[Verified from XHTML, L22989] Overall DQS S1&S2 = 4.0. Per asset class: Mortgages 3.9, CRE WB 3.7, CRE BB 3.3, Corporate BB 5.0, Corporate WB 4.0, Equity 4.9, Bonds 3.6. Range 3.5-4.5 -> Score 2.",—,—,V2 client-verified
-ING,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,"[Verified from XHTML, L22329] 'calculated in accordance with the Partnership for Carbon Accounting Financials (PCAF) methodology'. SBTi 1.5C validated (L19967). PCAF signatory not explicitly stated in report. Score 4.",—,—,V2 client-verified
-ING,2024-12-31,Bank,Part A,Portfolio Coverage,3,5,60.0,"[Verified from XHTML, L23076-23092] 79.0% = 704.5 / 892.0 EUR bn. Exclusions: money market (179bn), private individuals (18bn), accrued interest (-9bn). Range 60-80% -> Score 3.",—,—,V2 client-verified
-ING,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,"[Verified from XHTML, L19724+L19973+L20068] Terra since 2018, financed emissions ref year 2021, reductions tracked since 2019. 2030 SBTi targets + 2050 net zero. Score 3.",—,—,V2 client-verified
-ING,2024-12-31,Bank,Part B,Asset Class Coverage,1,5,20.0,"[Verified from XHTML, L23138-23154] Syndicated loans only (45.4 EUR bn). DCM/ECM excluded (<2.5% threshold). 1 of 5 Part B classes. Level 1.",—,—,V2 client-verified
-ING,2024-12-31,Bank,Part B,Attribution Methodology,3,5,60.0,"[Verified from XHTML, L23153] 'PCAF methodology for facilitated emissions, applying the prescribed weighting factor of 33 percent'. Score 3.",—,—,V2 client-verified
-ING,2024-12-31,Bank,Part B,Temporal Coverage,1,3,33.3,[Verified from XHTML] Facilitated emissions table shows 2025 and 2024 only. 2 years. Score 1.,—,—,V2 client-verified
-ING,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,"N/A - ING is a bank, not insurer/reinsurer.",N/A,N/A,V2 client-verified – N/A
-ING,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-ING,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Julius Baer,2024-12-31,Bank,Part A,Asset Class Coverage,1,5,20.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'mortgages'].",—,—,V2 client-verified
-Julius Baer,2024-12-31,Bank,Part A,Data Quality Score,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None.,—,—,V2 client-verified
-Julius Baer,2024-12-31,Bank,Part A,Attribution Methodology,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L148), partial coverage.",—,—,V2 client-verified
-Julius Baer,2024-12-31,Bank,Part A,Portfolio Coverage,2,5,40.0,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 49.0% found at L1847, verify this is PCAF portfolio coverage not another metric] Coverage: 49.0%.",—,—,V2 client-verified
-Julius Baer,2024-12-31,Bank,Part A,Temporal Coverage,2,3,66.7,"[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: False.",—,—,V2 client-verified
-Julius Baer,2024-12-31,Bank,Part B,Asset Class Coverage,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No facilitated emissions identified.,—,—,V2 client-verified
-Julius Baer,2024-12-31,Bank,Part B,Attribution Methodology,0,5,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND],—,—,V2 client-verified
-Julius Baer,2024-12-31,Bank,Part B,Temporal Coverage,0,3,0.0,[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND],—,—,V2 client-verified
-Julius Baer,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
-Julius Baer,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
-Julius Baer,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,N/A,N/A,N/A,V2 client-verified – N/A
+company,assessment_date,institution_type,pcaf_part,criterion,score,max_score,percentage,verification_status,evidence,priority,gap_description,assessor_notes
+Admiral Group,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,[VERIFIED],3.0/18 = 16.7%. Only corporate bonds (partial S1&S2). L285-302.,—,—,V2 client-verified
+Admiral Group,2024-12-31,Insurance,Part A,Data Quality Score,0,5,0.0,[VERIFIED],No PCAF DQS in sustainability report.,—,—,V2 client-verified
+Admiral Group,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,[VERIFIED],"PCAF mentioned once (L253, for IAE). WACI + SBTi for investments.",—,—,V2 client-verified
+Admiral Group,2024-12-31,Insurance,Part A,Portfolio Coverage,0,5,0.0,[VERIFIED],No coverage rate disclosed.,—,—,V2 client-verified
+Admiral Group,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,[VERIFIED],4 years (2021-2024) + 2025/2030/2040 targets. L271+L285.,—,—,V2 client-verified
+Admiral Group,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,[N/A],"N/A — insurer, not bank.",N/A,N/A,V2 client-verified – N/A
+Admiral Group,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Admiral Group,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Admiral Group,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[VERIFIED],Motor IAE measured (L254).,—,—,V2 client-verified
+Admiral Group,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[VERIFIED],PCAF standards referenced for IAE (L253).,—,—,V2 client-verified
+Admiral Group,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[VERIFIED],First IAE measurement in 2024.,—,—,V2 client-verified
+Ageas,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,[CLIENT-VERIFIED],"6.5/18 coefficient coverage (36.1%) – listed equity (6/6) + partial sovereign debt (0.5/2); other asset classes excluded (insurer profile, justification provided)",—,—,V2 client-verified
+Ageas,2024-12-31,Insurance,Part A,Data Quality Score,3,5,60.0,[CLIENT-VERIFIED],"Average DQS ~2.12 for listed equities, ~2 for sovereign debt",—,—,V2 client-verified
+Ageas,2024-12-31,Insurance,Part A,Attribution Methodology,3,5,60.0,[CLIENT-VERIFIED],PCAF methodology applied for covered asset classes,—,—,V2 client-verified
+Ageas,2024-12-31,Insurance,Part A,Portfolio Coverage,3,5,60.0,[CLIENT-VERIFIED],~71% portfolio coverage,—,—,V2 client-verified
+Ageas,2024-12-31,Insurance,Part A,Temporal Coverage,1,3,33.3,[CLIENT-VERIFIED],Current year only,—,—,V2 client-verified
+Ageas,2024-12-31,Insurance,Part B,Asset Class Coverage,0,5,0.0,[CLIENT-VERIFIED],No facilitated emissions (capital markets activity) reported,—,—,V2 client-verified
+Ageas,2024-12-31,Insurance,Part B,Attribution Methodology,0,5,0.0,[CLIENT-VERIFIED],No facilitated emissions attribution,—,—,V2 client-verified
+Ageas,2024-12-31,Insurance,Part B,Temporal Coverage,0,3,0.0,[CLIENT-VERIFIED],No facilitated emissions data,—,—,V2 client-verified
+Ageas,2024-12-31,Insurance,Part C,Asset Class Coverage,4,5,80.0,[CLIENT-VERIFIED],6/8 coefficient coverage (75%) – Commercial Lines (3/3) + Personal Motor (3/3); reinsurance branches not covered,—,—,V2 client-verified
+Ageas,2024-12-31,Insurance,Part C,Attribution Methodology,3,5,60.0,[CLIENT-VERIFIED],PCAF methodology used for commercial lines and personal motor,—,—,V2 client-verified
+Ageas,2024-12-31,Insurance,Part C,Temporal Coverage,0,3,0.0,[CLIENT-VERIFIED],No historical time series for insurance-associated emissions,—,—,V2 client-verified
+Allianz,2024-12-31,Insurance,Part A,Asset Class Coverage,3,5,60.0,[UNVERIFIED],"12.5/18 = 69.4%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'commercial_re', 'mortgages', 'sovereign_debt'].",—,—,V2 client-verified
+Allianz,2024-12-31,Insurance,Part A,Data Quality Score,4,5,80.0,[UNVERIFIED],DQS value: 2.2.,—,—,V2 client-verified
+Allianz,2024-12-31,Insurance,Part A,Attribution Methodology,3,5,60.0,[UNVERIFIED],"PCAF mentioned (L57), methods applied per asset class.",—,—,V2 client-verified
+Allianz,2024-12-31,Insurance,Part A,Portfolio Coverage,0,5,0.0,[UNVERIFIED],No portfolio coverage percentage identified.,—,—,V2 client-verified
+Allianz,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+Allianz,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+Allianz,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Allianz,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Allianz,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[UNVERIFIED],IAE mentioned at L48.,—,—,V2 client-verified
+Allianz,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[UNVERIFIED],Methodology details require human verification.,—,—,V2 client-verified
+Allianz,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[UNVERIFIED],Temporal extent requires human verification.,—,—,V2 client-verified
+Amundi,2024-12-31,Asset Manager,Part A,Asset Class Coverage,0,5,0.0,[UNVERIFIED],0/18 = 0.0%. Asset classes found: [].,—,—,V2 client-verified
+Amundi,2024-12-31,Asset Manager,Part A,Data Quality Score,0,5,0.0,[UNVERIFIED],DQS value: None.,—,—,V2 client-verified
+Amundi,2024-12-31,Asset Manager,Part A,Attribution Methodology,0,5,0.0,[UNVERIFIED],PCAF not mentioned.,—,—,V2 client-verified
+Amundi,2024-12-31,Asset Manager,Part A,Portfolio Coverage,0,5,0.0,[UNVERIFIED],No portfolio coverage percentage identified.,—,—,V2 client-verified
+Amundi,2024-12-31,Asset Manager,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+Amundi,2024-12-31,Asset Manager,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+Amundi,2024-12-31,Asset Manager,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Amundi,2024-12-31,Asset Manager,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Amundi,2024-12-31,Asset Manager,Part C,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
+Amundi,2024-12-31,Asset Manager,Part C,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Amundi,2024-12-31,Asset Manager,Part C,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+ASR Nederland,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,[UNVERIFIED],"5.5/18 = 30.6%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'sovereign_debt'].",—,—,V2 client-verified
+ASR Nederland,2024-12-31,Insurance,Part A,Data Quality Score,5,5,100.0,[UNVERIFIED],DQS value: 1.0.,—,—,V2 client-verified
+ASR Nederland,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L6872), partial coverage.",—,—,V2 client-verified
+ASR Nederland,2024-12-31,Insurance,Part A,Portfolio Coverage,0,5,0.0,[UNVERIFIED],No portfolio coverage percentage identified.,—,—,V2 client-verified
+ASR Nederland,2024-12-31,Insurance,Part A,Temporal Coverage,2,3,66.7,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: False.",—,—,V2 client-verified
+ASR Nederland,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+ASR Nederland,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+ASR Nederland,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+ASR Nederland,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[UNVERIFIED],IAE mentioned at L7474.,—,—,V2 client-verified
+ASR Nederland,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[UNVERIFIED],Methodology details require human verification.,—,—,V2 client-verified
+ASR Nederland,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[UNVERIFIED],Temporal extent requires human verification.,—,—,V2 client-verified
+Aviva,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,[UNVERIFIED],"6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'commercial_re', 'mortgages', 'sovereign_debt'].",—,—,V2 client-verified
+Aviva,2024-12-31,Insurance,Part A,Data Quality Score,4,5,80.0,[UNVERIFIED],DQS value: 2.3.,—,—,V2 client-verified
+Aviva,2024-12-31,Insurance,Part A,Attribution Methodology,4,5,80.0,[UNVERIFIED],PCAF signatory confirmed. L818:  for Carbon Accounting Financials (PCAF) We are a PCAF Member and standing member of the Climate Data Working Group. In 2024: we have been a participa,—,—,V2 client-verified
+Aviva,2024-12-31,Insurance,Part A,Portfolio Coverage,1,5,20.0,[UNVERIFIED],Coverage: 23.0%.,—,—,V2 client-verified
+Aviva,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+Aviva,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+Aviva,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Aviva,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Aviva,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[UNVERIFIED],IAE mentioned at L1714.,—,—,V2 client-verified
+Aviva,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[UNVERIFIED],Methodology details require human verification.,—,—,V2 client-verified
+Aviva,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[UNVERIFIED],Temporal extent requires human verification.,—,—,V2 client-verified
+AXA,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,[UNVERIFIED],"6.0/18 = 33.3%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'motor_vehicle', 'sovereign_debt'].",—,—,V2 client-verified
+AXA,2024-12-31,Insurance,Part A,Data Quality Score,2,5,40.0,[UNVERIFIED],DQS value: 4.0.,—,—,V2 client-verified
+AXA,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L1806), partial coverage.",—,—,V2 client-verified
+AXA,2024-12-31,Insurance,Part A,Portfolio Coverage,1,5,20.0,[UNVERIFIED],Coverage: 24.0%.,—,—,V2 client-verified
+AXA,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+AXA,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+AXA,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+AXA,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+AXA,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[UNVERIFIED],IAE mentioned at L1796.,—,—,V2 client-verified
+AXA,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[UNVERIFIED],Methodology details require human verification.,—,—,V2 client-verified
+AXA,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[UNVERIFIED],Temporal extent requires human verification.,—,—,V2 client-verified
+Commerzbank,2024-12-31,Bank,Part A,Asset Class Coverage,5,5,100.0,[CLIENT-VERIFIED],18/18 coefficient coverage (100%) – full coverage of all asset classes including sovereign debt S3 (consumption-based),—,—,V2 client-verified
+Commerzbank,2024-12-31,Bank,Part A,Data Quality Score,3,5,60.0,[CLIENT-VERIFIED],Average DQS ~4.05 across asset classes,—,—,V2 client-verified
+Commerzbank,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,[CLIENT-VERIFIED],Full PCAF methods per asset class (PCAF signatory),—,—,V2 client-verified
+Commerzbank,2024-12-31,Bank,Part A,Portfolio Coverage,2,5,40.0,[CLIENT-VERIFIED],~54% portfolio coverage,—,—,V2 client-verified
+Commerzbank,2024-12-31,Bank,Part A,Temporal Coverage,1,3,33.3,[CLIENT-VERIFIED],Current year + 1 prior year (2 years),—,—,V2 client-verified
+Commerzbank,2024-12-31,Bank,Part B,Asset Class Coverage,0,5,0.0,[CLIENT-VERIFIED],No facilitated emissions data published,—,—,V2 client-verified
+Commerzbank,2024-12-31,Bank,Part B,Attribution Methodology,0,5,0.0,[CLIENT-VERIFIED],No facilitated emissions attribution disclosed,—,—,V2 client-verified
+Commerzbank,2024-12-31,Bank,Part B,Temporal Coverage,0,3,0.0,[CLIENT-VERIFIED],No historical facilitated emissions data,—,—,V2 client-verified
+Commerzbank,2024-12-31,Bank,Part C,Asset Class Coverage,3,5,60.0,[CLIENT-VERIFIED],"Insurance-related emissions published within financed emissions (Scopes 1, 2 and 3) but no breakdown by insurance branch – 50% coverage estimated (4/8 coefficient)",—,—,V2 client-verified
+Commerzbank,2024-12-31,Bank,Part C,Attribution Methodology,0,5,0.0,[CLIENT-VERIFIED],No insurance-specific attribution methodology disclosed,—,—,V2 client-verified
+Commerzbank,2024-12-31,Bank,Part C,Temporal Coverage,0,3,0.0,[CLIENT-VERIFIED],No dedicated historical series for insurance-associated emissions,—,—,V2 client-verified
+Crédit Agricole,2024-12-31,Bank,Part A,Asset Class Coverage,1,5,20.0,[UNVERIFIED],"3.5/18 = 19.4%. Asset classes found: ['business_loans', 'mortgages'].",—,—,V2 client-verified
+Crédit Agricole,2024-12-31,Bank,Part A,Data Quality Score,0,5,0.0,[UNVERIFIED],DQS value: None.,—,—,V2 client-verified
+Crédit Agricole,2024-12-31,Bank,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L3696), partial coverage.",—,—,V2 client-verified
+Crédit Agricole,2024-12-31,Bank,Part A,Portfolio Coverage,0,5,0.0,[CLIENT-VERIFIED],"No PCAF portfolio coverage disclosed. The 89.2% at L22013 is the share of investment grade-rated counterparties ('La part de notations investment grade s'améliore et représente 89,2% du portefeuille'), not financed emissions coverage.",—,—,V2 client-verified
+Crédit Agricole,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+Crédit Agricole,2024-12-31,Bank,Part B,Asset Class Coverage,0,5,0.0,[UNVERIFIED],No facilitated emissions identified.,—,—,V2 client-verified
+Crédit Agricole,2024-12-31,Bank,Part B,Attribution Methodology,0,5,0.0,[UNVERIFIED],,—,—,V2 client-verified
+Crédit Agricole,2024-12-31,Bank,Part B,Temporal Coverage,0,3,0.0,[UNVERIFIED],,—,—,V2 client-verified
+Crédit Agricole,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
+Crédit Agricole,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Crédit Agricole,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Deutsche Börse,2024-12-31,Exchange,Part A,Asset Class Coverage,1,5,20.0,[UNVERIFIED],3/18 = 16.7%. Asset classes found: ['listed_equity_bonds'].,—,—,V2 client-verified
+Deutsche Börse,2024-12-31,Exchange,Part A,Data Quality Score,0,5,0.0,[UNVERIFIED],DQS value: None.,—,—,V2 client-verified
+Deutsche Börse,2024-12-31,Exchange,Part A,Attribution Methodology,0,5,0.0,[UNVERIFIED],PCAF not mentioned.,—,—,V2 client-verified
+Deutsche Börse,2024-12-31,Exchange,Part A,Portfolio Coverage,0,5,0.0,[UNVERIFIED],No portfolio coverage percentage identified.,—,—,V2 client-verified
+Deutsche Börse,2024-12-31,Exchange,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+Deutsche Börse,2024-12-31,Exchange,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+Deutsche Börse,2024-12-31,Exchange,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Deutsche Börse,2024-12-31,Exchange,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Deutsche Börse,2024-12-31,Exchange,Part C,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
+Deutsche Börse,2024-12-31,Exchange,Part C,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Deutsche Börse,2024-12-31,Exchange,Part C,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Eurazeo,2024-12-31,Asset Manager,Part A,Asset Class Coverage,1,5,20.0,[UNVERIFIED],0.5/18 = 2.8%. Asset classes found: ['mortgages'].,—,—,V2 client-verified
+Eurazeo,2024-12-31,Asset Manager,Part A,Data Quality Score,0,5,0.0,[UNVERIFIED],DQS value: None.,—,—,V2 client-verified
+Eurazeo,2024-12-31,Asset Manager,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L2646), partial coverage.",—,—,V2 client-verified
+Eurazeo,2024-12-31,Asset Manager,Part A,Portfolio Coverage,5,5,100.0,[UNVERIFIED],Coverage: 99.7%.,—,—,V2 client-verified
+Eurazeo,2024-12-31,Asset Manager,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+Eurazeo,2024-12-31,Asset Manager,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+Eurazeo,2024-12-31,Asset Manager,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Eurazeo,2024-12-31,Asset Manager,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Eurazeo,2024-12-31,Asset Manager,Part C,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
+Eurazeo,2024-12-31,Asset Manager,Part C,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Eurazeo,2024-12-31,Asset Manager,Part C,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+GBL,2024-12-31,Investment Holding,Part A,Asset Class Coverage,0,5,0.0,[UNVERIFIED],0/18 = 0.0%. Asset classes found: [].,—,—,V2 client-verified
+GBL,2024-12-31,Investment Holding,Part A,Data Quality Score,0,5,0.0,[UNVERIFIED],DQS value: None.,—,—,V2 client-verified
+GBL,2024-12-31,Investment Holding,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L14679), partial coverage.",—,—,V2 client-verified
+GBL,2024-12-31,Investment Holding,Part A,Portfolio Coverage,2,5,40.0,[UNVERIFIED],Coverage: 46.0%.,—,—,V2 client-verified
+GBL,2024-12-31,Investment Holding,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+GBL,2024-12-31,Investment Holding,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+GBL,2024-12-31,Investment Holding,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+GBL,2024-12-31,Investment Holding,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+GBL,2024-12-31,Investment Holding,Part C,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
+GBL,2024-12-31,Investment Holding,Part C,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+GBL,2024-12-31,Investment Holding,Part C,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+KBC,2024-12-31,Bancassurance,Part A,Asset Class Coverage,1,5,20.0,[UNVERIFIED],"6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'mortgages'].",—,—,V2 client-verified
+KBC,2024-12-31,Bancassurance,Part A,Data Quality Score,0,5,0.0,[UNVERIFIED],DQS value: None.,—,—,V2 client-verified
+KBC,2024-12-31,Bancassurance,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L66), partial coverage.",—,—,V2 client-verified
+KBC,2024-12-31,Bancassurance,Part A,Portfolio Coverage,2,5,40.0,[UNVERIFIED],Coverage: 44.0%.,—,—,V2 client-verified
+KBC,2024-12-31,Bancassurance,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+KBC,2024-12-31,Bancassurance,Part B,Asset Class Coverage,1,5,20.0,[UNVERIFIED],Facilitated emissions mentioned at L5759.,—,—,V2 client-verified
+KBC,2024-12-31,Bancassurance,Part B,Attribution Methodology,2,5,40.0,[UNVERIFIED],Methodology details require human verification.,—,—,V2 client-verified
+KBC,2024-12-31,Bancassurance,Part B,Temporal Coverage,1,3,33.3,[UNVERIFIED],Temporal extent requires human verification.,—,—,V2 client-verified
+KBC,2024-12-31,Bancassurance,Part C,Asset Class Coverage,2,5,40.0,[UNVERIFIED],IAE mentioned at L3840.,—,—,V2 client-verified
+KBC,2024-12-31,Bancassurance,Part C,Attribution Methodology,2,5,40.0,[UNVERIFIED],Methodology details require human verification.,—,—,V2 client-verified
+KBC,2024-12-31,Bancassurance,Part C,Temporal Coverage,1,3,33.3,[UNVERIFIED],Temporal extent requires human verification.,—,—,V2 client-verified
+Legal & General,2024-12-31,Insurance,Part A,Asset Class Coverage,2,5,40.0,[UNVERIFIED],"7.5/18 = 41.7%. Asset classes found: ['listed_equity_bonds', 'project_finance', 'mortgages', 'sovereign_debt'].",—,—,V2 client-verified
+Legal & General,2024-12-31,Insurance,Part A,Data Quality Score,3,5,60.0,[UNVERIFIED],DQS value: 2.8.,—,—,V2 client-verified
+Legal & General,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L1108), partial coverage.",—,—,V2 client-verified
+Legal & General,2024-12-31,Insurance,Part A,Portfolio Coverage,0,5,0.0,[UNVERIFIED],No portfolio coverage percentage identified.,—,—,V2 client-verified
+Legal & General,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+Legal & General,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+Legal & General,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Legal & General,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Legal & General,2024-12-31,Insurance,Part C,Asset Class Coverage,0,5,0.0,[UNVERIFIED],No IAE data identified.,—,—,V2 client-verified
+Legal & General,2024-12-31,Insurance,Part C,Attribution Methodology,0,5,0.0,[UNVERIFIED],,—,—,V2 client-verified
+Legal & General,2024-12-31,Insurance,Part C,Temporal Coverage,0,3,0.0,[UNVERIFIED],,—,—,V2 client-verified
+NN Group,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,[UNVERIFIED],"6.0/18 = 33.3%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'motor_vehicle', 'sovereign_debt'].",—,—,V2 client-verified
+NN Group,2024-12-31,Insurance,Part A,Data Quality Score,4,5,80.0,[UNVERIFIED],DQS value: 1.5.,—,—,V2 client-verified
+NN Group,2024-12-31,Insurance,Part A,Attribution Methodology,4,5,80.0,[UNVERIFIED],"PCAF signatory confirmed. L5464: orresponding emission factor. Together with other members of PCAF, we are exploring ways to obtain the actual consumption data to further enhance repo",—,—,V2 client-verified
+NN Group,2024-12-31,Insurance,Part A,Portfolio Coverage,1,5,20.0,[UNVERIFIED],Coverage: 40.0%.,—,—,V2 client-verified
+NN Group,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+NN Group,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+NN Group,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+NN Group,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+NN Group,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[UNVERIFIED],IAE mentioned at L4583.,—,—,V2 client-verified
+NN Group,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[UNVERIFIED],Methodology details require human verification.,—,—,V2 client-verified
+NN Group,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[UNVERIFIED],Temporal extent requires human verification.,—,—,V2 client-verified
+Nordea,2024-12-31,Bank,Part A,Asset Class Coverage,5,5,100.0,[CLIENT-VERIFIED],17/18 coefficient coverage (94.4%) – all 7 asset classes covered for S1&S2+S3 except sovereign debt S3,—,—,V2 client-verified
+Nordea,2024-12-31,Bank,Part A,Data Quality Score,3,5,60.0,[CLIENT-VERIFIED],Average DQS between 3 and 4,—,—,V2 client-verified
+Nordea,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,[CLIENT-VERIFIED],Full PCAF methodology per asset class (PCAF signatory),—,—,V2 client-verified
+Nordea,2024-12-31,Bank,Part A,Portfolio Coverage,3,5,60.0,[CLIENT-VERIFIED],~75% portfolio coverage,—,—,V2 client-verified
+Nordea,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,[CLIENT-VERIFIED],3 years of history + trends + projections/targets,—,—,V2 client-verified
+Nordea,2024-12-31,Bank,Part B,Asset Class Coverage,0,5,0.0,[CLIENT-VERIFIED],No facilitated emissions reported (Part B not yet implemented),—,—,V2 client-verified
+Nordea,2024-12-31,Bank,Part B,Attribution Methodology,0,5,0.0,[CLIENT-VERIFIED],No facilitated emissions attribution disclosed,—,—,V2 client-verified
+Nordea,2024-12-31,Bank,Part B,Temporal Coverage,0,3,0.0,[CLIENT-VERIFIED],No historical facilitated emissions data,—,—,V2 client-verified
+Nordea,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,[N/A],N/A – Nordea has no P&C insurance activity; life insurance emissions included in financed emissions,N/A,N/A,V2 client-verified – N/A
+Nordea,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Nordea,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Phoenix Group,2024-12-31,Insurance,Part A,Asset Class Coverage,1,5,20.0,[UNVERIFIED],"6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'mortgages'].",—,—,V2 client-verified
+Phoenix Group,2024-12-31,Insurance,Part A,Data Quality Score,0,5,0.0,[UNVERIFIED],DQS value: None.,—,—,V2 client-verified
+Phoenix Group,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L2146), partial coverage.",—,—,V2 client-verified
+Phoenix Group,2024-12-31,Insurance,Part A,Portfolio Coverage,4,5,80.0,[UNVERIFIED],Coverage: 85.0%.,—,—,V2 client-verified
+Phoenix Group,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+Phoenix Group,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+Phoenix Group,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Phoenix Group,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Phoenix Group,2024-12-31,Insurance,Part C,Asset Class Coverage,0,5,0.0,[UNVERIFIED],No IAE data identified.,—,—,V2 client-verified
+Phoenix Group,2024-12-31,Insurance,Part C,Attribution Methodology,0,5,0.0,[UNVERIFIED],,—,—,V2 client-verified
+Phoenix Group,2024-12-31,Insurance,Part C,Temporal Coverage,0,3,0.0,[UNVERIFIED],,—,—,V2 client-verified
+Santander,2024-12-31,Bank,Part A,Asset Class Coverage,3,5,60.0,[UNVERIFIED],"12.0/18 = 66.7%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'project_finance', 'commercial_re', 'mortgages', 'motor_vehicle', 'sovereign_debt'].",—,—,V2 client-verified
+Santander,2024-12-31,Bank,Part A,Data Quality Score,4,5,80.0,[UNVERIFIED],DQS value: 2.3.,—,—,V2 client-verified
+Santander,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,[UNVERIFIED],PCAF signatory confirmed. L4159: rbon Accounting Financials (PCAF): We have been a member of PCAF since 2021 and thus committed to disclose our financed emissions according to the PCA,—,—,V2 client-verified
+Santander,2024-12-31,Bank,Part A,Portfolio Coverage,2,5,40.0,[UNVERIFIED],Coverage: 50.0%.,—,—,V2 client-verified
+Santander,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+Santander,2024-12-31,Bank,Part B,Asset Class Coverage,1,5,20.0,[UNVERIFIED],Facilitated emissions mentioned at L2849.,—,—,V2 client-verified
+Santander,2024-12-31,Bank,Part B,Attribution Methodology,2,5,40.0,[UNVERIFIED],Methodology details require human verification.,—,—,V2 client-verified
+Santander,2024-12-31,Bank,Part B,Temporal Coverage,1,3,33.3,[UNVERIFIED],Temporal extent requires human verification.,—,—,V2 client-verified
+Santander,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
+Santander,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Santander,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Schroders,2024-12-31,Asset Manager,Part A,Asset Class Coverage,1,5,20.0,[UNVERIFIED],"3.5/18 = 19.4%. Asset classes found: ['listed_equity_bonds', 'mortgages'].",—,—,V2 client-verified
+Schroders,2024-12-31,Asset Manager,Part A,Data Quality Score,0,5,0.0,[UNVERIFIED],DQS value: None.,—,—,V2 client-verified
+Schroders,2024-12-31,Asset Manager,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L10130), partial coverage.",—,—,V2 client-verified
+Schroders,2024-12-31,Asset Manager,Part A,Portfolio Coverage,0,5,0.0,[UNVERIFIED],No portfolio coverage percentage identified.,—,—,V2 client-verified
+Schroders,2024-12-31,Asset Manager,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+Schroders,2024-12-31,Asset Manager,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+Schroders,2024-12-31,Asset Manager,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Schroders,2024-12-31,Asset Manager,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Schroders,2024-12-31,Asset Manager,Part C,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
+Schroders,2024-12-31,Asset Manager,Part C,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Schroders,2024-12-31,Asset Manager,Part C,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Société Générale,2024-12-31,Bank,Part A,Asset Class Coverage,3,5,60.0,[UNVERIFIED],"9.5/18 weighted coverage (53%). Detail: Listed equity and corporate bonds: 0.0/6.0 (not reported); Business loans and unlisted equity: 6.0/6.0 (S1&S2 + S3); Project finance: 1.0/2.0 (S1&S2 only, S3 not covered); Commercial real estate: 1.0/1.0 (S1&S2); Mortgages: 0.5/0.5 (S1&S2 partial coverage); Motor vehicle loans: 0.5/0.5 (S1&S2 partial coverage); Sovereign debt: 0.5/2.0 (S1&S2 production only, LULUCF not included, S3 not covered)",Medium,Extend coverage to missing asset classes and include S3 emissions,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part A,Data Quality Score,0,5,0.0,[UNVERIFIED],PCAF® data quality score not disclosed in the sustainability report. Score 0: no DQS data available to assess data quality.,High,Implement and disclose PCAF® DQS,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],PCAF® mentioned but not a signatory. Documented methods with partial asset class coverage (Part A status: partial). Score 2.,High,Incomplete methodology,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part A,Portfolio Coverage,0,5,0.0,[UNVERIFIED],"No PCAF® portfolio coverage rate (Scope 3, Cat. 15) found in Société Générale's 2024 sustainability report.",Medium,Coverage data not disclosed – publish explicit PCAF® portfolio coverage rate,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part A,Temporal Coverage,1,3,33.3,[UNVERIFIED],"Part A status: partial, no quantified financed emissions found. Score 1: current year only (no multi-year trend possible).",Low,Extend to 3 years + projections for maximum score,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part B,Asset Class Coverage,1,5,20.0,[UNVERIFIED],Facilitated emissions composite 2/5 → ~40% Part B asset class coverage,High,Extend Part B to all 5 asset classes,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part B,Attribution Methodology,2,5,40.0,[UNVERIFIED],Time-based allocation documented,Medium,Full PCAF® Part B alignment,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part B,Temporal Coverage,1,3,33.3,[UNVERIFIED],Current year only,Low,Extend to multi-year reporting,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,[N/A],N/A – not applicable (not an insurer/reinsurer),N/A,N/A,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,[N/A],N/A – not applicable,N/A,N/A,"Priority 2: Report total financed emissions, not just sector targets"
+Société Générale,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,[N/A],N/A – not applicable,N/A,N/A,"Priority 2: Report total financed emissions, not just sector targets"
+Swiss Re,2024-12-31,Reinsurance,Part A,Asset Class Coverage,2,5,40.0,[UNVERIFIED],"8.5/18 = 47.2%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'sovereign_debt'].",—,—,V2 client-verified
+Swiss Re,2024-12-31,Reinsurance,Part A,Data Quality Score,0,5,0.0,[UNVERIFIED],DQS value: None.,—,—,V2 client-verified
+Swiss Re,2024-12-31,Reinsurance,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L284), partial coverage.",—,—,V2 client-verified
+Swiss Re,2024-12-31,Reinsurance,Part A,Portfolio Coverage,1,5,20.0,[UNVERIFIED],Coverage: 23.0%.,—,—,V2 client-verified
+Swiss Re,2024-12-31,Reinsurance,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+Swiss Re,2024-12-31,Reinsurance,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+Swiss Re,2024-12-31,Reinsurance,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Swiss Re,2024-12-31,Reinsurance,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Swiss Re,2024-12-31,Reinsurance,Part C,Asset Class Coverage,2,5,40.0,[UNVERIFIED],IAE mentioned at L1484.,—,—,V2 client-verified
+Swiss Re,2024-12-31,Reinsurance,Part C,Attribution Methodology,2,5,40.0,[UNVERIFIED],Methodology details require human verification.,—,—,V2 client-verified
+Swiss Re,2024-12-31,Reinsurance,Part C,Temporal Coverage,1,3,33.3,[UNVERIFIED],Temporal extent requires human verification.,—,—,V2 client-verified
+UniCredit,2024-12-31,Bank,Part A,Asset Class Coverage,1,5,20.0,[UNVERIFIED],"4.5/18 = 25.0%. Asset classes found: ['listed_equity_bonds', 'commercial_re', 'mortgages'].",—,—,V2 client-verified
+UniCredit,2024-12-31,Bank,Part A,Data Quality Score,0,5,0.0,[UNVERIFIED],DQS value: None.,—,—,V2 client-verified
+UniCredit,2024-12-31,Bank,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L2243), partial coverage.",—,—,V2 client-verified
+UniCredit,2024-12-31,Bank,Part A,Portfolio Coverage,1,5,20.0,[UNVERIFIED],Coverage: 32.0%.,—,—,V2 client-verified
+UniCredit,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+UniCredit,2024-12-31,Bank,Part B,Asset Class Coverage,1,5,20.0,[UNVERIFIED],Facilitated emissions mentioned at L2054.,—,—,V2 client-verified
+UniCredit,2024-12-31,Bank,Part B,Attribution Methodology,2,5,40.0,[UNVERIFIED],Methodology details require human verification.,—,—,V2 client-verified
+UniCredit,2024-12-31,Bank,Part B,Temporal Coverage,1,3,33.3,[UNVERIFIED],Temporal extent requires human verification.,—,—,V2 client-verified
+UniCredit,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
+UniCredit,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+UniCredit,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Zurich,2024-12-31,Insurance,Part A,Asset Class Coverage,2,5,40.0,[UNVERIFIED],"8.5/18 = 47.2%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'sovereign_debt'].",—,—,V2 client-verified
+Zurich,2024-12-31,Insurance,Part A,Data Quality Score,4,5,80.0,[UNVERIFIED],DQS value: 1.8.,—,—,V2 client-verified
+Zurich,2024-12-31,Insurance,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L4213), partial coverage.",—,—,V2 client-verified
+Zurich,2024-12-31,Insurance,Part A,Portfolio Coverage,0,5,0.0,[UNVERIFIED],No portfolio coverage percentage identified.,—,—,V2 client-verified
+Zurich,2024-12-31,Insurance,Part A,Temporal Coverage,3,3,100.0,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True.",—,—,V2 client-verified
+Zurich,2024-12-31,Insurance,Part B,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not a bank/bancassurance.,N/A,N/A,V2 client-verified – N/A
+Zurich,2024-12-31,Insurance,Part B,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Zurich,2024-12-31,Insurance,Part B,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Zurich,2024-12-31,Insurance,Part C,Asset Class Coverage,2,5,40.0,[UNVERIFIED],IAE mentioned at L4169.,—,—,V2 client-verified
+Zurich,2024-12-31,Insurance,Part C,Attribution Methodology,2,5,40.0,[UNVERIFIED],Methodology details require human verification.,—,—,V2 client-verified
+Zurich,2024-12-31,Insurance,Part C,Temporal Coverage,1,3,33.3,[UNVERIFIED],Temporal extent requires human verification.,—,—,V2 client-verified
+ING,2024-12-31,Bank,Part A,Asset Class Coverage,4,5,80.0,[VERIFIED],"16.0/18 = 88.9%. 6 asset classes reported (listed equity+bonds, business loans, project finance, CRE, mortgages, motor vehicles). Sovereign debt confirmed absent after full report search (89,783 lines). Level 4 (70-90%).",—,—,V2 client-verified
+ING,2024-12-31,Bank,Part A,Data Quality Score,2,5,40.0,[VERIFIED],"Overall DQS S1&S2 = 4.0. Per asset class: Mortgages 3.9, CRE WB 3.7, CRE BB 3.3, Corporate BB 5.0, Corporate WB 4.0, Equity 4.9, Bonds 3.6. Range 3.5-4.5 -> Score 2.",—,—,V2 client-verified
+ING,2024-12-31,Bank,Part A,Attribution Methodology,4,5,80.0,[VERIFIED],'calculated in accordance with the Partnership for Carbon Accounting Financials (PCAF) methodology'. SBTi 1.5C validated (L19967). PCAF signatory not explicitly stated in report. Score 4.,—,—,V2 client-verified
+ING,2024-12-31,Bank,Part A,Portfolio Coverage,3,5,60.0,[VERIFIED],"79.0% = 704.5 / 892.0 EUR bn. Exclusions: money market (179bn), private individuals (18bn), accrued interest (-9bn). Range 60-80% -> Score 3.",—,—,V2 client-verified
+ING,2024-12-31,Bank,Part A,Temporal Coverage,3,3,100.0,[VERIFIED],"Terra since 2018, financed emissions ref year 2021, reductions tracked since 2019. 2030 SBTi targets + 2050 net zero. Score 3.",—,—,V2 client-verified
+ING,2024-12-31,Bank,Part B,Asset Class Coverage,1,5,20.0,[VERIFIED],Syndicated loans only (45.4 EUR bn). DCM/ECM excluded (<2.5% threshold). 1 of 5 Part B classes. Level 1.,—,—,V2 client-verified
+ING,2024-12-31,Bank,Part B,Attribution Methodology,3,5,60.0,[VERIFIED],"'PCAF methodology for facilitated emissions, applying the prescribed weighting factor of 33 percent'. Score 3.",—,—,V2 client-verified
+ING,2024-12-31,Bank,Part B,Temporal Coverage,1,3,33.3,[VERIFIED],Facilitated emissions table shows 2025 and 2024 only. 2 years. Score 1.,—,—,V2 client-verified
+ING,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,[N/A],"N/A - ING is a bank, not insurer/reinsurer.",N/A,N/A,V2 client-verified – N/A
+ING,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+ING,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Julius Baer,2024-12-31,Bank,Part A,Asset Class Coverage,1,5,20.0,[UNVERIFIED],"6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'mortgages'].",—,—,V2 client-verified
+Julius Baer,2024-12-31,Bank,Part A,Data Quality Score,0,5,0.0,[UNVERIFIED],DQS value: None.,—,—,V2 client-verified
+Julius Baer,2024-12-31,Bank,Part A,Attribution Methodology,2,5,40.0,[UNVERIFIED],"PCAF mentioned (L148), partial coverage.",—,—,V2 client-verified
+Julius Baer,2024-12-31,Bank,Part A,Portfolio Coverage,2,5,40.0,[UNVERIFIED],Coverage: 49.0%.,—,—,V2 client-verified
+Julius Baer,2024-12-31,Bank,Part A,Temporal Coverage,2,3,66.7,[UNVERIFIED],"Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: False.",—,—,V2 client-verified
+Julius Baer,2024-12-31,Bank,Part B,Asset Class Coverage,0,5,0.0,[UNVERIFIED],No facilitated emissions identified.,—,—,V2 client-verified
+Julius Baer,2024-12-31,Bank,Part B,Attribution Methodology,0,5,0.0,[UNVERIFIED],,—,—,V2 client-verified
+Julius Baer,2024-12-31,Bank,Part B,Temporal Coverage,0,3,0.0,[UNVERIFIED],,—,—,V2 client-verified
+Julius Baer,2024-12-31,Bank,Part C,Asset Class Coverage,N/A,N/A,,[N/A],N/A — not an insurer/reinsurer.,N/A,N/A,V2 client-verified – N/A
+Julius Baer,2024-12-31,Bank,Part C,Attribution Methodology,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A
+Julius Baer,2024-12-31,Bank,Part C,Temporal Coverage,N/A,N/A,,[N/A],N/A,N/A,N/A,V2 client-verified – N/A

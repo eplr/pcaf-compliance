@@ -26,6 +26,7 @@ Direct quotes from sustainability reports are kept in their original language.
 import csv
 import json
 import os
+import re
 
 BASE = "/Users/fidestra/Library/CloudStorage/OneDrive-fidestra/03_ACCOUNTS/Axylia/pcaf-compliance"
 
@@ -266,6 +267,38 @@ def portfolio_cov_score(pct):
     return 0
 
 NA = "N/A"
+
+# ── Verification status helpers ─────────────────────────────────────
+
+# Matches leading verification tags: [VERIFIED...], [AUTOMATED...], [UNVERIFIED...]
+_LEADING_TAG_RE = re.compile(
+    r'^\[(?:VERIFIED|Verified|AUTOMATED|UNVERIFIED)[^\]]*\]\s*',
+    re.IGNORECASE,
+)
+# Matches inline status/scan tags: [NOT FOUND], [FOUND — ...], [INCOMPLETE — ...], [No data]
+_INLINE_TAG_RE = re.compile(
+    r'\[(?:NOT FOUND|FOUND[^\]]*|INCOMPLETE[^\]]*|No data)\]\s*'
+)
+
+def _detect_verification_status(evidence, score, assessor_notes=""):
+    """Derive a verification_status label from evidence text / assessor_notes."""
+    if score is None or str(score) == NA:
+        return "[N/A]"
+    ev_upper = evidence.upper()
+    if ev_upper.startswith("[VERIFIED"):
+        return "[VERIFIED]"
+    if "[AUTOMATED" in ev_upper or "[UNVERIFIED" in ev_upper:
+        return "[UNVERIFIED]"
+    # Client-verified overrides (Nordea, Commerzbank, Ageas) have clean evidence
+    if "client-verified" in assessor_notes.lower():
+        return "[CLIENT-VERIFIED]"
+    return "[UNVERIFIED]"
+
+def _strip_verification_tag(evidence):
+    """Remove all bracket labels from evidence, keeping only the factual content."""
+    cleaned = _LEADING_TAG_RE.sub('', evidence)
+    cleaned = _INLINE_TAG_RE.sub('', cleaned)
+    return cleaned.strip()
 
 # ── Part A ──────────────────────────────────────────────────────────
 
@@ -567,15 +600,20 @@ def generate_assessment():
 
         def row_from_override(part_label, criterion, data):
             score = data.get("score"); max_s = data.get("max"); evid = data.get("evidence", "")
+            notes = "V2 client-verified"
+            vstatus = _detect_verification_status(evid, score, notes)
+            clean_evid = _strip_verification_tag(evid)
             if score is None:
                 return {"company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
                         "pcaf_part":part_label,"criterion":criterion,"score":NA,"max_score":NA,
-                        "percentage":"","evidence":evid,"priority":NA,"gap_description":NA,
+                        "percentage":"","verification_status":"[N/A]","evidence":clean_evid,
+                        "priority":NA,"gap_description":NA,
                         "assessor_notes":"V2 client-verified – N/A"}
             pct = round((score/max_s)*100,1) if max_s else ""
             return {"company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
                     "pcaf_part":part_label,"criterion":criterion,"score":score,"max_score":max_s,
-                    "percentage":pct,"evidence":evid,"priority":"—","gap_description":"—",
+                    "percentage":pct,"verification_status":vstatus,"evidence":clean_evid,
+                    "priority":"—","gap_description":"—",
                     "assessor_notes":"V2 client-verified"}
 
         if v2_over:
@@ -588,12 +626,13 @@ def generate_assessment():
         def append_rows(part_label, scored_rows):
             for criterion, score, max_s, evidence, priority, gap in scored_rows:
                 pct = "" if score==NA else (round((score/max_s)*100,1) if isinstance(max_s,(int,float)) and max_s>0 else "")
-                # Flag auto-generated scores as unverified
-                flagged_evidence = f"[UNVERIFIED — auto-generated, requires human verification against source report] {evidence}"
+                vstatus = "[N/A]" if score == NA else "[UNVERIFIED]"
+                clean_evid = _strip_verification_tag(evidence)
                 output_rows.append({
                     "company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
                     "pcaf_part":part_label,"criterion":criterion,"score":score,"max_score":max_s,
-                    "percentage":pct,"evidence":flagged_evidence,"priority":priority,"gap_description":gap,
+                    "percentage":pct,"verification_status":vstatus,"evidence":clean_evid,
+                    "priority":priority,"gap_description":gap,
                     "assessor_notes":compl_data.get("recommendation",""),
                 })
 
@@ -608,7 +647,7 @@ def main():
     rows = generate_assessment()
     output_path = os.path.join(BASE, "output", "pcaf_assessment_detailed.csv")
     fieldnames = ["company","assessment_date","institution_type","pcaf_part","criterion",
-                  "score","max_score","percentage","evidence","priority","gap_description","assessor_notes"]
+                  "score","max_score","percentage","verification_status","evidence","priority","gap_description","assessor_notes"]
     with open(output_path,"w",newline="",encoding="utf-8") as f:
         w = csv.DictWriter(f,fieldnames=fieldnames); w.writeheader(); w.writerows(rows)
 

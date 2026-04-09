@@ -712,9 +712,9 @@
         "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L3696), partial coverage."
       },
       "Portfolio Coverage": {
-        "score": 4,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 89.2% found at L22013, verify this is PCAF portfolio coverage not another metric] Coverage: 89.2%."
+        "evidence": "No PCAF portfolio coverage disclosed. The 89.2% at L22013 is the share of investment grade-rated counterparties ('La part de notations investment grade s'améliore et représente 89,2% du portefeuille'), not financed emissions coverage."
       },
       "Temporal Coverage": {
         "score": 3,
