@@ -1,71 +1,65 @@
 # Phoenix Group — PCAF® Compliance Assessment
 
-> **Report analysed**: PHOENIXGROUP 2024 (1,370,540 chars, 26,037 lines)
-> **Institution type**: Insurance (Part A + Part C applicable)
-> **Assessment date**: 8 April 2026
-> **Method**: Automated extraction from clean text with targeted section reading. ALL SCORES REQUIRE HUMAN VERIFICATION.
+**Source**: Annual Report and Accounts 2024 (PDF, 26 036 lines extracted text)
+**Institution type**: Insurance (life/retirement, £292bn AUA)
+**PCAF signatory**: Signatory
+**Assessment date**: 2024-12-31
+**Method**: Full reading of extracted text (`PHOENIXGROUP_2024_clean.txt`)
 
 ---
 
-## Part A — Financed Emissions: 10/23
+## Part A — Financed Emissions: 16/23 (69,6%)
 
-### 1. Asset Class Coverage — 1/5
+### Asset Class Coverage: 2/5
+8,0/18 = 44,4%
 
-Raw: 6.5/18 = 36.1%
+| Asset class | Status | Points | Evidence |
+|---|---|---|---|
+| Listed equity + corporate bonds | Reported (S1&S2+S3) | 6,0/6,0 | L2085-2103: 12,4 MtCO2e total S1&S2. S3 separately: 88 MtCO2e (L2231). |
+| Business loans / unlisted equity | Missing | 0/6,0 | Not covered (life insurer, no lending). |
+| Project finance | Missing | 0/2,0 | Not covered. |
+| Commercial real estate | Reported (S1&S2&S3) | 1,0/1,0 | L2180: £5bn real estate. DQS 3,0. Physical risk analysis (L1956-2001). |
+| Mortgages | Reported | 0,5/0,5 | L2183-2184: equity release mortgages £5bn. DQS 5,0. |
+| Motor vehicle loans | Missing | 0/0,5 | Not covered. |
+| Sovereign debt | Partial (S1 production) | 0,5/2,0 | L2178: £37bn sovereign debt. DQS 2,0. |
 
-| Asset class | Status | Evidence |
-|---|---|---|
-| Listed equity & corporate bonds | reported | [FOUND — HUMAN VERIFICATION REQUIRED] |
-| Business loans & unlisted equity | missing | [NOT FOUND] |
-| Project finance | missing | [NOT FOUND] |
-| Commercial real estate | missing | [NOT FOUND] |
-| Mortgages | reported | [FOUND — HUMAN VERIFICATION REQUIRED] |
-| Motor vehicle loans | missing | [NOT FOUND] |
-| Sovereign debt | missing | [NOT FOUND] |
+### Data Quality Score: 4/5
+PCAF DQS total = 1,7 (L2284). Per asset class: Listed equity 1,4 · Listed credit 1,5 · Sovereign 2,0 · Real estate 3,0 · Illiquid credit 2,7 · Equity release 5,0. Score 4 (DQS in 1,5–2,5 range).
 
-### 2. Data Quality Score — 0/5
+**Auto-scan failure**: DQS table was completely missed by regex extraction.
 
-[NOT FOUND] Score 0 (not disclosed).
+### Attribution Methodology: 4/5
+Explicitly uses PCAF (L2150): "We use the financed emissions methodologies developed by the Partnership for Carbon Accounting Financials ('PCAF')." Signatory. NZAOA aligned targets (L2146). ISS data vendor. 6 asset classes covered. Score 4.
 
-### 3. Attribution Methodology — 2/5
+### Portfolio Coverage: 3/5
+£198bn AUA covered / £284bn total = 70% (L2168). Covers 100% of 2025 target scope, 92% of 2030 scope.
 
-PCAF mentioned (L2146), partial coverage.
+**False positive corrected**: The 85% at L5835 was the scope of the 2030 decarbonisation target, not overall AUA portfolio coverage.
 
-PCAF signatory: [NOT CONFIRMED in report text. Verify on PCAF website.]
-
-### 4. Portfolio Coverage — 4/5
-
-85.0% found at L5835.
-[FOUND — HUMAN VERIFICATION REQUIRED: 85.0% found at L5835, verify this is PCAF portfolio coverage not another metric]
-
-### 5. Temporal Coverage — 3/3
-
-Years referenced: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets/net zero: Yes.
+### Temporal Coverage: 3/3
+2019 baseline. Data for 2019, 2021, 2023, 2024. 52% intensity reduction achieved. 2025/2030/2050 targets. Score 3.
 
 ---
 
 ## Part B — N/A
-
-N/A — not applicable.
-
----
-
-## Part C — Insurance-Associated Emissions: 0/13
-
-| Criterion | Score | Evidence |
-|---|---|---|
-| Asset Class Coverage | 0/5 | [NOT FOUND] No insurance-associated emissions data identified. |
-| Attribution Methodology | 0/5 | [NOT FOUND] No insurance-associated emissions data identified. |
-| Temporal Coverage | 0/3 | [NOT FOUND] No insurance-associated emissions data identified. |
+Phoenix Group is not a bank/bancassurance.
 
 ---
 
-## Summary
+## Part C — Insurance-Associated Emissions: 0/13 (0%)
 
-| Part | Score | Max |
-|---|---|---|
-| **Part A** | **10** | 23 |
-| **Part B** | **N/A** | 13 |
-| **Part C** | **0** | 13 |
+Phoenix Group is a life/retirement insurer (pensions, annuities, retirement income). No P&C underwriting. IAE under PCAF Part C not applicable.
 
-> **ALL SCORES in this assessment are based on automated extraction and REQUIRE HUMAN VERIFICATION against the source report before use.**
+---
+
+## Score changes vs auto-generated
+
+| Criterion | Old | New | Reason |
+|---|---|---|---|
+| Part A Asset Class Coverage | 1 | **2** | S3 included for listed assets; 8,0/18 vs 6,5/18 |
+| Part A DQS | 0 | **4** | DQS 1,7 found in detailed table (L2284). Auto-scan missed it completely. |
+| Part A Attribution | 2 | **4** | Explicit PCAF methodology, signatory, NZAOA. |
+| Part A Portfolio Coverage | 4 | **3** | 70% actual coverage (L2168); 85% was 2030 target scope, not AUA coverage. |
+
+**Part A**: 10 → **16**/23 (43,5% → 69,6%)
+**Part C**: 0 → **0**/13 (unchanged, correct — no P&C underwriting)

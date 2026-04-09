@@ -1242,36 +1242,37 @@
     "institution_type": "Insurance",
     "Part A": {
       "Asset Class Coverage": {
-        "score": 1,
-        "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'mortgages']."
-      },
-      "Data Quality Score": {
-        "score": 0,
-        "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
-      },
-      "Attribution Methodology": {
         "score": 2,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L2146), partial coverage."
+        "coverage_ratio": 0.444,
+        "evidence": "[Verified from full reading of Annual Report 2024, 26036 lines] 8.0/18 = 44.4%. Listed equity S1&S2+S3 (L2085-2103, 12.4 MtCO2e total; S3 analyzed at 88 MtCO2e, L2231). Listed credit S1&S2. Sovereign debt S1 production (L2178, DQS 2.0). Real estate S1&S2&S3 (L2180, DQS 3.0). Illiquid credit (L2182). Equity release mortgages (L2183-2184, DQS 5.0). Not covered: business loans, project finance, motor vehicle."
       },
-      "Portfolio Coverage": {
+      "Data Quality Score": {
         "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 85.0% found at L5835, verify this is PCAF portfolio coverage not another metric] Coverage: 85.0%."
+        "evidence": "[Verified from full reading, L2245-2286] PCAF DQS total = 1.7 (2024), 1.7 (2023), 1.8 (2019). Per asset class: Listed equity 1.4, Listed credit 1.5, Sovereign 2.0, Real estate 3.0, Illiquid credit 2.7, Equity release 5.0. Score 4: DQS 1.7 falls in 1.5-2.5 range. Auto-scan missed the DQS table entirely."
+      },
+      "Attribution Methodology": {
+        "score": 4,
+        "max": 5,
+        "evidence": "[Verified from full reading, L2150] Explicitly uses PCAF methodology. Verbatim: 'We use the financed emissions methodologies developed by the Partnership for Carbon Accounting Financials (PCAF)'. PCAF signatory. NZAOA aligned targets (L2146). ISS data vendor (L2168). Comprehensive methodology across 6 asset classes. Score 4."
+      },
+      "Portfolio Coverage": {
+        "score": 3,
+        "max": 5,
+        "evidence": "[Verified from full reading, L2168] £198bn AUA covered in carbon footprinting out of £284bn total life company assets = 70%. Covers 100% of 2025 target scope, 92% of 2030 target scope, 70% of 2050 target scope. The 85% at L5835 refers to the scope of coverage for the 2030 decarbonisation target, not overall AUA coverage. Score 3 (60-80%)."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "[Verified from full reading] 2019 baseline (L2168). Data for 2019, 2021, 2023, 2024 (L2079-2136). 52% reduction in listed equity+credit intensity (L2148). 2025 target: 25% reduction. 2030: 50%. 2050: net zero (L2152-2159). Score 3."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A — Phoenix Group is not a bank/bancassurance."
       },
       "Attribution Methodology": {
         "score": null,
@@ -1288,18 +1289,23 @@
       "Asset Class Coverage": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No IAE data identified."
+        "evidence": "[Verified from full reading] Phoenix Group is a life/retirement insurer (pensions, annuities, retirement income). No P&C underwriting. No insurance-associated emissions (IAE) reported or applicable."
       },
       "Attribution Methodology": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+        "evidence": "[Verified] No IAE methodology — no P&C underwriting business."
       },
       "Temporal Coverage": {
         "score": 0,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+        "evidence": "[Verified] No IAE data."
       }
+    },
+    "_compliance": {
+      "Part A": 0.6957,
+      "Part B": null,
+      "Part C": 0.0
     }
   },
   "Santander": {
