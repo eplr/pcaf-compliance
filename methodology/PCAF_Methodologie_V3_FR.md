@@ -174,7 +174,7 @@ Chaque institution évaluée produit un rapport au format `output/{INSTITUTION}_
 | `data/corrected_compliance_data.json` | Statut de conformité par institution (statut Parties A/B/C, DQS, etc.) |
 | `data/pcaf_composite_scores.csv` | Scores composites par classe d'actifs (0–5) |
 | `data/extended_asset_class_coverage.json` | Statut de couverture par classe d'actifs (`reported` / `partial` / `missing`) |
-| `data/pcaf_v2_scores.json` | Scores client-vérifiés pour Nordea, Commerzbank, Ageas |
+| `data/pcaf_v2_scores.json` | Scores vérifiés (client + lectures complètes) pour 25 institutions |
 | `data/verification_checklist.json` | Trace d'audit des vérifications manuelles |
 | `resources/reports/extracted_text/*.json` | Texte extrait des rapports PDF |
 | `resources/reports/extracted_text/*_full_clean.txt` | Texte propre des rapports XHTML |
@@ -262,10 +262,98 @@ Chaque score du fichier `pcaf_assessment_detailed.csv` est accompagné d'un cham
 
 ---
 
+## Colonnes du CSV détaillé (V3.1)
+
+Le fichier `pcaf_assessment_detailed.csv` comprend 15 colonnes :
+
+| Colonne | Description |
+|---|---|
+| `company` | Nom de l’institution |
+| `assessment_date` | Date de référence (2024-12-31) |
+| `institution_type` | Type : Bank, Insurance, Bancassurance, Asset Manager, etc. |
+| `pcaf_signatory` | Statut PCAF : `Signatory` / `Non-signatory` / `Non-signatory (mentions PCAF)` / `Non-signatory (no mention)` |
+| `pcaf_part` | Partie évaluée (Part A / Part B / Part C) |
+| `criterion` | Critère (Asset Class Coverage, Data Quality Score, etc.) |
+| `score` | Score attribué (entier ou N/A) |
+| `max_score` | Score maximum possible |
+| `percentage` | Score en pourcentage (score/max × 100) |
+| `verification_status` | `[VERIFIED]` = lecture complète · `[CLIENT-VERIFIED]` = validé par le client · `[UNVERIFIED]` = auto-généré · `[N/A]` |
+| `extraction_result` | `[NOT FOUND]` = donnée absente · `[FOUND — ...]` = donnée trouvée (à vérifier) · `[No data]` = absence confirmée |
+| `evidence` | Justification factuelle (sans tags) |
+| `priority` | Priorité de remédiation |
+| `gap_description` | Description de l’écart |
+| `assessor_notes` | Notes de l’évaluateur |
+
+---
+
 ## Évaluations complètes (lecture complète du rapport)
 
 | Institution | Source | Méthode | Part A | Part B | Part C | Rapport |
 |---|---|---|---|---|---|---|
 | ING | Annual Report 2025 (ESEF XHTML) | Lecture complète (89 783 lignes) | **16**/23 | **5**/13 | N/A | `output/ING_PCAF_Compliance_Assessment.md` |
+| Admiral Group | Sustainability Report 2024 (PDF) | Lecture complète (1 004 lignes) | **6**/23 | N/A | **5**/13 | `output/Admiral_Group_PCAF_Compliance_Assessment.md` |
 
-*Les autres institutions seront évaluées selon la même méthode (lecture complète du rapport source).*
+*19 institutions restantes à évaluer par lecture complète (voir protocole ci-dessous).*
+
+---
+
+## Protocole d’analyse des rapports — Phase 2 (prévu avril 2026)
+
+### Objectif
+Passer les 19 institutions `[UNVERIFIED]` à `[VERIFIED]` par lecture complète de chaque rapport source.
+
+### Ordre de traitement (par taille décroissante de rapport)
+
+**Batch 1 — Rapports > 2M caractères** (~2h)
+1. UniCredit (3,37M) — Bank
+2. Santander (3,09M) — Bank
+3. GBL (2,79M) — Investment Holding
+4. Crédit Agricole (2,62M) — Bank
+
+**Batch 2 — Rapports 1M–2M caractères** (~3h30)
+5. AXA (1,92M) — Insurance
+6. Amundi (1,88M) — Asset Manager
+7. ASR Nederland (1,82M) — Insurance
+8. Allianz (1,54M) — Insurance
+9. NN Group (1,48M) — Insurance
+10. Eurazeo (1,41M) — Asset Manager
+11. Phoenix Group (1,38M) — Insurance
+12. Zurich (1,38M) — Insurance
+13. Deutsche Börse (1,17M) — Exchange
+14. Schroders (747k) — Asset Manager
+15. KBC (447k) — Bancassurance
+
+**Batch 3 — Rapports < 500k caractères** (~50min)
+16. Swiss Re (413k) — Reinsurance
+17. Aviva (370k) — Insurance
+18. Legal & General (281k) — Insurance
+19. Julius Baer (239k) — Bank
+
+### Procédure par institution
+
+Pour chaque institution :
+
+1. **Ouvrir** le texte extrait : `resources/reports/extracted_text/{KEY}_2024_clean.txt`
+2. **Identifier** les sections pertinentes : sustainability statement, financed emissions, PCAF methodology, data quality, portfolio coverage, temporal data, facilitated emissions, insurance-associated emissions
+3. **Pour chaque critère des 11** :
+   - Trouver le **verbatim exact** avec référence de ligne
+   - Appliquer la grille de scoring de la méthodologie V3
+   - Documenter le raisonnement
+   - Vérifier tout pourcentage contre le contexte complet de la phrase
+4. **Mettre à jour** `data/pcaf_v2_scores.json` avec les scores vérifiés et l’evidence enrichie
+5. **Générer** le rapport d’évaluation : `output/{INSTITUTION}_PCAF_Compliance_Assessment.md`
+6. **Regénérer** les CSV : `python3 generate_pcaf_assessment.py && python3 generate_all_looker_csvs.py`
+7. **Vérifier** que `verification_status` passe de `[UNVERIFIED]` à `[VERIFIED]`
+
+### Points d’attention prioritaires
+
+- **Portfolio Coverage** : 12 pourcentages `[FOUND — HUMAN VERIFICATION REQUIRED]` à vérifier (historique d’erreur : 69 %)
+- **DQS** : 8 valeurs extraites par regex à confirmer en contexte
+- **Part C (assureurs)** : scores génériques (2/5, 2/5, 1/3) à détailler avec données réelles
+- **Temporal Coverage** : vérifier les années réellement présentes (pas juste les années mentionnées dans le header)
+
+### Livrables attendus
+- 19 rapports `.md` enrichis dans `output/`
+- `pcaf_v2_scores.json` mis à jour (25 institutions vérifiées)
+- 7 CSV regénérés avec 0 lignes `[UNVERIFIED]`
+- Commit + push sur GitHub
