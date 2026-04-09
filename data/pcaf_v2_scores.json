@@ -569,34 +569,35 @@
       "Asset Class Coverage": {
         "score": 1,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.5/18 = 36.1%. Asset classes found: ['listed_equity_bonds', 'commercial_re', 'mortgages', 'sovereign_debt']."
+        "coverage_ratio": 0.333,
+        "evidence": "[Verified from full reading of CRFD 2024 + Sustainability Datasheet 2024] 6.0/18 = 33.3%. Credit & equities S1&S2 (datasheet 3.4 R7, £147.8bn, 6.7M tCO2e). Infrastructure debt S1&S2 (3.4 R8, £9.0bn). Direct real estate S1+S2+S3 (3.4 R9, £6.2bn, Deepki/CRREM). CRE mortgages S1&S2 (3.4 R10, £6.3bn). Equity release mortgages S1&S2 (3.4 R11, £10.4bn). Sovereign S1 production (3.5 R21, 8.1M tCO2e, PRIMAP-hist). S3 of investees NOT included (L2053: 'We do not include investments' Scope 3 emissions'). Business loans/unlisted equity: not covered. Motor vehicle: not covered."
       },
       "Data Quality Score": {
-        "score": 4,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 2.3."
+        "evidence": "[Verified from Sustainability Datasheet 2024, sheet 3.5 R18] Total PCAF DQS = 2.5 (2024), 2.4 (2023). Per asset class: Credit & equities 2.2, Infrastructure debt 3.6, Direct real estate 3.8, CRE mortgages 3.2, Equity release 4.3, Sovereign 2.3. Score 3: DQS 2.5 falls in 2.5-3.5 range. Note: auto-scan found 2.3 which is sovereign DQS only, not the total."
       },
       "Attribution Methodology": {
         "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF signatory confirmed. L818:  for Carbon Accounting Financials (PCAF) We are a PCAF Member and standing member of the Climate Data Working Group. In 2024: we have been a participa"
+        "evidence": "[Verified from CRFD 2024, L817-818] PCAF Member and standing member of Climate Data Working Group. Participating in 5 PCAF working groups in 2024. Verbatim: 'We are a PCAF Member and standing member of the Climate Data Working Group'. PCAF signatory. Uses PCAF methodology across all covered asset classes with Carbon Trust support for infra/CRE (L3589). Part A status: reported. Score 4."
       },
       "Portfolio Coverage": {
-        "score": 1,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 23.0% found at L2147, verify this is PCAF portfolio coverage not another metric] Coverage: 23.0%."
+        "evidence": "[Verified from CRFD 2024 + Datasheet 2024] 72% AUM coverage of balance sheet assets (datasheet 3.6 R14: £225.4bn / £313.0bn). 57% of total AUM including third-party (3.6 R15). 95% emissions data coverage within included asset classes (L2023). The 23% at L2147 refers to the percentage of credit & equities portfolio from top 4 sectors by emissions, NOT portfolio coverage. Score 3 (60-80%)."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "[Verified from CRFD 2024 + Datasheet] Financed emissions tracked 2022-2024 (datasheet 3.4 R7-R12). 2019 baseline for WACI targets. 64% reduction achieved vs 2019 (datasheet 3.4 R16). 2030 ambition: 60% ECI reduction. Net zero by 2040. Score 3."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A — Aviva is an insurer, not a bank/bancassurance."
       },
       "Attribution Methodology": {
         "score": null,
@@ -611,20 +612,25 @@
     },
     "Part C": {
       "Asset Class Coverage": {
-        "score": 2,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L1714."
+        "evidence": "[Verified from CRFD 2024, L1714] IAE explicitly not reported. Verbatim: 'Due to challenges relating to methodology and accurate measurement with low quality data and coverage, we are not yet in a position to disclose our insurance-associated emissions under Scope 3 category 15 - underwriting'. Score 0."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+        "evidence": "[Verified from CRFD 2024] No insurance-associated emissions attribution methodology disclosed. IAE not yet reported."
       },
       "Temporal Coverage": {
-        "score": 1,
+        "score": 0,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+        "evidence": "[Verified from CRFD 2024] No historical IAE data. First disclosure expected in future years."
       }
+    },
+    "_compliance": {
+      "Part A": 0.6087,
+      "Part B": null,
+      "Part C": 0.0
     }
   },
   "AXA": {

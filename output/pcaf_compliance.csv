@@ -8,8 +8,8 @@ Allianz,2024-12-31,Signatory,Part C - Insurance-Associated Emissions,PARTIAL,38,
 Amundi,2024-12-31,Non-signatory,Part A - Financed Emissions,MISSING,13,"Asset Class Coverage, Data Quality Score, Attribution Methodology, Portfolio Coverage",Critical
 ASR Nederland,2024-12-31,Non-signatory (mentions PCAF),Part A - Financed Emissions,PARTIAL,44,"Asset Class Coverage, Portfolio Coverage",High
 ASR Nederland,2024-12-31,Non-signatory (mentions PCAF),Part C - Insurance-Associated Emissions,PARTIAL,38,Temporal Coverage,High
-Aviva,2024-12-31,Signatory,Part A - Financed Emissions,PARTIAL,56,"Asset Class Coverage, Portfolio Coverage",High
-Aviva,2024-12-31,Signatory,Part C - Insurance-Associated Emissions,PARTIAL,38,Temporal Coverage,High
+Aviva,2024-12-31,Signatory,Part A - Financed Emissions,PARTIAL,61,Asset Class Coverage,High
+Aviva,2024-12-31,Signatory,Part C - Insurance-Associated Emissions,MISSING,0,"Asset Class Coverage, Attribution Methodology, Temporal Coverage",Critical
 AXA,2024-12-31,Non-signatory (mentions PCAF),Part A - Financed Emissions,MISSING,39,"Asset Class Coverage, Portfolio Coverage",Critical
 AXA,2024-12-31,Non-signatory (mentions PCAF),Part C - Insurance-Associated Emissions,PARTIAL,38,Temporal Coverage,High
 Commerzbank,2024-12-31,Signatory,Part A - Financed Emissions,PARTIAL,65,Temporal Coverage,High
