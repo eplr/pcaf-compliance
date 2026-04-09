@@ -1120,7 +1120,7 @@
     }
   },
   "Legal & General": {
-    "assessment_date": "2024-12-31",
+    "assessment_date": "2026-04-09",
     "institution_type": "Insurance",
     "Part A": {
       "Asset Class Coverage": {
@@ -1188,7 +1188,8 @@
       "Part A": 0.8261,
       "Part B": null,
       "Part C": 0.0
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "NN Group": {
     "assessment_date": "2024-12-31",
