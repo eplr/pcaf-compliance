@@ -1374,34 +1374,35 @@
       "Asset Class Coverage": {
         "score": 1,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 3.5/18 = 19.4%. Asset classes found: ['listed_equity_bonds', 'mortgages']."
+        "coverage_ratio": 0.389,
+        "evidence": "[Verified from full reading of Annual Report 2024, 10342 lines] 7.0/18 = 38.9%. Listed equity + corporate bonds + REITs + ETFs: S1&S2 (18.5 MtCO2e, L786) AND S3 (141.9 MtCO2e, L10104-10108) = reported (6.0/6.0). Schroders Capital Real Estate: partial S1&S2&S3 tenant (L854, carbon intensity targets). Not covered: business loans, project finance, mortgages, motor vehicle, sovereign debt. Score 1 (0-40%)."
       },
       "Data Quality Score": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+        "evidence": "[Verified from full reading] No PCAF DQS published. Report acknowledges data quality issues (L10082, L10130: 'emissions data is frequently based on estimates or proxy data') but no weighted average DQS disclosed. Score 0."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L10130), partial coverage."
+        "evidence": "[Verified from full reading, L10130] Uses PCAF principles for financed emissions calculations. Verbatim: 'we use our own methodology, which is based on Partnership of Carbon Accounting Financials (PCAF) principles'. SBTi-validated targets (L771-773). MSCI data for emissions. Not a PCAF signatory (mentions PCAF but not member). Score 3: PCAF-aligned methods per asset class, not signatory."
       },
       "Portfolio Coverage": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+        "evidence": "[Verified from full reading] No explicit portfolio coverage % disclosed. In-scope assets for SBTi = directly managed listed equity, corporate bonds, REITs, ETFs (L780). Total AUM £778.7bn but in-scope portion not quantified as a coverage %. The 97% figure (L10055) refers to operational Scope 3 from business travel and supply chain, NOT financed emissions coverage. Score 0."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "[Verified from full reading] Financed emissions tracked from 2019 base year (L10091-10119). Annual data 2019-2024. SBTi targets: 2.2°C by 2030, 1.5°C by 2040, net zero by 2050 (L822-863). Portfolio temperature score improving: 2.9°C (2020) → 2.4°C (2024). Score 3."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A — Schroders is an asset manager, not a bank/bancassurance."
       },
       "Attribution Methodology": {
         "score": null,
@@ -1418,7 +1419,7 @@
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not an insurer/reinsurer."
+        "evidence": "N/A — Schroders is an asset manager, not an insurer/reinsurer."
       },
       "Attribution Methodology": {
         "score": null,
@@ -1430,6 +1431,11 @@
         "max": null,
         "evidence": "N/A"
       }
+    },
+    "_compliance": {
+      "Part A": 0.3043,
+      "Part B": null,
+      "Part C": null
     }
   },
   "Swiss Re": {
