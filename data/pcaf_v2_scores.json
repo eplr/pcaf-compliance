@@ -1045,7 +1045,8 @@
       "Part A": 0.5652,
       "Part B": 0.0,
       "Part C": null
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "KBC": {
     "assessment_date": "2024-12-31",
