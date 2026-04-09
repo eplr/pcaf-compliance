@@ -3,7 +3,7 @@
 > **Report analysed**: Annual Report 2024 (PDF, 10 420 lines of extracted text)
 > **Institution type**: Exchange / market infrastructure provider (Part A applicable — Part B N/A, Part C N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: Climate targets (L3295–3302), GHG emissions table (L3440–3441), Basis of valuation methods (L3404–3411). PCAF search confirmed absent across all 10,420 lines.
 
 ---

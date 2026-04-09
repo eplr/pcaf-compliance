@@ -3,7 +3,7 @@
 > **Report analysed**: NN Group Annual Report 2024 (PDF, 23 633 lines of extracted text)
 > **Institution type**: Insurer (Part A + Part C applicable — Part B N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: financed emissions tables (L5097–5310), IAE table (L5588–5660), methodology per asset class (L5252–5300), targets (L4835–4946), signatory/PCAF engagement (L4583, L4820, L4865).
 
 ---

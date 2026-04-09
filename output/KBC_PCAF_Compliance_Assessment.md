@@ -3,7 +3,7 @@
 > **Report analysed**: Sustainability Report 2024 (PDF, 6 013 lines of extracted text)
 > **Institution type**: Bancassurance (Part A + Part B + Part C applicable)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: Loan portfolio assessments (L3871–3990), White Paper sectors (L4001–5082), Own investments KBC Insurance (L5650–5677), Sovereign KBC Bank (L5699–5701), IAE assessment (L5725–5748), Facilitated emissions (L5758–5759).
 
 ---

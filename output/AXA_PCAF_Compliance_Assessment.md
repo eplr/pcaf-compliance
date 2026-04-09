@@ -3,7 +3,7 @@
 > **Report analysed**: AXA Universal Registration Document 2024 (PDF, 5 717 lines of extracted text)
 > **Institution type**: Insurer (Part A + Part C applicable — Part B N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: investment GHG methodology (L1861–1875, L2542–2560), financed emissions tables (L1866–1875), IAE targets and table (L2025–2033, L2584–2587), signatory confirmation (L1809, L2586).
 
 ---

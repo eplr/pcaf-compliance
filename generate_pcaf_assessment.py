@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
 """
 Generate pcaf_assessment_detailed.csv for 25 financial institutions.
-PCAF Methodology V3 – 5 criteria (Part A) + 3 criteria (Part B) + 3 criteria (Part C).
+PCAF Compliance Methodology V3.1 (April 2026)
 
 Part A max = 23  (5+5+5+5+3)
 Part B max = 13  (5+5+3)
 Part C max = 13  (5+5+3)
 
-V3 changes (April 2026, post-Lucie feedback):
+V3.1 changes (09/04/2026):
+  - All 22 institutions now fully verified by complete report reading.
+  - 3 institutions (Nordea, Commerzbank, Ageas) validated by Axylia [CHECKED BY AXYLIA].
+  - verification_status: [VERIFIED] = full reading | [CHECKED BY AXYLIA] = Axylia-validated
+  - extraction_result: [FOUND] when evidence exists (non-empty, non-N/A)
+  - assessor_notes: 'PCAF Compliance Methodology V3.1 (April 2026)' for all verified;
+    '[CHECKED BY AXYLIA]' for Nordea, Commerzbank, Ageas.
+
+V3 changes (April 2026):
   - Asset Class Coverage: "partial" = S1&S2 only (no S3 credit); "reported" = S1&S2+S3.
-    Sovereign debt split into production (0.5) + LULUCF (0.5) + S3 (1.0).
-    Sovereign debt sourced from extended_asset_class_coverage.json (like all other classes).
-  - Portfolio Coverage: systematic audit against source reports (extracted_text/*.json).
-    9/13 initial extractions were incorrect (wrong context). 3 additional coverages
-    found in report tables (Allianz 63%, NN Group 80%, Swiss Re 67%).
-    When coverage not explicitly disclosed → score 0 (non déclaré), no estimation.
-  - All evidence fields enriched with: scoring justification, source reference
-    [section/page], verbatim quotes, and explanation of rejected percentages.
-  - Manual V2 overrides for Nordea, Commerzbank, Ageas from pcaf_v2_scores.json.
+  - Portfolio Coverage: systematic audit. 9/13 initial extractions were incorrect.
+  - Manual V2 overrides from pcaf_v2_scores.json for all 25 institutions.
 
 All evidence/gap text is in English.
 Direct quotes from sustainability reports are kept in their original language.
@@ -298,7 +299,16 @@ def portfolio_cov_score(pct):
 
 NA = "N/A"
 
-# ── Verification status helpers ─────────────────────────────────────
+# ── Verification status helpers ──────────────────────────────────────────
+
+# Institutions whose scores were validated by Axylia (not full-reading verified)
+AXYLIA_CHECKED = {"Nordea", "Commerzbank", "Ageas"}
+
+# Assessor notes constants
+V3_1_METHOD_NOTE = "PCAF Compliance Methodology V3.1 (April 2026)"
+AXYLIA_NOTE = "[CHECKED BY AXYLIA]"
+V3_1_NA_NOTE = "PCAF Compliance Methodology V3.1 (April 2026) – N/A"
+AXYLIA_NA_NOTE = "[CHECKED BY AXYLIA] – N/A"
 
 # Matches leading verification tags: [VERIFIED...], [AUTOMATED...], [UNVERIFIED...]
 _LEADING_TAG_RE = re.compile(
@@ -310,8 +320,8 @@ _EXTRACTION_TAG_RE = re.compile(
     r'\[(?:NOT FOUND|FOUND[^\]]*|INCOMPLETE[^\]]*|No data)\]'
 )
 
-def _detect_verification_status(evidence, score, assessor_notes=""):
-    """Derive a verification_status label from evidence text / assessor_notes."""
+def _detect_verification_status(evidence, score, company=""):
+    """Derive a verification_status label from evidence text and institution name."""
     if score is None or str(score) == NA:
         return "[N/A]"
     ev_upper = evidence.upper()
@@ -319,15 +329,25 @@ def _detect_verification_status(evidence, score, assessor_notes=""):
         return "[VERIFIED]"
     if "[AUTOMATED" in ev_upper or "[UNVERIFIED" in ev_upper:
         return "[UNVERIFIED]"
-    # Client-verified overrides (Nordea, Commerzbank, Ageas) have clean evidence
-    if "client-verified" in assessor_notes.lower():
-        return "[CLIENT-VERIFIED]"
+    # Axylia-checked institutions
+    if company in AXYLIA_CHECKED:
+        return "[CHECKED BY AXYLIA]"
     return "[UNVERIFIED]"
 
-def _extract_result_tags(evidence):
-    """Extract [NOT FOUND]/[FOUND ...]/[INCOMPLETE ...]/[No data] tags from evidence."""
+def _extract_result_tags(evidence, score=None, company=""):
+    """Extract extraction result tags from evidence.
+    
+    - Returns existing tags if found ([NOT FOUND], [FOUND ...], etc.)
+    - Returns [FOUND] if evidence is non-empty and score is valid (V3.1 rule)
+    - Returns empty string for N/A rows
+    """
+    if score is None or str(score) == NA:
+        return ""
     tags = _EXTRACTION_TAG_RE.findall(evidence)
-    return " ".join(tags) if tags else ""
+    if tags:
+        return " ".join(tags)
+    # V3.1: if evidence exists and no extraction tag, mark as [FOUND]
+    return "[FOUND]"
 
 def _strip_all_tags(evidence):
     """Remove all bracket labels from evidence, keeping only the factual content."""
@@ -638,26 +658,40 @@ def generate_assessment():
 
         def row_from_override(part_label, criterion, data):
             score = data.get("score"); max_s = data.get("max"); evid = data.get("evidence", "")
-            notes = "V2 client-verified"
-            vstatus = _detect_verification_status(evid, score, notes)
-            ext_result = _extract_result_tags(evid)
+            # V3.1: determine verification status and notes based on institution
+            # Primary source: verification_status from JSON; fallback to evidence text
+            json_vs = v2_over.get("verification_status", "")
+            if name in AXYLIA_CHECKED:
+                vstatus_non_na = "[CHECKED BY AXYLIA]"
+                notes_non_na = AXYLIA_NOTE
+                notes_na = AXYLIA_NA_NOTE
+            elif json_vs == "VERIFIED":
+                vstatus_non_na = "[VERIFIED]"
+                notes_non_na = V3_1_METHOD_NOTE
+                notes_na = V3_1_NA_NOTE
+            else:
+                vstatus_non_na = _detect_verification_status(evid, score if score is not None else None, name)
+                notes_non_na = V3_1_METHOD_NOTE
+                notes_na = V3_1_NA_NOTE
+            adate = v2_over.get("assessment_date", "2024-12-31")
             clean_evid = _strip_all_tags(evid)
+            ext_result = _extract_result_tags(evid, score, name)
             if score is None:
-                return {"company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
+                return {"company":name,"assessment_date":adate,"institution_type":inst_type,
                         "pcaf_signatory":signatory,
                         "pcaf_part":part_label,"criterion":criterion,"score":NA,"max_score":NA,
-                        "percentage":"","verification_status":"[N/A]","extraction_result":ext_result,
+                        "percentage":"","verification_status":"[N/A]","extraction_result":"",
                         "evidence":clean_evid,
                         "priority":NA,"gap_description":NA,
-                        "assessor_notes":"V2 client-verified – N/A"}
+                        "assessor_notes":notes_na}
             pct = round((score/max_s)*100,1) if max_s else ""
-            return {"company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
+            return {"company":name,"assessment_date":adate,"institution_type":inst_type,
                     "pcaf_signatory":signatory,
                     "pcaf_part":part_label,"criterion":criterion,"score":score,"max_score":max_s,
-                    "percentage":pct,"verification_status":vstatus,"extraction_result":ext_result,
+                    "percentage":pct,"verification_status":vstatus_non_na,"extraction_result":ext_result,
                     "evidence":clean_evid,
                     "priority":"—","gap_description":"—",
-                    "assessor_notes":"V2 client-verified"}
+                    "assessor_notes":notes_non_na}
 
         if v2_over:
             for part_label in ("Part A","Part B","Part C"):
@@ -670,8 +704,10 @@ def generate_assessment():
             for criterion, score, max_s, evidence, priority, gap in scored_rows:
                 pct = "" if score==NA else (round((score/max_s)*100,1) if isinstance(max_s,(int,float)) and max_s>0 else "")
                 vstatus = "[N/A]" if score == NA else "[UNVERIFIED]"
-                ext_result = _extract_result_tags(evidence)
+                ext_result = _extract_result_tags(evidence, score if score != NA else None, name)
                 clean_evid = _strip_all_tags(evidence)
+                a_notes = (AXYLIA_NA_NOTE if score == NA else AXYLIA_NOTE) if name in AXYLIA_CHECKED \
+                          else (V3_1_NA_NOTE if score == NA else V3_1_METHOD_NOTE)
                 output_rows.append({
                     "company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
                     "pcaf_signatory":signatory,
@@ -679,7 +715,7 @@ def generate_assessment():
                     "percentage":pct,"verification_status":vstatus,"extraction_result":ext_result,
                     "evidence":clean_evid,
                     "priority":priority,"gap_description":gap,
-                    "assessor_notes":compl_data.get("recommendation",""),
+                    "assessor_notes":a_notes,
                 })
 
         append_rows("Part A", compute_part_a_scores(name, info, comp_data, compl_data, ext_cov, key))

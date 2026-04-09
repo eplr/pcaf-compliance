@@ -3,7 +3,7 @@
 > **Report analysed**: Annual Report and Accounts 2024 (PDF, 26 036 lines of extracted text)
 > **Institution type**: Life/retirement insurer (£292bn AUA; Part A applicable — Part B N/A, Part C N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: Investment portfolio targets + metrics (L2140–2286), PCAF methodology statement (L2150), DQS table (L2245–2285), asset class breakdown (L2172–2192), portfolio coverage (L2168).
 
 ---

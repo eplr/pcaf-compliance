@@ -3,7 +3,7 @@
 > **Report analysed**: Amundi Document d’Enregistrement Universel 2024 (French, PDF, 41 648 lines of extracted text)
 > **Institution type**: Asset Manager (Part A only — Parts B and C not applicable)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: Net Zero investment strategy (L10756–11015), carbon intensity metrics (L11163–11195), responsible investment update (L17638–19527), climate strategy (L19528–19950), initiatives table (L14671–14727).
 
 ---

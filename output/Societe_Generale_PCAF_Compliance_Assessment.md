@@ -3,7 +3,7 @@
 > **Report analysed**: Document d’Enregistrement Universel 2025 / Groupe Société Générale (2,988,754 chars, 65,588 lines — in French, reporting FY2024)
 > **Institution type**: Bank (Part A + Part B applicable — Part C N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: PCAF financed emissions methodology (L20088–20135), sector alignment targets (L19043–19450), climate strategy (L18164–18165, L19055–19073), GHG emissions (L20028–20050), signatory confirmations (L19567, L19593, L22519).
 
 ---

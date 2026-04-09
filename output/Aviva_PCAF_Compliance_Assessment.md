@@ -3,7 +3,7 @@
 > **Report analysed**: Climate-related Financial Disclosure 2024 + Sustainability Datasheet 2024 (PDF, 4 013 lines of extracted text + XLSX)
 > **Institution type**: Insurer (Part A + Part C applicable — Part B N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: PCAF membership (L817–818), Note 7 – Financed emissions (L1966–2194), Note 8 – Sovereign monitoring (L2205–2244), IAE statement (L1714). Supplemented by Sustainability Datasheet 2024 (XLSX: sheets 3.4, 3.5, 3.6).
 
 ---

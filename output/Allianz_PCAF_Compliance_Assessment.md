@@ -3,7 +3,7 @@
 > **Report analysed**: Allianz Group Annual Report 2024 (PDF, 73 314 lignes de texte extrait)
 > **Type d'institution**: Assureur (Partie A + Partie C applicables — Partie B N/A)
 > **Date d'évaluation**: 9 avril 2026
-> **Méthodologie**: PCAF Compliance Methodology V3 (avril 2026)
+> **Méthodologie**: PCAF Compliance Methodology V3.1 (avril 2026)
 > **Méthode de lecture**: Lecture complète du rapport source. Sections clés lues intégralement : émissions financées (L13650–14430), émissions liées à l'assurance (L12766–13320), notes méthodologiques (L26182–26670), objectifs et cibles (L14155–14400).
 
 ---

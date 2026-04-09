@@ -3,7 +3,7 @@
 > **Report analysed**: GBL — Déclaration relative à la durabilité 2024 (French, PDF, 25 746 lines of extracted text)
 > **Institution type**: Investment Holding / Asset Manager (Part A only — Parts B and C not applicable)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: GBL holding climate strategy (L1051–1250), Cat 15 emissions table (L4440–4617), PCAF reference verification (L14679, L14738), portfolio coverage verification (L19789, L1186).
 
 ---

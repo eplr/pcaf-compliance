@@ -3,7 +3,7 @@
 > **Report analysed**: ASR Nederland Annual Report 2024 (PDF, 35 093 lines of extracted text)
 > **Institution type**: Insurer (Part A + Part C applicable — Part B N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: financed emissions tables (L8507–8900), IAE table (L8902–8947), targets (L8126–8410), PCAF methodology notes (L12948–13109), signatory confirmation (L6872).
 
 ---

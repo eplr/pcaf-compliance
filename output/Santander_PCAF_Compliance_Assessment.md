@@ -3,7 +3,7 @@
 > **Report analysed**: Santander Annual Report 2024 (50 324 lines of extracted text)
 > **Institution type**: Bank (Part A + Part B applicable — Part C N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: financed emissions table (L9082–9148), PCAF methodology (L2815–2850, L4158–4161), sector details (L3589–3771), portfolio coverage verification (L3835–3836).
 
 ---

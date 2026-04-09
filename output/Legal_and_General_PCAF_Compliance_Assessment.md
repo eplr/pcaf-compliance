@@ -3,7 +3,7 @@
 > **Report analysed**: Climate and Nature Report 2024 (PDF, 3 236 lines of extracted text)
 > **Institution type**: Insurer/asset manager, life and retirement (Part A applicable — Part B N/A, Part C N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: GHG emissions intensity of investments (L1075–1213), Metrics dashboard (L2465–2600), Basis of preparation Scope 3 Cat 15 (L2815–3079), PCAF DQS tables (L1089–1186).
 
 ---

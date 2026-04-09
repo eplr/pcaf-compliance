@@ -3,7 +3,7 @@
 > **Report analysed**: Annual Report and Accounts 2024 (PDF, 10 342 lines of extracted text)
 > **Institution type**: Asset manager (£778.7bn AUM; Part A applicable — Part B N/A, Part C N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: Climate strategy + targets (L767–880), 2024 metrics table (L10089–2119), PCAF methodology note (L10130), SBTi in-scope assets (L780).
 
 ---

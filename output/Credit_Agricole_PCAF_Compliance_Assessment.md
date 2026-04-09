@@ -3,7 +3,7 @@
 > **Report analysed**: Crédit Agricole CIB — Document d’Enregistrement Universel 2024 (French, PDF, 48 980 lines of extracted text)
 > **Institution type**: Bank (Part A + Part B applicable — Part C N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: PCAF methodology and sector targets (L3685–4107), financed emissions GHG table (L3981–4082), portfolio coverage verification (L22013–22014).
 
 ---

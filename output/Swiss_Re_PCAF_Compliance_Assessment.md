@@ -3,7 +3,7 @@
 > **Report analysed**: Swiss Re Sustainability Report 2024 (PDF, 5 217 lines of extracted text)
 > **Institution type**: Reinsurer (Part A + Part C applicable — Part B N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: investment GHG methodology (L2097–2218), IAE methodology + data (L1989–1998, L3237–3318), PCAF references (L1484, L1507, L1562, L1620), portfolio coverage (L1521).
 
 ---

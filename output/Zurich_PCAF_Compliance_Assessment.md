@@ -3,7 +3,7 @@
 > **Report analysed**: Annual Report 2024 (PDF, 26 238 lines of extracted text)
 > **Institution type**: Insurer (Part A + Part C applicable — Part B N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: Investment portfolio metrics (L6276–6475), Sovereign bonds (L6758–6781), CRE portfolio (L6782–6930), IAE methodology + data (L6307–6370).
 
 ---

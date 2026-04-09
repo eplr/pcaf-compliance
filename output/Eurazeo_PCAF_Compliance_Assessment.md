@@ -3,7 +3,7 @@
 > **Report analysed**: Document d'enregistrement universel 2024 (PDF, 22 154 lines of extracted text)
 > **Institution type**: Private Equity / asset manager (Part A applicable — Part B N/A, Part C N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: Emissions bilan GES (L2533–2604), GHG targets + SBTi (L2404–2424), PCAF attribution method (L2646), RE target (L2417), temporal data (L2326, L2318).
 
 ---

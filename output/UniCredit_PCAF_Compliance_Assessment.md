@@ -3,7 +3,7 @@
 > **Report analysed**: UniCredit Annual Reports and Accounts 2024 (6 933 lines of extracted text)
 > **Institution type**: Bank (Part A + Part B applicable — Part C N/A)
 > **Assessment date**: 9 April 2026
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: PCAF methodology + financed emissions scope (L2243, L3018–3025), E1-6 GHG emissions table (L3006–3008), Net Zero sector targets (L2948–2981, L2979–2981), portfolio coverage verification (L3025).
 
 

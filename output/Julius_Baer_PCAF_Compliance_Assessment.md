@@ -3,7 +3,7 @@
 > **Report analysed**: Sustainability Report 2025 (PDF, 4 924 lines of extracted text) — covers FY2025 data
 > **Institution type**: Bank / private wealth manager (Part A + Part B applicable — Part C N/A)
 > **Assessment date**: 9 April 2026 (source report: FY2025)
-> **Methodology**: PCAF Compliance Methodology V3 (April 2026)
+> **Methodology**: PCAF Compliance Methodology V3.1 (April 2026)
 > **Reading method**: Full report reading. Key sections read in full: Climate targets (L857–950), Treasury book tables (L1956–2518), Mortgage book tables (L2521–2604), Lending book tables (L2607–end), GHG key figures (L1856–1938).
 
 ---
