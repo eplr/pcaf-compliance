@@ -79,6 +79,36 @@ INSTITUTIONS = {
     "Julius Baer":     {"key":"JULIUSBAER",      "composite_key":"Julius Baer",     "type":"Bank",               "pcaf_type":"bank"},
 }
 
+# ── PCAF Signatory status (from resources/PCAF signatory status) ────
+# ✅ = Signatory | ❌⚠️ = Non-signatory (mentions PCAF) | ❌ = Non-signatory | ❌❌ = Non-signatory (no mention)
+PCAF_SIGNATORY = {
+    "ADMIRAL":        "Signatory",
+    "AGEAS":          "Signatory",
+    "ALLIANZ":        "Signatory",
+    "AMUNDI":         "Non-signatory",
+    "ASRNEDERLAND":   "Non-signatory (mentions PCAF)",
+    "AVIVA":          "Signatory",
+    "AXA":            "Non-signatory (mentions PCAF)",
+    "COMMERZBANK":    "Signatory",
+    "CREDITAGRICOLE": "Signatory",
+    "DEUTSCHEBOERSE": "Non-signatory (no mention)",
+    "EURAZEO":        "Non-signatory (mentions PCAF)",
+    "GBL":            "Non-signatory (mentions PCAF)",
+    "ING":            "Signatory",
+    "JULIUSBAER":     "Signatory",
+    "KBC":            "Signatory",
+    "LEGALGENERAL":   "Signatory",
+    "NNGROUP":        "Signatory",
+    "NORDEA":         "Signatory",
+    "PHOENIXGROUP":   "Signatory",
+    "SANTANDER":      "Signatory",
+    "SCHRODERS":      "Non-signatory (mentions PCAF)",
+    "SOCGEN":         "Non-signatory (mentions PCAF)",
+    "SWISSRE":        "Signatory",
+    "UNICREDIT":      "Non-signatory (mentions PCAF)",
+    "ZURICH":         "Signatory",
+}
+
 # ── V3 Coefficient tables ───────────────────────────────────────────
 
 PART_A_COEFF = {
@@ -593,6 +623,7 @@ def generate_assessment():
         key       = info["key"]
         comp_key  = info["composite_key"]
         inst_type = info["type"]
+        signatory = PCAF_SIGNATORY.get(key, "Unknown")
         comp_data  = composite.get(comp_key, {})
         compl_data = compliance.get(key, {})
         ext_cov    = ext_coverage_all.get(key, {})
@@ -605,12 +636,14 @@ def generate_assessment():
             clean_evid = _strip_verification_tag(evid)
             if score is None:
                 return {"company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
+                        "pcaf_signatory":signatory,
                         "pcaf_part":part_label,"criterion":criterion,"score":NA,"max_score":NA,
                         "percentage":"","verification_status":"[N/A]","evidence":clean_evid,
                         "priority":NA,"gap_description":NA,
                         "assessor_notes":"V2 client-verified – N/A"}
             pct = round((score/max_s)*100,1) if max_s else ""
             return {"company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
+                    "pcaf_signatory":signatory,
                     "pcaf_part":part_label,"criterion":criterion,"score":score,"max_score":max_s,
                     "percentage":pct,"verification_status":vstatus,"evidence":clean_evid,
                     "priority":"—","gap_description":"—",
@@ -630,6 +663,7 @@ def generate_assessment():
                 clean_evid = _strip_verification_tag(evidence)
                 output_rows.append({
                     "company":name,"assessment_date":"2024-12-31","institution_type":inst_type,
+                    "pcaf_signatory":signatory,
                     "pcaf_part":part_label,"criterion":criterion,"score":score,"max_score":max_s,
                     "percentage":pct,"verification_status":vstatus,"evidence":clean_evid,
                     "priority":priority,"gap_description":gap,
@@ -646,7 +680,7 @@ def generate_assessment():
 def main():
     rows = generate_assessment()
     output_path = os.path.join(BASE, "output", "pcaf_assessment_detailed.csv")
-    fieldnames = ["company","assessment_date","institution_type","pcaf_part","criterion",
+    fieldnames = ["company","assessment_date","institution_type","pcaf_signatory","pcaf_part","criterion",
                   "score","max_score","percentage","verification_status","evidence","priority","gap_description","assessor_notes"]
     with open(output_path,"w",newline="",encoding="utf-8") as f:
         w = csv.DictWriter(f,fieldnames=fieldnames); w.writeheader(); w.writerows(rows)

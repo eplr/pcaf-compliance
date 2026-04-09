@@ -27,6 +27,12 @@ assessment = []
 with open(os.path.join(OUT, "pcaf_assessment_detailed.csv"), "r", encoding="utf-8") as f:
     assessment = list(csv.DictReader(f))
 
+# Build signatory lookup from the detailed assessment (populated by generate_pcaf_assessment.py)
+_signatory_map = {}
+for _r in assessment:
+    if _r["company"] not in _signatory_map:
+        _signatory_map[_r["company"]] = _r.get("pcaf_signatory", "")
+
 # 2. Compliance data
 with open(os.path.join(BASE, "data/corrected_compliance_data.json"), "r") as f:
     compliance = json.load(f)
@@ -389,6 +395,7 @@ def gen_assessment_overall(part_rows):
             "company": name,
             "assessment_date": "2024-12-31",
             "institution_type": inst["type"],
+            "pcaf_signatory": _signatory_map.get(name, ""),
             "weighted_score": weighted,
             "maturity_level": maturity,
             "maturity_label": maturity_labels.get(maturity, "Unknown"),
@@ -399,7 +406,7 @@ def gen_assessment_overall(part_rows):
 
     write_csv(
         os.path.join(OUT, "pcaf_assessment_overall.csv"),
-        ["company", "assessment_date", "institution_type", "weighted_score",
+        ["company", "assessment_date", "institution_type", "pcaf_signatory", "weighted_score",
          "maturity_level", "maturity_label", "part_a_score", "part_b_score", "part_c_score"],
         rows,
     )
@@ -444,6 +451,7 @@ def gen_pcaf_compliance(part_rows):
             rows.append({
                 "company": name,
                 "assessment_date": "2024-12-31",
+                "pcaf_signatory": _signatory_map.get(name, ""),
                 "pcaf_part": "Part A - Financed Emissions",
                 "status": status,
                 "completeness_percent": round(pct),
@@ -472,6 +480,7 @@ def gen_pcaf_compliance(part_rows):
                 rows.append({
                     "company": name,
                     "assessment_date": "2024-12-31",
+                    "pcaf_signatory": _signatory_map.get(name, ""),
                     "pcaf_part": "Part B - Facilitated Emissions",
                     "status": status,
                     "completeness_percent": round(pct),
@@ -500,6 +509,7 @@ def gen_pcaf_compliance(part_rows):
                 rows.append({
                     "company": name,
                     "assessment_date": "2024-12-31",
+                    "pcaf_signatory": _signatory_map.get(name, ""),
                     "pcaf_part": "Part C - Insurance-Associated Emissions",
                     "status": status,
                     "completeness_percent": round(pct),
@@ -509,7 +519,7 @@ def gen_pcaf_compliance(part_rows):
 
     write_csv(
         os.path.join(OUT, "pcaf_compliance.csv"),
-        ["company", "assessment_date", "pcaf_part", "status",
+        ["company", "assessment_date", "pcaf_signatory", "pcaf_part", "status",
          "completeness_percent", "missing_elements", "priority"],
         rows,
     )
