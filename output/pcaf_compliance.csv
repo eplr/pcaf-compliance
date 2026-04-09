@@ -17,7 +17,7 @@ Commerzbank,2024-12-31,Signatory,Part B - Facilitated Emissions,MISSING,0,"Asset
 Crédit Agricole,2024-12-31,Signatory,Part A - Financed Emissions,MISSING,26,"Asset Class Coverage, Data Quality Score, Portfolio Coverage",Critical
 Crédit Agricole,2024-12-31,Signatory,Part B - Facilitated Emissions,MISSING,0,"Asset Class Coverage, Attribution Methodology, Temporal Coverage",Critical
 Deutsche Börse,2024-12-31,Non-signatory (no mention),Part A - Financed Emissions,MISSING,13,"Asset Class Coverage, Data Quality Score, Attribution Methodology, Portfolio Coverage",Critical
-Eurazeo,2024-12-31,Non-signatory (mentions PCAF),Part A - Financed Emissions,PARTIAL,48,"Asset Class Coverage, Data Quality Score",High
+Eurazeo,2024-12-31,Non-signatory (mentions PCAF),Part A - Financed Emissions,MISSING,30,"Asset Class Coverage, Data Quality Score, Portfolio Coverage",Critical
 GBL,2024-12-31,Non-signatory (mentions PCAF),Part A - Financed Emissions,MISSING,30,"Asset Class Coverage, Data Quality Score",Critical
 KBC,2024-12-31,Signatory,Part A - Financed Emissions,PARTIAL,56,Data Quality Score,High
 KBC,2024-12-31,Signatory,Part B - Facilitated Emissions,MISSING,0,"Asset Class Coverage, Attribution Methodology, Temporal Coverage",Critical

@@ -840,34 +840,35 @@
       "Asset Class Coverage": {
         "score": 1,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 0.5/18 = 2.8%. Asset classes found: ['mortgages']."
+        "coverage_ratio": 0.389,
+        "evidence": "[Verified from full reading of Document d'enregistrement universel 2024, 22154 lines] 7.0/18 = 38.9%. Private Equity portfolio: S1+S2+S3 of portfolio companies (L2592-2646, 3,674,661 tCO2e = 99.7% of total). Real Estate portfolio: targets -60% per m² by 2030 (L2417). PCAF attribution factor used (L2646). Not covered: listed equity/bonds (PE firm), project finance, mortgages, motor vehicle, sovereign. Score 1."
       },
       "Data Quality Score": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+        "evidence": "[Verified from full reading] No PCAF DQS published. Portfolio emissions based on actual company GHG assessments (last 3 years) or sector-based monetary emission factors (L2646). Score 0."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L2646), partial coverage."
+        "evidence": "[Verified from full reading, L2646] Uses PCAF attribution factor methodology. Verbatim: 'calculé selon un facteur d'attribution, méthode alignée avec les recommandations du Partnership for Carbon Accounting Financials (PCAF)'. SBTi validated targets since 2022 (L2404). GHG Protocol for operational emissions. Not a PCAF signatory. Score 3: PCAF-aligned, not signatory."
       },
       "Portfolio Coverage": {
-        "score": 5,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 99.7% found at L2620, verify this is PCAF portfolio coverage not another metric] Coverage: 99.7%."
+        "evidence": "[Verified from full reading] No explicit portfolio coverage % disclosed. The 99.7% at L2620 is the share of Category 15 (Investments) in total GHG emissions, NOT the share of the investment portfolio covered by financed emissions calculations. SBTi target: 25% of PE capital invested with SBTi targets by 2025, 100% by 2030 (L2419-2420). Funds of funds and some debt excluded (L2646). Score 0."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "[Verified from full reading] S1&S2 baseline 2017, S3 baseline 2019. SBTi targets: -55% S1&S2 by 2030, net zero 2040 (L2318, L2411-2416). Annual GHG reporting since 2008 (L2326). Score 3."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A — Eurazeo is a PE/asset manager, not a bank/bancassurance."
       },
       "Attribution Methodology": {
         "score": null,
@@ -884,7 +885,7 @@
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not an insurer/reinsurer."
+        "evidence": "N/A — Eurazeo is not an insurer/reinsurer."
       },
       "Attribution Methodology": {
         "score": null,
@@ -896,6 +897,11 @@
         "max": null,
         "evidence": "N/A"
       }
+    },
+    "_compliance": {
+      "Part A": 0.3043,
+      "Part B": null,
+      "Part C": null
     }
   },
   "GBL": {
