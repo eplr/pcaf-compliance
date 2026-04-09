@@ -374,34 +374,34 @@
       "Asset Class Coverage": {
         "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 12.5/18 = 69.4%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'commercial_re', 'mortgages', 'sovereign_debt']."
+        "evidence": "Raw 9/18=50%. Listed/bonds partial(S1&2,no S3); CRE reported(1/1); mortgages reported(0.5); sovereign partial(0.5/2,no LULUCF/S3); business loans missing; project finance missing; motor vehicle missing."
       },
       "Data Quality Score": {
-        "score": 4,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 2.2."
+        "evidence": "No aggregate DQS disclosed for investment portfolio. DQS only published for Part C (2.42 commercial, 2.52 motor)."
       },
       "Attribution Methodology": {
         "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L57), methods applied per asset class."
+        "evidence": "PCAF co-leads working groups (signatory inferred). 'strives to meet' PCAF (L26223); SFDR/NZAOA as primary references; LULUCF excluded; sub-sovereign methodology adapted."
       },
       "Portfolio Coverage": {
-        "score": 0,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+        "evidence": "60.4% table (L13950) / 64% narrative (L13687). Both in 60-80% range. 'No methodology yet' group (EUR106.8bn=13.9%) not covered."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "2019 baseline + 2023 + 2024 data + 2030 targets. Annual publication."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A – not applicable for this institution type"
       },
       "Attribution Methodology": {
         "score": null,
@@ -416,21 +416,22 @@
     },
     "Part C": {
       "Asset Class Coverage": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L48."
+        "evidence": "Raw 5/8=62.5%. Commercial lines S1&2 (2/3); personal motor reported (3/3); reinsurance missing (0+0)."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+        "evidence": "PCAF Part C standard explicitly cited. PCAF attribution factors for commercial and motor. Signatory inferred from PCAF working group co-leadership."
       },
       "Temporal Coverage": {
-        "score": 1,
+        "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+        "evidence": "2022 baseline + 2023 + 2024 data + 2030 targets for commercial and motor."
       }
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "Amundi": {
     "assessment_date": "2024-12-31",
@@ -439,34 +440,34 @@
       "Asset Class Coverage": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 0/18 = 0.0%. Asset classes found: []."
+        "evidence": "PCAF not referenced in Amundi 2024 report. Uses WACI (revenue-based carbon intensity) not PCAF financed emissions. All PCAF asset classes: missing."
       },
       "Data Quality Score": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+        "evidence": "No PCAF DQS disclosed. Not a PCAF signatory."
       },
       "Attribution Methodology": {
-        "score": 0,
+        "score": 2,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] PCAF not mentioned."
+        "evidence": "Documented non-PCAF methodology: Amundi Net Zero framework aligned with PAII NZIF, IEA NZE 2050. Revenue-based WACI, not EVIC. Covers listed equities and corporate bonds only."
       },
       "Portfolio Coverage": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+        "evidence": "86% = own operations footprint (not portfolio). 67.39% = EU Taxonomy KPI. Net Zero portfolios ~EUR250bn = subset of total AuM. No PCAF coverage disclosed."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "2019 base + 2023 (implied comparison) + 2024 + 2025/2030 targets."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A – not applicable for this institution type"
       },
       "Attribution Methodology": {
         "score": null,
@@ -483,7 +484,7 @@
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not an insurer/reinsurer."
+        "evidence": "N/A – not applicable for this institution type"
       },
       "Attribution Methodology": {
         "score": null,
@@ -495,43 +496,44 @@
         "max": null,
         "evidence": "N/A"
       }
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "ASR Nederland": {
     "assessment_date": "2024-12-31",
     "institution_type": "Insurance",
     "Part A": {
       "Asset Class Coverage": {
-        "score": 1,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 5.5/18 = 30.6%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'sovereign_debt']."
+        "evidence": "Raw 9.5/18=52.8%. Listed equity+bonds reported S1&2+S3(6/6); sovereign reported S1+LULUCF+S3(2/2); CRE reported(1/1); mortgages reported(0.5); business loans missing(0/6); project finance missing(0/2); motor missing(0/0.5)."
       },
       "Data Quality Score": {
-        "score": 5,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 1.0."
+        "evidence": "Weighted avg DQS 2.6 (own investments) / 2.7 (all types). Range 2.5-3.5. PCAF standard used per asset class with AuM weighting."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L6872), partial coverage."
+        "evidence": "PCAF signatory confirmed (L6872: 'active participant of PCAF'). PCAF methodology applied per asset class. Mortgage model co-developed with PCAF."
       },
       "Portfolio Coverage": {
-        "score": 0,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No portfolio coverage percentage identified."
+        "evidence": "77% own investments (EUR56,324M/EUR73,361M, L8596-8603). 86% is all-AuM total including third-party mortgages. V3 corrects 99% error (was green leasing hectares)."
       },
       "Temporal Coverage": {
-        "score": 2,
+        "score": 1,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: False."
+        "evidence": "Combined a.s.r.+Aegon NL entity: only 2023 baseline + 2024 data. No 3-year series for merged group. <3 years threshold."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A – not applicable for this institution type"
       },
       "Attribution Methodology": {
         "score": null,
@@ -546,21 +548,22 @@
     },
     "Part C": {
       "Asset Class Coverage": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L7474."
+        "evidence": "Raw 5/8=62.5%. P&C commercial S1&2 (2/3); personal motor reported (3/3); reinsurance missing (0+0). Health IAE beyond PCAF scope not scored."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+        "evidence": "PCAF Part C referenced; PCAF industry attribution factor for motor. Commercial lines data source changed from PCAF to CBS (deviation). PCAF signatory confirmed."
       },
       "Temporal Coverage": {
         "score": 1,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+        "evidence": "2022 baseline + 2024 current (no 2023 IAE shown). <3 years."
       }
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "Aviva": {
     "assessment_date": "2024-12-31",
@@ -640,34 +643,34 @@
       "Asset Class Coverage": {
         "score": 1,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 6.0/18 = 33.3%. Asset classes found: ['listed_equity_bonds', 'mortgages', 'motor_vehicle', 'sovereign_debt']."
+        "evidence": "Raw 4.5/18=25%. Listed equity+bonds partial S1&2 no S3(3/6); sovereign partial S1 no LULUCF(0.5/2); CRE equity reported(1/1); mortgages explicitly excluded(0); business loans missing(0); project finance missing(0); motor missing(0). Mortgages excluded explicitly (L1875-style)."
       },
       "Data Quality Score": {
-        "score": 2,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 4.0."
+        "evidence": "No Part A DQS disclosed. IAE DQS (3.00, 4.50, 3.70) is Part C only."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L1806), partial coverage."
+        "evidence": "AXA 'refers to' PCAF for investment and underwriting carbon footprint. EVIC, GAV, PPP-GDP approaches. No explicit signatory statement. NZAOA member since 2019."
       },
       "Portfolio Coverage": {
-        "score": 1,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 24.0% found at L2026, verify this is PCAF portfolio coverage not another metric] Coverage: 24.0%."
+        "evidence": "72% of GA covered by GHG measurement (L1863). V3 corrects 86.9% error (was RE equity only). Range 60-80% -> Score 3."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "2019 baseline + 2023 + 2024 data + 2030 targets. NZAOA member since 2019."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A – not applicable for this institution type"
       },
       "Attribution Methodology": {
         "score": null,
@@ -682,74 +685,75 @@
     },
     "Part C": {
       "Asset Class Coverage": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] IAE mentioned at L1796."
+        "evidence": "Raw 5/8=62.5%. Commercial lines (2/3, 88 largest clients + intensity). Motor retail (3/3). Facultative reinsurance excluded. No reinsurance IAE."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+        "evidence": "PCAF Standard Part C (2023) cited. PCAF attribution 6.99% for motor (updated from 18%). DQS per IAE category. No formal signatory statement."
       },
       "Temporal Coverage": {
         "score": 1,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+        "evidence": "Only 2021/2019 baseline + 2024 current. No 2023 IAE intermediate. <3 years."
       }
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "Crédit Agricole": {
     "assessment_date": "2024-12-31",
     "institution_type": "Bank",
     "Part A": {
       "Asset Class Coverage": {
-        "score": 1,
+        "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 3.5/18 = 19.4%. Asset classes found: ['business_loans', 'mortgages']."
+        "evidence": "Raw 16/18=88.9%. Listed equity+bonds reported S1&2+S3(6/6); business loans reported(6/6); project finance reported(2/2); CRE reported via NZBA(1/1); mortgages reported via residential RE sector target(0.5); motor vehicle reported via automobile sector target(0.5); sovereign excluded(0/2)."
       },
       "Data Quality Score": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+        "evidence": "PCAF DQS scale described (L3704) but no aggregate score disclosed. Data quality heterogeneous per L4063-4064."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L3696), partial coverage."
+        "evidence": "PCAF signatory since 2022 explicitly confirmed (L3697: 'que le Groupe Crédit Agricole a rejoint [PCAF] en 2022'). PCAF attribution formula applied. One deviation: committed vs drawn amounts (L3704)."
       },
       "Portfolio Coverage": {
         "score": 0,
         "max": 5,
-        "evidence": "No PCAF portfolio coverage disclosed. The 89.2% at L22013 is the share of investment grade-rated counterparties ('La part de notations investment grade s'améliore et représente 89,2% du portefeuille'), not financed emissions coverage."
+        "evidence": "No PCAF portfolio coverage % disclosed. Prêts aux particuliers excluded from Cat 15 aggregate (L4058). Sector targets include retail loans via PCAF but no overall % stated."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "2020/2019 baselines + 2024 actuals + 2030 targets across 10 sectors. Annual publication commitment."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] No facilitated emissions identified."
+        "evidence": "No PCAF Part B facilitated emissions despite #5 global project finance."
       },
       "Attribution Methodology": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+        "evidence": "No facilitated emissions methodology."
       },
       "Temporal Coverage": {
         "score": 0,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND]"
+        "evidence": "No facilitated emissions data."
       }
     },
     "Part C": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not an insurer/reinsurer."
+        "evidence": "N/A – not applicable for this institution type"
       },
       "Attribution Methodology": {
         "score": null,
@@ -761,7 +765,8 @@
         "max": null,
         "evidence": "N/A"
       }
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "Deutsche Börse": {
     "assessment_date": "2024-12-31",
@@ -909,36 +914,36 @@
     "institution_type": "Investment Holding",
     "Part A": {
       "Asset Class Coverage": {
-        "score": 0,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 0/18 = 0.0%. Asset classes found: []."
+        "evidence": "Raw 12/18=66.7%. Listed equity+bonds reported S1&2+S3 via GHG Protocol equity share (6/6); unlisted equity reported(6/6); all other PCAF classes missing (equity-only investor)."
       },
       "Data Quality Score": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+        "evidence": "No PCAF DQS. GBL uses GHG Protocol equity share (not PCAF). Not a PCAF signatory."
       },
       "Attribution Methodology": {
         "score": 2,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L14679), partial coverage."
+        "evidence": "GHG Protocol equity share (not PCAF). Documented for listed and unlisted equity. Sienna IM subsidiary uses PCAF for private debt but not at GBL holding level. SBTi leader."
       },
       "Portfolio Coverage": {
-        "score": 2,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 46.0% found at L19789, verify this is PCAF portfolio coverage not another metric] Coverage: 46.0%."
+        "evidence": "No PCAF portfolio coverage %. V3 corrections: 46% = Imerys waste recycling rate; 78% = SBTi NAV coverage; neither is PCAF portfolio coverage."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "FY2012 carbon intensity history + FY2019 SBTi base + FY2024 + 2030/2050 targets."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not a bank/bancassurance."
+        "evidence": "N/A – not applicable for this institution type"
       },
       "Attribution Methodology": {
         "score": null,
@@ -955,7 +960,7 @@
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not an insurer/reinsurer."
+        "evidence": "N/A – not applicable for this institution type"
       },
       "Attribution Methodology": {
         "score": null,
@@ -967,7 +972,8 @@
         "max": null,
         "evidence": "N/A"
       }
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "Julius Baer": {
     "assessment_date": "2025-12-31",
@@ -1119,7 +1125,7 @@
       "Asset Class Coverage": {
         "score": 3,
         "max": 5,
-        "coverage_ratio": 0.50,
+        "coverage_ratio": 0.5,
         "evidence": "[Verified from full reading of Climate and Nature Report 2024, 3236 lines] 9.0/18 = 50.0%. Bonds 90% of portfolio (Table 4, L1126-1130, £87.2bn incl. lifetime mortgages £5.9bn). Property 9% (L1131-1135, £6.0bn). Equity 1% (L1136-1140, £2.9bn). Private debt and private equity covered via proxy (L1190). Sovereign (Government 16%, Table 5 L1172-1176). All S1&S2 only (L1079). CRE uses whole-building data. Motor vehicle not covered."
       },
       "Data Quality Score": {
@@ -1188,37 +1194,36 @@
     "institution_type": "Insurance",
     "Part A": {
       "Asset Class Coverage": {
-        "score": 1,
+        "score": 2,
         "max": 5,
-        "coverage_ratio": 0.278,
-        "evidence": "[Verified from full reading of Annual Report 2024, 23633 lines] 5.0/18 = 27.8%. Corporate bonds + listed equity S1&S2 (L5106-5110, 2.4M tCO2e; S3 separately: 21.7M tCO2e). Real estate S1&S2&S3 (L5419-5460, 27.6k + 61.5k tCO2e). Residential mortgages S1&S2 (PCAF, L5462-5478, 434k tCO2e). Sovereign bonds S1 production (L5362-5380, 5.5M tCO2e). PE and infrastructure strategies started 2024 (L4884-4886). Not covered: business loans, project finance, motor vehicle."
+        "evidence": "Raw 8.5/18=47.2%. Listed equity+bonds reported S1&2+S3(6/6); sovereign partial S1+LULUCF no S3(1/2); CRE reported(1/1); mortgages reported(0.5); business loans missing(0/6); project finance missing(0/2); motor missing(0/0.5)."
       },
       "Data Quality Score": {
         "score": 4,
         "max": 5,
-        "evidence": "[Verified from full reading, L5101-5110] PCAF DQS per asset class: Corporate S1&S2 = 1.8, S3 = 3.3. Sovereign = 1.1. Real estate = 2.1. Mortgages = 3.5. No single total published, but corporate (largest class) at 1.8. Auto-scan found 1.5 which was likely the listed equity sub-score. Score 4."
+        "evidence": "Weighted avg DQS ~2.2 (range 1.5-2.5). Govt bonds DQS 1.1, corporate 1.4-1.8, real estate 2.1. Mortgages 3.4 lower weight."
       },
       "Attribution Methodology": {
         "score": 4,
         "max": 5,
-        "evidence": "[Verified from full reading, L5282] PCAF member. Uses PCAF Global GHG Standard Part A (2022). NZIF/PAII aligned. ISS and Morningstar Sustainalytics data (L5262). Asset-class-specific strategies with PCAF attribution factors per class (L5252-5280). Score 4."
+        "evidence": "PCAF Part A (2022) explicitly cited. PCAF member/active co-developer of mortgage carbon model. EVIC, GAV, LTV, PPP-GDP attribution per asset class."
       },
       "Portfolio Coverage": {
         "score": 4,
         "max": 5,
-        "evidence": "[Verified from full reading, L5293] EUR 126bn covered = ~80% of proprietary assets. 13% via extrapolation, 15% not yet covered (mutual funds, ABS, cash, derivatives, L5293). The 40% at L20000 was not portfolio coverage. Score 4 (80-95%)."
+        "evidence": "~80% of total proprietary assets (EUR126bn/EUR157bn, L5293). Explicitly stated in table (L5157-5159: 80%). V3 audit confirmed Score 4."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[Verified from full reading] 2019/2021 baselines. Annual data. Corporate: -31% vs 2021 baseline (L5340-5341). 2025/2030/2050 targets. Net zero by 2050. Score 3."
+        "evidence": "2021 baseline + 2023 + 2024 data + 2025 interim + 2030 targets. Annual NZBA Progress Reports."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — NN Group is an insurer, not a bank/bancassurance."
+        "evidence": "N/A – not applicable for this institution type"
       },
       "Attribution Methodology": {
         "score": null,
@@ -1235,25 +1240,25 @@
       "Asset Class Coverage": {
         "score": 3,
         "max": 5,
-        "coverage_ratio": 0.625,
-        "evidence": "[Verified from full reading, L4915+L4934-4946] PCAF Standard for commercial lines and Private Motor. Commercial: -26% IAE by 2030 vs 2022 (L4937-4942). Private Motor: -15% intensity per car by 2030 (L4943-4946). Total IAE: 199,513 tCO2e (L5037-5040). 5.0/8.0 = 62.5%. Score 3."
+        "evidence": "Raw 5/8=62.5%. Commercial lines S1&2 DQS5.0 (2/3); Private Motor S1&2 DQS2.3 (3/3); reinsurance missing (0+0)."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 4,
         "max": 5,
-        "evidence": "[Verified from full reading, L4934] PCAF Standard for IAE. Sector analyses based on Dutch Klimaatnota. Score 2."
+        "evidence": "PCAF Part C (2022) explicitly cited. PCAF attribution factors (PCAF database for commercial, PCAF global-weighted average for Private Motor). PCAF member active."
       },
       "Temporal Coverage": {
-        "score": 1,
+        "score": 3,
         "max": 3,
-        "evidence": "[Verified from full reading] IAE base year 2022. 2023+2024 data (L5037-5040). -26% target by 2030. Net zero 2050. Score 1."
+        "evidence": "2022 base + 2023 + 2024 for commercial and motor. 2030 targets. Full 3 years."
       }
     },
     "_compliance": {
       "Part A": 0.6957,
       "Part B": null,
       "Part C": 0.4615
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "Phoenix Group": {
     "assessment_date": "2024-12-31",
@@ -1331,53 +1336,53 @@
     "institution_type": "Bank",
     "Part A": {
       "Asset Class Coverage": {
-        "score": 3,
+        "score": 5,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 12.0/18 = 66.7%. Asset classes found: ['listed_equity_bonds', 'business_loans', 'project_finance', 'commercial_re', 'mortgages', 'motor_vehicle', 'sovereign_debt']."
+        "evidence": "Raw 16.5/18=91.7%. Listed equity+bonds reported S1&2+S3(6/6); business loans reported(6/6); project finance reported(2/2); CRE PCAF framework(1/1); mortgages UK+Spain PCAF(0.5); motor vehicle auto lending(0.5); sovereign partial S1 no LULUCF(0.5/2). >=90% -> Score 5."
       },
       "Data Quality Score": {
-        "score": 4,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: DQS values extracted by regex, need context check] DQS value: 2.3."
+        "evidence": "Per-sector PCAF DQS disclosed (2.7-4.0). Weighted avg ~3.1 (mortgages EUR262bn DQS3.5, auto lending EUR62bn DQS2.7). Range 2.5-3.5 -> Score 3. V3 corrects ~2.3 extraction error."
       },
       "Attribution Methodology": {
         "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF signatory confirmed. L4159: rbon Accounting Financials (PCAF): We have been a member of PCAF since 2021 and thus committed to disclose our financed emissions according to the PCA"
+        "evidence": "PCAF signatory since 2021 (L4158-4160: 'member of PCAF since 2021'). PCAF attribution per asset class. EVIC for corporates. NZBA founding member. Minor deviation: TVC uses equity+debt (not EVIC+cash)."
       },
       "Portfolio Coverage": {
-        "score": 2,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 50.0% found at L3836, verify this is PCAF portfolio coverage not another metric] Coverage: 50.0%."
+        "evidence": "No PCAF portfolio coverage %. V3 corrections: 50% at L3836 = SAM's NZAM AuM target; 9% = NZBA alignment target coverage. Per V3 rule -> 0."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "2019-2023 data (5 years) for CIB sectors + 2030 targets. Annual publication since 2021."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
-        "score": 1,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Facilitated emissions mentioned at L2849."
+        "evidence": "Capital markets facilitated emissions explicitly 'not material' (L2849-2850). No PCAF Part B disclosure."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+        "evidence": "No facilitated emissions methodology."
       },
       "Temporal Coverage": {
-        "score": 1,
+        "score": 0,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+        "evidence": "No facilitated emissions data."
       }
     },
     "Part C": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not an insurer/reinsurer."
+        "evidence": "N/A – not applicable for this institution type"
       },
       "Attribution Methodology": {
         "score": null,
@@ -1389,7 +1394,8 @@
         "max": null,
         "evidence": "N/A"
       }
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "Schroders": {
     "assessment_date": "2024-12-31",
@@ -1539,53 +1545,53 @@
     "institution_type": "Bank",
     "Part A": {
       "Asset Class Coverage": {
-        "score": 1,
+        "score": 4,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] 4.5/18 = 25.0%. Asset classes found: ['listed_equity_bonds', 'commercial_re', 'mortgages']."
+        "evidence": "Raw 15.5/18=86.1%. Listed equity+bonds NFC reported S1&2+S3(6/6); business loans NFC reported(6/6); project finance included in NFC scope(2/2); CRE via NFC NZBA target(1/1); mortgages residential Italy/Germany/Austria PCAF(0.5); motor vehicle missing(0); sovereign explicitly excluded(0/2)."
       },
       "Data Quality Score": {
         "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [NOT FOUND] DQS value: None."
+        "evidence": "No PCAF DQS disclosed. 16% actual data for NFC, 84% estimated (L3025). No weighted average DQS published. Per V3 rule -> 0."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 3,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] PCAF mentioned (L2243), partial coverage."
+        "evidence": "PCAF GHG Accounting Standard explicitly cited as basis for Cat 15 (L3018-3019). EVIC applied for oil&gas (L2982). PCAF for residential mortgages (L3025). No formal PCAF signatory statement. NZBA member Oct 2021."
       },
       "Portfolio Coverage": {
-        "score": 1,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] [FOUND — HUMAN VERIFICATION REQUIRED: 32.0% found at L4320, verify this is PCAF portfolio coverage not another metric] Coverage: 32.0%."
+        "evidence": "82.8% = NFC sub-portfolio only; 82% = residential mortgage sub-portfolio only. V3 corrects: 32% at L4320 is EU Taxonomy table; 90% in earlier version was credit risk classification. No overall PCAF % -> 0."
       },
       "Temporal Coverage": {
         "score": 3,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]. Targets: True."
+        "evidence": "2021/2022 baselines + 2022/2023 actuals across 6 sectors + 2030 targets. Multiple sectors with 3+ data points. First CSRD year for Cat 15 ESRS aggregate."
       }
     },
     "Part B": {
       "Asset Class Coverage": {
-        "score": 1,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Facilitated emissions mentioned at L2054."
+        "evidence": "No PCAF Part B facilitated emissions. L2054 in auto-gen was table of contents."
       },
       "Attribution Methodology": {
-        "score": 2,
+        "score": 0,
         "max": 5,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Methodology details require human verification."
+        "evidence": "No facilitated emissions methodology."
       },
       "Temporal Coverage": {
-        "score": 1,
+        "score": 0,
         "max": 3,
-        "evidence": "[AUTOMATED — HUMAN VERIFICATION REQUIRED] Temporal extent requires human verification."
+        "evidence": "No facilitated emissions data."
       }
     },
     "Part C": {
       "Asset Class Coverage": {
         "score": null,
         "max": null,
-        "evidence": "N/A — not an insurer/reinsurer."
+        "evidence": "N/A – not applicable for this institution type"
       },
       "Attribution Methodology": {
         "score": null,
@@ -1597,7 +1603,8 @@
         "max": null,
         "evidence": "N/A"
       }
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "Zurich": {
     "assessment_date": "2024-12-31",
@@ -1733,6 +1740,72 @@
         "score": 1,
         "max": 3,
         "evidence": "[VERIFIED from full reading of Sustainability Report 2024] First IAE measurement in 2024. [INCOMPLETE — need NZTP.]"
+      }
+    }
+  },
+  "Société Générale": {
+    "assessment_date": "2024-12-31",
+    "institution_type": "Bank",
+    "verification_status": "VERIFIED",
+    "Part A": {
+      "Asset Class Coverage": {
+        "score": 4,
+        "max": 5,
+        "evidence": "Raw 15/18=83.3%. Listed equity+bonds reported S1&2+S3(6/6); business loans reported(6/6); project finance reported(2/2); CRE reported via NZBA/PACTA physical intensity(1/1); sovereign excluded(0/2); mortgages excluded(0); motor excluded(0)."
+      },
+      "Data Quality Score": {
+        "score": 0,
+        "max": 5,
+        "evidence": "22% primary data disclosed (L20135) but not labeled as PCAF DQS. Implied DQS ~3.8. Per V3 rule: not disclosed -> Score 0."
+      },
+      "Attribution Methodology": {
+        "score": 3,
+        "max": 5,
+        "evidence": "PCAF Part A (2022) explicitly cited (L20115). EVIC-based attribution. PCAF emission factors (L20116). NZBA founding member. No explicit PCAF signatory statement found."
+      },
+      "Portfolio Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "50.34% = EU Taxonomy GAR. No PCAF portfolio coverage % disclosed. Mortgages, motor, sovereign (33% EAD) excluded. Per V3 rule -> 0."
+      },
+      "Temporal Coverage": {
+        "score": 3,
+        "max": 3,
+        "evidence": "2019/2022 baselines + Q2 2024 actuals + 2024 annual + 2030 targets. Annual NZBA Progress Reports."
+      }
+    },
+    "Part B": {
+      "Asset Class Coverage": {
+        "score": 0,
+        "max": 5,
+        "evidence": "No PCAF Part B facilitated emissions disclosed despite Top 3 global project finance."
+      },
+      "Attribution Methodology": {
+        "score": 0,
+        "max": 5,
+        "evidence": "No facilitated emissions methodology described."
+      },
+      "Temporal Coverage": {
+        "score": 0,
+        "max": 3,
+        "evidence": "No facilitated emissions data."
+      }
+    },
+    "Part C": {
+      "Asset Class Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A – not applicable for this institution type"
+      },
+      "Attribution Methodology": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
+      },
+      "Temporal Coverage": {
+        "score": null,
+        "max": null,
+        "evidence": "N/A"
       }
     }
   }

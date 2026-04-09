@@ -1,26 +1,26 @@
 company,assessment_date,institution_type,pcaf_signatory,weighted_score,maturity_level,maturity_label,part_a_score,part_b_score,part_c_score
 Admiral Group,2024-12-31,Insurance,Signatory,32.3,1,Initial,26.1,N/A,38.5
 Ageas,2024-12-31,Insurance,Signatory,50.8,2,Developing,47.8,N/A,53.8
-Allianz,2024-12-31,Insurance,Signatory,47.5,2,Developing,56.5,N/A,38.5
-Amundi,2024-12-31,Asset Manager,Non-signatory,13.0,0,Not Started,13.0,N/A,N/A
-ASR Nederland,2024-12-31,Insurance,Non-signatory (mentions PCAF),41.0,2,Developing,43.5,N/A,38.5
+Allianz,2024-12-31,Insurance,Signatory,64.6,3,Defined,52.2,N/A,76.9
+Amundi,2024-12-31,Asset Manager,Non-signatory,21.7,1,Initial,21.7,N/A,N/A
+ASR Nederland,2024-12-31,Insurance,Non-signatory (mentions PCAF),57.3,2,Developing,60.9,N/A,53.8
 Aviva,2024-12-31,Insurance,Signatory,30.4,1,Initial,60.9,N/A,0.0
-AXA,2024-12-31,Insurance,Non-signatory (mentions PCAF),38.8,1,Initial,39.1,N/A,38.5
+AXA,2024-12-31,Insurance,Non-signatory (mentions PCAF),48.6,2,Developing,43.5,N/A,53.8
 Commerzbank,2024-12-31,Bank,Signatory,45.6,2,Developing,65.2,0.0,N/A
-Crédit Agricole,2024-12-31,Bank,Signatory,18.3,0,Not Started,26.1,0.0,N/A
+Crédit Agricole,2024-12-31,Bank,Signatory,33.5,1,Initial,47.8,0.0,N/A
 Deutsche Börse,2024-12-31,Exchange,Non-signatory (no mention),13.0,0,Not Started,13.0,N/A,N/A
 Eurazeo,2024-12-31,Asset Manager,Non-signatory (mentions PCAF),30.4,1,Initial,30.4,N/A,N/A
-GBL,2024-12-31,Investment Holding,Non-signatory (mentions PCAF),30.4,1,Initial,30.4,N/A,N/A
+GBL,2024-12-31,Investment Holding,Non-signatory (mentions PCAF),34.8,1,Initial,34.8,N/A,N/A
 KBC,2024-12-31,Bancassurance,Signatory,41.1,2,Developing,56.5,0.0,46.2
 Legal & General,2024-12-31,Insurance,Signatory,41.3,2,Developing,82.6,N/A,0.0
-NN Group,2024-12-31,Insurance,Signatory,57.9,2,Developing,69.6,N/A,46.2
+NN Group,2024-12-31,Insurance,Signatory,75.4,3,Defined,73.9,N/A,76.9
 Nordea,2024-12-31,Bank,Signatory,54.8,2,Developing,78.3,0.0,N/A
 Phoenix Group,2024-12-31,Insurance,Signatory,34.8,1,Initial,69.6,N/A,0.0
-Santander,2024-12-31,Bank,Signatory,58.0,2,Developing,69.6,30.8,N/A
+Santander,2024-12-31,Bank,Signatory,45.6,2,Developing,65.2,0.0,N/A
 Schroders,2024-12-31,Asset Manager,Non-signatory (mentions PCAF),30.4,1,Initial,30.4,N/A,N/A
-Société Générale,2024-12-31,Bank,Non-signatory (mentions PCAF),27.5,1,Initial,26.1,30.8,N/A
+Société Générale,2024-12-31,Bank,Non-signatory (mentions PCAF),30.4,1,Initial,43.5,0.0,N/A
 Swiss Re,2024-12-31,Reinsurance,Signatory,44.9,2,Developing,43.5,N/A,46.2
-UniCredit,2024-12-31,Bank,Non-signatory (mentions PCAF),30.5,1,Initial,30.4,30.8,N/A
+UniCredit,2024-12-31,Bank,Non-signatory (mentions PCAF),30.4,1,Initial,43.5,0.0,N/A
 Zurich,2024-12-31,Insurance,Signatory,39.3,1,Initial,47.8,N/A,30.8
 ING,2024-12-31,Bank,Signatory,60.3,3,Defined,69.6,38.5,N/A
 Julius Baer,2024-12-31,Bank,Signatory,39.5,1,Initial,56.5,0.0,N/A
