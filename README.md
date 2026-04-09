@@ -43,7 +43,7 @@ python3 generate_all_looker_csvs.py
 | `corrected_compliance_data.json` | Statut de conformité par institution (Parts A/B/C, DQS, etc.) |
 | `extended_asset_class_coverage.json` | Couverture par classe d'actifs (`reported` / `partial` / `missing`) |
 | `pcaf_composite_scores.csv` | Scores composites par classe d'actifs (0–5) |
-| `pcaf_v2_scores.json` | Scores client-vérifiés (Nordea, Commerzbank, Ageas) |
+| `pcaf_v2_scores.json` | Scores vérifiés (client + lectures complètes) pour 25 institutions |
 | `deep_analysis_results.json` | Résultats de l'analyse approfondie |
 
 ## Sorties (`output/`)
@@ -58,8 +58,18 @@ python3 generate_all_looker_csvs.py
 | `financed_emissions.csv` | Émissions financées agrégées |
 | `operational_emissions.csv` | Émissions opérationnelles |
 
+### Colonnes clés de `pcaf_assessment_detailed.csv`
+
+| Colonne | Description |
+|---|---|
+| `pcaf_signatory` | Statut PCAF : `Signatory`, `Non-signatory`, `Non-signatory (mentions PCAF)`, `Non-signatory (no mention)` |
+| `verification_status` | `[VERIFIED]` = lecture complète du rapport · `[CLIENT-VERIFIED]` = validé par le client · `[UNVERIFIED]` = auto-généré · `[N/A]` = non applicable |
+| `extraction_result` | Résultat de l'extraction automatique : `[NOT FOUND]` = donnée absente · `[FOUND — ...]` = donnée trouvée (à vérifier) · `[INCOMPLETE — ...]` = vérification partielle · `[No data]` = absence confirmée |
+| `evidence` | Justification factuelle du score (sans tags) |
+
 ## Historique des versions
 
 - **V1** (Mars 2026) : première version, méthodologie initiale
 - **V2** (Mars 2026) : nouvelle méthodologie à 11 critères, scores client-vérifiés
 - **V3** (Avril 2026) : audit systématique des extractions, corrections Portfolio Coverage (9/13 erreurs corrigées), justifications enrichies avec source/page/verbatim, scoring `partial` vs `reported` corrigé
+- **V3.1** (Avril 2026) : ajout des colonnes `pcaf_signatory`, `verification_status`, `extraction_result` ; correction Crédit Agricole Portfolio Coverage (faux positif 89,2%)
