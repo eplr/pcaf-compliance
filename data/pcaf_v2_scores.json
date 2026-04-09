@@ -1402,7 +1402,7 @@
     "verification_status": "VERIFIED"
   },
   "Schroders": {
-    "assessment_date": "2024-12-31",
+    "assessment_date": "2026-04-09",
     "institution_type": "Asset Manager",
     "Part A": {
       "Asset Class Coverage": {
@@ -1470,7 +1470,8 @@
       "Part A": 0.3043,
       "Part B": null,
       "Part C": null
-    }
+    },
+    "verification_status": "VERIFIED"
   },
   "Swiss Re": {
     "assessment_date": "2026-04-09",
