@@ -148,7 +148,7 @@ Each part is scored independently. No global weighted score is published — com
 
 ### Assessment reports (`output/`)
 
-22 markdown files — one per full-reading institution:
+25 markdown files in `output/assessment_reports/` — one per institution:
 `*_PCAF_Compliance_Assessment.md` — each contains metadata header, per-criterion verbatim evidence with line references, and summary table.
 
 ### Data files (`output/`)

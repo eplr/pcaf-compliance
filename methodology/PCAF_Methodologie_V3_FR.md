@@ -159,7 +159,7 @@ L'approche privilégiée pour l'évaluation de conformité est la **lecture comp
 
 ### Format du rapport d'évaluation
 
-Chaque institution évaluée produit un rapport au format `output/{INSTITUTION}_PCAF_Compliance_Assessment.md` contenant :
+Chaque institution évaluée produit un rapport au format `output/assessment_reports/{INSTITUTION}_PCAF_Compliance_Assessment.md` contenant :
 - Métadonnées : rapport source, type d'institution, date, méthode de lecture
 - Pour chaque critère des 3 parties : score, verbatim avec référence de ligne, raisonnement
 - Tableau récapitulatif Part A / Part B / Part C (scores bruts uniquement, pas de pondération)
@@ -290,8 +290,8 @@ Le fichier `pcaf_assessment_detailed.csv` comprend 15 colonnes :
 
 | Institution | Source | Méthode | Part A | Part B | Part C | Rapport |
 |---|---|---|---|---|---|---|
-| ING | Annual Report 2025 (ESEF XHTML) | Lecture complète (89 783 lignes) | **16**/23 | **5**/13 | N/A | `output/ING_PCAF_Compliance_Assessment.md` |
-| Admiral Group | Sustainability Report 2024 (PDF) | Lecture complète (1 004 lignes) | **6**/23 | N/A | **5**/13 | `output/Admiral_Group_PCAF_Compliance_Assessment.md` |
+| ING | Annual Report 2025 (ESEF XHTML) | Lecture complète (89 783 lignes) | **16**/23 | **5**/13 | N/A | `output/assessment_reports/ING_PCAF_Compliance_Assessment.md` |
+| Admiral Group | Sustainability Report 2024 (PDF) | Lecture complète (1 004 lignes) | **6**/23 | N/A | **5**/13 | `output/assessment_reports/Admiral_Group_PCAF_Compliance_Assessment.md` |
 
 *19 institutions restantes à évaluer par lecture complète (voir protocole ci-dessous).*
 
@@ -341,7 +341,7 @@ Pour chaque institution :
    - Documenter le raisonnement
    - Vérifier tout pourcentage contre le contexte complet de la phrase
 4. **Mettre à jour** `data/pcaf_v2_scores.json` avec les scores vérifiés et l’evidence enrichie
-5. **Générer** le rapport d’évaluation : `output/{INSTITUTION}_PCAF_Compliance_Assessment.md`
+5. **Générer** le rapport d'évaluation : `output/assessment_reports/{INSTITUTION}_PCAF_Compliance_Assessment.md`
 6. **Regénérer** les CSV : `python3 generate_pcaf_assessment.py && python3 generate_all_looker_csvs.py`
 7. **Vérifier** que `verification_status` passe de `[UNVERIFIED]` à `[VERIFIED]`
 
@@ -353,7 +353,7 @@ Pour chaque institution :
 - **Temporal Coverage** : vérifier les années réellement présentes (pas juste les années mentionnées dans le header)
 
 ### Livrables attendus
-- 19 rapports `.md` enrichis dans `output/`
+- 19 rapports `.md` enrichis dans `output/assessment_reports/`
 - `pcaf_v2_scores.json` mis à jour (25 institutions vérifiées)
 - 7 CSV regénérés avec 0 lignes `[UNVERIFIED]`
 - Commit + push sur GitHub
